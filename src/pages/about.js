@@ -12,7 +12,7 @@ const AboutPage = () => (
   <Layout>
     <div className="container mx-auto px-4 py-8">
       <div className="prose prose-lg max-w-none">
-        <h1 className="text-3xl">About Shaun Pezeshki</h1>
+        <h1 className="text-4xl">About Shaun Pezeshki</h1>
         <p>
           Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices. With a foundation in marketing and tech, he always seeks to maximize client investments.
         </p>
