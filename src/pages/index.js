@@ -7,8 +7,14 @@ const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
+    <>
+    <Seo
+      title="Code & Quirks: Chronicles of a Millennial Developer"
+      description="Dive into 'Code & Quirks': A millennial dev's journey through tech, life, and whimsical musings."
+      meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
+    />
+
     <Layout>
-      <Seo title="Home" />
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
@@ -45,6 +51,7 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
     </Layout>
+    </>
   )
 }
 
