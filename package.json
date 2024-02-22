@@ -11,6 +11,7 @@
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
@@ -46,5 +47,4 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
-  
 }
