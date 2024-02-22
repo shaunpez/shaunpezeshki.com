@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-            <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Code & Quirks: Ramblings of a Weary Millennial Dev</h2>
+            <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Code & Quirks: Ramblings of a Weary Millennial Dev</h1>
             <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
