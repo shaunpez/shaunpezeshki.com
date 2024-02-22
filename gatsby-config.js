@@ -34,6 +34,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        name: `analytics`,
+        trackingId: "G-JF4CNN7RZ6",
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
