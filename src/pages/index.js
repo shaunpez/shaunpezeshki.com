@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
             <h1>Code & Quirks: Ramblings of a Weary Millennial Dev</h1>
             <p>Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>
           </div>
-          <div className="blog-posts grid gap-8">
+          <div className="blog-posts">
             {posts.map(({ node }) => {
               const { title, date, slug, category, excerpt } = node.frontmatter
               const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
@@ -34,9 +34,7 @@ const IndexPage = ({ data }) => {
                     </span>
                     <span className="text-sm">{formattedDate}</span> {/* Display formatted date */}
                   </div>
-                  <h2>
-                    <Link to={postUrl}>{title}</Link>
-                  </h2>
+                  <h2><Link to={postUrl}>{title}</Link></h2>
                   <p>{excerpt}</p>
                   <Link to={postUrl} className="blog-link">
                     Read more
