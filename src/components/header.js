@@ -10,8 +10,8 @@ const Header = ({ siteTitle, pageTitle }) => (
     </div>
     <nav className="menu w-full md:w-auto md:text-right pt-2">
       <ul className="flex flex-col md:flex-row md:space-x-10 text-xl">
-        <li><Link to="/about" className="hover:underline">About Shaun</Link></li>
-        <li><Link to="/chat-with-shaun" className="hover:underline">Chat With Shaun</Link></li>
+        <li><Link to="/about" className="hover:underline font-medium">About Shaun</Link></li>
+        <li><Link to="/chat-with-shaun" className="hover:underline font-medium">Chat With Shaun</Link></li>
       </ul>
     </nav>
   </header>
