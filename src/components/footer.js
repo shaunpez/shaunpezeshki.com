@@ -3,7 +3,7 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto p-4 flex justify-between items-center w-1200 border-t">
+    <footer>
       <div className="space-x-4">
         <a href="https://twitter.com/shaunpez" rel="noreferrer" target="_blank" className="hover:underline"><i className="fab fa-twitter"></i> Twitter</a>
         <a href="https://linkedin.com/in/shaunpez" rel="noreferrer" target="_blank" className="hover:underline"><i className="fab fa-linkedin"></i> LinkedIn</a>

@@ -2,16 +2,18 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Header = ({ siteTitle, pageTitle }) => (
-  <header className="container mx-auto p-4 flex flex-col md:flex-row justify-between border-b">
-    <div className="text-logo tracking-tight font-bold text-4xl mb-4 md:mb-0 md:text-left">
-      <Link to="/" className="hover:underline">
-        {siteTitle}
-      </Link>
+  <header>
+    <div className="text-logo">
+      <h1>
+        <Link to="/" className="hover:underline">
+          {siteTitle}
+        </Link>
+      </h1>
     </div>
-    <nav className="menu w-full md:w-auto md:text-right pt-2">
-      <ul className="flex flex-col md:flex-row md:space-x-10 text-xl">
-        <li><Link to="/about" activeClassName="underline" className="hover:underline font-medium tracking-tight">About Shaun</Link></li>
-        <li><Link to="/chat-with-shaun" activeClassName="underline" className="hover:underline font-medium tracking-tight">Chat With Shaun</Link></li>
+    <nav className="menu">
+      <ul>
+        <li><Link to="/about" activeClassName="underline">About Shaun</Link></li>
+        <li><Link to="/chat-with-shaun" activeClassName="underline">Chat With Shaun</Link></li>
       </ul>
     </nav>
   </header>

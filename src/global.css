@@ -2,3 +2,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Headings and Paragraph */
+h1{
+    @apply text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900;
+}
+h2{
+    @apply text-2xl tracking-tight font-extrabold;
+}
+h3{
+    @apply text-xl tracking-tight font-semibold;
+}
+h4{
+    @apply text-lg tracking-tight font-semibold;
+}
+p{
+    @apply font-light;
+}
+.container{
+    @apply mx-auto px-4 py-14;
+}
+
+/* Header */
+header{
+    @apply container flex flex-col md:flex-row justify-between border-b;
+    @apply py-6;
+}
+header .menu{
+    @apply w-full md:w-auto md:text-right pt-2;
+}
+header .menu ul{
+    @apply flex flex-col md:flex-row md:space-x-10 text-xl;
+}
+header .menu ul li{
+    @apply hover:underline font-medium;
+}
+
+/* Homepage */
+.homepage .container{
+    @apply max-w-screen-md;
+}
+.homepage .content{
+    @apply text-center lg:mb-16 mb-8;
+}
+.homepage .content p{
+    @apply text-gray-500 mt-4;
+}
+
+/* Blog Listing */
+.blog-posts .blog-post{
+    @apply rounded-lg border border-gray-200 shadow-md p-6;
+}
+.blog-posts .blog-category {
+    @apply text-xs font-medium inline-flex items-center py-0.5 rounded;
+}
+.blog-posts .blog-info{
+    @apply flex justify-between items-center mb-5 text-gray-500;
+}
+.blog-posts .blog-post h2{
+    @apply mb-2 hover:underline;
+}
+.blog-posts .blog-post p{
+    @apply mb-5 font-light text-gray-500;
+}
+.blog-posts .blog-post .blog-link{
+    @apply inline-flex items-center font-medium hover:underline;
+}
+
+/* Blog */
+.blog{
+    @apply container;
+}
+.blog .back-button{
+    @apply text-black py-2 px-4 hover:underline ;
+}
+/* Footer */
+footer{
+    @apply container flex justify-between items-center border-t;
+    @apply py-6;
+}

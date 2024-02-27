@@ -10,7 +10,7 @@ const AboutPage = () => (
     meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
   />
   <Layout>
-    <div className="container mx-auto px-4 py-14">
+    <div className="container px-4">
       <div className="prose prose-lg max-w-none">
         <h1 className="text-4xl">About Shaun Pezeshki</h1>
         <p>

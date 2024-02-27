@@ -15,21 +15,19 @@ const BlogPostTemplate = ({ data }) => {
         />
         <Layout>
             <div key={post.frontmatter.slug}>
-                <section class="p-4">
-                    <div class="container mx-auto py-8 px-0 sm:px-4">
+                <section className="blog">
                     <div className="flex justify-end">
-                        <button onClick={() => window.history.back()} className="text-black py-2 px-4 hover:underline">
+                        <button onClick={() => window.history.back()} className="back-button">
                             Back to Posts
                         </button>
                     </div>
-                    <article class="">
-                        <div class="mb-5 text-gray-500">
-                        <span class="text-sm">{post.frontmatter.date}</span>
+                    <article>
+                        <div className="mb-5 text-gray-500">
+                        <span className="text-sm">{post.frontmatter.date}</span>
                         </div>
-                        <h1 class="mb-6 text-4xl tracking-tight font-extrabold text-gray-900">{post.frontmatter.title}</h1>
+                        <h1 className="mb-6 text-4xl tracking-tight font-extrabold text-gray-900">{post.frontmatter.title}</h1>
                         <div dangerouslySetInnerHTML={{ __html: post.html }} />                
                     </article>
-                    </div>
                 </section>    
             </div>
         </Layout>
