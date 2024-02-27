@@ -6,6 +6,9 @@ excerpt: "Join me on a journey through the tumultuous landscape of a millennial'
 category: "Personal Reflections"
 ---
 
+![The struggling millenial](./images/millenial-tired.png)
+<br />
+
 <div class="prose prose-lg max-w-none">
 <p>Welcome to 'Code & Quirks,' where the digital world intertwines with the labyrinth of a millennial's thoughts. I'm Shaun Pezeshki, your weary yet whimsical guide, navigating the twists and turns of existence in my 30s. Life in this decade feels like a perpetual second-guessing, a constant struggle to find purpose amidst the noise.</p>
 
