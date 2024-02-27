@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data }) => {
         <Layout>
             <div key={post.frontmatter.slug}>
                 <section class="p-4">
-                    <div class="container mx-auto py-8 px-4 sm:px-0">
+                    <div class="container mx-auto py-8 px-0 sm:px-4">
                     <div className="flex justify-end">
                         <button onClick={() => window.history.back()} className="text-black py-2 px-4 hover:underline">
                             Back to Posts
