@@ -15,8 +15,8 @@ const BlogPostTemplate = ({ data }) => {
         />
         <Layout>
             <div key={post.frontmatter.slug}>
-                <section class="container mx-auto p-4 w-1200">
-                    <div class="py-8 lg:py-8 ">
+                <section class="p-4">
+                    <div class="container mx-auto py-8 px-4 sm:px-0">
                     <div className="flex justify-end">
                         <button onClick={() => window.history.back()} className="text-black py-2 px-4 hover:underline">
                             Back to Posts
@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data }) => {
                         <div class="mb-5 text-gray-500">
                         <span class="text-sm">{post.frontmatter.date}</span>
                         </div>
-                        <h1 class="mb-6 text-4xl lg:text-4xl tracking-tight font-extrabold text-gray-900">{post.frontmatter.title}</h1>
+                        <h1 class="mb-6 text-4xl tracking-tight font-extrabold text-gray-900">{post.frontmatter.title}</h1>
                         <div dangerouslySetInnerHTML={{ __html: post.html }} />                
                     </article>
                     </div>

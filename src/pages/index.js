@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
 
     <Layout>
       <section className="bg-white ">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+        <div className="container py-8 px-4 mx-auto lg:py-16">
           <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
             <h1 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 ">Code & Quirks: Ramblings of a Weary Millennial Dev</h1>
             <p className="font-light text-gray-500 sm:text-xl ">Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>

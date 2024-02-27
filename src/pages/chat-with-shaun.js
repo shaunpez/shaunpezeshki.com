@@ -12,7 +12,7 @@ const ContactPage = () => (
       ]}
   />
   <Layout>
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-14">
       <div className="prose prose-lg max-w-none">
         <h1 className="text-4xl">Let's Chat</h1>
         <p>
