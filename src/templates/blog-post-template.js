@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data }) => {
                         <div class="mb-5 text-gray-500">
                         <span class="text-sm">{post.frontmatter.date}</span>
                         </div>
-                        <h1 class="mb-6 text-4xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{post.frontmatter.title}</h1>
+                        <h1 class="mb-6 text-4xl lg:text-4xl tracking-tight font-extrabold text-gray-900">{post.frontmatter.title}</h1>
                         <div dangerouslySetInnerHTML={{ __html: post.html }} />                
                     </article>
                     </div>
