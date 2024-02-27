@@ -29,13 +29,13 @@ header{
     @apply py-6;
 }
 header .menu{
-    @apply w-full md:w-auto md:text-right pt-2;
+    @apply w-full md:w-auto md:text-right pt-6 md:pt-2;
 }
 header .menu ul{
-    @apply flex flex-col md:flex-row md:space-x-10 text-xl;
+    @apply flex flex-row space-x-10 text-xl;
 }
 header .menu ul li{
-    @apply hover:underline font-medium;
+    @apply hover:underline font-medium text-lg;
 }
 
 /* Homepage */
