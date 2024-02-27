@@ -4,15 +4,12 @@ date: "2024-02-21"
 slug: "navigating-the-future-ai-jobs-and-the-millennial-conundrum"
 category: "Technology and Society"
 excerpt: " In an era where AI's rapid evolution reshapes our job landscape, a 35-year-old millennial developer reflects on the future of work amidst tech layoffs, economic uncertainties, and the widening wealth gap..."
+image: "./images/future-ai.jpg"
 ---
 
 ![The future of AI and tech](./images/future-ai.jpg)
 <br />
 <div class="prose prose-lg max-w-none">
-
-  <p>
-    Welcome back to 'Code & Quirks,' the sanctuary where the logical rigors of coding intertwine with the untamed thoughts of a millennial developer journeying through the intricacies of technology and life's unpredictable narratives.
-  </p>
 
   <p>
     As we stand at the crossroads of an AI-driven era, the pace at which artificial intelligence evolves sends ripples through our professional lives, prompting both awe and anxiety. The question that looms large is: As AI continues to advance, what does the future hold for our jobs?

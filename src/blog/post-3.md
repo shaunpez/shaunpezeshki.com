@@ -4,6 +4,7 @@ date: "2024-02-26"
 slug: "bridging-worlds-digital-agency-to-public-service"
 category: "Career Transitions"
 excerpt: "Exploring the intersection of personal passions, cultural identity, and professional aspirations through a millennial developer's lens..."
+image: "./images/representation-michigan.webp"
 ---
 
 ![Map of Michigan with tech and asian influence](./images/representation-michigan.webp)
@@ -11,21 +12,17 @@ excerpt: "Exploring the intersection of personal passions, cultural identity, an
 <div class="prose prose-lg max-w-none">
 
   <p>
-    Join me on a reflective journey as I contemplate a potential career pivot that not only aligns with my professional skills but also resonates with my cultural heritage and commitment to inclusivity.
-  </p>
-
-  <p>
-    In the ever-evolving tapestry of my career, I find myself at yet another crossroad. The allure of a new opportunity beckons—this time, it's a role that, while not directly tied to my current professional realm, intrigues me with its promise of aligning my myriad passions with purposeful work. As I mull over a potential pivot to a Departmental Analyst position within Michigan's government, specifically focusing on the Michigan Asian Pacific American Affairs Commission (MAPAAC) administration, I'm drawn to the unique convergence of public service, cultural advocacy, and the inherent drive to make a difference.
+    In the ever-changing landscape of my career journey, I find myself at yet another crossroad. The allure of a new opportunity beckons—this time, it's a role that, while not directly tied to my current professional realm, intrigues me with its promise of aligning my many passions with purposeful work. As I mull over a potential pivot to a Departmental Analyst position within Michigan's government, specifically focusing on the Michigan Asian Pacific American Affairs Commission (MAPAAC) administration, I'm drawn to the unique convergence of public service, cultural advocacy, and the inherent drive to make a difference.
   </p>
 
   <h2>Where Passions Meet</h2>
   <p>
-    At first glance, the transition from running a digital agency to a role steeped in public policy and community engagement might seem unconventional. Yet, the essence of what drives us often transcends the boundaries of our job descriptions. My journey as a millennial developer has always been about more than just code; it's been a quest for impact, a desire to weave the threads of my identity—Asian American, LGBTQ+, entrepreneur—into a tapestry that not only tells my story but also uplifts others.
+    At first glance, the transition from running a digital agency to a role steeped in public policy and community engagement might seem unconventional. Yet, the essence of what drives us often transcends the boundaries of our job descriptions. My journey as a millennial developer has always been about more than just code; it's been a quest for impact, a desire to weave the threads of my identity—Asian American, Middle Eastern American, LGBTQ+, entrepreneur—into a tapestry that not only tells my story but also uplifts others.
   </p>
 
   <h2>Digital Skills, Real-World Change</h2>
   <p>
-    The skills honed in the digital realm are surprisingly adaptable to the nuanced world of public administration. Project management, analytical thinking, and a knack for distilling complex ideas into accessible solutions are just as vital in shaping policies and programs as they are in developing software. My experience in creating and nurturing a digital agency has endowed me with a keen understanding of how to build something from nothing, how to rally a team towards a common goal, and how to pivot when faced with unforeseen challenges—skills that are indispensable in public service.
+    The skills in the digital realm are surprisingly adaptable to the nuanced world of public administration. Project management, analytical thinking, and a knack for distilling complex ideas into accessible solutions are just as vital in shaping policies and programs as they are in developing software. My experience in creating and nurturing a digital agency has endowed me with a strong understanding of how to build something from nothing, how to rally a team towards a common goal, and how to pivot when faced with unforeseen challenges—skills that are indispensable in public service.
   </p>
 
   <h2>Programming with Purpose</h2>
@@ -39,9 +36,9 @@ excerpt: "Exploring the intersection of personal passions, cultural identity, an
   </p>
   <h2>Taking the Next Big Step</h2>
   <p>
-    As I stand on the precipice of this new venture, I'm filled with a mixture of excitement and apprehension. Yet, the more I reflect, the more I realize that this role represents everything I'm passionate about: innovation, community, diversity, and impact. It's a reminder that our careers can be vast and varied landscapes, shaped by our passions, experiences, and the desire to contribute to something greater than ourselves.
+    As I stand at the edge of this new journey, I'm both excited and a bit nervous. But the more I think about it, the more I see how this role touches on things I really care about: new ideas, community, bringing people together, and making a difference. It reminds me that our work life is like a big, varied adventure, shaped by what we love, our experiences, and our wish to add to something bigger than just us.
   </p>
   <p> 
-    In contemplating this transition, I'm reminded that the path to fulfillment is rarely linear. It's a journey marked by unexpected detours, profound discoveries, and, most importantly, the courage to pursue what resonates with our deepest values. As I ponder the possibilities that lie ahead, I'm buoyed by the thought of what's to come and the impact we can make when we dare to bridge worlds.
+    Thinking about this change, I realize that finding what really fulfills us isn't always a straight road. It's more like a journey with unexpected twists, big discoveries, and most of all, the courage to go after what truly matters to us. As I look forward to what's ahead, I'm excited by the possibilities and the chance to see if this new path is the right fit for me, even if the role isn't exactly what I was looking for.
   </p>
 </div>

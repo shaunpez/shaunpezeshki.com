@@ -2,16 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
+import { getSrc } from "gatsby-plugin-image";
 
 const BlogPostTemplate = ({ data }) => {
   // `data` prop will be injected by the GraphQL layer based on the query below
   const { markdownRemark: post } = data // Destructuring the post data
+  const imageUrl = post.frontmatter.image ? getSrc(post.frontmatter.image.childImageSharp) : null;
 
   return (
     <>
         <Seo
             title={post.frontmatter.title}
             description={post.frontmatter.excerpt}
+            image={imageUrl}
         />
         <Layout>
             <div key={post.frontmatter.slug}>
@@ -45,6 +48,11 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         excerpt
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 1200, layout: FIXED)
+          }
+        }
       }
     }
   }

@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import favicon from '../images/favicon.png'; // Adjust the path as necessary
 
-function Seo({ description, lang = "en", meta = [], title }) {
+function Seo({ description, lang = "en", meta = [], title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -24,9 +24,9 @@ function Seo({ description, lang = "en", meta = [], title }) {
       }
     `
   );
-
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+  const imageUrl = image ? `${image}` : null;
 
   return (
     <Helmet
@@ -71,7 +71,16 @@ function Seo({ description, lang = "en", meta = [], title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+        // Add new meta tags for the image
+        imageUrl && {
+          property: `og:image`,
+          content: imageUrl,
+        },
+        imageUrl && {
+          name: `twitter:image`,
+          content: imageUrl,
+        },
+      ].concat(meta).filter(Boolean)}
     />
   );
 }
