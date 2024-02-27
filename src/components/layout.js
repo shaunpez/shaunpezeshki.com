@@ -1,5 +1,5 @@
 // src/components/Layout.js
-import React from "react"
+import React, { useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -15,6 +15,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

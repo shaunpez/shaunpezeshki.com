@@ -52,6 +52,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     // Add any other plugins you need here
   ],
 }

@@ -2,6 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from 'gatsby-plugin-image';
+import headerImage from '../images/homepage.webp';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -12,12 +14,18 @@ const IndexPage = ({ data }) => {
       title="Code & Quirks: Chronicles of a Millennial Developer"
       description="Dive into 'Code & Quirks': A millennial dev's journey through tech, life, and whimsical musings."
       meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
+      image={headerImage}
     />
 
     <Layout>
       <section className="homepage">
         <div className="container">
           <div className="content">
+            <StaticImage
+              src="../images/homepage.webp" // Adjust the path as necessary
+              alt="Code & Quirks: Ramblings of a Weary Millennial Dev"
+              placeholder="blurred" // Optional: This prop defines the loading strategy
+            />
             <h1>Code & Quirks: Ramblings of a Weary Millennial Dev</h1>
             <p>Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>
           </div>

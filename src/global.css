@@ -45,6 +45,9 @@ header .menu ul li{
 .homepage .content{
     @apply text-center lg:mb-16 mb-8;
 }
+.homepage .content h1{
+    @apply mt-8;
+}
 .homepage .content p{
     @apply text-gray-500 mt-4;
 }
