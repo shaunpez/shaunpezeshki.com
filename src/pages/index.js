@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
               alt="Code & Quirks: Ramblings of a Weary Millennial Dev"
               placeholder="blurred" // Optional: This prop defines the loading strategy
             />
-            <h1>Code & Quirks: Ramblings of a Weary Millennial Dev</h1>
+            <h1>Code & Quirks: <br />Ramblings of a Weary Millennial Dev</h1>
             <p>Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>
           </div>
           <div className="blog-posts">

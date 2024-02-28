@@ -5,6 +5,7 @@ slug: "embracing-uncertainty-millennial-existence"
 excerpt: "Join me on a journey through the tumultuous landscape of a millennial's mind, where the chaos of life intersects with the order of coding..."
 category: "Personal Reflections"
 image: "./images/millenial-tired.png"
+draft: false
 ---
 
 ![The struggling millenial](./images/millenial-tired.png)

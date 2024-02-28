@@ -5,6 +5,7 @@ slug: "bridging-worlds-digital-agency-to-public-service"
 category: "Career Transitions"
 excerpt: "Exploring the intersection of personal passions, cultural identity, and professional aspirations through a millennial developer's lens..."
 image: "./images/representation-michigan.webp"
+draft: false
 ---
 
 ![Map of Michigan with tech and asian influence](./images/representation-michigan.webp)

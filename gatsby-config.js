@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Shaun Pezeshki`,
-    description: `Shaun's Journey`,
+    description: `'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind.`,
     author: `Shaun Pezeshki`,
     siteUrl: `https://shaunpezeshki.com`,
   },
@@ -45,6 +45,70 @@ module.exports = {
             options: {
               maxWidth: 1600, // Adjust the maxWidth as necessary
             },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    siteUrl
+                    site_url: siteUrl
+                }
+            }
+        }`,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                const year = node.frontmatter.date.split("-")[0]; // Extracting the year from the date
+                const month = node.frontmatter.date.split("-")[1]; // Extracting the month from the date
+                const day = node.frontmatter.date.split("-")[2]; // Extracting the day from the date
+            
+                const postURL = `${site.siteMetadata.siteUrl}/${year}/${month}/${day}/${node.frontmatter.slug}`;
+            
+                return {
+                  title: node.frontmatter.title,
+                  description: node.frontmatter.excerpt,
+                  date: node.frontmatter.date,
+                  url: postURL,
+                  guid: postURL,
+                  custom_elements: [{ "content:encoded": node.html }],
+                }
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { draft: { ne: true } } }
+                ) {
+                  nodes {
+                    html
+                    frontmatter {
+                      title
+                      date
+                      slug
+                      excerpt
+                      image {
+                        childImageSharp {
+                          gatsbyImageData(width: 1200, layout: FIXED)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Code & Quirks: Ramblings of a Weary Millennial Dev",
+            // other options here...
           },
         ],
       },
