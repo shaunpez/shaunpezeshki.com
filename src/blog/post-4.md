@@ -55,24 +55,24 @@ draft: false
 <h4>Direct Approach</h4>
 
   <ul>
-    <li>Personalized Projects: Create and share projects tailored to the mission or products of your target companies on platforms like GitHub or Behance, tagging them in your posts.</li>
-    <li>Cold Outreach: Instead of waiting for a job listing, directly email teams or leaders at companies you admire with a concise pitch on how you can solve their current challenges.</li>
+    <li><strong>Personalized Projects</strong>: Create and share projects tailored to the mission or products of your target companies on platforms like GitHub or Behance, tagging them in your posts.</li>
+    <li><strong>Cold Outreach</strong>: Instead of waiting for a job listing, directly email teams or leaders at companies you admire with a concise pitch on how you can solve their current challenges.</li>
   </ul>
 
 <h4>Creative Engagement</h4>
   <ul>
-    <li>Social Media Campaigns: Launch a creative campaign on platforms like Twitter or Instagram where you tackle a challenge or build something related to the company, using their hashtags or tagging them to garner attention.</li>
-    <li>Public Challenges: Take on public coding challenges or design sprints and share your process and results online, making sure to link back to how these skills can benefit your target companies.</li>
+    <li><strong>Social Media Campaigns</strong>: Launch a creative campaign on platforms like Twitter or Instagram where you tackle a challenge or build something related to the company, using their hashtags or tagging them to garner attention.</li>
+    <li><strong>Public Challenges</strong>: Take on public coding challenges or design sprints and share your process and results online, making sure to link back to how these skills can benefit your target companies.</li>
   </ul>
 </h4>
 <h4>Physical Presence</h4>
     <ul>
-      <li>Local Meetups and Tech Talks: Attend tech meetups and talks in your area to network in person. Sometimes, a face-to-face conversation can make a more lasting impression than an online interaction.
-      <li>Creative Delivery of Resumes: While most applications are online, consider sending a creative, well-designed physical copy of your resume or portfolio to the offices of companies you're interested in, especially if they are local. This could be through direct mail or even hand-delivery for a memorable touch.</li>
+      <li><strong>Local Meetups and Tech Talks</strong>: Attend tech meetups and talks in your area to network in person. Sometimes, a face-to-face conversation can make a more lasting impression than an online interaction.
+      <li><strong>Creative Delivery of Resumes</strong>: While most applications are online, consider sending a creative, well-designed physical copy of your resume or portfolio to the offices of companies you're interested in, especially if they are local. This could be through direct mail or even hand-delivery for a memorable touch.</li>
     </ul>
 <h4>Showcase Adaptability</h4>
     <ul>
-      <li>Industry Crossover Projects: Work on projects that demonstrate how your tech skills can solve problems in other industries, showing your versatility and ability to think outside the box.</li>
+      <li><strong>Industry Crossover Projects</strong>: Work on projects that demonstrate how your tech skills can solve problems in other industries, showing your versatility and ability to think outside the box.</li>
     </ul>
 
 <h2>Looking Ahead</h2>
