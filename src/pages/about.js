@@ -14,17 +14,17 @@ const AboutPage = () => (
       <div className="prose prose-lg max-w-none">
         <h1 className="text-4xl">About Shaun Pezeshki</h1>
         <p>
-          Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices. With a foundation in marketing and tech, he always seeks to maximize client investments.
-        </p>
+          Shaun Pezeshki is a technical strategist known for enhancing business operations. With a strong marketing and tech background, he maximizes client investments efficiently. </p>
         <p>
-          He's skilled at bridging the gap between older systems and modern solutions, achieving greater efficiency. Drawing from his work experience, spanning individual brands to full-scale agencies, Shaun grasps diverse needs and meticulously crafts strategic roadmaps leading to success.
-        </p>
+          He excels at integrating modern solutions with existing systems, boosting efficiency. Shaun's diverse experience, from individual brands to agencies, enables him to understand varied needs and develop strategic success roadmaps. </p>
         <p>
-          Merging creativity, technology, and AI insights, Shaun emphasizes boosting user engagement and devising solutions that genuinely support individuals in elevating their companies.
-        </p>
+          By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions. </p>
         <p>
-          Want to connect? Reach out to me at <a href="mailto:hello@uphighstudio.com">hello@uphighstudio.com</a>
+          Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBT+ communities.  </p>
+        <p>
+          Want to connect? Reach out to me at <a href="mailto:hello@uphighstudio.com">hello@uphighstudio.com</a>.
         </p>
+
       </div>
     </div>
   </Layout>

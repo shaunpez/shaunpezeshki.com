@@ -18,7 +18,7 @@ const AboutPage = () => (
         <p className="text-sm">Last updated: February, 20 2024</p>
         <h1 className="text-4xl">Privacy Policy</h1>
         <h2>Introduction</h2>
-        <p>Welcome to Code & Quirks: Ramblings of a Weary Millennial Dev. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
+        <p>Welcome to Code & Quirks: Chronicals of a Weary Millennial Dev. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
         
         <h2>Information We Collect</h2>
         <p>We collect several types of information from and about users of our website, including information by which you may be personally identified, such as name, postal address, email address, telephone number, etc. ("personal information").</p>
@@ -33,7 +33,7 @@ const AboutPage = () => (
             <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
             <li>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</li>
         </ul>
-        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at shaun@uphighstudio.com.</p>
+        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
 
         <h2>Changes to Our Privacy Policy</h2>
         <p>It is our policy to post any changes we make to our privacy policy on this page. If we make material changes to how we treat our users' personal information, we will notify you through a notice on the website home page. The date the privacy policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting our website and this privacy policy to check for any changes.</p>

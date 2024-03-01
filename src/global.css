@@ -67,6 +67,15 @@ header .menu ul li{
 .blog-posts .blog-info{
     @apply flex justify-between items-center mb-5 text-gray-500;
 }
+.blog-posts .blog-post .blog-col{
+    @apply sm:flex;
+}
+.blog-posts .blog-post .blog-hero{
+    @apply sm:w-1/3 sm:mr-6 mb-4 sm:mb-0;
+}
+.blog-posts .blog-post .blog-main{
+    @apply sm:w-2/3
+}
 .blog-posts .blog-post h2{
     @apply mb-2 hover:underline;
 }

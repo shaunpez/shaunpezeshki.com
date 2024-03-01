@@ -31,15 +31,15 @@ The key to escape is finding my "break statement"—a heartfelt chat with a frie
 ## 2. Syntax Errors of Communication
 
 ### Understanding the Problem
-> Communication in social contexts has always been a complex puzzle for me, much like navigating a minefield blindfolded. This might stem from a dash of neurodiversity or just my unique perspective. However, in professional settings, the rules of engagement seem more defined, providing a semblance of structure to my interactions.
+> Communicating in everyday social situations often feels incredibly complex for me, almost as if I'm trying to navigate through a field of hidden obstacles blindfolded. This challenge might be due to my unique way of processing the world, possibly influenced by neurodiversity, or simply my individual perspective. On the other hand, the structured environment of professional settings provides clearer guidelines for interaction, making it somewhat easier for me to engage with others.
 
-**In coding...** the challenges in social communication are akin to syntax errors where a small typo can disrupt the flow, halting the entire operation.
+**In coding...** the challenges in social communication are comparable to syntax errors where a small typo can disrupt the flow, halting the entire operation.
 
 **In life...** communication mishaps, whether personal or professional, are like syntax errors in coding—small misunderstandings can lead to unexpected outcomes.
 
 ### Potential Solution
 
-I've come to realize that socially, it's okay not to resonate with everyone. As I've matured, I've learned to carve my own path towards individuals who share my values, while maintaining a healthy distance from those who may not have my best interests at heart. This approach, akin to refining code, involves active listening and clear expression, allowing me to bridge gaps and cultivate meaningful connections.
+I've come to realize that socially, it's okay not to resonate with everyone. As I've matured, I've learned to carve my own path towards individuals who share my values, while maintaining a healthy distance from those who may not have my best interests at heart. This approach, like refining code, involves active listening and clear expression, allowing me to bridge gaps and cultivate meaningful connections.
 
 ## 3. Bug Squashing vs. Procrastination
 
@@ -50,7 +50,7 @@ I've come to realize that socially, it's okay not to resonate with everyone. As 
 
 **In life...** procrastination can resemble a complex bug, hiding beneath layers of emotional turmoil, with "Doom Scrolling" acting as a misleading error message that distracts from the core issues.
 
-### Potential Solution:
+### Potential Solution
 
 Procrastination is like fixing a complex code: break it into smaller parts. By taking it one day at a time and doing small, achievable tasks, I make progress against the tendency to delay. This method helps shift focus back to productivity, like how fixing each bug in code gets it running smoothly again.
 
@@ -74,7 +74,7 @@ To improve, I've adopted a more straightforward thinking process: combining thou
 ### Understanding the Problem
 > Leading up to 2018, the relentless pace of my career pushed me to the brink of burnout. Taking a break was essential, but once I stepped back, I discovered that rest alone wasn't enough. My body and soul yearned for more than just a pause; they needed genuine nourishment and care that I hadn't realized was lacking.
 
-**In coding...** this mirrors a system crash due to overloading, akin to neglecting necessary maintenance until it's too late.
+**In coding...** this mirrors a system crash due to overloading, similar to neglecting necessary maintenance until it's too late.
 
 **In life...** the neglect of self-care in the relentless pursuit of success is similar to ignoring the warning signs before a system crash.
 

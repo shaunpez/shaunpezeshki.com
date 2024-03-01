@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const Header = ({ siteTitle, pageTitle }) => (
   <header>
-    <div class="container">
+    <div className="container">
       <h1>
         <Link to="/" className="hover:underline">
           {siteTitle}

@@ -4,7 +4,7 @@ import React from "react"
 const Footer = () => {
   return (
     <footer>
-      <div class="container">
+      <div className="container">
         <ul>
           <li><a href="https://twitter.com/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">Twitter</a></li>
           <li><a href="https://linkedin.com/in/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">LinkedIn</a></li>
