@@ -2,7 +2,7 @@
 title: "Embracing Uncertainty: Navigating the Whirlwind of Millennial Existence"
 date: "2024-02-20"
 slug: "embracing-uncertainty-millennial-existence"
-excerpt: "Join me on a journey through the tumultuous landscape of a millennial's mind, where the chaos of life intersects with the order of coding..."
+excerpt: "Join me on a journey through the tumultuous landscape of a millennial's mind, where the chaos of life intersects with the order of coding."
 category: "Personal Reflections"
 image: "./images/millenial-tired.png"
 draft: false
