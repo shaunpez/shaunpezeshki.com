@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
     <Seo
-      title="Code & Quirks: Chronicles of a Millennial Developer"
+      title="Code & Quirks: Chronicals of a Weary Millennial Developer"
       description="Dive into 'Code & Quirks': A millennial dev's journey through tech, life, and whimsical musings."
       meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
       image={headerImage}
@@ -23,10 +23,10 @@ const IndexPage = ({ data }) => {
           <div className="content">
             <StaticImage
               src="../images/homepage.webp" // Adjust the path as necessary
-              alt="Code & Quirks: Ramblings of a Weary Millennial Dev"
+              alt="Code & Quirks: Chronicals of a Weary Millennial Dev"
               placeholder="blurred" // Optional: This prop defines the loading strategy
             />
-            <h1>Code & Quirks: <br />Ramblings of a Weary Millennial Dev</h1>
+            <h1>Code & Quirks: <br />Chronicals of a Weary Millennial Dev</h1>
             <p>Welcome to 'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind. Here, I, your weary yet whimsical host, embark on a journey through the ebbs and flows of tech, life, and the absurdities in between.</p>
           </div>
           <div className="blog-posts">

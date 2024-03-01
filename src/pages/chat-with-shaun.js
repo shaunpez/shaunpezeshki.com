@@ -22,7 +22,7 @@ const ContactPage = () => (
           Shoot me a message, email, or let's grab a virtual coffee and geek out about all things tech.
         </p>
         <p>
-          To set up a coffee chat, feel free to pick a slot from my <a href="https://calendly.com/shaunpez/coffee-chat?month=2024-02" className="transition duration-300">Calendly link</a>. Looking forward to our chat!
+          To set up a coffee chat, feel free to pick a slot from my <a href="https://calendly.com/shaunpez/coffee-chat" className="transition duration-300">Calendly link</a>. Looking forward to our chat!
         </p>
         <p>
           Drop me an email at <a href="mailto:shaun@uphighstudio.com" className="transition duration-300">shaun@uphighstudio.com</a> or connect with me on social media. Let's dive into the world of tech together!

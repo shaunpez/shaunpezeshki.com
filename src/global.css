@@ -25,8 +25,10 @@ p{
 
 /* Header */
 header{
-    @apply container flex flex-col md:flex-row justify-between border-b;
-    @apply py-6;
+    @apply border-b;
+}
+header .container{
+    @apply flex flex-col md:flex-row justify-between py-6;
 }
 header .menu{
     @apply w-full md:w-auto md:text-right pt-6 md:pt-2;
@@ -90,6 +92,11 @@ header .menu ul li{
 }
 /* Footer */
 footer{
-    @apply container flex justify-between items-center border-t;
-    @apply py-6;
+    @apply border-t;
+}
+footer .container{
+    @apply flex flex-col md:flex-row justify-between py-6;
+}
+footer ul{
+    @apply flex space-x-4;
 }
