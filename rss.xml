@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code & Quirks: Ramblings of a Weary Millennial Dev]]></title><description><![CDATA['Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind.]]></description><link>https://shaunpezeshki.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Mar 2024 03:51:29 GMT</lastBuildDate><item><title><![CDATA[Strategies for Success: Navigating the 2024 Tech Job Market]]></title><description><![CDATA[Dive into the evolving landscape of the tech industry, where economic shifts and competitive dynamics demand innovative job search strategies. Discover how networking, skill development, and avant-garde approaches can guide you to your next opportunity...]]></description><link>https://shaunpezeshki.com/2024/02/28/strategies-for-success-navigating-the-2024-tech-job-market</link><guid isPermaLink="false">https://shaunpezeshki.com/2024/02/28/strategies-for-success-navigating-the-2024-tech-job-market</guid><pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code & Quirks: Ramblings of a Weary Millennial Dev]]></title><description><![CDATA['Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind.]]></description><link>https://shaunpezeshki.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Mar 2024 07:11:35 GMT</lastBuildDate><item><title><![CDATA[Debugging Life Lessons: Unraveling the Code of Existence]]></title><description><![CDATA[Discover how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds...]]></description><link>https://shaunpezeshki.com/2024/03/01/debugging-life-lessons-unraveling-code-existence</link><guid isPermaLink="false">https://shaunpezeshki.com/2024/03/01/debugging-life-lessons-unraveling-code-existence</guid><pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1243px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/94450d5e4be6b3d8ae471242617dd1d8/4ac4c/debugging-zen.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAMAAv/aAAwDAQACEAMQAAABrKZLYrRLEP8A/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAERIDBP/aAAgBAQABBQJrEPdSUa10WmcsPQ8//8QAGREBAAIDAAAAAAAAAAAAAAAAAQACAxES/9oACAEDAQE/AbnJuOQn/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECEhH/2gAIAQIBAT8BitPhhn//xAAcEAABBAMBAAAAAAAAAAAAAAAAAREhMQJBUZH/2gAIAQEABj8CsXFOQPQ2uEGvD//EABsQAAMAAwEBAAAAAAAAAAAAAAABESFBUTFh/9oACAEBAAE/IW4FdjTG3qF2X4ZRTj2oYTZ9JPMx/9oADAMBAAIAAwAAABDX7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEXH/2gAIAQMBAT8QTugqZf/EABgRAQEAAwAAAAAAAAAAAAAAAAEAETFR/9oACAECAQE/EAxuQhu//8QAHRABAQACAgMBAAAAAAAAAAAAAREAQSFhUXGBof/aAAgBAQABPxAJQBXBabvjpx3lq/LbTps+YCBV7Tj2/uVW6JCu/J8cS40RrKuqhcHdVVcf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Debugging Zen&quot;
+        title=&quot;&quot;
+        src=&quot;/static/94450d5e4be6b3d8ae471242617dd1d8/4ac4c/debugging-zen.jpg&quot;
+        srcset=&quot;/static/94450d5e4be6b3d8ae471242617dd1d8/066f9/debugging-zen.jpg 400w,
+/static/94450d5e4be6b3d8ae471242617dd1d8/4b190/debugging-zen.jpg 800w,
+/static/94450d5e4be6b3d8ae471242617dd1d8/4ac4c/debugging-zen.jpg 1243w&quot;
+        sizes=&quot;(max-width: 1243px) 100vw, 1243px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;prose prose-lg max-w-none&quot;&gt;
+&lt;p&gt;As a self-proclaimed perfectionist Leo, my journey is dotted with moments of introspection, missteps, and, occasionally, enlightenment. Today, I&apos;m peeling back the layers of my existence to reveal how the art of coding, mirrors the tumultuous adventure of life.&lt;/p&gt;
+&lt;h2&gt;1. Infinite Loop of Negativity&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My drive for excellence can sometimes lead me down a path of harsh self-criticism, particularly after uncomfortable social encounters or when outcomes fall short of my expectations. This mental feedback loop keeps replaying these instances, ensnaring me in a relentless cycle of doubt.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problem:&lt;/strong&gt; Just like an infinite loop in coding caused by a missing break statement.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Life Parallel:&lt;/strong&gt; This mental merry-go-round mirrors the frustrating cycle of an infinite loop, endlessly iterating without progress.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Potential Solution:&lt;/strong&gt; The key to escape is finding my &quot;break statement&quot;—a heartfelt chat with a friend or a moment of mindfulness—allowing me to step out of the cycle and move forward.&lt;/p&gt;
+&lt;h2&gt;2. Syntax Errors of Communication&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Communication has always been a peculiar puzzle for me. Perhaps it&apos;s a dash of neurodiversity or simply my unique perspective, but connecting with others can sometimes feel like navigating a minefield blindfolded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problem:&lt;/strong&gt; Reminiscent of those pesky syntax errors in coding, where a simple typo can throw everything off.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Life Parallel:&lt;/strong&gt; Miscommunications in life, much like in code, often arise from small oversights or misunderstandings, leading to unintended consequences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Potential Solution:&lt;/strong&gt; I&apos;ve learned the importance of active listening and clear expression, akin to debugging syntax errors, to foster understanding and connection.&lt;/p&gt;
+&lt;h2&gt;3. Bug Squashing vs. Procrastination&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My battle with procrastination is well-documented in the annals of my life. Losing direction can be disheartening, but channeling my energy into creative outlets like this blog has been a beacon of light in the fog.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problem:&lt;/strong&gt; It mirrors the process of debugging, where identifying and addressing the underlying issue is crucial.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Life Parallel:&lt;/strong&gt; Just as a bug in code hides beneath the surface, procrastination often masks deeper challenges or fears.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Potential Solution:&lt;/strong&gt; Approaching procrastination like a bug to be squashed—by pinpointing its root cause and methodically addressing it—has been transformative in regaining my momentum.&lt;/p&gt;
+&lt;h2&gt;4. Logic Errors in Decision Making&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My approach to decision-making is a study in contrasts. Grounded in logic, yet occasionally swayed by the emotional appeals of others, it&apos;s a delicate dance between reason and empathy.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problem:&lt;/strong&gt; This duality reflects the nature of logical errors in coding, where everything appears correct on the surface, yet the outcome is not as expected.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Life Parallel:&lt;/strong&gt; Just as logical errors can lead to unexpected behavior in programs, decisions based on flawed logic or incomplete information can lead to unforeseen consequences in life.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Potential Solution:&lt;/strong&gt; Employing critical thinking, seeking comprehensive information, and being mindful of biases helps me navigate this intricate landscape, aiming for decisions that are both logical and considerate.&lt;/p&gt;
+&lt;h2&gt;5. Crash Course in Self-Care&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The year 2018 marked a turning point for me, a time when the relentless pace of my career led to burnout. Retreating to the sanctuary of my childhood home, I embarked on a journey of self-discovery and renewal.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problem:&lt;/strong&gt; It&apos;s akin to a system crash caused by overloading resources or neglecting to manage memory leaks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Life Parallel:&lt;/strong&gt; Neglecting self-care in the relentless pursuit of success is much like ignoring the warning signs of an impending system crash.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Potential Solution:&lt;/strong&gt; Regular intervals of rest, prioritizing well-being, and engaging in activities that rejuvenate the spirit are my strategies to avoid the perils of burnout, ensuring that both my code and I can run optimally.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Strategies for Success: Navigating the 2024 Tech Job Market]]></title><description><![CDATA[Dive into the evolving landscape of the tech industry, where economic shifts and competitive dynamics demand innovative job search strategies. Discover how networking, skill development, and avant-garde approaches can guide you to your next opportunity...]]></description><link>https://shaunpezeshki.com/2024/02/28/strategies-for-success-navigating-the-2024-tech-job-market</link><guid isPermaLink="false">https://shaunpezeshki.com/2024/02/28/strategies-for-success-navigating-the-2024-tech-job-market</guid><pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1600px; &quot;
     &gt;
