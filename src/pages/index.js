@@ -4,10 +4,11 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from 'gatsby-plugin-image';
 import headerImage from '../images/homepage.webp';
-import Img from "gatsby-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
+  console.log(posts);
 
   return (
     <>
@@ -44,12 +45,13 @@ const IndexPage = ({ data }) => {
                     <span className="text-sm">{formattedDate}</span> 
                   </div>
                   <div className="blog-col">
-                    <div className="blog-hero">
-                      {image && image.childImageSharp && (
-                        <Img fluid={image.childImageSharp.fluid} alt={title} />
-                      )}
-                    </div>
-                    <div className="blog-main">
+                  
+                    {image && (
+                      <div className="blog-hero">
+                        <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={title} />
+                      </div>
+                    )}
+                    <div className={image ? "blog-main" : ""}>
                       <h2><Link to={postUrl}>{title}</Link></h2>
                       <p>{excerpt}</p>
                       <Link to={postUrl} className="blog-link">
@@ -82,9 +84,7 @@ export const query = graphql`
             excerpt
             image {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }

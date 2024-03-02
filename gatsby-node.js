@@ -1,7 +1,7 @@
 const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
   const blogPostTemplate = path.resolve(`src/templates/blog-post-template.js`);
   const result = await graphql(`
     query {
@@ -37,4 +37,12 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     });
   }
+
+  // Define the redirect from /feed to /
+  createRedirect({
+    fromPath: '/feed',
+    toPath: '/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  });
 };

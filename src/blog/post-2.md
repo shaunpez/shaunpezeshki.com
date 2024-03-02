@@ -1,6 +1,6 @@
 ---
 title: "Navigating the Future: AI, Jobs, and the Millennial Conundrum"
-date: "2024-02-21"
+date: "2024-02-20"
 slug: "navigating-the-future-ai-jobs-and-the-millennial-conundrum"
 category: "Technology and Society"
 excerpt: " In an era where AI's rapid evolution reshapes our job landscape, a 35-year-old millennial developer reflects on the future of work amidst tech layoffs, economic uncertainties, and the widening wealth gap."

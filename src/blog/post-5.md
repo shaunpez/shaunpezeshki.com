@@ -1,6 +1,6 @@
 ---
 title: "Debugging Life Lessons: Unraveling the Code of Existence"
-date: "2024-03-01"
+date: "2024-02-29"
 slug: "debugging-life-lessons-unraveling-code-existence"
 category: "Personal Development"
 excerpt: "Discover how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds."

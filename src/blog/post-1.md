@@ -1,6 +1,6 @@
 ---
 title: "Embracing Uncertainty: Navigating the Whirlwind of Millennial Existence"
-date: "2024-02-20"
+date: "2024-02-18"
 slug: "embracing-uncertainty-millennial-existence"
 excerpt: "Join me on a journey through the tumultuous landscape of a millennial's mind, where the chaos of life intersects with the order of coding."
 category: "Personal Reflections"
