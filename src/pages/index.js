@@ -8,7 +8,6 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
-  console.log(posts);
 
   return (
     <>

@@ -86,8 +86,8 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { draft: { ne: true } } }
+                  sort: {frontmatter: {date: DESC}}
+                  filter: {frontmatter: {draft: {ne: true}}}
                 ) {
                   nodes {
                     html
