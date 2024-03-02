@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { getSrc } from "gatsby-plugin-image";
@@ -19,9 +19,9 @@ const BlogPostTemplate = ({ data }) => {
         <Layout>
             <div key={post.frontmatter.slug}>
                 <section className="blog">
-                    <button onClick={() => window.history.back()} className="back-button">
+                    <Link to="/" className="back-button">
                         Back to Posts
-                    </button>
+                    </Link>
                     <article>
                         <div className="date">
                           {post.frontmatter.date}
