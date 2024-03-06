@@ -8,7 +8,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import favicon from '../images/favicon.png'; // Adjust the path as necessary
+import faviconICO from '../images/favicon.ico'; 
+import faviconPNG from '../images/favicon.png'; 
 
 function Seo({ description, lang = "en", meta = [], title, image }) {
   const { site } = useStaticQuery(
@@ -34,7 +35,9 @@ function Seo({ description, lang = "en", meta = [], title, image }) {
         lang,
       }}
       link={[
-        { rel: 'icon', type: 'image/x-icon', href: favicon },
+          { rel: 'icon', type: 'image/x-icon', href: faviconICO }, // For ICO favicon
+          { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconPNG }, // For PNG favicon (32x32)
+          { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconPNG }, // For PNG favicon (16x16)
       ]}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
