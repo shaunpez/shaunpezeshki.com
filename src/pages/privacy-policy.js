@@ -18,7 +18,7 @@ const AboutPage = () => (
         <p className="text-sm">Last updated: February, 20 2024</p>
         <h1 className="text-4xl">Privacy Policy</h1>
         <h2>Introduction</h2>
-        <p>Welcome to Code & Quirks: Chronicals of a Weary Millennial Dev. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
+        <p>We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
         
         <h2>Information We Collect</h2>
         <p>We collect several types of information from and about users of our website, including information by which you may be personally identified, such as name, postal address, email address, telephone number, etc. ("personal information").</p>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Shaun Pezeshki`,
-    description: `'Code & Quirks,' a digital refuge where the structured world of coding meets the chaotic musings of a millennial developer's mind.`,
+    description: `A journey of a millennial techie navigating technology, personal growth, and diverse experiences in today's dynamic world.`,
     author: `Shaun Pezeshki`,
     siteUrl: `https://shaunpezeshki.com`,
   },
@@ -79,7 +79,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: postURL,
                   guid: postURL,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  // custom_elements: [{ "content:encoded": node.html }],
                 }
               });
             },
@@ -107,7 +107,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Code & Quirks: Ramblings of a Weary Millennial Dev",
+            title: "Chronicles of a Millennial Techie",
             // other options here...
           },
         ],

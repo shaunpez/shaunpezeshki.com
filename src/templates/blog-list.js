@@ -2,17 +2,18 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { StaticImage } from 'gatsby-plugin-image';
+import Pagination from '../components/pagination'; 
 import headerImage from '../images/homepage.webp';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
-const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+const BlogListPage = ({ data, pageContext }) => {
+  const posts = data.allMarkdownRemark.edges;
+  const { currentPage, numPages } = pageContext;
 
   return (
     <>
     <Seo
-      title="Chronicles of a Millennial Techie"
+      title={`Chronicles of a Millennial Techie - Page ${currentPage}`}
       description="A journey of a millennial navigating technology, personal growth, and diverse experiences in today's dynamic world."
       meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
       image={headerImage}
@@ -22,14 +23,8 @@ const IndexPage = ({ data }) => {
       <section className="homepage">
         <div className="container">
           <div className="content">
-            <StaticImage
-              src="../images/homepage.webp" // Adjust the path as necessary
-              alt="Chronicles of a Millennial Techie"
-              placeholder="blurred" // Optional: This prop defines the loading strategy
-            />
-            <h1>Chronicles of a Millennial Techie</h1>
-            <p>Join me as I navigate the intersection of technology and life. As a techie, I'm driven by logic and precision. Yet, as a millennial, I find myself constantly adapting to and exploring the many facets of modern life, from professional ambitions to personal growth and everything in between. Through this journey, I aim to explore how the analytical skills honed in technology can address the complex challenges and vibrant opportunities of our generation.</p>
-          </div>
+            <h1>Chronicles of a Millennial Techie - Page {currentPage}</h1>
+          </div>          
           <div className="blog-posts">
             {posts.map(({ node }) => {
               const { title, date, slug, category, excerpt, image } = node.frontmatter
@@ -37,6 +32,8 @@ const IndexPage = ({ data }) => {
               const postUrl = `/${date}/${slug}`; // Constructing the complete URL
               return (
                 <article key={slug} className="blog-post">
+
+
                   <div className="blog-info">
                     <span className="blog-category">
                       {category}
@@ -62,14 +59,8 @@ const IndexPage = ({ data }) => {
                 </article>
               )
             })}
-            {posts.length > 10 && (
-              <div className="pagination">
-                <Link to="/page/2" rel="prev">
-                ← Previous
-                </Link>
-              </div>
-            )}
-                        
+            <Pagination currentPage={currentPage} numberOfPages={numPages} />
+            
           </div>
         </div>
       </section>
@@ -79,8 +70,8 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+  query ($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: $limit, skip: $skip) {
       edges {
         node {
           frontmatter {
@@ -101,4 +92,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default BlogListPage

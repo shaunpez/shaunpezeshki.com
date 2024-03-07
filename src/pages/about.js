@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 const AboutPage = () => (
   <>
   <Seo
-    title="About Shaun Pezeshki"
+    title="About"
     description="Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices."
     meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
   />
