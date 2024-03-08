@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from 'gatsby-plugin-image';
-import headerImage from '../images/homepage.webp';
+import headerImage from '../images/home.webp';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
@@ -19,16 +19,17 @@ const IndexPage = ({ data }) => {
     />
 
     <Layout>
-      <section className="homepage">
+      <section className="homepage plant">
+
         <div className="container">
           <div className="content">
-            <StaticImage
-              src="../images/homepage.webp" // Adjust the path as necessary
-              alt="Chronicles of a Millennial Techie"
-              placeholder="blurred" // Optional: This prop defines the loading strategy
-            />
+          <StaticImage
+                src="../images/home.webp" // Adjust the path as necessary
+                alt="Chronicles of a Millennial Techie"
+                placeholder="blurred" // Optional: This prop defines the loading strategy
+          />
             <h1>Chronicles of a Millennial Techie</h1>
-            <p>Join me as I navigate the intersection of technology and life. As a techie, I'm driven by logic and precision. Yet, as a millennial, I find myself constantly adapting to and exploring the many facets of modern life, from professional ambitions to personal growth and everything in between. Through this journey, I aim to explore how the analytical skills honed in technology can address the complex challenges and vibrant opportunities of our generation.</p>
+            <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives, making each discovery a step towards a more profound understanding of ourselves and the world around us.</p>
           </div>
           <div className="blog-posts">
             {posts.map(({ node }) => {

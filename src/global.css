@@ -42,7 +42,7 @@ header .menu ul li{
 
 /* Homepage */
 .homepage .container{
-    @apply max-w-screen-md;
+    @apply max-w-screen-md relative;
 }
 .homepage .content{
     @apply text-center lg:mb-16 mb-8;
@@ -59,7 +59,7 @@ header .menu ul li{
     @apply grid gap-8;
 }
 .blog-posts .blog-post{
-    @apply rounded-lg border border-gray-200 shadow-md p-6;
+    @apply rounded-lg border border-gray-200 shadow-md p-6 bg-white relative z-10;
 }
 .blog-posts .blog-category {
     @apply text-xs font-medium inline-flex items-center py-0.5 rounded;
@@ -99,6 +99,7 @@ header .menu ul li{
 .blog .back-button{
     @apply py-2 hover:underline text-right block;
 }
+
 /* Footer */
 footer{
     @apply border-t;
@@ -108,4 +109,39 @@ footer .container{
 }
 footer ul{
     @apply flex space-x-4;
+}
+
+/* Main */
+main{
+    background:#fafafa;
+}
+
+/* Plant */
+.plant{
+    background-color: #fafafa; 
+    position: relative;
+}
+/* Styles for .plant on smaller screens */
+@media (min-width: 768px) {
+    .plant::before {
+        content: "";
+        background: url('./images/leafs-2.png') top right no-repeat;
+        background-size: 500px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 500px;
+    }
+
+    .plant::after {
+        content: "";
+        background: url('./images/leafs.png') bottom left no-repeat;
+        background-size: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 600px;
+    }
 }

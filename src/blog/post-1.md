@@ -13,7 +13,7 @@ draft: false
 
 <div class="prose prose-lg max-w-none">
 
-Welcome to 'Code & Quirks,' where the digital world intertwines with the labyrinth of a millennial's thoughts. I'm Shaun Pezeshki, your weary yet whimsical guide, navigating the twists and turns of existence in my 30s. Life in this decade feels like a perpetual second-guessing, a constant struggle to find purpose amidst the noise.
+Welcome to "Chronicles of a Millennial Techie," where the digital world intertwines with the labyrinth of a millennial's thoughts. I'm Shaun Pezeshki, your guide, navigating the twists and turns of existence in my 30s. Life in this decade feels like a perpetual second-guessing, a constant struggle to find purpose amidst the noise.
 
 ## From Extrovert to Introvert
 

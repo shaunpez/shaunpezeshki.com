@@ -20,7 +20,7 @@ const BlogListPage = ({ data, pageContext }) => {
     />
 
     <Layout>
-      <section className="homepage">
+      <section className="homepage plant">
         <div className="container">
           <div className="content">
             <h1>Chronicles of a Millennial Techie - Page {currentPage}</h1>
