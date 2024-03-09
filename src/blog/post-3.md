@@ -2,7 +2,7 @@
 title: "Bridging Worlds: From Digital Agency to Public Service"
 date: "2024-02-24"
 slug: "bridging-worlds-digital-agency-to-public-service"
-category: "Career Transitions"
+category: "Career Development"
 excerpt: "Exploring the intersection of personal passions, cultural identity, and professional aspirations through a millennial developer's lens."
 image: "./images/representation-michigan.webp"
 draft: false

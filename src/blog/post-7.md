@@ -2,7 +2,7 @@
 title: "17 Challenges of LGBTQ+ Dating as a Minority"
 date: "2024-03-06"
 slug: "lgbt-dating-challenges-minority"
-category: "LGBTQ+ Dating"
+category: "LGBTQ+"
 excerpt: "Navigating the complexities of dating as an LGBTQ+ individual with intersecting minority identities."
 image: "./images/connection-issues-dating.webp"
 draft: false

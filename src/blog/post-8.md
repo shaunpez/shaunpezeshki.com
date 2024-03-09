@@ -13,9 +13,9 @@ draft: false
 
 <div class="prose prose-lg max-w-none">
 
-## A Blended Upbringing
+The Bahá'í 19-day Fast, beginning on March 2nd, is a period of spiritual reflection and renewal, culminating in the celebration of the Iranian new year.
 
-The Bahá'í fast began on March 2nd this year, marking the annual period of spiritual renewal and preparation for the new year. 
+## A Blended Upbringing
 
 Growing up, faith in our household wasn't about strict religious rules. It was more of a blending of cultural and spiritual traditions. My parents wanted to pass down the beliefs they were raised with, even though they weren't deeply religious themselves. My dad followed Bahá'í principles, while my mom came from a Roman Catholic background. They exposed us to all sorts of different beliefs and practices.
 
@@ -25,7 +25,7 @@ When I was little, our Sundays revolved around going to church in the mornings. 
 
 ## Fasting: An Inconsistent Attempt
 
-My personal experience with the Bahá'í fast was never about rigidly following the rules. It was more of a heartfelt attempt, even if inconsistent, to connect with that spiritual practice. The few times I did observe the fast, abstaining from food and drink from dawn to dusk for 19 days, it became a profound period of self-reflection, discipline, and feeling united with the wider community. Around day 7 or 8, the physical hunger would fade, and I'd really tap into the essence of what the fast was about - cultivating empathy and strengthening our bonds.
+My personal experience with the Bahá'í fast was never about rigidly following the rules. It was more of a heartfelt attempt, even if inconsistent, to connect with that spiritual practice. The few times I did observe the fast, abstaining from food and drink from dawn to dusk, it became a profound period of self-reflection, discipline, and feeling united with the wider community. Around day 7 or 8, the physical hunger would fade, and I'd really tap into the essence of what the fast was about - cultivating empathy and strengthening our bonds.
 
 ## Lasting Lessons
 
