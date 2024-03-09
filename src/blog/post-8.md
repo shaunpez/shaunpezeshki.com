@@ -16,6 +16,7 @@ draft: false
 ## A Blended Upbringing
 
 The Bahá'í fast began on March 2nd this year, marking the annual period of spiritual renewal and preparation for the new year. 
+
 Growing up, faith in our household wasn't about strict religious rules. It was more of a blending of cultural and spiritual traditions. My parents wanted to pass down the beliefs they were raised with, even though they weren't deeply religious themselves. My dad followed Bahá'í principles, while my mom came from a Roman Catholic background. They exposed us to all sorts of different beliefs and practices.
 
 ## Journeys in Community
