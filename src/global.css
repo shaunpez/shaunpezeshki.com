@@ -50,6 +50,9 @@ header .menu ul li{
 .homepage .content h1{
     @apply mt-8;
 }
+.homepage .content h2{
+    @apply mt-2 text-gray-500 font-normal;
+}
 .homepage .content p{
     @apply text-gray-500 mt-4;
 }
@@ -190,6 +193,9 @@ main{
         left: 0;
         height: 100%;
         width: 600px;
+    }
+    .plant.plant-bottom::before{
+        display: none;
     }
 }
 

@@ -6,6 +6,7 @@ import Pagination from '../components/pagination';
 import headerImage from '../images/homepage.webp';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
+
 const BlogListPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const { currentPage, numPages } = pageContext;
@@ -20,10 +21,11 @@ const BlogListPage = ({ data, pageContext }) => {
     />
 
     <Layout>
-      <section className="homepage plant">
+      <section className="homepage plant plant-bottom">
         <div className="container">
           <div className="content">
-            <h1>Chronicles of a Millennial Techie - Page {currentPage}</h1>
+            <h1>Chronicles of a Millennial Techie</h1>
+            <h2>Page {currentPage}</h2>
           </div>          
           <div className="blog-posts">
             {posts.map(({ node }) => {
