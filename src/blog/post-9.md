@@ -3,7 +3,7 @@ title: "Sunday Scaries: A Camp's Tale"
 date: "2024-03-10"
 slug: "sunday-scaries-camps-tale"
 category: "Mental Health"
-excerpt: "Delve into my unique anxiety preceding the workweek through campy analogies."
+excerpt: "Delve into my unique anxiety that precedes my workweek through my campy analogies."
 image: "./images/sunday-scaries-v4.jpg"
 draft: false
 ---
@@ -37,15 +37,13 @@ I spent one blissful Sunday afternoon getting lost on a meandering nature hike, 
 
  > Worries spinning around like the choking hairspray cloud when a queen gets too close to the hot lights.
 
-That restless night of anxiety - a swirling tornado of fears and what-if thoughts whipping around in the stillness. One memorable Sunday evening became that dreaded experience, as each toss and turn in bed matched the anxious thoughts spinning rapidly in my mind. It was like the choking hairspray cloud that puffs out when an overly eagerdrag queen gets too close to the hot stage lights after layering on an entire can of extra hold spray. My jumbled worries tangled together in a frantic snarl as I twisted the sheets into knots, desperate to put out the mental flames keeping me awake.
+That restless night of anxiety - a swirling tornado of fears and what-if thoughts whipping around in the stillness. One memorable Sunday evening became that dreaded experience, as each toss and turn in bed matched the anxious thoughts spinning rapidly in my mind. It was like the choking hairspray cloud that puffs out when an overly eager drag queen gets too close to the hot stage lights after layering on an entire can of extra hold spray. My jumbled worries tangled together in a frantic snarl as I twisted the sheets into knots, desperate to put out the mental flames keeping me awake.
 
 
 ## The Honest Truth
 
-Sure, I could dole out the typical advice about creating a calming bedtime routine with meditation and journaling to soothe the Sunday night anxieties. Or I could get all poetic about transforming your bed into a serene oasis.
+Sure, I could dole out the typical advice about creating a calming bedtime routine with meditation and journaling to soothe the Sunday night anxieties. Alternatively, I might suggest screaming out sassy mantras about mindfulness, or perhaps spilling the tea to your cat about office dramas. Or I could get all poetic about transforming your bed into a serene oasis.
 
-But let's be real - sometimes you just have to lean into the 3am spiral. Embrace the swirling tornado of looming deadlines and endless to-do lists whipping through your mind. Lean into the darkest corners to truly understand why you feel this way. Because it's in those raw, messy moments of fully experiencing the Sunday scaries that you'll eventually find your own answers.
-
- Find your own outlet for purging the worries, even if it means spilling the tea to your cat about office dramas. The path to overcoming the nighttime anxieties isn't paved with sassy mantras about mindfulness. Sometimes you just have to flail around like a tired diva, stressed-out until you metaphorically sweat out all the nerves.
+But let's be real - sometimes you just have to lean into the 3am spiral. Embrace the "swirling" tornado of looming deadlines and endless to-do lists whipping through your mind. Lean into the darkest corners to truly understand why you feel this way. Because it's in those raw, messy moments of fully experiencing the Sunday scaries that you'll eventually find your own answers.
 
 </div>

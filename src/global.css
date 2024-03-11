@@ -127,6 +127,42 @@ main{
     background:#fafafa;
 }
 
+.back-to-top {
+    @apply fixed bottom-5 right-5 z-50 cursor-pointer bg-gray-300 text-center;
+    background:#ececec; 
+    width:35px;
+    height:33px;
+}
+
+.back-to-top button {
+    @apply text-black cursor-pointer;
+    font-size:26px;
+}
+
+/* Pagination */
+.pagination{
+    @apply text-right relative z-10;
+}
+.pagination a:hover{
+    border-bottom: 1px solid #000; 
+}
+.pagination .prev{
+    @apply mr-2;
+}
+.pagination .prev::before{
+    content:"←";
+    padding-right: 5px;
+}
+.pagination .next::after{
+    content:"→";
+    padding-left: 5px;
+
+}
+.pagination a:hover::before,
+.pagination a:hover::after {
+    border-bottom: 1px solid #fff; 
+}
+
 /* Plant */
 .plant{
     background-color: #fafafa; 
@@ -156,3 +192,4 @@ main{
         width: 600px;
     }
 }
+

@@ -10,21 +10,25 @@ const Pagination = ({ currentPage, numberOfPages }) => {
   const prevPage = `/page/${currentPage + 1}`;
 
   return (
-    <div className="flex justify-between">
-      <div>
-        {!isLast && (
-          <Link to={prevPage} rel="prev">
-            ← Previous
+    <div className="pagination">
+        {!isLast ? (
+          <Link to={prevPage} className="prev" rel="prev">
+            Previous
           </Link>
+        ) : (
+          <span className="prev text-gray-300">
+            Previous
+          </span>
         )}
-      </div>
-      <div>
-        {!isFirst && (
-          <Link to={nextPage} rel="next">
-            Next →
+        {!isFirst ? (
+          <Link to={nextPage} className="next" rel="next">
+            Next
           </Link>
+        ) : (
+          <span className="next text-gray-300">
+            Next
+          </span>
         )}
-      </div>
 
     </div>
   );

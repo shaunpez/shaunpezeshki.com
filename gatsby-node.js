@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create paginated blog list pages
-  const postsPerPage = 10; // Define how many posts per page you want
+  const postsPerPage = 8; // Define how many posts per page you want
   const totalCount = result.data.allMarkdownRemark.totalCount;
   const numPages = Math.ceil(totalCount / postsPerPage);
   
