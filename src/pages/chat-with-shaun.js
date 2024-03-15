@@ -8,7 +8,7 @@ const ContactPage = () => (
       title="Connect with Shaun Pezeshki: Tech Enthusiast & Strategist"
       description="Engage with Shaun Pezeshki for insightful tech discussions and collaborations. Ready to chat about AI, tech innovations, or grab a virtual coffee."
       meta={[
-          { name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Technology, AI Conversations, Tech Collaboration, Virtual Coffee Chat' }
+          { name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Technology, AI Conversations, Tech Collaboration, Virtual Coffee Chat, Millennial Techie' }
       ]}
   />
   <Layout>

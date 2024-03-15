@@ -8,7 +8,7 @@ const AboutPage = () => (
   <Seo
     title="About"
     description="Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices."
-    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
+    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
   />
   <Layout>
     <div className="container px-4">
@@ -32,7 +32,7 @@ const AboutPage = () => (
             <p>
             Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities.  </p>
             <p>
-            Want to connect? Reach out to me at <a href="mailto:hello@uphighstudio.com">hello@uphighstudio.com</a>.
+            Want to connect? Reach out to me at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
             </p>
           </div>
           

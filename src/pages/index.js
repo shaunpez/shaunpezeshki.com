@@ -7,14 +7,16 @@ import headerImage from '../images/shaun-hero-v3.jpg';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.limitedPosts.edges;
+  const total = data.totalCount.totalCount;
+
 
   return (
     <>
     <Seo
       title="Chronicles of a Millennial Techie"
       description="A journey of a millennial navigating technology, personal growth, and diverse experiences in today's dynamic world."
-      meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
+      meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
       image={headerImage}
     />
 
@@ -63,7 +65,7 @@ const IndexPage = ({ data }) => {
                 </article>
               )
             })}
-            {posts.length > 8 && (
+            {total > 8 && (
               <div className="pagination">
                 <Link to="/page/2" rel="prev" className="prev">
                   Previous
@@ -84,7 +86,10 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    totalCount: allMarkdownRemark {
+      totalCount
+    }
+    limitedPosts: allMarkdownRemark(limit: 8, sort: {frontmatter: {date: DESC}}) {
       edges {
         node {
           frontmatter {

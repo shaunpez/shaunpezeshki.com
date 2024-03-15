@@ -1,5 +1,5 @@
 ---
-title: "Unifying Differences: Exploring Intersectionality within the LGBTQ+ Community"
+title: "Exploring Intersectionality within the LGBTQ+ Community"
 date: "2024-03-04"
 slug: "unifying-differences-exploring-intersectionality-within-the-lgbtq-community"
 category: "Diversity and Inclusion"

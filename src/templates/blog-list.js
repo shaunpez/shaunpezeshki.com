@@ -16,7 +16,7 @@ const BlogListPage = ({ data, pageContext }) => {
     <Seo
       title={`Chronicles of a Millennial Techie - Page ${currentPage}`}
       description="A journey of a millennial navigating technology, personal growth, and diverse experiences in today's dynamic world."
-      meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology' }]}
+      meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
       image={headerImage}
     />
 
