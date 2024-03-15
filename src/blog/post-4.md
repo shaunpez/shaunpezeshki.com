@@ -9,8 +9,8 @@ draft: false
 ---
 
 ![Job Hunting in 2024](./images/getting-jobs-2024.jpg)
-<br />
-<div class="prose prose-lg max-w-none">
+
+<div class="prose prose-lg max-w-none mt-10">
 
 Navigating the tech job market in 2024 is like finding your way through a dense, foggy forest, with the once clear paths now obscured by economic slowdowns and tech layoffs, creating a highly competitive landscape. To stand out in this environment, it is essential to master the art of networking. This guide will provide direct strategies for leveraging your network, enhancing your visibility, and continuously learning to adapt to the changing demands of the tech industry.
 

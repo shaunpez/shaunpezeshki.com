@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Debugging Zen](./images/debugging-zen.jpg)
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 As a self-proclaimed perfectionist Leo, my journey is dotted with moments of introspection, missteps, and, occasionally, enlightenment. Today, I'm peeling back the layers of my existence to reveal how the art of coding, mirrors the tumultuous adventure of life.
 

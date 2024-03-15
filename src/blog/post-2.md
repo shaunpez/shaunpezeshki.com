@@ -9,8 +9,8 @@ draft: false
 ---
 
 ![The future of AI and tech](./images/future-ai.jpg)
-<br />
-<div class="prose prose-lg max-w-none">
+
+<div class="prose prose-lg max-w-none mt-10">
 
   As we stand at the crossroads of an AI-driven era, the pace at which artificial intelligence evolves sends ripples through our professional lives, prompting both awe and anxiety. The question that looms large is: As AI continues to advance, what does the future hold for our jobs?
 

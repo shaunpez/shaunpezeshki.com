@@ -9,8 +9,8 @@ draft: false
 ---
 
 ![Map of Michigan with tech and asian influence](./images/representation-michigan.webp)
-<br />
-<div class="prose prose-lg max-w-none">
+
+<div class="prose prose-lg max-w-none mt-10">
 
   In the ever-changing landscape of my career journey, I find myself at yet another crossroad. The allure of a new opportunity beckons—this time, it's a role that, while not directly tied to my current professional realm, intrigues me with its promise of aligning my many passions with purposeful work. As I mull over a potential pivot to a Departmental Analyst position within Michigan's government, specifically focusing on the Michigan Asian Pacific American Affairs Commission (MAPAAC) administration, I'm drawn to the unique convergence of public service, cultural advocacy, and the inherent drive to make a difference.
 

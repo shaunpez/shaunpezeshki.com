@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Baha'i Temple in Chicago](./images/bahai-temple-group.webp) 
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 The Bahá'í 19-day Fast, beginning on March 2nd, is a period of spiritual reflection and renewal, culminating in the celebration of the Iranian new year.
 

@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![The struggling millenial](./images/millenial-tired.png)
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 Welcome to "Chronicles of a Millennial Techie," where the digital world intertwines with the labyrinth of a millennial's thoughts. I'm Shaun Pezeshki, your guide, navigating the twists and turns of existence in my 30s. Life in this decade feels like a perpetual second-guessing, a constant struggle to find purpose amidst the noise.
 

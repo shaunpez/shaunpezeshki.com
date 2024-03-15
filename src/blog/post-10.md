@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Transition from Party Animal to...Something Else](./images/20s-to-30s.jpg) 
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-12">
 
 ## Introduction: The Echoes of My 20s
 

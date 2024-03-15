@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Sunday Scaries](./images/sunday-scaries-v4.jpg) 
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 Sundays brings me a special kind of anxiety, with each passing hour counting down to the dreaded return to the workweek. Through a series of personal experiences, I found vivid, campy analogies that helped me navigate and ultimately reframe these "Sunday scaries."
 

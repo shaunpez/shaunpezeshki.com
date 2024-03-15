@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Debugging Zen](./images/dicotomy-lgbt-inclusion-v2.webp) 
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 Today, we're stepping away from our usual tech-focused discussions to explore something deeply personal. As an Filipino-Iranian gay man, I want to share the complex journey of self-discovery and acceptance, a journey that many of us in the LGBTQ+ community navigate, especially when layered with the rich textures of diverse racial and ethnic backgrounds. For those like me, who are gay and also part of a minority group, life is a unique blend of challenges, navigating not just our sexual identity but also the nuances of our cultural heritage. Let's delve into this journey together and talk about the importance of fostering a community that truly embraces everyone.
 

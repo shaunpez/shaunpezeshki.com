@@ -9,9 +9,8 @@ draft: false
 ---
 
 ![Dating as an LGBTQ+ Minority](./images/connection-issues-dating.webp) 
-<br />
 
-<div class="prose prose-lg max-w-none">
+<div class="prose prose-lg max-w-none mt-10">
 
 In today's changing LGBTQ+ dating world, finding connection and companionship can be challenging, especially for those with diverse backgrounds like mine. As someone of Filipino-Iranian descent, my experiences in dating are shaped by the complexities of my heritage and the hurdles of navigating racial and cultural dynamics in the dating scene.
 
