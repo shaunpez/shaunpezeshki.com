@@ -28,6 +28,7 @@ const BlogListPage = ({ data, pageContext }) => {
             <h2>Page {currentPage}</h2>
           </div>          
           <div className="blog-posts">
+            <Pagination currentPage={currentPage} numberOfPages={numPages} />
             {posts.map(({ node }) => {
               const { title, date, slug, category, excerpt, image } = node.frontmatter
               const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
