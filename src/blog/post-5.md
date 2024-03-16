@@ -1,14 +1,14 @@
 ---
-title: "Debugging Life Lessons: Unraveling the Code of Existence"
+title: "Debugging Life Lessons for a Code-Inspired Existence"
 date: "2024-02-29"
 slug: "debugging-life-lessons-unraveling-code-existence"
 category: "Personal Development"
-excerpt: "Discover how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds."
-image: "./images/debugging-zen.jpg"
+excerpt: "Understand how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds."
+image: "./images/debugging-v2.jpg"
 draft: false
 ---
 
-![Debugging Zen](./images/debugging-zen.jpg)
+![Debugging Zen](./images/debugging-v2.jpg)
 
 <div class="prose prose-lg max-w-none mt-10">
 

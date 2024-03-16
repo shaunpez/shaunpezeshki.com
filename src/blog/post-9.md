@@ -3,12 +3,12 @@ title: "A Campy Tale of Sunday Scaries"
 date: "2024-03-10"
 slug: "sunday-scaries-camps-tale"
 category: "Mental Health"
-excerpt: "Delve into my unique anxiety that precedes my workweek through my campy analogies."
-image: "./images/sunday-scaries-v4.jpg"
+excerpt: "Explore that kind of anxiety that sets in before the workweek through campy analogies."
+image: "./images/sunday-scaries-v6.jpg"
 draft: false
 ---
 
-![Sunday Scaries](./images/sunday-scaries-v4.jpg) 
+![Sunday Scaries](./images/sunday-scaries-v6.jpg) 
 
 <div class="prose prose-lg max-w-none mt-10">
 

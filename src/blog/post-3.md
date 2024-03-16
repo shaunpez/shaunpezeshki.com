@@ -1,14 +1,14 @@
 ---
-title: "Bridging Worlds: From Digital Agency to Public Service"
+title: "From Digital Agency to Cultural Advocacy?"
 date: "2024-02-24"
 slug: "bridging-worlds-digital-agency-to-public-service"
 category: "Career Development"
-excerpt: "Exploring the intersection of personal passions, cultural identity, and professional aspirations through a millennial developer's lens."
-image: "./images/representation-michigan.webp"
+excerpt: "Exploring the vibrant intersection of personal passions, cultural identity, and professional aspirations."
+image: "./images/michigan-letters.jpg"
 draft: false
 ---
 
-![Map of Michigan with tech and asian influence](./images/representation-michigan.webp)
+![Michigan in letters](./images/michigan-letters.jpg)
 
 <div class="prose prose-lg max-w-none mt-10">
 

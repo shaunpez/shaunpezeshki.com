@@ -3,12 +3,12 @@ title: "Fasting and Faith: A Spiritual Journey Across Traditions"
 date: "2024-03-02"
 slug: "fasting-and-faith-a-spiritual-journey-across-traditions"
 category: "Spirituality"
-excerpt: "Exploring the Bahá'í fast period taught me profound lessons about community bonds, self-discipline, and the essence of empathy that now guide my spiritual journey."
-image: "./images/bahai-temple-group.webp"
+excerpt: "Exploring the Bahá'í fast period teaches profound lessons about community bonds, self-discipline, and the essence of empathy that can guide one's spiritual journey."
+image: "./images/fasting-faith-v3.jpg"
 draft: false
 ---
 
-![Baha'i Temple in Chicago](./images/bahai-temple-group.webp) 
+![Prayer Man](./images/fasting-faith-v3.jpg) 
 
 <div class="prose prose-lg max-w-none mt-10">
 

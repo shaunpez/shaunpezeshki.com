@@ -3,7 +3,7 @@ title: "Exploring Intersectionality within the LGBTQ+ Community"
 date: "2024-03-04"
 slug: "unifying-differences-exploring-intersectionality-within-the-lgbtq-community"
 category: "Diversity and Inclusion"
-excerpt: "As a Filipino-Iranian gay man, I share my journey and the broader implications for fostering a supportive and inclusive environment for all within the LGBTQ+ community."
+excerpt: "The journey of a Filipino-Iranian gay man highlighting the importance of building an inclusive LGBTQ+ community."
 image: "./images/dicotomy-lgbt-inclusion-v2.webp"
 draft: false
 ---

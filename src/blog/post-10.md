@@ -4,11 +4,11 @@ date: "2024-03-14"
 slug: "transition-from-party-animal-to-something-else"
 category: "Personal Development"
 excerpt: "Transitioning from the vibrant nightlife of your 20s to a more subdued social life in your 30s can be a perplexing journey."
-image: "./images/20s-to-30s.jpg"
+image: "./images/endless-party-v4.jpg"
 draft: false
 ---
 
-![Transition from Party Animal to...Something Else](./images/20s-to-30s.jpg) 
+![Transition from Party Animal to...Something Else](./images/endless-party-v4.jpg) 
 
 <div class="prose prose-lg max-w-none mt-12">
 
@@ -32,7 +32,6 @@ I tried to relive my glory days, but each new boozy outing increasingly felt lik
 
 
 ## The Siren Call of the Endless Party
-<img src="./images/endless-party-v4.jpg" alt="Endless Party" />
 
 In your 30s, the gays who seem to be having the most fun are the ones still partying hard like they're in their 20s. The attractive, socially active guys going from bar to club to circuit party weekend after weekend. That's the visible idea of a "good time" that gets projected out there. It's honestly tempting to keep chasing that endless party, because you don't see many examples of attractive men having just as much fun at a knitting class or pottery studio. Even if they are out there, those lower-key enjoyments don't get broadcasted the same way.
 
