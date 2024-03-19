@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <div className="content">
           <StaticImage
-                src="../images/shaun-hero-v4.jpg" // Adjust the path as necessary
+                src="../images/shaun-hero-v5.jpg" // Adjust the path as necessary
                 alt="Chronicles of a Millennial Techie"
                 placeholder="blurred" // Optional: This prop defines the loading strategy
           />
