@@ -3,13 +3,19 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from 'gatsby-plugin-image';
-import headerImage from '../images/shaun-hero-v3.jpg';
+import headerImage from '../images/shaun-hero-v4.jpg';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
-  const posts = data.limitedPosts.edges;
+  let posts = data.limitedPosts.edges;
   const total = data.totalCount.totalCount;
 
+  // Get today's date in the same format as your post dates
+  const today = new Date();
+  const todayFormatted = today.toISOString().split('T')[0].replace(/-/g, '/');
+
+  // Filter posts to include only those with a date of today or later
+  posts = posts.filter(({ node }) => node.frontmatter.date <= todayFormatted);
 
   return (
     <>
@@ -26,9 +32,10 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <div className="content">
           <StaticImage
-                src="../images/shaun-hero-v5.jpg" // Adjust the path as necessary
+                src="../images/shaun-bookstore1.png" // Adjust the path as necessary
                 alt="Chronicles of a Millennial Techie"
                 placeholder="blurred" // Optional: This prop defines the loading strategy
+                className="main-hero"   
           />
             <h1>Chronicles of a Millennial Techie</h1>
             <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives, making each discovery a step towards a more profound understanding of ourselves and the world around us.</p>

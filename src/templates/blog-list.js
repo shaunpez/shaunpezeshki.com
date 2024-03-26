@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Pagination from '../components/pagination'; 
-import headerImage from '../images/homepage.webp';
+import headerImage from '../images/shaun-hero-v4.jpg';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 

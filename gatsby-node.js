@@ -30,14 +30,21 @@ exports.createPages = async ({ graphql, actions }) => {
   if (result.data && result.data.allMarkdownRemark && result.data.allMarkdownRemark.edges) {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const { slug, date } = node.frontmatter;
-      const path = `/${date}/${slug}`; // Construct the complete path including the date
-      createPage({
-        path,
-        component: blogPostTemplate,
-        context: {
-          slug: node.frontmatter.slug,
-        },
-      });
+      const currentDate = new Date();
+      const postDate = new Date(date);
+
+       // Check if the post date is not in the future
+      if (postDate <= currentDate) {
+
+        const path = `/${date}/${slug}`; // Construct the complete path including the date
+        createPage({
+          path,
+          component: blogPostTemplate,
+          context: {
+            slug: node.frontmatter.slug,
+          },
+        });
+      }
     });
   }
 

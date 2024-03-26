@@ -56,6 +56,14 @@ header .menu ul li{
 .homepage .content p{
     @apply text-gray-500 mt-4;
 }
+.homepage .main-hero img {
+    width:100%;
+    max-width:500px;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 100%;
+}
+
 
 /* Blog Listing */
 .blog-posts{
@@ -198,4 +206,3 @@ main{
         display: none;
     }
 }
-

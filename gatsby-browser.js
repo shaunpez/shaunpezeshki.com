@@ -6,4 +6,10 @@
 
 import "./src/global.css";
 
-// You can delete this file if you're not using it
+// This is an ES6 module export. Ensure the entire file uses ES6 imports/exports.
+export const onRouteUpdate = ({ location, prevLocation }) => {
+    if (prevLocation !== null) {
+      window.scrollTo(0, 0);
+    }
+  };
+  
