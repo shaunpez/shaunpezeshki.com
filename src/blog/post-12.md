@@ -1,5 +1,5 @@
 ---
-title: "Behind DE's Smile: A Story of Deception and Discovery"
+title: "Behind DE's Smile Lies a Story of Deception and Discovery"
 date: "2024-03-21"
 slug: "behind-de-smile-story-of-deception-and-discovery"
 category: "Personal Development"
@@ -16,11 +16,11 @@ During our early days at Wayne State University, we were young and embarking on 
 
 ## Introducing DE
 
-DE wasn't your typical standout; she wasn't always the center of attention, but there was something about her. She had a way of mixing humor with a bit of secrecy that piqued your curiosity. Her tales were filled with little adventures and slight acts of rebellion, which were captivating, especially for a bunch of geeks at age 18 learning about what was out there. They suggested there was more to her beneath the surface. Within our diverse group, where everyone had their own stories and aspirations, DE was like a puzzle with some pieces missing. She drew you in, making you wonder about the parts of her story she wasn't telling.
+DE wasn't your typical standout; she wasn't always the center of attention, but there was something about her. She had a way of mixing humor with a bit of secrecy that piqued your curiosity. Her tales were filled with little adventures and slight acts of rebellion, which were captivating, especially for a bunch of geeks at age 18 learning about what was out there. Within our diverse group, where everyone had their own stories and aspirations, DE was like a puzzle with some pieces missing. She drew you in, making you wonder about the parts of her story she wasn't telling.
 
 ## The Plot Unfolds
 
-As the semester progressed, DE slowly shared more about her personal life, particularly about a new boyfriend in Canada. She painted a picture of him as somewhat of a rebel or "bad boy" — a description that, coupled with his  charm, made the narrative all the more captivating. However, our intrigue turned into concern when DE revealed her family's expectation of an arranged marriage. Despite having someone she was interested in, it seemed she had no choice in the matter. While we understood that arranged marriages are a part of Indian culture, the prospect of such a significant life event at our young age was surprising and led us to worry about DE's well-being and ability to make her own choices.
+As the semester progressed, DE slowly shared more about her personal life, particularly about a new boyfriend in Canada. She painted a picture of him as somewhat of a rebel or "bad boy" — a description that, coupled with his  charm, made the narrative all the more captivating. However, weeks, or perhaps even months later, our initial intrigue turned into concern when DE revealed her family's expectation of an arranged marriage. Despite having someone she was interested in, it seemed she had no choice in the matter. While we understood that arranged marriages are a part of Indian culture, the prospect of such a significant life event at our young age was surprising and led us to worry about DE's well-being and ability to make her own choices.
 
 ## A Leap of Faith
 

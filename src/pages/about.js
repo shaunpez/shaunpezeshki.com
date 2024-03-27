@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import headerImage from '../images/shaun.jpg';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const AboutPage = () => (
@@ -9,6 +10,7 @@ const AboutPage = () => (
     title="About"
     description="Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices."
     meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
+    image={headerImage}
   />
   <Layout>
     <div className="container px-4">

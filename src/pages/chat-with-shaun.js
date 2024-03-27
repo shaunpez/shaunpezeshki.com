@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import headerImage from '../images/shaun-hero-v4.jpg';
 import Seo from "../components/seo";
 
 const ContactPage = () => (
@@ -10,6 +11,7 @@ const ContactPage = () => (
       meta={[
           { name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Technology, AI Conversations, Tech Collaboration, Virtual Coffee Chat, Millennial Techie' }
       ]}
+      image={headerImage}
   />
   <Layout>
     <div className="container mx-auto">

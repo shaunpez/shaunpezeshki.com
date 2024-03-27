@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from 'gatsby-plugin-image';
-import headerImage from '../images/shaun-hero-v4.jpg';
+import headerImage from '../images/shaun-hero-v3.jpg';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <div className="content">
           <StaticImage
-                src="../images/shaun-bookstore1.png" // Adjust the path as necessary
+                src="../images/shaun-bookstore3.jpg" // Adjust the path as necessary
                 alt="Chronicles of a Millennial Techie"
                 placeholder="blurred" // Optional: This prop defines the loading strategy
                 className="main-hero"   
