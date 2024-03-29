@@ -38,7 +38,7 @@ As I stand at this crossroads, exploring Columbus after my experiences in Metro 
 
 ### The Quest Continues
 
-So, what's next for this gay minority wandering through the Midwest? The quest for a place to call home continues, but with a newfound appreciation for the unexpected warmth found in conservative corners. Maybe home isn't a place but a feeling — a sense of belonging that blooms in the most surprising conditions.
+So, what's next? The quest for a place to call home continues, but with a newfound appreciation for the unexpected warmth found in conservative corners. Maybe home isn't a place but a feeling — a sense of belonging that blooms in the most surprising conditions.
 
 **Looking Ahead**: While I haven't packed my bags for Columbus just yet, the city's welcoming spirit has left a lasting impression. As I ponder where to plant my roots, the laughter, connections, and invaluable lessons from Columbus remain with me, hinting that perhaps, it will be my next chapter.
 
