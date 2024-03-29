@@ -4,11 +4,11 @@ date: "2024-03-14"
 slug: "transition-from-party-animal-to-something-else"
 category: "Personal Development"
 excerpt: "Transitioning from the vibrant nightlife of your 20s to a more subdued social life in your 30s can be a perplexing journey."
-image: "./images/endless-party-v4.jpg"
+image: "./images/party-or-not.jpg"
 draft: false
 ---
 
-![Transition from Party Animal to...Something Else](./images/endless-party-v4.jpg) 
+![Transition from Party Animal to...Something Else](./images/party-or-not.jpg) 
 
 <div class="prose prose-lg max-w-none mt-12">
 

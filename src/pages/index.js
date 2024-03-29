@@ -30,17 +30,18 @@ const IndexPage = ({ data }) => {
       <section className="homepage plant">
 
         <div className="container">
-          <div className="content">
+          <div className="content ">
           <StaticImage
                 src="../images/shaun-bookstore3.jpg" // Adjust the path as necessary
                 alt="Chronicles of a Millennial Techie"
                 placeholder="blurred" // Optional: This prop defines the loading strategy
                 className="main-hero"   
           />
-            <h1>Chronicles of a Millennial Techie</h1>
-            <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives, making each discovery a step towards a more profound understanding of ourselves and the world around us.</p>
+            <div className="prose prose-xl">
+              <h1>Chronicles of a Millennial Techie</h1>
+              <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives, making each discovery a step towards a more profound understanding of ourselves and the world around us.</p>
+            </div>
           </div>
-          <div className="blog-posts">
           {total > 8 && (
               <div className="pagination">
                 <Link to="/page/2" rel="prev" className="prev">
@@ -51,25 +52,26 @@ const IndexPage = ({ data }) => {
                 </span>
               </div>
             )}
+          <div className="blog-posts">
+          
             {posts.map(({ node }) => {
               const { title, date, slug, category, excerpt, image } = node.frontmatter
               const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
               const postUrl = `/${date}/${slug}`; // Constructing the complete URL
               return (
                 <article key={slug} className="blog-post">
-                  <div className="blog-info">
-                    <span className="blog-category">
-                      {category}
-                    </span>
-                    <span className="text-sm">{formattedDate}</span> 
-                  </div>
                   <div className="blog-col">
-                  
                     {image && (
                       <div className="blog-hero">
                         <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={title} />
                       </div>
                     )}
+                     <div className="blog-info">
+                      <span className="blog-category">
+                        {category}
+                      </span>
+                      <span className="blog-date">{formattedDate}</span> 
+                    </div>
                     <div className={image ? "blog-main" : ""}>
                       <h2><Link to={postUrl}>{title}</Link></h2>
                       <p>{excerpt}</p>
@@ -81,8 +83,9 @@ const IndexPage = ({ data }) => {
                   </div>
                 </article>
               )
-            })}
-            {total > 8 && (
+            })}         
+          </div>
+          {total > 8 && (
               <div className="pagination">
                 <Link to="/page/2" rel="prev" className="prev">
                   Previous
@@ -92,8 +95,6 @@ const IndexPage = ({ data }) => {
                 </span>
               </div>
             )}
-                        
-          </div>
         </div>
       </section>
     </Layout>

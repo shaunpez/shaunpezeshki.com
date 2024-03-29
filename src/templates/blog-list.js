@@ -27,29 +27,27 @@ const BlogListPage = ({ data, pageContext }) => {
             <h1>Chronicles of a Millennial Techie</h1>
             <h2>Page {currentPage}</h2>
           </div>          
+          <Pagination currentPage={currentPage} numberOfPages={numPages} />
+
           <div className="blog-posts">
-            <Pagination currentPage={currentPage} numberOfPages={numPages} />
             {posts.map(({ node }) => {
               const { title, date, slug, category, excerpt, image } = node.frontmatter
               const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
               const postUrl = `/${date}/${slug}`; // Constructing the complete URL
               return (
-                <article key={slug} className="blog-post">
-
-
-                  <div className="blog-info">
-                    <span className="blog-category">
-                      {category}
-                    </span>
-                    <span className="text-sm">{formattedDate}</span> 
-                  </div>
+                <article key={slug} className="blog-post">                 
                   <div className="blog-col">
-                  
                     {image && (
                       <div className="blog-hero">
                         <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={title} />
                       </div>
                     )}
+                    <div className="blog-info">
+                      <span className="blog-category">
+                        {category}
+                      </span>
+                      <span className="blog-date">{formattedDate}</span> 
+                    </div>
                     <div className={image ? "blog-main" : ""}>
                       <h2><Link to={postUrl}>{title}</Link></h2>
                       <p>{excerpt}</p>
@@ -62,9 +60,10 @@ const BlogListPage = ({ data, pageContext }) => {
                 </article>
               )
             })}
-            <Pagination currentPage={currentPage} numberOfPages={numPages} />
             
           </div>
+          <Pagination currentPage={currentPage} numberOfPages={numPages} />
+
         </div>
       </section>
     </Layout>

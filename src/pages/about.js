@@ -24,7 +24,7 @@ const AboutPage = () => (
             />
           </div>
           <div className="info">
-            <h1 className="text-4xl">About Shaun Pezeshki</h1>
+            <h1>About Shaun Pezeshki</h1>
             <p>
             Shaun Pezeshki is a technical strategist known for enhancing business operations. With a strong marketing and tech background, he maximizes client investments efficiently. </p>
             <p>

@@ -8,7 +8,7 @@ const NotFoundPage = () => (
     <Seo title="404 Page Not Found" />
     <div className="container">
       <div className="prose prose-xl">
-      <h1 className="text-4xl">404 Page Not Found</h1>
+      <h1>404 Page Not Found</h1>
         <p>Oops! It seems like you've taken a wrong turn in the digital wilderness. Fear not, weary traveler. </p>
         <p>
           Return to the <Link to="/">main path</Link>.

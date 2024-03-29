@@ -16,7 +16,7 @@ const ContactPage = () => (
   <Layout>
     <div className="container mx-auto">
       <div className="prose prose-lg max-w-none">
-        <h1 className="text-4xl">Let's Chat</h1>
+        <h1>Let's Chat</h1>
         <p>
           Hey there! Interested in chatting about tech, exploring inclusivity, or anything in between? Whether you're itching to share the latest breakthrough or just looking for a friendly tech chat, I'm here to learn and talk shop.
         </p>

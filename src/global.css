@@ -5,7 +5,7 @@
 
 /* Headings and Paragraph */
 h1{
-    @apply text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900;
+    @apply text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900;
 }
 h2{
     @apply text-2xl tracking-tight font-extrabold;
@@ -42,13 +42,16 @@ header .menu ul li{
 
 /* Homepage */
 .homepage .container{
-    @apply max-w-screen-md relative;
+    @apply max-w-screen-lg relative;
 }
 .homepage .content{
-    @apply text-center lg:mb-16 mb-8;
+    @apply text-center mb-8;
+}
+.homepage .content .prose{
+    @apply max-w-none;
 }
 .homepage .content h1{
-    @apply mt-8;
+    @apply mt-8 text-4xl lg:text-5xl;
 }
 .homepage .content h2{
     @apply mt-2 text-gray-500 font-normal;
@@ -67,25 +70,32 @@ header .menu ul li{
 
 /* Blog Listing */
 .blog-posts{
-    @apply grid gap-8;
+    @apply grid gap-8 sm:grid-cols-2;
 }
 .blog-posts .blog-post{
-    @apply rounded-lg border border-gray-200 shadow-md p-6 bg-white relative z-10;
+    @apply last:rounded-lg border border-gray-200 shadow-md bg-white relative z-10;
+}
+.blog-posts .blog-post:last-child{
+    @apply rounded-none;
 }
 .blog-posts .blog-category {
-    @apply text-xs font-medium inline-flex items-center py-0.5 rounded;
+    @apply text-xs inline-flex items-center py-0.5;
 }
+.blog-posts .blog-date {
+    @apply text-xs;
+}
+
 .blog-posts .blog-info{
-    @apply flex justify-between items-center mb-5 text-gray-500;
+    @apply flex justify-between items-center mb-4 mt-6 text-gray-500 pl-6 pr-6;
 }
 .blog-posts .blog-post .blog-col{
-    @apply sm:flex;
+    border-radius: 0;
 }
 .blog-posts .blog-post .blog-hero{
-    @apply sm:w-5/12 sm:mr-6 mb-4 sm:mb-0;
+    @apply mb-4 sm:mb-0;
 }
 .blog-posts .blog-post .blog-main{
-    @apply sm:w-7/12
+    @apply p-6 pt-0;
 }
 .blog-posts .blog-post h2{
     @apply mb-2 hover:underline;
@@ -96,6 +106,7 @@ header .menu ul li{
 .blog-posts .blog-post .blog-link{
     @apply inline-flex items-center font-medium hover:underline;
 }
+
 
 /* Bio */
 .bio{
@@ -120,6 +131,11 @@ header .menu ul li{
 }
 .blog .back-button{
     @apply py-2 hover:underline text-right block;
+}
+
+/* Prose */
+.prose h1{
+    @apply  text-4xl lg:text-5xl;
 }
 
 /* Footer */
@@ -152,7 +168,7 @@ main{
 
 /* Pagination */
 .pagination{
-    @apply text-right relative z-10;
+    @apply text-right relative z-10 pt-6 pb-6;
 }
 .pagination a:hover{
     border-bottom: 1px solid #000; 
@@ -172,6 +188,11 @@ main{
 .pagination a:hover::before,
 .pagination a:hover::after {
     border-bottom: 1px solid #fff; 
+}
+
+/* Images */
+.gatsby-resp-image-image {
+    box-shadow: none !important;
 }
 
 /* Plant */
@@ -205,7 +226,11 @@ main{
     .plant.plant-bottom::before{
         display: none;
     }
+
 }
-.gatsby-resp-image-image {
-    box-shadow: none !important;
+@media (max-width: 768px) {
+    .homepage .content p{
+        font-size: 0.9em;
+    }
+
 }
