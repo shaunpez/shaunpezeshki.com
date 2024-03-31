@@ -7,7 +7,38 @@ import { getSrc } from "gatsby-plugin-image";
 const BlogPostTemplate = ({ data }) => {
   // `data` prop will be injected by the GraphQL layer based on the query below
   const { markdownRemark: post } = data // Destructuring the post data
-  const imageUrl = post.frontmatter.image ? getSrc(post.frontmatter.image.childImageSharp) : null;
+  const { siteUrl } = data.site.siteMetadata;
+  const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null; // Constructing absolute URL for the image
+  const { title, date, slug, category } = post.frontmatter;
+  const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+  const dateObj = new Date(date);
+  const year = dateObj.getFullYear();
+  const month = ('0' + (dateObj.getMonth() + 1)).slice(-2); // Ensure month is 2 digits
+  const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
+  const postUrl = `${siteUrl}/${year}/${month}/${day}/${slug}`;
+
+  // Structured data for the blog post
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "datePublished": formattedDate,
+    "articleBody": post.html,
+    "author": {
+      "@type": "Person",
+      "name": "Shaun Pezeshki"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Chronicles of a Millennial Techie"
+    },
+    "image": imageUrl, 
+    "url": siteUrl . postUrl,
+    "genre": category 
+  };
+
+  const structuredDataScript = JSON.stringify(structuredData);
 
   return (
     <>
@@ -23,6 +54,7 @@ const BlogPostTemplate = ({ data }) => {
                         Back to Posts
                     </Link>
                     <article>
+                        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
                         <div className="date">
                           {post.frontmatter.date}
                         </div>
@@ -47,7 +79,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
-        excerpt
+        category
         image {
           childImageSharp {
             gatsbyImageData(width: 1200, layout: FIXED)
@@ -55,5 +87,10 @@ export const query = graphql`
         }
       }
     }
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    } 
   }
 `

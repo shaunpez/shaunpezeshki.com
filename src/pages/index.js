@@ -16,7 +16,30 @@ const IndexPage = ({ data }) => {
 
   // Filter posts to include only those with a date of today or later
   posts = posts.filter(({ node }) => node.frontmatter.date <= todayFormatted);
+  const { siteUrl } = data.site.siteMetadata;
 
+  // Constructing the list of blog posts for structured data
+  const itemListElement = posts.map(({ node }, index) => {
+    const { date, slug } = node.frontmatter;
+    const dateObj = new Date(date);
+    const year = dateObj.getFullYear();
+    const month = ('0' + (dateObj.getMonth() + 1)).slice(-2); // Ensure month is 2 digits
+    const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
+
+    return {
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${siteUrl}/${year}/${month}/${day}/${slug}`
+    };
+  });
+
+  // Structured data for the blog list
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "itemListElement": itemListElement
+  };
+  
   return (
     <>
     <Seo
@@ -97,6 +120,9 @@ const IndexPage = ({ data }) => {
             )}
         </div>
       </section>
+      <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
     </Layout>
     </>
   )
@@ -123,6 +149,11 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

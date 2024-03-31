@@ -10,6 +10,29 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 const BlogListPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const { currentPage, numPages } = pageContext;
+  const { siteUrl } = data.site.siteMetadata;
+
+  // Constructing the list of blog posts for structured data
+  const itemListElement = posts.map(({ node }, index) => {
+    const { date, slug } = node.frontmatter;
+    const dateObj = new Date(date);
+    const year = dateObj.getFullYear();
+    const month = ('0' + (dateObj.getMonth() + 1)).slice(-2); // Ensure month is 2 digits
+    const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
+
+    return {
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${siteUrl}/${year}/${month}/${day}/${slug}`
+    };
+  });
+
+  // Structured data for the blog list
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "itemListElement": itemListElement
+  };
 
   return (
     <>
@@ -34,8 +57,10 @@ const BlogListPage = ({ data, pageContext }) => {
               const { title, date, slug, category, excerpt, image } = node.frontmatter
               const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
               const postUrl = `/${date}/${slug}`; // Constructing the complete URL
+              
               return (
-                <article key={slug} className="blog-post">                 
+                <article key={slug} className="blog-post">     
+          
                   <div className="blog-col">
                     {image && (
                       <div className="blog-hero">
@@ -65,6 +90,10 @@ const BlogListPage = ({ data, pageContext }) => {
           <Pagination currentPage={currentPage} numberOfPages={numPages} />
 
         </div>
+        {/* Inserting structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </section>
     </Layout>
     </>
@@ -89,6 +118,11 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

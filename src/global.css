@@ -8,13 +8,13 @@ h1{
     @apply text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900;
 }
 h2{
-    @apply text-2xl tracking-tight font-extrabold;
+    @apply text-2xl tracking-tight font-extrabold text-gray-900;
 }
 h3{
-    @apply text-xl tracking-tight font-semibold;
+    @apply text-xl tracking-tight font-semibold text-gray-900;
 }
 h4{
-    @apply text-lg tracking-tight font-semibold;
+    @apply text-lg tracking-tight font-semibold text-gray-900;
 }
 p{
     @apply font-light;
@@ -60,11 +60,7 @@ header .menu ul li{
     @apply text-gray-500 mt-4;
 }
 .homepage .main-hero img {
-    width:100%;
-    max-width:450px;
-    height: 100%;
-    max-height: 450px;
-    border-radius: 100%;
+    @apply w-full max-w-[450px] h-full max-h-[450px] rounded-full;
 }
 
 
@@ -73,7 +69,7 @@ header .menu ul li{
     @apply grid gap-8 sm:grid-cols-2;
 }
 .blog-posts .blog-post{
-    @apply last:rounded-lg border border-gray-200 shadow-md bg-white relative z-10;
+    @apply last:rounded-lg border border-gray-200 bg-white relative z-10;
 }
 .blog-posts .blog-post:last-child{
     @apply rounded-none;
@@ -89,10 +85,10 @@ header .menu ul li{
     @apply flex justify-between items-center mb-4 mt-6 text-gray-500 pl-6 pr-6;
 }
 .blog-posts .blog-post .blog-col{
-    border-radius: 0;
+    @apply rounded-[0px]
 }
 .blog-posts .blog-post .blog-hero{
-    @apply mb-4 sm:mb-0;
+    @apply mb-4 sm:mb-0 p-6 bg-gray-900;
 }
 .blog-posts .blog-post .blog-main{
     @apply p-6 pt-0;
@@ -151,19 +147,15 @@ footer ul{
 
 /* Main */
 main{
-    background:#fafafa;
+    @apply bg-[#fafafa]
 }
 
 .back-to-top {
-    @apply fixed bottom-5 right-5 z-50 cursor-pointer bg-gray-300 text-center;
-    background:#ececec; 
-    width:35px;
-    height:33px;
+    @apply fixed bottom-5 right-5 z-50 cursor-pointer w-[35px] h-[35px] bg-[#ececec] text-center;
 }
 
 .back-to-top button {
-    @apply text-black cursor-pointer;
-    font-size:26px;
+    @apply text-black cursor-pointer text-[26px] leading-[42px];
 }
 
 /* Pagination */
@@ -171,7 +163,7 @@ main{
     @apply text-right relative z-10 pt-6 pb-6;
 }
 .pagination a:hover{
-    border-bottom: 1px solid #000; 
+    @apply border-b border-black;
 }
 .pagination .prev{
     @apply mr-2;
@@ -187,7 +179,7 @@ main{
 }
 .pagination a:hover::before,
 .pagination a:hover::after {
-    border-bottom: 1px solid #fff; 
+    @apply border-b border-white;
 }
 
 /* Images */
@@ -197,8 +189,7 @@ main{
 
 /* Plant */
 .plant{
-    background-color: #fafafa; 
-    position: relative;
+    @apply relative bg-[#fafafa];
 }
 /* Styles for .plant on smaller screens */
 @media (min-width: 768px) {
