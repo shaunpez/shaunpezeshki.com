@@ -3,7 +3,7 @@ title: "Celebrating Naw Ruz - A Story of Tradition, Memories, and Renewal"
 date: "2024-03-19"
 slug: "celebrating-naw-ruz-story-tradition-memories-renewal"
 category: "Spirituality"
-excerpt: "Explore the persian tradition of Naw Ruz, from vibrant community celebrations to intimate reflections on renewal and memory, honoring the past while embracing new beginnings."
+excerpt: "Explore the Persian tradition of Naw Ruz, from vibrant community celebrations to intimate reflections on renewal and memory, honoring the past while embracing new beginnings."
 image: "./images/naw-ruz-2024-v2.jpg"
 draft: false
 ---

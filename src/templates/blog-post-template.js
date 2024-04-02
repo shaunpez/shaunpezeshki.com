@@ -8,9 +8,9 @@ const BlogPostTemplate = ({ data }) => {
   // `data` prop will be injected by the GraphQL layer based on the query below
   const { markdownRemark: post } = data // Destructuring the post data
   const { siteUrl } = data.site.siteMetadata;
-  const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null; // Constructing absolute URL for the image
+  const imageUrl = post.frontmatter.image ? `${siteUrl}${getSrc(post.frontmatter.image.childImageSharp)}` : null; // Constructing absolute URL for the image
   const { title, date, slug, category } = post.frontmatter;
-  const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const formattedDate = new Date(date).toISOString();
 
   const dateObj = new Date(date);
   const year = dateObj.getFullYear();
@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data }) => {
       "name": "Chronicles of a Millennial Techie"
     },
     "image": imageUrl, 
-    "url": siteUrl . postUrl,
+    "url": postUrl,
     "genre": category 
   };
 

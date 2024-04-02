@@ -8,7 +8,7 @@ image: "./images/dicotomy-lgbt-inclusion-v2.webp"
 draft: false
 ---
 
-![Debugging Zen](./images/dicotomy-lgbt-inclusion-v2.webp) 
+![Filipino-Iranian Male & White Male](./images/dicotomy-lgbt-inclusion-v2.webp) 
 
 <div class="prose prose-lg max-w-none mt-10">
 

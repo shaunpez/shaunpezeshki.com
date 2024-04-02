@@ -31,14 +31,14 @@ function Seo({ description, lang = "en", meta = [], title, image }) {
   const imageUrl = image ? `${site.siteMetadata.siteUrl}${image}` : null;
 
   return (
-    <Helmet
+    <><Helmet
       htmlAttributes={{
         lang,
       }}
       link={[
-          { rel: 'icon', type: 'image/x-icon', href: faviconICO }, // For ICO favicon
-          { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconPNG }, // For PNG favicon (32x32)
-          { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconPNG }, // For PNG favicon (16x16)
+        { rel: 'icon', type: 'image/x-icon', href: faviconICO }, // For ICO favicon
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconPNG }, // For PNG favicon (32x32)
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconPNG }, // For PNG favicon (16x16)
       ]}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
@@ -84,8 +84,8 @@ function Seo({ description, lang = "en", meta = [], title, image }) {
           name: `twitter:image`,
           content: imageUrl,
         },
-      ].concat(meta).filter(Boolean)}
-    />
+      ].concat(meta).filter(Boolean)} />
+      </>
   );
 }
 

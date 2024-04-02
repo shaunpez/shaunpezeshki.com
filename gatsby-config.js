@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Shaun Pezeshki`,
@@ -111,6 +115,35 @@ module.exports = {
             // other options here...
           },
         ],
+      },
+    },
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
+        accessToken: process.env.STRAPI_TOKEN,
+        collectionTypes: [
+          {
+            singularName: "blog",
+            queryParams: {
+              publicationState:
+                process.env.GATSBY_IS_PREVIEW === "true" ? "preview" : "live",
+              populate: {
+                cover: "*",
+                blocks: {
+                  populate: "*",
+                },
+              },
+            },
+          },
+          {
+            singularName: "author",
+          },
+          {
+            singularName: "category",
+          },
+        ]
       },
     },
     `gatsby-plugin-sharp`,
