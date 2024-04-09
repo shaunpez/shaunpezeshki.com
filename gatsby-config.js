@@ -117,35 +117,25 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-source-strapi",
-      options: {
-        apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
-        accessToken: process.env.STRAPI_TOKEN,
-        collectionTypes: [
-          {
-            singularName: "blog",
-            queryParams: {
-              publicationState:
-                process.env.GATSBY_IS_PREVIEW === "true" ? "preview" : "live",
-              populate: {
-                cover: "*",
-                blocks: {
-                  populate: "*",
-                },
-              },
-            },
-          },
-          {
-            singularName: "author",
-          },
-          {
-            singularName: "category",
-          },
-        ]
-      },
-    },
+    // "gatsby-plugin-postcss",
+    // {
+    //   resolve: "gatsby-source-strapi",
+    //   options: {
+    //     apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
+    //     accessToken: process.env.STRAPI_TOKEN,
+    //     collectionTypes: [
+    //       {
+    //         singularName: "article",
+    //       },
+    //       {
+    //         singularName: "author",
+    //       },
+    //       {
+    //         singularName: "category",
+    //       },
+    //     ]
+    //   },
+    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,

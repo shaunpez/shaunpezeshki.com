@@ -33,7 +33,7 @@ const BlogListPage = ({ data, pageContext }) => {
     "@type": "ItemList",
     "itemListElement": itemListElement
   };
-
+  
   return (
     <>
     <Seo
@@ -42,7 +42,7 @@ const BlogListPage = ({ data, pageContext }) => {
       meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
       image={headerImage}
     />
-
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}></script>
     <Layout>
       <section className="homepage plant plant-bottom">
         <div className="container">
@@ -90,10 +90,6 @@ const BlogListPage = ({ data, pageContext }) => {
           <Pagination currentPage={currentPage} numberOfPages={numPages} />
 
         </div>
-        {/* Inserting structured data */}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
       </section>
     </Layout>
     </>

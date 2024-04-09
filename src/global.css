@@ -69,11 +69,9 @@ header .menu ul li{
     @apply grid gap-8 sm:grid-cols-2;
 }
 .blog-posts .blog-post{
-    @apply last:rounded-lg border border-gray-200 bg-white relative z-10;
+    @apply border border-gray-200 bg-white relative z-10;
 }
-.blog-posts .blog-post:last-child{
-    @apply rounded-none;
-}
+
 .blog-posts .blog-category {
     @apply text-xs inline-flex items-center py-0.5;
 }
@@ -94,7 +92,7 @@ header .menu ul li{
     @apply p-6 pt-0;
 }
 .blog-posts .blog-post h2{
-    @apply mb-2 hover:underline;
+    @apply mb-2 hover:underline leading-7;
 }
 .blog-posts .blog-post p{
     @apply mb-5 font-light text-gray-500 text-[0.9em];
@@ -102,7 +100,44 @@ header .menu ul li{
 .blog-posts .blog-post .blog-link{
     @apply inline-flex items-center font-medium hover:underline;
 }
-
+/* Featured Blog Post */
+.featured-blog-post{
+    @apply border border-gray-200 bg-white relative z-10 mb-8;
+}
+.featured-blog-post::after {
+    @apply absolute top-0 left-0 z-10 bg-[#111] text-white py-2 px-3 text-sm uppercase font-medium;
+    content: "Featured";
+}
+.featured-blog-post .blog-col{
+    @apply grid gap-8 sm:grid-cols-2;
+}
+.featured-blog-post .blog-hero{
+    @apply bg-cover bg-center;
+}
+.featured-blog-post .gatsby-image-wrapper{
+    @apply block sm:hidden;
+}
+.featured-blog-post .blog-main{
+    @apply p-6 pt-0 sm:p-0 sm:pb-6 sm:pr-2;
+}
+.featured-blog-post h2{
+    @apply mb-2 hover:underline;
+}
+.featured-blog-post p{
+    @apply mb-5 font-light text-gray-500 text-[0.9em];
+}
+.featured-blog-post .blog-link{
+    @apply inline-flex items-center font-medium hover:underline;
+}
+.featured-blog-post .blog-info{
+    @apply flex justify-between items-center mb-4 sm:mt-6 text-gray-500 pr-6;
+}
+.featured-blog-post .blog-category {
+    @apply text-xs inline-flex items-center py-0.5;
+}
+.featured-blog-post .blog-date {
+    @apply text-xs;
+}
 
 /* Bio */
 .bio{
