@@ -1,54 +1,44 @@
 ---
-title: "The Eulogy Unspoken: Remembering My Dadu"
+title: "Can You Learn to Love Polyamorously?"
 date: "2024-04-14"
-slug: "the-eulogy-unspoken-remembering-my-father"
-category: "Personal Development"
-excerpt: "In a world paused by a pandemic, there is reflection on the profound quiet left in the wake of a dad's passing—sharing the eulogy that was never delivered."
-image: "./images/dad-memory-2.jpg"
+slug: "can-you-learn-to-love-polyamorously"
+category: "LGBTQ+"
+excerpt: "Exploring the nuances of polyamory through personal experience and the limits of love's expansiveness in the world of multiple partners."
+image: "./images/polyamourous-relationships.jpg"
 draft: false
 ---
 
-![Shaun and Dadu](./images/dad-memory-2.jpg) 
+![Polyamory - Throuples](./images/polyamourous-relationships.jpg) 
 
 <div class="prose prose-lg max-w-none mt-12">
 
-Four years ago, the world shut down. As streets emptied and doors closed, my dad’s heart quietly followed suit. It was April 2020, and as a menacing virus held us in its grip, the opportunity to publicly honor his life slipped away. Now, with time to reflect and process, I am ready to share the words that have matured in the quiet spaces of my mind, unspoken since that surreal spring day.
+## What is Polyamory?
 
-<div class="flex flex-wrap items-center">
-  <div class="w-full md:w-2/3 md:pr-6">
-    <h2 class="md:mt-0">A Giant Among Men</h2>
-    <p>My dad was a man of few words but many inches, standing over six feet tall—a quiet giant with a presence that was as subtle as it was significant. He was more introvert than extrovert, yet his towering figure commanded attention without so much as a word. While he might have seemed intimidating to some, those who knew him understood the gentleness of his spirit.</p>
-  </div>
-  <div class="w-full md:mt-2 md:w-1/3">
-      <img src="./images/baba-stylish.jpg" alt="Darioush Pezeshki" />
-  </div>
-</div>
+Polyamory, a term rooted in the Greek 'poly' (many) and Latin 'amor' (love), refers to the practice of engaging in multiple romantic relationships with the consent of all parties involved. This can range from *throuples*, a committed relationship among three people, to more complex networks where one might date someone who has another partner, and so forth. The configurations are as varied as the people who practice them, but the core principle remains: openness and consent.
 
-## A Mentor
+## A Dive into the Polyamorous World
 
-I grew up around skating rinks, spending most of my time there after school. The shiny orange and purple rink my dad managed was the backdrop for many of my childhood memories. It was our simple ritual—my dad would pick me up, and we'd head straight to the rink.
+Back in 2018, I was living the fast-paced lifestyle of San Francisco's famed gay mecca — a whirl of parties, fleeting connections, and a vibrant hookup culture. Yet, beneath the glittering surface, I craved something different. Something deeper. Then, one ordinary day turned extraordinary when I met Jonathan on a dating app. He was an intriguing blend of artistic spirit, and though he was already in a committed relationship with his 'primary' partner, my monogamous inclinations made me curious about this new dynamic. In polyamory, a primary partner often refers to a main or significant relationship among multiple connections.
 
-One vivid memory stands out: a customer offered $200 for my skates, which were exactly valued at half that. I rejected the offer simply because I liked the aesthetic of those skates (and I was a kid). Later, when I told my dad about it, he used it as a teaching moment. He explained the principles of smart decision-making and seizing opportunities, helping me see the broader implications of my choices. His advice had been invaluable, providing lessons that continue to influence my life.
+I'd always thought of myself as staunchly monogamous. The idea of sharing a romantic partner was unfamiliar territory for me, almost a hard no. But then, curiosity — that tricky little thing — got the better of me. Jonathan was a whirlwind of creativity, singing, dancing, living with an intensity that fascinated me. His primary partner, a mirror of his passion, only added to the allure. As a logical, critical thinker, my life had always been ruled by pragmatism. But here I was, drawn into a world where love wasn't finite but infinite.
 
-## A Master Chef 
+## The Heart of the Matter
 
-Beyond the skating rink, my dad's magic extended into the kitchen. He was a culinary wizard, renowned among relatives as the best cook. With an uncanny ability to concoct delicious meals from a mere glance at the refrigerator's contents, he would whip up dishes that comforted us. Whether it was the complex flavors of Persian cuisine or a simple, impromptu stir-fry, he shared his love through every dish he crafted. Meals at our house were not just food for us; they were expressions of his love for his family.
+The dynamic was captivating at first. I was introduced to the concept that love, much like attention to hobbies and passions, could be divided and yet whole. Jonathan compared his ability to love multiple people to how he distributed his passion between his art forms — all different, all consuming, all loved. I tried to follow this philosophy, to see love as a boundless entity, but the practical part of me struggled.
 
-## A Supporter and Builder
+As our relationship progressed, I met his partner. Wonderful, passionate, but not someone I could see myself in a relationship with. This was my polyamorous litmus test: could I engage equally with both? The answer was a resounding no. My heart, it seemed, was stubbornly monogamous.
 
-He wasn’t just my father; he was a homework helper, problem solver, a chef, and builder, always there to support both me and my sister. He had a knack for skillfully crafting things like decks, fixing household items, and constructing interiors that made our home more functional and welcoming. His dedication to improving our lives through these practical acts of service showed his deep love and commitment to our family’s well-being.
+## The Double Date and The Realization
 
-Despite his illness weakening his physical strength, it never diminished his spirit. He persevered in fixing, building, and improving, driven by a deep desire to ensure that my mom and our family were well taken care of. Each project he undertook was more than just maintenance; it was his way of securing my mom's comfort and minimizing any future challenges she might face in retirement.
+A turning point came with a double date — Jonathan, his partner, his partner’s new beau, and myself. It was supposed to be fun, a new experience. And it was, but underneath the shared popcorn and whispered jokes, I felt an unmistakable desire of longing. Longing for simplicity, for an undivided love that was mine and mine alone.
 
+I left that relationship soon after. Not with bitterness, but with a new understanding of myself and of others. Polyamory, I realized, was an art form in itself, suited to those who could transcend traditional boundaries of love and relationship. Perhaps it was meant for the creative souls, unbound by conventional logic.
 
-## The Unspoken Eulogy
+## Final Thoughts
 
-If I had stood before you all those years ago, with the weight of his absence fresh on my shoulders, I would have said this:
+In the end, my journey through the polyamorous landscape taught me about the vast spectra of human relationships. For some, love truly is infinite, stretching and morphing to encompass as many as the heart will allow. For others, like myself, it is more singular, though no less profound.
 
-> Look around you, see the faces of those he touched, feel the space his absence has carved into our lives. My dad was a man of few words because his life spoke volumes. In his silence, there was a reservoir of wisdom, in his height, a towering example of kindness. We are all buildings in a skyline he helped shape, cities of memories he constructed with steady, humble hands.
-
-As I write this, I realize that perhaps the true eulogy lies not in the words spoken at a funeral, but in the quiet moments of reflection that follow us through the years, the lessons we carry forward, the gentle imprint of his life on ours.
-
-Thank you, Dadu, for every sacrifice, for every lesson taught not through words but through deeds. Your impact is a loud echo through the halls of my life. Here’s to you—the greatest man I ever knew.
+Whether polyamory can be learned or not isn't a question with a simple answer. It's about the capacity of the heart, the openness of the mind, and the courage to challenge societal norms. For me, the path led back to monogamy, but for you? Only your heart can tell.
 
 </div>
+

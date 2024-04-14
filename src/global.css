@@ -128,7 +128,7 @@ header .menu ul li{
     @apply block sm:hidden;
 }
 .featured-blog-post .blog-main{
-    @apply p-6 pt-0 sm:p-0 sm:pb-6 sm:pr-2;
+    @apply p-6 pt-0 sm:p-0 sm:pb-6 sm:pr-6;
 }
 .featured-blog-post h2{
     @apply mb-2 hover:underline;
@@ -140,7 +140,7 @@ header .menu ul li{
     @apply inline-flex items-center font-medium hover:underline;
 }
 .featured-blog-post .blog-info{
-    @apply flex justify-between items-center mb-4 sm:mt-6 text-gray-500 pr-6;
+    @apply flex justify-between items-center mb-4 sm:mt-6 text-gray-500;
 }
 .featured-blog-post .blog-category {
     @apply text-xs inline-flex items-center py-0.5;
