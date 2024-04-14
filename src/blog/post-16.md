@@ -12,13 +12,24 @@ draft: false
 
 <div class="prose prose-lg max-w-none mt-12">
 
-The LGBTQ+ community is a brilliant spectrum, each shade representing a distinct identity, experience, and story. Yet, in this array of colors, there are moments when some hues seem less vibrant, less acknowledged. One such pressing issue is the hesitation of some cis gay men to fully champion the 'T' in LGBTQ+. So, let's talk about the identity, history and empathy. 
+The LGBTQ+ community is a brilliant spectrum, each shade representing a distinct identity, experience, and story. Yet, in this array of colors, some hues seem less vibrant, less acknowledged. This brings us to a surprising observation — the hesitance of some cis gay men to fully champion the 'T' in LGBTQ+. So, let's talk about the identity, history and empathy. 
 
-## What is Cis vs. Trans
-First off, let's break down the basics with the least amount of jargon possible, shall we? Being cisgender means your gender identity matches the sex you were assigned at birth. Transgender, in contrast, signifies a mismatch between one's gender identity and the sex assigned at birth, similar to wearing a pair of mismatched socks – it's unexpected, yet it uniquely represents who you are.
-
-* **Cisgender:** Like expecting a pizza and getting a pizza.
-* **Transgender:** Like ordering a pizza and getting a calzone instead – unexpected but equally wonderful.
+<div class="flex flex-wrap items-center">
+  <div class="w-full md:w-2/3 pr-4">
+    <h2>What is Cis vs. Trans</h2>
+    <p>First off, let's break down the basics with the least amount of jargon possible, shall we? Being cisgender means your gender identity matches the sex you were assigned at birth. Transgender, in contrast, signifies a mismatch between one's gender identity and the sex assigned at birth, similar to wearing a pair of mismatched socks – it's unexpected, yet it uniquely represents who you are.</p>
+    <p>In simpler terms:</p>
+    <ul>
+      <li><strong>Cisgender:</strong> Like ordering a pizza and getting a pizza.</li>
+      <li><strong>Transgender:</strong> Like ordering a pizza and getting a calzone instead – unexpected but equally wonderful.</li>
+    </ul>
+  </div>
+  <div class="w-full md:mt-16 md:w-1/3">
+    <figure>
+      <img src="./images/pizza-calzone.jpg" alt="Pizza or Calzone" />
+    </figure>
+  </div>
+</div>
 
 ## Understanding Gender
 Now, gender itself isn't a one-size-fits-all hat; it's more like a galaxy with a vast array of expressions, identities, and experiences. We find not just planets of masculinity and femininity but a whole cosmos of non-binary, genderqueer, and beyond. It's a spectrum, not a binary switch.
@@ -30,12 +41,15 @@ Now, gender itself isn't a one-size-fits-all hat; it's more like a galaxy with a
     <p>But then things started happening for the gays and lesbians, like marriage equality. And I'm not gonna lie, the trans community's specific battles got overshadowed in the process. But when you're caught up in your own fight, other people's struggles can kinda fade into the background.</p>
   </div>
   <div class="w-full md:mt-16 md:w-1/3">
-    <img src="./images/marsha-p-johnson-v3.jpg" alt="Marsha P. Johnson" />
+    <figure>
+      <img src="./images/marsha-p-johnson-v3.jpg" alt="Marsha P. Johnson" />
+      <figcaption class="mt-2">Marsha P. Johnson</figcaption>
+    </figure>
   </div>
 </div>
 
 ## Reasons for a Lack of Support from Some Cis Gay Men
-Understanding where some cis gay men are coming from when it comes to not fully embracing trans issues? Well, it's a complicated dynamic, but let's break it down:
+So, understanding where some cis gay men are coming from when it comes to not fully embracing trans issues is a complicated dynamic, but let's break it down:
 
 * **Historical Backing and Representation:** Trans icons like Sylvia Rivera and Marsha P. Johnson were out there on the front lines from day one. But as time went on, their contributions almost got muffled by the louder narratives around cis gay and lesbian rights. It's like their voices got drowned out in the crowd. This lack of representation in historical narratives and leadership positions has perpetuated a cycle where trans voices are underrepresented in political and social spheres, impacting the level of support and recognition they receive.
 

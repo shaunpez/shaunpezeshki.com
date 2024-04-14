@@ -50,7 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create paginated blog list pages
   const postsPerPage = 8; // Define how many posts per page you want
-  const totalCount = result.data.allMarkdownRemark.totalCount;
+  const totalCount = result.data.allMarkdownRemark.totalCount - 1;
   const numPages = Math.ceil(totalCount / postsPerPage);
   
 
@@ -62,7 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
         component: blogListTemplate,
         context: {
           limit: postsPerPage,
-          skip: i * postsPerPage,
+          skip: i * postsPerPage + 1,
           numPages,
           currentPage: i + 1,
         },

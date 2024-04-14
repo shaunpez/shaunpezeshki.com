@@ -44,6 +44,9 @@ header .menu ul li{
 .homepage .container{
     @apply max-w-screen-lg relative;
 }
+.homepage .container.home{
+    @apply pt-4;
+}
 .homepage .content{
     @apply text-center mb-8;
 }
@@ -63,6 +66,13 @@ header .menu ul li{
     @apply w-full max-w-[450px] h-full max-h-[450px] rounded-full;
 }
 
+/* First Post */
+.first-post{
+    @apply bg-black;
+}
+.first-post .container{
+    @apply pb-6;
+}
 
 /* Blog Listing */
 .blog-posts{
