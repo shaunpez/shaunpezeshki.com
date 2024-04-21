@@ -18,9 +18,13 @@ Polyamory, a term rooted in the Greek 'poly' (many) and Latin 'amor' (love), ref
 
 ## A Dive into the Polyamorous World
 
-Back in 2018, I was living the fast-paced lifestyle of San Francisco's famed gay mecca — a whirl of parties, fleeting connections, and a vibrant hookup culture. Yet, beneath the glittering surface, I craved something different. Something deeper. Then, one ordinary day turned extraordinary when I met Jonathan on a dating app. He was an intriguing blend of artistic spirit, and though he was already in a committed relationship with his 'primary' partner, my monogamous inclinations made me curious about this new dynamic. In polyamory, a primary partner often refers to a main or significant relationship among multiple connections.
+Back in 2018, I was living the fast-paced lifestyle of San Francisco's famed gay mecca — a whirl of parties, fleeting connections, and a vibrant hookup culture. Yet, beneath the glittering surface, I craved something different. Something deeper. 
 
-I'd always thought of myself as staunchly monogamous. The idea of sharing a romantic partner was unfamiliar territory for me, almost a hard no. But then, curiosity — that tricky little thing — got the better of me. Jonathan was a whirlwind of creativity, singing, dancing, living with an intensity that fascinated me. His primary partner, a mirror of his passion, only added to the allure. As a logical, critical thinker, my life had always been ruled by pragmatism. But here I was, drawn into a world where love wasn't finite but infinite.
+Then, one ordinary day turned extraordinary when I met Jonathan on a dating app. He was an intriguing blend of artistic spirit, and though he was already in a committed relationship with his 'primary' partner, my monogamous inclinations made me curious about this new dynamic. In polyamory, a primary partner often refers to a main or significant relationship among multiple connections.
+
+I'd always thought of myself as staunchly monogamous. The idea of sharing a romantic partner was unfamiliar territory for me, almost a hard no. But then, curiosity — that tricky little thing — got the better of me. 
+
+Jonathan was a whirlwind of creativity, singing, dancing, living with an intensity that fascinated me. His primary partner, a mirror of his passion, only added to the allure. As a logical, critical thinker, my life had always been ruled by pragmatism. But here I was, drawn into a world where love wasn't finite but infinite.
 
 ## The Heart of the Matter
 

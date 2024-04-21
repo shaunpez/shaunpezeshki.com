@@ -47,20 +47,20 @@ header .menu ul li{
 .homepage .container.home{
     @apply pt-4;
 }
-.homepage .content{
-    @apply text-center mb-8;
+.homepage .content.pages{
+    @apply text-center;
 }
 .homepage .content .prose{
     @apply max-w-none;
 }
 .homepage .content h1{
-    @apply mt-8 text-4xl lg:text-5xl;
+    @apply mt-0 text-4xl lg:text-4xl;
 }
 .homepage .content h2{
     @apply mt-2 text-gray-500 font-normal;
 }
 .homepage .content p{
-    @apply text-gray-500 mt-4;
+    @apply mt-4 text-[1.15rem];
 }
 .homepage .main-hero img {
     @apply w-full max-w-[450px] h-full max-h-[450px] rounded-full;
@@ -128,7 +128,7 @@ header .menu ul li{
     @apply block sm:hidden;
 }
 .featured-blog-post .blog-main{
-    @apply p-6 pt-0 sm:p-0 sm:pb-6 sm:pr-6;
+    @apply p-6 pt-0 sm:p-0 sm:pb-12 sm:pt-4 sm:pr-6;
 }
 .featured-blog-post h2{
     @apply mb-2 hover:underline;
@@ -247,6 +247,7 @@ main{
         right: 0;
         height: 100%;
         width: 500px;
+        display: none;
     }
 
     .plant::after {

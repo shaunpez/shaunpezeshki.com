@@ -26,9 +26,7 @@ Four years ago, the world shut down. As streets emptied and doors closed, my dad
 
 ## A Mentor
 
-I grew up around skating rinks, spending most of my time there after school. The shiny orange and purple rink my dad managed was the backdrop for many of my childhood memories. It was our simple ritual—my dad would pick me up, and we'd head straight to the rink.
-
-One vivid memory stands out: a customer offered $200 for my skates, which were exactly valued at half that. I rejected the offer simply because I liked the aesthetic of those skates (and I was a kid). Later, when I told my dad about it, he used it as a teaching moment. He explained the principles of smart decision-making and seizing opportunities, helping me see the broader implications of my choices. His advice had been invaluable, providing lessons that continue to influence my life.
+My dad managed a skating rink, a place where we spent countless afternoons together after school. To help me earn a little money and learn the value of work, he would generally assign me to the snack bar and the skate shop. One vivid memory stands out from those days: while working at the skate shop, a customer offered $200 for my skates, which were actually valued at only half that. I rejected the offer simply because I liked the aesthetic of those skates—and I was just a kid. Later, when I told my dad about it, he used it as a teaching moment. He explained the principles of smart decision-making and seizing opportunities, helping me see the broader implications of my choices. His advice has been invaluable, providing lessons that continue to influence my life.
 
 ## A Master Chef 
 
@@ -36,7 +34,7 @@ Beyond the skating rink, my dad's magic extended into the kitchen. He was a culi
 
 ## A Supporter and Builder
 
-He wasn’t just my father; he was a homework helper, problem solver, a chef, and builder, always there to support both me and my sister. He had a knack for skillfully crafting things like decks, fixing household items, and constructing interiors that made our home more functional and welcoming. His dedication to improving our lives through these practical acts of service showed his deep love and commitment to our family’s well-being.
+He wasn't just my father; he was a homework helper, problem solver, a chef, and builder, always there to support both me and my sister. He had a knack for skillfully crafting things like decks, fixing household items, and constructing interiors that made our home more functional and welcoming. His dedication to improving our lives through these practical acts of service showed his deep love and commitment to our family’s well-being.
 
 Despite his illness weakening his physical strength, it never diminished his spirit. He persevered in fixing, building, and improving, driven by a deep desire to ensure that my mom and our family were well taken care of. Each project he undertook was more than just maintenance; it was his way of securing my mom's comfort and minimizing any future challenges she might face in retirement.
 
@@ -49,6 +47,6 @@ If I had stood before you all those years ago, with the weight of his absence fr
 
 As I write this, I realize that perhaps the true eulogy lies not in the words spoken at a funeral, but in the quiet moments of reflection that follow us through the years, the lessons we carry forward, the gentle imprint of his life on ours.
 
-Thank you, Dadu, for every sacrifice, for every lesson taught not through words but through deeds. Your impact is a loud echo through the halls of my life. Here’s to you—the greatest man I ever knew.
+Thank you, Dadu, for every sacrifice, for every lesson taught not through words but through deeds. Your impact is a loud echo through the halls of my life. Here's to you—the greatest man I ever knew.
 
 </div>

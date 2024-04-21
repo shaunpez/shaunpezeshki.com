@@ -18,6 +18,15 @@ const BlogPostTemplate = ({ data }) => {
   const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
   const postUrl = `${siteUrl}/${year}/${month}/${day}/${slug}`;
 
+  // Retrieve the currentPage from localStorage
+  const isBrowser = typeof window !== "undefined";
+
+  // Retrieve the currentPage from localStorage if we're in the browser
+  const currentPage = isBrowser ? localStorage.getItem('currentPage') : null;
+
+  // Determine the path based on currentPage
+  const fromPage = !currentPage || currentPage === "1" ? "/" : `/page/${currentPage}`;
+
   // Structured data for the blog post
   const structuredData = {
     "@context": "https://schema.org",
@@ -39,7 +48,6 @@ const BlogPostTemplate = ({ data }) => {
   };
 
   const structuredDataScript = JSON.stringify(structuredData);
-
   return (
     <>
         <Seo
@@ -47,10 +55,11 @@ const BlogPostTemplate = ({ data }) => {
             description={post.frontmatter.excerpt}
             image={imageUrl}
         />
+        
         <Layout>
             <div key={post.frontmatter.slug}>
                 <section className="blog">
-                    <Link to="/" className="back-button">
+                    <Link to={fromPage} className="back-button">
                         Back to Posts
                     </Link>
                     <article>
@@ -79,6 +88,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
+        excerpt
         category
         image {
           childImageSharp {

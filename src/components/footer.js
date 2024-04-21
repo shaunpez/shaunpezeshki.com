@@ -7,11 +7,11 @@ const Footer = () => {
     <footer>
       <div className="container">
         <ul>
-          <li><a href="https://twitter.com/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">Twitter</a></li>
           <li><a href="https://linkedin.com/in/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">LinkedIn</a></li>
+          <li><a href="https://twitter.com/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">X</a></li>
           <li><a href="https://instagram.com/shaunpez" rel="noreferrer" target="_blank" className="hover:underline">Instagram</a></li>
           <li><a href="/rss.xml" rel="noreferrer" target="_blank" className="hover:underline">RSS</a></li>
-          <li><Link to="/privacy-policy" activeClassName="underline">Privacy</Link></li>
+          <li><Link to="/privacy-policy" activeClassName="underline" className="hover:underline">Privacy</Link></li>
         </ul>
       </div>
     </footer>

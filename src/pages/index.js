@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import headerImage from '../images/shaun-hero-v3.jpg';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
@@ -10,12 +10,34 @@ const IndexPage = ({ data }) => {
   let posts = data.limitedPosts.edges;
   const total = data.totalCount.totalCount;
 
+  const handleLinkClick = () => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem('currentPage', "1");
+    }
+  };
+  
+
   // Get today's date in the same format as your post dates
   const today = new Date();
-  const todayFormatted = today.toISOString().split('T')[0].replace(/-/g, '/');
+  const todayFormatted = today.toLocaleDateString('en-CA', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).replace(/-/g, '/');
+  
+  // Filter posts to include only those with a date of today or earlier
+  posts = posts.filter(({ node }) => {
+    const postDate = new Date(node.frontmatter.date);
+    const postDateFormatted = postDate.toLocaleDateString('en-CA', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
+    }).replace(/-/g, '/');
+  
+    return postDateFormatted <= todayFormatted;
+  });
 
   // Filter posts to include only those with a date of today or later
-  posts = posts.filter(({ node }) => node.frontmatter.date <= todayFormatted);
   const { siteUrl } = data.site.siteMetadata;
 
   // Constructing the list of blog posts for structured data
@@ -39,8 +61,6 @@ const IndexPage = ({ data }) => {
     "@type": "ItemList",
     "itemListElement": itemListElement
   };
-  
-
 
   return (
     <>
@@ -58,12 +78,12 @@ const IndexPage = ({ data }) => {
         
           <div className="content ">
             <div className="container">
-              <StaticImage
+              {/* <StaticImage
                     src="../images/shaun-bookstore3.jpg" // Adjust the path as necessary
                     alt="Chronicles of a Millennial Techie"
                     placeholder="blurred" // Optional: This prop defines the loading strategy
                     className="main-hero"   
-              />
+              /> */}
               <div className="prose prose-xl">
                 <h1>Chronicles of a Millennial Techie</h1>
                 <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives, making each discovery a step towards a more profound understanding of ourselves and the world around us.</p>
@@ -100,9 +120,9 @@ const IndexPage = ({ data }) => {
                           </span>
                           <span className="blog-date">{formattedDate}</span> 
                         </div>
-                        <h2><Link to={postUrl}>{title}</Link></h2>
+                        <h2><Link to={postUrl} onClick={handleLinkClick}>{title}</Link></h2>
                         <p>{excerpt}</p>
-                        <Link to={postUrl} className="blog-link">
+                        <Link to={postUrl} onClick={handleLinkClick} className="blog-link">
                           Read more
                           <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                         </Link>
