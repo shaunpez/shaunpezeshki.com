@@ -3,7 +3,7 @@ title: "Is TikTok Facing Its Last Dance in the U.S.?"
 date: "2024-04-20"
 slug: "is-tiktoks-facing-last-dance-us"
 category: "Technology"
-excerpt: "Exploring how TikTok became a vital part of daily life during the pandemic and examining the potential impact of its possible ban on users and the broader digital landscape."
+excerpt: "Learn how TikTok became a vital part of daily life during the pandemic and examining the potential impact of its possible ban on users and the broader digital landscape."
 image: "./images/tiktok-ban.jpg"
 draft: false
 ---

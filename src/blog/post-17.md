@@ -3,7 +3,7 @@ title: "Can You Learn to Love Polyamorously?"
 date: "2024-04-14"
 slug: "can-you-learn-to-love-polyamorously"
 category: "LGBTQ+"
-excerpt: "Exploring the nuances of polyamory through personal experience and the limits of love's expansiveness in the world of multiple partners."
+excerpt: "Explore the nuances of polyamory through personal experience and the limits of love's expansiveness in the world of multiple partners."
 image: "./images/polyamourous-relationships.jpg"
 draft: false
 ---
