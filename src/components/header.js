@@ -5,8 +5,8 @@ const Header = ({ siteTitle, pageTitle }) => (
   <header>
     <div className="container">
       <h1>
-        <Link to="/" className="hover:underline">
-          {siteTitle}
+        <Link to="/">
+          SP
         </Link>
       </h1>
       <nav className="menu">

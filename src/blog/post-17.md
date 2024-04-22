@@ -34,7 +34,7 @@ As our relationship progressed, I met his partner. Wonderful, passionate, but no
 
 ## The Double Date and The Realization
 
-A turning point came with a double date — Jonathan, his partner, his partner’s new beau, and myself. It was supposed to be fun, a new experience. And it was, but underneath the shared popcorn and whispered jokes, I felt an unmistakable desire of longing. Longing for simplicity, for an undivided love that was mine and mine alone.
+A turning point came with a double date — Jonathan, his partner, his partner's new beau, and myself. It was supposed to be fun, a new experience. And it was, but underneath the shared popcorn and whispered jokes, I felt an unmistakable desire of longing. Longing for simplicity, for an undivided love that was mine and mine alone.
 
 I left that relationship soon after. Not with bitterness, but with a new understanding of myself and of others. Polyamory, I realized, was an art form in itself, suited to those who could transcend traditional boundaries of love and relationship. Perhaps it was meant for the creative souls, unbound by conventional logic.
 

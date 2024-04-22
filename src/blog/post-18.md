@@ -12,7 +12,7 @@ draft: false
 
 <div class="prose prose-lg max-w-none mt-12">
 
-Four years ago, the world shut down. As streets emptied and doors closed, my dad’s heart quietly followed suit. It was April 2020, and as a menacing virus held us in its grip, the opportunity to publicly honor his life slipped away. Now, with time to reflect and process, I am ready to share the words that have matured in the quiet spaces of my mind, unspoken since that surreal spring day.
+Four years ago, the world shut down. As streets emptied and doors closed, my dad's heart quietly followed suit. It was April 2020, and as a menacing virus held us in its grip, the opportunity to publicly honor his life slipped away. Now, with time to reflect and process, I am ready to share the words that have matured in the quiet spaces of my mind, unspoken since that surreal spring day.
 
 <div class="flex flex-wrap items-center">
   <div class="w-full md:w-2/3 md:pr-6">
@@ -34,7 +34,7 @@ Beyond the skating rink, my dad's magic extended into the kitchen. He was a culi
 
 ## A Supporter and Builder
 
-He wasn't just my father; he was a homework helper, problem solver, a chef, and builder, always there to support both me and my sister. He had a knack for skillfully crafting things like decks, fixing household items, and constructing interiors that made our home more functional and welcoming. His dedication to improving our lives through these practical acts of service showed his deep love and commitment to our family’s well-being.
+He wasn't just my father; he was a homework helper, problem solver, a chef, and builder, always there to support both me and my sister. He had a knack for skillfully crafting things like decks, fixing household items, and constructing interiors that made our home more functional and welcoming. His dedication to improving our lives through these practical acts of service showed his deep love and commitment to our family's well-being.
 
 Despite his illness weakening his physical strength, it never diminished his spirit. He persevered in fixing, building, and improving, driven by a deep desire to ensure that my mom and our family were well taken care of. Each project he undertook was more than just maintenance; it was his way of securing my mom's comfort and minimizing any future challenges she might face in retirement.
 
