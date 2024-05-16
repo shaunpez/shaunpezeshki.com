@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Shaun Pezeshki",
   "dependencies": {
+    "@mdx-js/mdx": "^3.0.1",
+    "@mdx-js/react": "^2.3.0",
     "autoprefixer": "^10.4.17",
     "gatsby": "^5.13.3",
     "gatsby-image": "^3.11.0",

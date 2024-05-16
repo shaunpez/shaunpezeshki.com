@@ -93,7 +93,7 @@ header .menu ul li{
 }
 
 .blog-posts .blog-category {
-    @apply text-xs inline-flex items-center py-0.5;
+    @apply text-xs inline-flex items-center py-0.5 pr-2 pl-2 rounded-lg font-medium text-black bg-[#f2f2f2];
 }
 .blog-posts .blog-date {
     @apply text-xs;
@@ -106,7 +106,7 @@ header .menu ul li{
     @apply rounded-[0px]
 }
 .blog-posts .blog-post .blog-hero{
-    @apply mb-4 sm:mb-0 bg-gray-900;
+    @apply mb-4 sm:mb-0;
 }
 .blog-posts .blog-post .blog-main{
     @apply p-6 pt-0;
@@ -116,6 +116,9 @@ header .menu ul li{
 }
 .blog-posts .blog-post p{
     @apply mb-5 font-light text-gray-500 text-[0.9em];
+}
+.blog-posts .blog-post p span{
+    @apply text-black font-medium;
 }
 .blog-posts .blog-post .blog-link{
     @apply inline-flex items-center font-medium hover:underline;
@@ -146,6 +149,9 @@ header .menu ul li{
 .featured-blog-post p{
     @apply mb-5 font-light text-gray-500 text-[0.9em];
 }
+.featured-blog-post p span{
+    @apply text-black font-medium;
+}
 .featured-blog-post .blog-link{
     @apply inline-flex items-center font-medium hover:underline;
 }
@@ -153,7 +159,7 @@ header .menu ul li{
     @apply flex justify-between items-center mb-4 sm:mt-6 text-gray-500;
 }
 .featured-blog-post .blog-category {
-    @apply text-xs inline-flex items-center py-0.5;
+    @apply text-xs inline-flex items-center py-0.5 pr-2 pl-2 rounded-lg font-medium text-black bg-[#f2f2f2];
 }
 .featured-blog-post .blog-date {
     @apply text-xs;
@@ -182,6 +188,11 @@ header .menu ul li{
 }
 .blog .back-button{
     @apply py-2 hover:underline text-right block;
+}
+
+.blog .tiktok-embed{
+    padding:0 !important;
+    border:none !important;
 }
 
 /* Prose */

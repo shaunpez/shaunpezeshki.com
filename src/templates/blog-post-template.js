@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react";
 import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
@@ -17,6 +17,18 @@ const BlogPostTemplate = ({ data }) => {
   const month = ('0' + (dateObj.getMonth() + 1)).slice(-2); // Ensure month is 2 digits
   const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
   const postUrl = `${siteUrl}/${year}/${month}/${day}/${slug}`;
+
+  useEffect(() => {
+    // Dynamically load TikTok embed script
+    const script = document.createElement("script");
+    script.src = "https://www.tiktok.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   // Retrieve the currentPage from localStorage
   const isBrowser = typeof window !== "undefined";

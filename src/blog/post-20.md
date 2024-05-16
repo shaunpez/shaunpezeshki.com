@@ -1,6 +1,6 @@
 ---
 title: "Is This Really What We Signed Up For, America?"
-date: "2024-04-21"
+date: "2024-04-22"
 slug: "is-this-really-signed-up-america"
 category: "Economy"
 excerpt: "As America moves forward, there's a growing sense of unease about our future direction."
@@ -16,16 +16,16 @@ draft: false
 Ever tried changing the channel back in the 90s, only to find the same show playing on every station? Living in today's America feels pretty similar. You've got a remote (supposedly your democratic voice), but it doesn't seem to work the way it used to. Let's take a walk through today's America, where it seems like every answer to our biggest questions is a resounding 'no.'
 
 ## The Great American Letdown
-### The 'No' Symphony
+### Repeated Rejections
 Can we get affordable housing? No. Have job security? No. Raise the minimum wage? Also no. Each 'no' adds up, and it feels like we're being left out in the cold. While corporate profits reach sky-high levels, the average Joe's wallet is on a never-ending shrink—thin and getting thinner.
 
-### Funding the Unfunded
+### Prioritizing the Inessential
 Public assistance programs like SNAP and child care subsidies are experiencing budget cuts, even as we continue to fund less essential projects. It's a clear misalignment of priorities, showing a disconnect between immediate needs and where the funds are actually going.
 
-### The Planet and the Profit
+### Environmental Neglect
 And let's not even start on environmental issues. "Stop killing the planet?" Big No. Apparently, the planet doesn't have a lobbying group powerful enough to compete with the giants. It's a stark reminder that in the board game of American politics, some players wield more power than others, and Mother Nature holds no aces.
 
-### Digital Dystopia
+### The Double-Edged Sword of Technology
 On a lighter note, we've got our tech—our phones, our apps. Yet even the simple joy of watching cat videos is under threat. Censorship, surveillance, and the overwhelming sense that Big Brother is not just watching you but also deciding which videos you get to see. It's like someone's holding a remote control over your life.
 
 ## But, Are They Really Listening?
