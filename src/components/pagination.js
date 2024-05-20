@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 
 const Pagination = ({ currentPage, numberOfPages }) => {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numberOfPages;
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Clear localStorage items if they exist
+      if (localStorage.getItem('selectedCategory') || localStorage.getItem('loadMoreCount')) {
+        localStorage.removeItem('selectedCategory');
+        localStorage.removeItem('loadMoreCount');
+      }
+    }
+  }, []);
 
   // Update to use /page/ for pages after the first
   const nextPage = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`;

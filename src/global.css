@@ -5,16 +5,16 @@
 
 /* Headings and Paragraph */
 h1{
-    @apply text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900;
+    @apply text-4xl lg:text-5xl tracking-tight font-extrabold text-[#111];
 }
 h2{
-    @apply text-2xl tracking-tight font-extrabold text-gray-900;
+    @apply text-2xl tracking-tight font-extrabold text-[#111];
 }
 h3{
-    @apply text-xl tracking-tight font-semibold text-gray-900;
+    @apply text-xl tracking-tight font-semibold text-[#111];
 }
 h4{
-    @apply text-lg tracking-tight font-semibold text-gray-900;
+    @apply text-lg tracking-tight font-semibold text-[#111];
 }
 p{
     @apply font-light;
@@ -48,37 +48,43 @@ header .menu ul li{
 
 /* Homepage */
 .homepage .container{
-    @apply max-w-screen-lg relative;
-}
-.homepage .container.home{
-    @apply pt-4;
-}
-.homepage .content.pages{
-    @apply text-center;
+    @apply max-w-screen-lg relative z-50;
 }
 .homepage .content{
-    position: relative;
-    z-index: 10;
+    @apply relative z-10 bg-[#111];
 }
 .homepage .content .prose{
-    @apply max-w-none;
+    @apply max-w-none text-white;
 }
-.homepage .content h1{
-    @apply mt-0 text-4xl lg:text-4xl;
-}
-.homepage .content h2{
-    @apply mt-2 text-gray-500 font-normal;
+.homepage .content h3{
+    @apply text-white;    
 }
 .homepage .content p{
     @apply mt-4 text-[1.15rem];
 }
-.homepage .main-hero img {
-    @apply w-full max-w-[450px] h-full max-h-[450px] rounded-full;
+/* Homepage - Main Heading */
+.homepage .main-title{
+    @apply mt-4;
 }
+.homepage .main-title h1{
+    @apply mb-6 text-4xl lg:text-4xl;   
+}
+
+/* Homepage - Content - Pages */
+.homepage .content.pages{
+    @apply relative z-10 bg-[#f8f8f8] text-center;
+}
+.homepage .content.pages h1{
+    @apply mt-0 text-4xl lg:text-4xl;
+}
+.homepage .content.pages h2{
+    @apply mt-2 text-gray-500 font-normal;
+}
+
 
 /* First Post */
 .first-post{
-    @apply bg-black;
+    @apply bg-[#111];
 }
 .first-post .container{
     @apply pb-6;
@@ -123,13 +129,14 @@ header .menu ul li{
 .blog-posts .blog-post .blog-link{
     @apply inline-flex items-center font-medium hover:underline;
 }
+  
 /* Featured Blog Post */
 .featured-blog-post{
     @apply border border-gray-200 bg-white relative z-10 mb-8;
 }
 .featured-blog-post::after {
     @apply absolute top-0 left-0 z-10 bg-[#111] text-white py-2 px-3 text-sm uppercase font-medium;
-    content: "Featured";
+    content: "Latest";
 }
 .featured-blog-post .blog-col{
     @apply grid gap-8 sm:grid-cols-2;
@@ -196,16 +203,45 @@ header .menu ul li{
     @apply text-4xl text-gray-500 mx-2;
 }
 
-
 .blog .tiktok-embed{
     padding:0 !important;
     border:none !important;
 }
 .blog #disqus_thread{
-    margin-top:2rem;
+    @apply mt-8;
+}
+
+/* Category buttons */
+.category-select h4{
+    @apply pb-2;
+}
+.category-select .container{
+    @apply pb-2 pt-8;
+}
+.category-buttons {
+    @apply flex flex-wrap gap-2.5 mb-8;
+}
+
+.category-button {
+    @apply bg-gray-200 border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
+}
+
+.category-button:hover {
+    @apply bg-gray-300;
+}
+
+.category-button.selected, .category-button[aria-current="page"] {
+    @apply bg-[#111] text-white;
 }
 
 
+/* Category Page */
+.category-page .container{
+    @apply pt-12;
+}
+.category-page h1{
+    @apply text-3xl pb-8 lg:text-4xl;
+}
 
 /* Prose */
 .prose h1{
@@ -259,6 +295,14 @@ main{
 .pagination a:hover::after {
     @apply border-b border-white;
 }
+/* Pagination - Load More */
+.pagination-load {
+    @apply flex justify-center mt-8;
+  }
+  
+.pagination-load .load-more-button {
+    @apply bg-gray-200 py-2.5 px-5 hover:bg-[#111] hover:text-white transition duration-300;
+}
 
 /* Images */
 .gatsby-resp-image-image {
@@ -292,6 +336,7 @@ main{
         left: 0;
         height: 100%;
         width: 600px;
+        display: none;
     }
     .plant.plant-bottom::before{
         display: none;

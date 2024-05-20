@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
-import { graphql, Link } from "gatsby"
-import Seo from "../components/seo"
-import Layout from "../components/layout"
+import React, { useEffect, useState } from "react";
+import { graphql, Link } from "gatsby";
+import Seo from "../components/seo";
+import Layout from "../components/layout";
 import { getSrc } from "gatsby-plugin-image";
 import { Disqus } from 'gatsby-plugin-disqus';
 
-const BlogPostTemplate = ({ data }) => {
-  // `data` prop will be injected by the GraphQL layer based on the query below
-  const { markdownRemark: post } = data // Destructuring the post data
+const BlogPostTemplate = ({ data, location }) => {
+  const [fromPage, setFromPage] = useState("/");
+  const { markdownRemark: post } = data;
   const { siteUrl } = data.site.siteMetadata;
-  const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null; // Constructing absolute URL for the image
+  const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null;
   const { title, date, slug, category } = post.frontmatter;
   const formattedDate = new Date(date).toISOString();
 
   const dateObj = new Date(date);
   const year = dateObj.getFullYear();
-  const month = ('0' + (dateObj.getMonth() + 1)).slice(-2); // Ensure month is 2 digits
-  const day = ('0' + dateObj.getDate()).slice(-2); // Ensure day is 2 digits
+  const month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
+  const day = ('0' + dateObj.getDate()).slice(-2);
   const postUrl = `${siteUrl}/${year}/${month}/${day}/${slug}`;
 
   useEffect(() => {
@@ -31,16 +31,12 @@ const BlogPostTemplate = ({ data }) => {
     };
   }, []);
 
-  // Retrieve the currentPage from localStorage
-  const isBrowser = typeof window !== "undefined";
+  useEffect(() => {
+    if (location.state && location.state.from) {
+      setFromPage(location.state.from);
+    }
+  }, [location.state]);
 
-  // Retrieve the currentPage from localStorage if we're in the browser
-  const currentPage = isBrowser ? localStorage.getItem('currentPage') : null;
-
-  // Determine the path based on currentPage
-  const fromPage = !currentPage || currentPage === "1" ? "/" : `/page/${currentPage}`;
-
-  // Structured data for the blog post
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -70,42 +66,40 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <>
-        <Seo
-            title={post.frontmatter.title}
-            description={post.frontmatter.excerpt}
-            image={imageUrl}
-        />
-        
-        <Layout>
-            <div key={post.frontmatter.slug}>
-                <section className="blog">
-                    <Link to={fromPage} className="back-button">
-                        Back to Posts
-                    </Link>
-                    <article>
-                        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
-                        <div className="date">
-                          {post.frontmatter.date}
-                        </div>
-                        <h1>{post.frontmatter.title}</h1>
-                        <div dangerouslySetInnerHTML={{ __html: post.html }} />  
-                        <div className="blog-separator">
-                            <span class="dots">&middot;</span>
-                            <span class="dots">&middot;</span>
-                            <span class="dots">&middot;</span>
-                        </div>
-                        <Disqus config={disqusConfig} />
-                    </article>
-                </section>    
-            </div>
-        </Layout>
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.excerpt}
+        image={imageUrl}
+      />
+      <Layout>
+        <div key={post.frontmatter.slug}>
+          <section className="blog">
+            <Link to={fromPage} className="back-button">
+              Back to Posts
+            </Link>
+            <article>
+              <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
+              <div className="date">
+                {post.frontmatter.date}
+              </div>
+              <h1>{post.frontmatter.title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />  
+              <div className="blog-separator">
+                <span className="dots">&middot;</span>
+                <span className="dots">&middot;</span>
+                <span className="dots">&middot;</span>
+              </div>
+              <Disqus config={disqusConfig} />
+            </article>
+          </section>    
+        </div>
+      </Layout>
     </>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
-// Define the page query
 export const query = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
@@ -127,6 +121,6 @@ export const query = graphql`
       siteMetadata {
         siteUrl
       }
-    } 
+    }
   }
-`
+`;

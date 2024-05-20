@@ -1,9 +1,14 @@
 const path = require("path");
 
+const createCategoryPath = (category) => {
+  return category.toLowerCase().replace(/\s+/g, '-');
+};
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions;
   const blogPostTemplate = path.resolve(`src/templates/blog-post-template.js`);
-  const blogListTemplate = path.resolve(`src/templates/blog-list.js`); // Path to your blog list template
+  const blogListTemplate = path.resolve(`src/templates/blog-list-template.js`);
+  const categoryTemplate = path.resolve(`src/templates/category-template.js`);
 
   const result = await graphql(`
     query {
@@ -12,68 +17,87 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             frontmatter {
               slug
-              date(formatString: "YYYY/MM/DD") 
+              date(formatString: "YYYY/MM/DD")
+              category
             }
           }
         }
         totalCount
       }
+      categories: allMarkdownRemark {
+        group(field: {frontmatter: {category: SELECT}}) {
+          fieldValue
+          totalCount
+        }
+      }
     }
   `);
 
-  // Check if data is defined before accessing it
   if (result.errors) {
     throw result.errors;
   }
 
-  // Create blog post pages if there is data available
-  if (result.data && result.data.allMarkdownRemark && result.data.allMarkdownRemark.edges) {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const { slug, date } = node.frontmatter;
-      const currentDate = new Date();
-      const postDate = new Date(date);
-
-       // Check if the post date is not in the future
-      if (postDate <= currentDate) {
-
-        const path = `/${date}/${slug}`; // Construct the complete path including the date
-        createPage({
-          path,
-          component: blogPostTemplate,
-          context: {
-            slug: node.frontmatter.slug,
-          },
-        });
-      }
-    });
-  }
-
-  // Create paginated blog list pages
-  const postsPerPage = 8; // Define how many posts per page you want
+  const posts = result.data.allMarkdownRemark.edges;
+  const categories = result.data.categories.group;
+  const postsPerPage = 8;
   const totalCount = result.data.allMarkdownRemark.totalCount - 1;
   const numPages = Math.ceil(totalCount / postsPerPage);
-  
 
-  if (totalCount >= postsPerPage) {
-    // If the condition is met, proceed to create paginated blog list pages
-    Array.from({ length: numPages }).forEach((_, i) => {
+  // Create blog posts
+  posts.forEach(({ node }) => {
+    const { slug, date } = node.frontmatter;
+    const currentDate = new Date();
+    const postDate = new Date(date);
+
+    if (postDate <= currentDate) {
+      const path = `/${date}/${slug}`;
       createPage({
-        path: i === 0 ? `/` : `/page/${i + 1}`, // Set the first page to root, and subsequent pages to /page/2, /page/3, etc.
-        component: blogListTemplate,
+        path,
+        component: blogPostTemplate,
         context: {
+          slug: node.frontmatter.slug,
+        },
+      });
+    }
+  });
+
+  // Create paginated blog list pages
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/` : `/page/${i + 1}`,
+      component: blogListTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage + 1,
+        numPages,
+        currentPage: i + 1,
+      },
+    });
+  });
+
+  // Create paginated category pages with lowercase paths and dashes for spaces
+  categories.forEach(category => {
+    const numCategoryPages = Math.ceil(category.totalCount / postsPerPage);
+    const categoryPath = createCategoryPath(category.fieldValue);
+
+    Array.from({ length: numCategoryPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/category/${categoryPath}` : `/category/${categoryPath}/${i + 1}`,
+        component: categoryTemplate,
+        context: {
+          category: category.fieldValue,
           limit: postsPerPage,
-          skip: i * postsPerPage + 1,
-          numPages,
+          skip: i * postsPerPage,
+          numPages: numCategoryPages,
           currentPage: i + 1,
         },
       });
     });
-  }
+  });
 
-  // Define an array of paths to redirect
-  const pathsToRedirect = ['/feed/', '/feed']; // Add more paths as needed
+  // Redirects
+  const pathsToRedirect = ['/feed/', '/feed'];
 
-  // Create redirects for each path
   pathsToRedirect.forEach(path => {
     createRedirect({
       fromPath: path,

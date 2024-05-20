@@ -1,10 +1,3 @@
-/**
- * SEO component that queries for data with
- * Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
@@ -26,12 +19,18 @@ function Seo({ description, lang = "en", meta = [], title, image, noindex = fals
       }
     `
   );
+
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const imageUrl = image ? `${site.siteMetadata.siteUrl}${image}` : null;
 
+  // Create the canonical URL without query parameters
+  const canonicalUrl = typeof window !== 'undefined'
+    ? `${site.siteMetadata.siteUrl}${window.location.pathname}`
+    : `${site.siteMetadata.siteUrl}`;
+
   return (
-    <><Helmet
+    <Helmet
       htmlAttributes={{
         lang,
       }}
@@ -39,6 +38,7 @@ function Seo({ description, lang = "en", meta = [], title, image, noindex = fals
         { rel: 'icon', type: 'image/x-icon', href: faviconICO }, // For ICO favicon
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconPNG }, // For PNG favicon (32x32)
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconPNG }, // For PNG favicon (16x16)
+        { rel: 'canonical', href: canonicalUrl }, // Canonical link
       ]}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
@@ -88,9 +88,9 @@ function Seo({ description, lang = "en", meta = [], title, image, noindex = fals
           name: `robots`,
           content: `noindex, follow`,
         },
-      ].concat(meta).filter(Boolean)} />
-      </>
+      ].concat(meta).filter(Boolean)}
+    />
   );
 }
 
-export default Seo
+export default Seo;
