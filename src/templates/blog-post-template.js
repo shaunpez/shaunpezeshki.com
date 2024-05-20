@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { getSrc } from "gatsby-plugin-image";
+import { Disqus } from 'gatsby-plugin-disqus';
 
 const BlogPostTemplate = ({ data }) => {
   // `data` prop will be injected by the GraphQL layer based on the query below
@@ -60,6 +61,13 @@ const BlogPostTemplate = ({ data }) => {
   };
 
   const structuredDataScript = JSON.stringify(structuredData);
+
+  const disqusConfig = {
+    url: postUrl,
+    identifier: slug,
+    title: title,
+  };
+
   return (
     <>
         <Seo
@@ -80,7 +88,13 @@ const BlogPostTemplate = ({ data }) => {
                           {post.frontmatter.date}
                         </div>
                         <h1>{post.frontmatter.title}</h1>
-                        <div dangerouslySetInnerHTML={{ __html: post.html }} />                
+                        <div dangerouslySetInnerHTML={{ __html: post.html }} />  
+                        <div className="blog-separator">
+                            <span class="dots">&middot;</span>
+                            <span class="dots">&middot;</span>
+                            <span class="dots">&middot;</span>
+                        </div>
+                        <Disqus config={disqusConfig} />
                     </article>
                 </section>    
             </div>

@@ -189,11 +189,23 @@ header .menu ul li{
 .blog .back-button{
     @apply py-2 hover:underline text-right block;
 }
+.blog .blog-separator{
+    @apply flex items-center pt-8 pb-8 justify-center w-full;
+}
+.blog .blog-separator .dots{
+    @apply text-4xl text-gray-500 mx-2;
+}
+
 
 .blog .tiktok-embed{
     padding:0 !important;
     border:none !important;
 }
+.blog #disqus_thread{
+    margin-top:2rem;
+}
+
+
 
 /* Prose */
 .prose h1{

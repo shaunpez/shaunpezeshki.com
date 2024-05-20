@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import faviconICO from '../images/favicon.ico'; 
 import faviconPNG from '../images/favicon.png'; 
 
-function Seo({ description, lang = "en", meta = [], title, image }) {
+function Seo({ description, lang = "en", meta = [], title, image, noindex = false }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -83,6 +83,10 @@ function Seo({ description, lang = "en", meta = [], title, image }) {
         imageUrl && {
           name: `twitter:image`,
           content: imageUrl,
+        },
+        noindex && {
+          name: `robots`,
+          content: `noindex, follow`,
         },
       ].concat(meta).filter(Boolean)} />
       </>

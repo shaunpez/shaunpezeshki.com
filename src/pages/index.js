@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => {
     <>
     <Seo
       title="Chronicles of a Millennial Techie"
-      description="A journey of a millennial navigating technology, personal growth, and diverse experiences in today's dynamic world."
+      description="Discover a millennial techie's personal insights on growth, learning, LGBTQ+ and minority issues, mental health, and navigating life's modern complexities."
       meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
       image={headerImage}
     />
@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
               /> */}
               <div className="prose prose-xl">
                 <h1>Chronicles of a Millennial Techie</h1>
-                <p>I created this blog out of necessity—a lifeline to navigate through the fog of my anxiety. But as this space grew, so did its purpose. Now, it's not just about unburdening my mind; it's about offering you a mirror to perhaps see your own reflections differently. This journey is as much yours as it is mine. Together, let's uncover insights that challenge and reshape our perspectives.</p>
+                <p>I started this blog as a space to share my experiences as a millennial navigating life. What began as a personal outlet has grown into a community for growth, learning, and connection. This journey is as much yours as it is mine, offering you a mirror to see your own reflections differently. Together, let's uncover insights that challenge and reshape our perspectives.</p>
               </div>
             </div>
           </div>
