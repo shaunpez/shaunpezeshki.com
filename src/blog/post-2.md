@@ -6,6 +6,12 @@ category: "Technology"
 excerpt: "Reflecting on the future of work amidst tech layoffs, economic uncertainties, and the widening wealth gap."
 image: "./images/future-ai-v2.jpg"
 draft: false
+tags: 
+  - AI
+  - Future Careers
+  - Technology
+  - Economic Divide
+  - Millennial Challenges
 ---
 
 ![The future of AI and tech](./images/future-ai-v2.jpg)

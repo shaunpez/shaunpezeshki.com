@@ -67,7 +67,7 @@ header .menu ul li{
     @apply mt-4;
 }
 .homepage .main-title h1{
-    @apply mb-6 text-4xl lg:text-4xl;   
+    @apply mb-6 text-4xl lg:text-5xl;   
 }
 
 /* Homepage - Content - Pages */
@@ -75,7 +75,7 @@ header .menu ul li{
     @apply relative z-10 bg-[#f8f8f8] text-center;
 }
 .homepage .content.pages h1{
-    @apply mt-0 text-4xl lg:text-4xl;
+    @apply mt-0 text-4xl lg:text-5xl;
 }
 .homepage .content.pages h2{
     @apply mt-2 text-gray-500 font-normal;
@@ -211,6 +211,21 @@ header .menu ul li{
     @apply mt-8;
 }
 
+.blog .category a {
+    @apply mb-6 inline-block bg-gray-200 rounded-lg border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
+}
+.blog .category a:hover {
+    @apply bg-gray-300;
+}
+
+.blog .tags {
+    @apply flex flex-wrap gap-2.5 mb-8 mt-8;
+}
+
+.blog .tags .tag {
+    @apply bg-gray-200 rounded-lg text-xs border-none py-2.5 px-5 transition-colors duration-300;
+}
+
 /* Category buttons */
 .category-select h4{
     @apply pb-2;
@@ -223,7 +238,7 @@ header .menu ul li{
 }
 
 .category-button {
-    @apply bg-gray-200 border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
+    @apply bg-gray-200 rounded-lg border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
 }
 
 .category-button:hover {
@@ -240,12 +255,12 @@ header .menu ul li{
     @apply pt-12;
 }
 .category-page h1{
-    @apply text-3xl pb-8 lg:text-4xl;
+    @apply text-4xl pb-6 lg:text-5xl;
 }
 
 /* Prose */
 .prose h1{
-    @apply  text-4xl lg:text-5xl;
+    @apply text-4xl lg:text-5xl;
 }
 
 /* Footer */

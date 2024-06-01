@@ -10,7 +10,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const { siteUrl } = data.site.siteMetadata;
   const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null;
-  const { title, date, slug, category } = post.frontmatter;
+  const { title, date, slug, category, tags } = post.frontmatter;
   const formattedDate = new Date(date).toISOString();
 
   const dateObj = new Date(date);
@@ -18,6 +18,10 @@ const BlogPostTemplate = ({ data, location }) => {
   const month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
   const day = ('0' + dateObj.getDate()).slice(-2);
   const postUrl = `${siteUrl}/${year}/${month}/${day}/${slug}`;
+
+  const formatCategory = (category) => {
+    return category.toLowerCase().replace(/\s+/g, '-');
+  };
 
   useEffect(() => {
     // Dynamically load TikTok embed script
@@ -83,7 +87,18 @@ const BlogPostTemplate = ({ data, location }) => {
                 {post.frontmatter.date}
               </div>
               <h1>{post.frontmatter.title}</h1>
+              <div className="category">
+                <Link to={`/category/${formatCategory(post.frontmatter.category)}`}>
+                  {post.frontmatter.category}
+                </Link>
+              </div>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />  
+              <div className="tags">
+                {tags && tags.map((tag, index) => (
+                  <span key={index} className="tag">{tag}</span>
+                ))}
+              </div>
+              
               <div className="blog-separator">
                 <span className="dots">&middot;</span>
                 <span className="dots">&middot;</span>
@@ -110,6 +125,7 @@ export const query = graphql`
         slug
         excerpt
         category
+        tags
         image {
           childImageSharp {
             gatsbyImageData(width: 1200, layout: FIXED)

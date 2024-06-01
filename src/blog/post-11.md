@@ -6,6 +6,12 @@ category: "Spirituality"
 excerpt: "Explore the Persian tradition of Naw Ruz, from vibrant community celebrations to intimate reflections on renewal and memory, honoring the past while embracing new beginnings."
 image: "./images/naw-ruz-2024-v2.jpg"
 draft: false
+tags: 
+  - Naw Ruz
+  - Persian New Year
+  - Family Traditions
+  - Cultural Heritage
+  - Renewal and Reflection
 ---
 
 ![Naw Ruz 2024](./images/naw-ruz-2024-v2.jpg) 

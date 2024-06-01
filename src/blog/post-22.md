@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "On Mother's Day, there's a mix of gratitude for family and a restless want for the vibrant life left behind in the city."
 image: "./images/mom-shaun-mothers-day-v2.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - Mother's Day Reflections
+  - Life Transition
+  - City vs. Suburb
+  - Finding Passion
 ---
 
 ![Mom and Shaun on Mother's Day](./images/mom-shaun-mothers-day-v2.jpg) 

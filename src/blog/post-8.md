@@ -6,6 +6,12 @@ category: "Spirituality"
 excerpt: "Exploring the Bahá'í fast period teaches profound lessons about community bonds, self-discipline, and the essence of empathy that can guide one's spiritual journey."
 image: "./images/fasting-faith-v3.jpg"
 draft: false
+tags: 
+  - Spirituality
+  - Bahá'í Faith
+  - Fasting
+  - Community Bonds
+  - Self-Discipline
 ---
 
 ![Prayer Man](./images/fasting-faith-v3.jpg) 

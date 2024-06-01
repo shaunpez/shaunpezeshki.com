@@ -6,6 +6,12 @@ category: "Career Development"
 excerpt: "A revealing inside look at a toxic workplace exposes the harsh realities of discrimination that minorities, women and others face, highlighting the critical need for true equality and respect in professional environments."
 image: "./images/workplace-inclusion.jpg"
 draft: false
+tags: 
+  - Workplace Equality
+  - Discrimination
+  - Career Development
+  - Diversity and Inclusion
+  - Toxic Work Culture
 ---
 
 ![Workplace Diversity and Inclusion](./images/workplace-inclusion.jpg) 

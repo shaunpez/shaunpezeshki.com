@@ -6,6 +6,12 @@ category: "Economy"
 excerpt: "As America moves forward, there's a growing sense of unease about our future direction."
 image: "./images/merica-failing.jpg"
 draft: false
+tags: 
+  - American Economy
+  - Social Issues
+  - Environmental Concerns
+  - Political Disconnect
+  - Future of America
 ---
 
 ![American Flag Cracking](./images/merica-failing.jpg) 

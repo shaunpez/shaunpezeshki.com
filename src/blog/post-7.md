@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "Navigating the complexities of dating as an LGBTQ+ individual with intersecting minority identities."
 image: "./images/connection-issues-dating.webp"
 draft: false
+tags: 
+  - LGBTQ+ Dating
+  - Minority Challenges
+  - Intersectionality
+  - Cultural Identity
+  - Relationship Struggles
 ---
 
 ![Dating as an LGBTQ+ Minority](./images/connection-issues-dating.webp) 

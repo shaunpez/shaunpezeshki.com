@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "Explore the nuances of polyamory through personal experience and the limits of love's expansiveness in the world of multiple partners."
 image: "./images/polyamourous-relationships.jpg"
 draft: false
+tags: 
+  - Polyamory
+  - LGBTQ+
+  - Relationships
+  - Personal Experience
+  - Love and Connection
 ---
 
 ![Polyamory - Throuples](./images/polyamourous-relationships.jpg) 

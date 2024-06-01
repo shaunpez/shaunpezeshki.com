@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "A gay's experience through the Midwest reveals an unexpected sense of belonging in Columbus, OH, highlighting the minority experience."
 image: "./images/finding-home-v4.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - LGBTQ+ Experiences
+  - Sense of Belonging
+  - Midwest Living
+  - Columbus OH
 ---
 
 ![Shaun on the couch drinking wine](./images/finding-home-v4.jpg) 

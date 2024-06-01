@@ -6,6 +6,12 @@ category: "Mental Health"
 excerpt: "Explore that kind of anxiety that sets in before the workweek through campy analogies."
 image: "./images/sunday-scaries-v6.jpg"
 draft: false
+tags: 
+  - Mental Health
+  - Sunday Scaries
+  - Anxiety
+  - Workweek Stress
+  - Personal Experiences
 ---
 
 ![Sunday Scaries](./images/sunday-scaries-v6.jpg) 

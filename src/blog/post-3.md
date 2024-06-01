@@ -6,6 +6,12 @@ category: "Career Development"
 excerpt: "Exploring the vibrant intersection of personal passions, cultural identity, and professional aspirations."
 image: "./images/michigan-letters.jpg"
 draft: false
+tags: 
+  - Career Development
+  - Cultural Advocacy
+  - Public Service
+  - Personal Passions
+  - Professional Transition
 ---
 
 ![Michigan in letters](./images/michigan-letters.jpg)

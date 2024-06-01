@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "Explore why certain cis gay men hold back from supporting the trans community."
 image: "./images/trans-lgbtq-rights-support.jpg"
 draft: false
+tags: 
+  - LGBTQ+
+  - Trans Rights
+  - Community Support
+  - Identity and Intersectionality
+  - Gender and Sexuality
 ---
 
 ![Support Trans People](./images/trans-lgbtq-rights-support.jpg) 

@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "Transitioning from the vibrant nightlife of your 20s to a more subdued social life in your 30s can be a perplexing journey."
 image: "./images/party-or-not.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - Life Transition
+  - Social Life
+  - Self-Discovery
+  - LGBTQ+ Experiences
 ---
 
 ![Transition from Party Animal to...Something Else](./images/party-or-not.jpg) 

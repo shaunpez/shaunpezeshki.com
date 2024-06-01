@@ -6,6 +6,12 @@ category: "Career Development"
 excerpt: "Discover how networking, skill development, and avant-garde approaches can guide you to your next opportunity."
 image: "./images/getting-jobs-2024.jpg"
 draft: false
+tags: 
+  - Tech Job Market
+  - Career Development
+  - Networking
+  - Skill Development
+  - Job Hunting Strategies
 ---
 
 ![Job Hunting in 2024](./images/getting-jobs-2024.jpg)

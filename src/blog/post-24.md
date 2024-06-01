@@ -2,10 +2,16 @@
 title: "Navigating Difficult Client Relationships: When to Say No"
 date: "2024-05-19"
 slug: "navigating-difficult-client-relationships"
-category: "Business"
+category: "Career Development"
 excerpt: "Balancing client demands with business integrity is challenging. Here's how Up High Studio handles difficult clients and when it's best to part ways."
 image: "./images/happy-client.jpg"
 draft: false
+tags: 
+  - Career Development
+  - Client Management
+  - Business Integrity
+  - Difficult Clients
+  - Quality vs Cost
 ---
 
 ![Client Relationships](./images/happy-client.jpg) 

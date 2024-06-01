@@ -6,6 +6,12 @@ excerpt: "A guide through the whirlwinds of existential uncertainty, introspecti
 category: "Personal Development"
 image: "./images/uncertainty-shaun.jpg"
 draft: false
+tags: 
+  - Millennial Life
+  - Existential Struggles
+  - Introspection
+  - Empathy
+  - Personal Development
 ---
 
 ![The struggling millenial](./images/uncertainty-shaun.jpg)

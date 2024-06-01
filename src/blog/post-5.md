@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "Understand how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds."
 image: "./images/debugging-v2.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - Life Lessons
+  - Coding Analogies
+  - Self-Improvement
+  - Mental Health
 ---
 
 ![Debugging Zen](./images/debugging-v2.jpg)

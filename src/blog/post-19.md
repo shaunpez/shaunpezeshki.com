@@ -6,6 +6,12 @@ category: "Technology"
 excerpt: "Learn how TikTok became a vital part of daily life during the pandemic and examining the potential impact of its possible ban on users and the broader digital landscape."
 image: "./images/tiktok-ban.jpg"
 draft: false
+tags: 
+  - TikTok
+  - Social Media
+  - Digital Landscape
+  - Technology Regulation
+  - Pandemic Effects
 ---
 
 ![Tiktok Ban](./images/tiktok-ban.jpg) 

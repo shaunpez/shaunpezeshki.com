@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "Reflecting on 16 years: A story of trust, manipulation, and cultural complexities, as lived by a group of friends at Wayne State University."
 image: "./images/manipulation-puppet.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - Deception
+  - Cultural Complexity
+  - Friendship
+  - Self-Discovery
 ---
 
 ![Manipulation using puppets](./images/manipulation-puppet.jpg) 

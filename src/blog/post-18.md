@@ -6,6 +6,12 @@ category: "Personal Development"
 excerpt: "In a world paused by a pandemic, there is reflection on the profound quiet left in the wake of a dad's passing—sharing the eulogy that was never delivered."
 image: "./images/dad-memory-2.jpg"
 draft: false
+tags: 
+  - Personal Development
+  - Eulogy
+  - Grief and Loss
+  - Family Memories
+  - Tribute
 ---
 
 ![Shaun and Dadu](./images/dad-memory-2.jpg) 

@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "Exploring the lack of dedicated 3rd spaces for gay individuals and the maddening cycle of seeking connection through apps like Grindr."
 image: "./images/grindr-in-bed-v2.jpg"
 draft: false
+tags: 
+  - LGBTQ+
+  - Gay Community
+  - Third Spaces
+  - Digital Connection
+  - Grindr
 ---
 
 ![Man on Grindr in Bed Laying Down](./images/grindr-in-bed-v2.jpg) 

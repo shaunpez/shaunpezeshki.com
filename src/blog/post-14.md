@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "Unpack a story that goes beyond being gay, digging into how society's rules about gender and identity really affect us all."
 image: "./images/masc-vs-fem.jpg"
 draft: false
+tags: 
+  - LGBTQ+
+  - Gender Identity
+  - Masculinity and Femininity
+  - Societal Norms
+  - Self-Discovery
 ---
 
 ![Masc vs. Fem](./images/masc-vs-fem.jpg) 

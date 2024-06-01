@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "The journey of a Filipino-Iranian gay man highlighting the importance of building an inclusive LGBTQ+ community."
 image: "./images/dicotomy-lgbt-inclusion-v2.webp"
 draft: false
+tags: 
+  - LGBTQ+ Community
+  - Intersectionality
+  - Cultural Identity
+  - Inclusivity
+  - Minority Experiences
 ---
 
 ![Filipino-Iranian Male & White Male](./images/dicotomy-lgbt-inclusion-v2.webp) 

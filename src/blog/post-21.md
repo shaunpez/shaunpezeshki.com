@@ -6,6 +6,12 @@ category: "LGBTQ+"
 excerpt: "An introspective look at overcoming societal biases and internal struggles within the gay Asian community, inspired by personal experiences and TikToker Kevo."
 image: "./images/asian-looked-at-white.jpg"
 draft: false
+tags: 
+  - LGBTQ+
+  - Gay Asian Community
+  - Overcoming Stereotypes
+  - Self-Worth
+  - Racial Biases
 ---
 
 ![White man looking at Asian man](./images/asian-looked-at-white.jpg) 
