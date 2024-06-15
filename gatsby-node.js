@@ -61,18 +61,20 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
-  // Create paginated blog list pages
+
   Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? `/` : `/page/${i + 1}`,
-      component: blogListTemplate,
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage + 1,
-        numPages,
-        currentPage: i + 1,
-      },
-    });
+    if (i > 0) { // Start pagination from /page/2
+      createPage({
+        path: `/page/${i + 1}`,
+        component: blogListTemplate,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage + 1,
+          numPages,
+          currentPage: i + 1,
+        },
+      });
+    }
   });
 
   // Create paginated category pages with lowercase paths and dashes for spaces

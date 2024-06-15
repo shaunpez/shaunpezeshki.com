@@ -32,7 +32,7 @@ const AboutPage = () => (
             <p>
             By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions. </p>
             <p>
-            Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities.  </p>
+            Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He also writes for Prism & Pen, a publication focused on amplifying LGBTQ+ voices.</p>
             <p>
             Want to connect? Reach out to me at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
             </p>

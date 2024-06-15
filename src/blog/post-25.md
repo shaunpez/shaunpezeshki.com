@@ -18,11 +18,11 @@ tags:
 
 <div class="prose prose-lg max-w-none mt-12">
 
-Have you ever felt like a walking contradiction? Like, you embody two opposing qualities simultaneously, making it hard to understand yourself, let alone explain it to others? Well, that's me in a nutshell. As I reflect on my life, I realize that these contradictions might be the reason I'm perpetually single and constantly searching for balance.
+Have you ever felt like a walking contradiction? Like you embody two totally opposing qualities at the same time, making it impossible to fully understand yourself, let alone explain it to someone else? That's been the story of my life. When I look back on my romantic relationships (or lack thereof), I've come to realize those contradictory forces within me are probably why I'm that perpetual single friend, always searching for some sense of inner balance.
 
 ## The Neediest, Not Needy Person
 
-I crave attention but don't want to be smothered. I enjoy my independence yet find myself longing for connection. It's a delicate dance between wanting to be noticed and needing my space. For instance, I thrive on the freedom to manage my time and tasks, but if no one checks in on me, I feel lost. It's as if I'm in a constant tug-of-war with myself, never quite finding the sweet spot.
+I crave attention but don't want to be smothered. I enjoy my independence yet find myself longing for connection. It's a delicate dance between wanting to be noticed and needing my space. I love having the freedom to manage my own time and tasks, but if no one checks in on me, I end up feeling lost. It’s like I'm constantly in a tug-of-war with myself, never quite finding the perfect balance.
 
 ## The Independent, Codependent Person
 

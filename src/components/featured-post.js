@@ -3,6 +3,10 @@ import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import calculateReadingTime from '../util/read-time';
 
+const createCategoryPath = (category) => {
+  return category.toLowerCase().replace(/\s+/g, '-');
+};
+
 const FeaturedPost = ({ post, handleLinkClick }) => {
   if (!post) return null;
 
@@ -24,7 +28,7 @@ const FeaturedPost = ({ post, handleLinkClick }) => {
           )}
           <div className={image ? "blog-main" : ""}>
             <div className="blog-info">
-              <span className="blog-category">{category}</span>
+              <Link to={`/category/${createCategoryPath(category)}`} className="blog-category">{category}</Link>
               <span className="blog-date">{formattedDate}</span>
             </div>
             <h2><Link to={postUrl} onClick={handleLinkClick}>{title}</Link></h2>

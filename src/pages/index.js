@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
     }).replace(/-/g, '/');
     return postDateFormatted <= todayFormatted;
   });
-
+ 
   // Extract the first post
   const firstPost = allPosts.length > 0 ? allPosts[0].node : null;
 

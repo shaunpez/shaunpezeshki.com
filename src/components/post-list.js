@@ -23,7 +23,7 @@ const PostList = ({ posts, handleLinkClick, currentPath }) => {
                 </div>
               )}
               <div className="blog-info">
-                <a href={`/category/${createCategoryPath(category)}`} className="blog-category">{category}</a>
+                <Link to={`/category/${createCategoryPath(category)}`} className="blog-category">{category}</Link>
                 <span className="blog-date">{formattedDate}</span>
               </div>
               <div className={image ? "blog-main" : ""}>
