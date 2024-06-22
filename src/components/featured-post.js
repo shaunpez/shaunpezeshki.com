@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import calculateReadingTime from '../util/read-time';
+import calculateReadingTime from '../utils/read-time';
 
 const createCategoryPath = (category) => {
   return category.toLowerCase().replace(/\s+/g, '-');

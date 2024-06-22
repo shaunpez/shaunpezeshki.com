@@ -216,6 +216,9 @@ header .menu ul li{
 }
 
 /* Blog - Category */
+.blog .category{
+    @apply inline-block align-top mr-4;
+}
 .blog .category a {
     @apply mb-6 inline-block bg-gray-200 rounded-lg border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
 }
@@ -226,6 +229,24 @@ header .menu ul li{
 .blog .tags {
     @apply flex flex-wrap gap-2.5 mb-8 mt-8;
 }
+
+/* Blog - Read */
+.blog .text-to-speech {
+    @apply inline-block align-top;
+}
+.blog .text-to-speech button{
+    @apply bg-gray-200 hover:bg-gray-300 rounded-lg focus:outline-none  border-none py-2.5 px-4 cursor-pointer transition-colors duration-300 flex items-center;
+}
+.blog .react-audio-player{
+    @apply inline-block align-top mb-6;   
+}
+@media (max-width: 768px) {
+    .blog .text-to-speech button {
+        width: 100% !important;
+      }   
+    
+}
+
 
 .blog .tags .tag {
     @apply bg-gray-200 rounded-lg text-xs border-none py-2.5 px-5 transition-colors duration-300;

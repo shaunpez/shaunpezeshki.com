@@ -4,6 +4,7 @@ import Seo from "../components/seo";
 import Layout from "../components/layout";
 import { getSrc } from "gatsby-plugin-image";
 import { Disqus } from 'gatsby-plugin-disqus';
+import AudioPlayer from '../components/audio-player';
 
 const BlogPostTemplate = ({ data, location }) => {
   const [fromPage, setFromPage] = useState("/");
@@ -92,6 +93,7 @@ const BlogPostTemplate = ({ data, location }) => {
                   {post.frontmatter.category}
                 </Link>
               </div>
+              <AudioPlayer slug={slug} />
               <div dangerouslySetInnerHTML={{ __html: post.html }} />  
               <div className="tags">
                 {tags && tags.map((tag, index) => (
