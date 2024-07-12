@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
 import { Link } from 'gatsby';
 
 const Header = ({ siteTitle, pageTitle }) => {
+
+
   return (
-    <header>
+    <>
+      <header>
       <div className="container">
         <h1>
           <Link to="/">SP</Link>
@@ -16,6 +19,7 @@ const Header = ({ siteTitle, pageTitle }) => {
         </nav>
       </div>
     </header>
+    </>
   );
 };
 

@@ -1,9 +1,10 @@
 // src/components/Footer.js
-import React from "react"
+import React from "react";
 import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
+    <>
     <footer>
       <div className="container">
         <ul>
@@ -15,6 +16,7 @@ const Footer = () => {
         </ul>
       </div>
     </footer>
+    </>
   )
 }
 

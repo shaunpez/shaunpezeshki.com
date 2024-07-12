@@ -18,7 +18,11 @@ async function synthesizeSpeech(text, slug) {
   for (let i = 0; i < chunks.length; i++) {
     const request = {
       input: { text: chunks[i] },
-      voice: { languageCode: 'en-US', ssmlGender: 'NEUTRAL' },
+      voice: {
+        languageCode: 'en-US',
+        name: 'en-US-Studio-Q', // Change this to the desired voice
+        ssmlGender: 'MALE', // Change this to 'FEMALE' if desired
+      },
       audioConfig: { audioEncoding: 'MP3' },
     };
 

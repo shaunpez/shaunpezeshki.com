@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx,md}", // Adjust this path if your file structure is different
   ],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        screens: {
+          lg: '1080px',
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
