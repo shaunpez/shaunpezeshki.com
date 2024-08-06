@@ -6,12 +6,24 @@ const AudioPlayer = ({ slug }) => {
   const [showAudioPlayer, setShowAudioPlayer] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioSrc, setAudioSrc] = useState('');
+  const [audioExists, setAudioExists] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const src = `${window.location.origin}/audio/${slug}.mp3`;
       setAudioSrc(src);
+
+      // Check if the audio file exists
+      fetch(src, { method: 'HEAD' })
+        .then(response => {
+          if (response.ok) {
+            setAudioExists(true);
+          } else {
+            setAudioExists(false);
+          }
+        })
+        .catch(() => setAudioExists(false));
     }
   }, [slug]);
 
@@ -38,22 +50,24 @@ const AudioPlayer = ({ slug }) => {
 
   return (
     <>
-      <div className="text-to-speech">
-        <button onClick={handlePlayButtonClick}>
-          {isPlaying ? (
-            <>
-              <PauseIcon className="h-6 w-6 text-gray-700 mr-2" />
-              Pause
-            </>
-          ) : (
-            <>
-              <PlayIcon className="h-6 w-6 text-gray-700 mr-2" />
-              Listen
-            </>
-          )}
-        </button>
-      </div>
-      {showAudioPlayer && (
+      {audioExists && (
+        <div className="text-to-speech">
+          <button onClick={handlePlayButtonClick}>
+            {isPlaying ? (
+              <>
+                <PauseIcon className="h-6 w-6 text-gray-700 mr-2" />
+                Pause
+              </>
+            ) : (
+              <>
+                <PlayIcon className="h-6 w-6 text-gray-700 mr-2" />
+                Listen
+              </>
+            )}
+          </button>
+        </div>
+      )}
+      {showAudioPlayer && audioExists && (
         <ReactAudioPlayer 
           src={audioSrc} 
           autoPlay 

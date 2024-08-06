@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
     day: '2-digit'
   }).replace(/-/g, '/');
 
+
   // Filter posts to only include those published up to today
   const allPosts = data.allPosts.edges.filter(({ node }) => {
     const postDate = new Date(node.frontmatter.date);
