@@ -11,7 +11,8 @@ const AudioPlayer = ({ slug }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const src = `${window.location.origin}/audio/${slug}.mp3`;
+      const timestamp = new Date().getTime(); // Current timestamp
+      const src = `${window.location.origin}/audio/${slug}.mp3?t=${timestamp}`;
       setAudioSrc(src);
 
       // Check if the audio file exists
