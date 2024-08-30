@@ -2,7 +2,7 @@
 title: "The Eulogy Unspoken: Remembering My Dadu"
 date: "2024-04-15"
 slug: "the-eulogy-unspoken-remembering-my-father"
-category: "Personal Development"
+category: "Human Stories"
 excerpt: "In a world paused by a pandemic, there is reflection on the profound quiet left in the wake of a dad's passing—sharing the eulogy that was never delivered."
 image: "./images/dad-memory-2.jpg"
 draft: false
