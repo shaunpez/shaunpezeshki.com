@@ -8,8 +8,8 @@ const AboutPage = () => (
   <>
   <Seo
     title="About"
-    description="Shaun Pezeshki is a technical strategist with a talent for assisting businesses in enhancing their operational practices."
-    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
+    description="Shaun Pezeshki is a technical strategist and entrepreneur with a talent for assisting businesses in enhancing their operational practices."
+    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Inclusive Techie, Entrepreneur' }]}
     image={headerImage}
   />
   <Layout>
@@ -26,7 +26,7 @@ const AboutPage = () => (
           <div className="info">
             <h1>About Shaun Pezeshki</h1>
             <p>
-            Shaun Pezeshki is a technical strategist known for enhancing business operations. With a strong marketing and tech background, he maximizes client investments efficiently. </p>
+            Shaun Pezeshki is a technical strategist and entrepreneurship known for enhancing business operations. With a strong marketing and tech background, he maximizes client investments efficiently. </p>
             <p>
             He excels at integrating modern solutions with existing systems, boosting efficiency. Shaun's diverse experience, from individual brands to agencies, enables him to understand varied needs and develop strategic success roadmaps. </p>
             <p>

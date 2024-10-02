@@ -56,7 +56,7 @@ Oh, the sympathy! Can you feel it? Neither can I. What a fine manner of informin
 
 Oh, sure—because emotions are such a character defect. These lines completely dismiss your partner's feelings and make them some kind of over-reactive person.
 
-What it really says: "Your feelings are an inconvenience to me."
+**What it sounds like:** "Your feelings are an inconvenience to me."
 
 **Say instead:** "I didn't realize that bothered you so much. Let's talk about this."
 
@@ -88,7 +88,7 @@ Ah, the non-apology apology—really an acknowledgment of another person's upset
 
 The classic backpedal. Not cool to hurt someone's feelings and then get defensive when your partner's not finding it funny.
 
-**What that sounds like:**  "Your hurt feelings are spoiling my fun."
+**What it sounds like:**  "Your hurt feelings are spoiling my fun."
 
 **Say instead:** "My joke went completely flat. Sorry, wasn't trying to do that."
 
@@ -96,7 +96,7 @@ The classic backpedal. Not cool to hurt someone's feelings and then get defensiv
 
 Your emotions do not work like an on/off button. This kind of saying makes a partner feel like there's something wrong with them for feeling normal human emotions. 
 
-**What that sounds like:** "Your feelings are an inconvenience to me." 
+**What it sounds like:** "Your feelings are an inconvenience to me." 
 
 **Say instead:** "I see this is really hard for you. How can we work through this together?"
 

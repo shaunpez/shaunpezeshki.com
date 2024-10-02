@@ -43,9 +43,9 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <Seo
-        title="Chronicles of a Millennial Techie"
-        description="Discover a millennial techie's personal insights on growth, learning, LGBTQ+ and minority issues, mental health, and navigating life's modern complexities."
-        meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Millennial Techie' }]}
+        title="The Inclusive Techie"
+        description="Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life."
+        meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie' }]}
         image={headerImage}
       />
       <SeoSchema posts={subsequentPosts} siteUrl={siteUrl} />
@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
           <div className="category-select">
             <div className="container home">
               <div className="main-title prose prose-xl">
-                <h1>Chronicles of a Millennial Techie</h1>
+                <h1>The Inclusive Techie</h1>
               </div>
               <CategoryButtons categories={categories} />
             </div>

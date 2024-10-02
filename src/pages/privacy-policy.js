@@ -6,19 +6,19 @@ const AboutPage = () => (
   <>
 <Seo
     title="Privacy Policy"
-    description="Welcome to Chronicles of a Millennial Techie! Our Privacy Policy outlines how we collect, use, and protect your information."
+    description="Welcome! Our Privacy Policy outlines how we collect, use, and protect your information."
     meta={[
-        { name: 'keywords', content: 'Privacy Policy, Data Protection, User Privacy, Information Security, Shaun Pezeshki, Millennial Techie, Chronicles of a Millennial Techie' }
+        { name: 'keywords', content: 'Privacy Policy, Data Protection, User Privacy, Information Security, Shaun Pezeshki, Neoteric Entrepreneur, The Neoteric Entrepreneur' }
     ]}
 />
 
   <Layout>
     <div className="container px-4">
       <div className="prose prose-lg max-w-none">
-        <p className="text-sm">Last updated: February, 20 2024</p>
+        <p className="text-sm">Last updated: September 17, 2024</p>
         <h1>Privacy Policy</h1>
         <h2>Introduction</h2>
-        <p>Welcome to Chronicles of a Millennial Techie. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
+        <p>We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a href="mail:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.</p>
         
         <h2>Information We Collect</h2>
         <p>We collect several types of information from and about users of our website, including information by which you may be personally identified, such as name, postal address, email address, telephone number, etc. ("personal information").</p>

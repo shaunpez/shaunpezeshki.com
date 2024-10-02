@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Shaun Pezeshki`,
-    description: `A journey of a millennial techie navigating technology, personal growth, and diverse experiences in today's dynamic world.`,
+    description: `Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life.`,
     author: `Shaun Pezeshki`,
     siteUrl: `https://shaunpezeshki.com`,
   },

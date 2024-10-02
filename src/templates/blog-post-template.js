@@ -54,7 +54,7 @@ const BlogPostTemplate = ({ data, location }) => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Chronicles of a Millennial Techie"
+      "name": "The Inclusive Techie"
     },
     "image": imageUrl, 
     "url": postUrl,
