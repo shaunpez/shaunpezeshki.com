@@ -7,11 +7,11 @@ excerpt: "After years of supporting small business owners, exploring mergers and
 image: "./images/shaun-entrepreneur-hero.jpg"
 draft: false
 tags: 
-  - entrepreneurship
-  - mergers and acquisitions
-  - small business
-  - personal growth
-  - community support
+  - Entrepreneurship
+  - Mergers and Acquisitions
+  - Small Business
+  - Personal Growth
+  - Community Support
 ---
 
 ![Shaun Pezeshki, A Neoteric Entrepreneur](./images/shaun-entrepreneur-hero.jpg)
