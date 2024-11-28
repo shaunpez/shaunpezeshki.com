@@ -14,7 +14,7 @@ const CategoryButtons = ({ categories }) => {
     <div>
       <div className="category-buttons">
         {categories.map(category => {
-          const categoryPath = category === "All" ? "/" : `/category/${createCategoryPath(category)}`;
+          const categoryPath = category === "All" ? "/blog" : `/category/${createCategoryPath(category)}`;
           const isSelected = currentPath === categoryPath;
 
           return (

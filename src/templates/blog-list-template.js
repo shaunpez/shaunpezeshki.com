@@ -24,7 +24,7 @@ const BlogListPage = ({ data, pageContext }) => {
   return (
     <>
       <Seo
-        title={`The Inclusive Techie - Page ${currentPage}`}
+        title={`Threads of Perspective - Page ${currentPage}`}
         description="Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life."
         image={headerImage}
         noindex={true} 
@@ -34,7 +34,7 @@ const BlogListPage = ({ data, pageContext }) => {
         <section className="homepage plant plant-bottom">
           <div className="container">
             <div className="content pages">
-              <h1>The Inclusive Techie</h1>
+              <h1>Threads of Perspective</h1>
               <h2>Page {currentPage}</h2>
             </div>          
             <Pagination currentPage={currentPage} numberOfPages={numPages} />

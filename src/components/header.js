@@ -13,8 +13,9 @@ const Header = ({ siteTitle, pageTitle }) => {
         </h1>
         <nav className="menu">
           <ul>
-            <li><Link to="/about" activeClassName="underline">About Shaun</Link></li>
-            <li><Link to="/chat-with-shaun" activeClassName="underline">Chat With Shaun</Link></li>
+            <li><Link to="/about" activeClassName="underline">About</Link></li>
+            <li><Link to="/blog" activeClassName="underline">Blog</Link></li>
+            <li><Link to="/chat-with-shaun" activeClassName="underline">Chat with Shaun</Link></li>
             <li className="coffee-button">
               <a href="https://buymeacoffee.com/shaunpez" target="_blank" rel="noopener noreferrer">
                   <img src={coffeeIcon} alt="Buy Me Coffee" className="icon"/>

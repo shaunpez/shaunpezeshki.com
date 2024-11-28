@@ -65,6 +65,12 @@ module.exports = {
               maxWidth: 1600, // Adjust the maxWidth as necessary
             },
           },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: `blog/videos`,
+            },
+          },
         ],
       },
     },
@@ -132,7 +138,7 @@ module.exports = {
         ],
       },
     },
-    // "gatsby-plugin-postcss",
+    "gatsby-plugin-postcss",
     // {
     //   resolve: "gatsby-source-strapi",
     //   options: {

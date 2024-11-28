@@ -7,7 +7,7 @@ import { Disqus } from 'gatsby-plugin-disqus';
 import AudioPlayer from '../components/audio-player';
 
 const BlogPostTemplate = ({ data, location }) => {
-  const [fromPage, setFromPage] = useState("/");
+  const [fromPage, setFromPage] = useState("/blog");
   const { markdownRemark: post } = data;
   const { siteUrl } = data.site.siteMetadata;
   const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null;
@@ -54,7 +54,7 @@ const BlogPostTemplate = ({ data, location }) => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "The Inclusive Techie"
+      "name": "Threads of Perspective"
     },
     "image": imageUrl, 
     "url": postUrl,

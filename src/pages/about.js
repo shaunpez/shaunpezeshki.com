@@ -9,8 +9,8 @@ const AboutPage = () => (
   <Seo
     title="About"
     description="Shaun Pezeshki is a technical strategist and entrepreneur with a talent for assisting businesses in enhancing their operational practices."
-    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Inclusive Techie, Entrepreneur' }]}
-    image={headerImage}
+    meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Shaunpez, Technical Strategist, Marketing, Technology, Inclusive Techie, Entrepreneur' }]}
+    image={headerImage} 
   />
   <Layout>
     <div className="container px-4">
@@ -21,6 +21,7 @@ const AboutPage = () => (
                   src="../images/shaun.jpg" // Adjust the path as necessary
                   alt="Shaun Pezeshki"
                   placeholder="blurred" // Optional: This prop defines the loading strategy
+                  className="shadow-lg"
             />
           </div>
           <div className="info">
@@ -33,8 +34,9 @@ const AboutPage = () => (
             By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions. </p>
             <p>
             Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He also writes for Prism & Pen, a publication focused on amplifying LGBTQ+ voices.</p>
+            <h3>Want to connect?</h3>
             <p>
-            Want to connect? Reach out to me at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
+             Reach out at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
             </p>
           </div>
           
