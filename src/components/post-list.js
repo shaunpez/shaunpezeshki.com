@@ -24,7 +24,7 @@ const PostList = ({ posts, handleLinkClick, currentPath }) => {
               )}
               <div className="blog-info">
                 <Link to={`/category/${createCategoryPath(category)}`} className="blog-category">{category}</Link>
-                <span className="blog-date">{formattedDate}</span>
+                <span className="blog-date" data-nosnippet>{formattedDate}</span>
               </div>
               <div className={image ? "blog-main" : ""}>
                 <h2><Link to={postUrl} state={{ from: currentPath }} onClick={handleLinkClick}>{title}</Link></h2>

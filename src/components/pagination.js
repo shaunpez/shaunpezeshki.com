@@ -16,7 +16,7 @@ const Pagination = ({ currentPage, numberOfPages }) => {
   }, []);
 
   // Update to use /page/ for pages after the first
-  const nextPage = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`;
+  const nextPage = currentPage - 1 === 1 ? "/blog" : `/page/${currentPage - 1}`;
   const prevPage = `/page/${currentPage + 1}`;
 
   return (
