@@ -24,7 +24,7 @@ Microsoft has done something no one expected: it created a new state of matter.
 
 And in doing so, it may have pushed quantum computing from theory into threat.
 
-It's called a "topological state." This isn't science fiction—it's physics. 
+It's called a "topological state." This isn't science fiction; it's physics. 
 
 And if it works the way researchers say, it could tear through the encryption that protects your data, your money, and everything you've ever backed up to the cloud.
 
@@ -33,11 +33,11 @@ And if it works the way researchers say, it could tear through the encryption th
 
 ## What Makes Quantum Computers Different
 
-Traditional computers use bits—tiny switches that flip between 1 and 0. Those 1s and 0s form everything from selfies to spreadsheets.
+Traditional computers use bits (tiny switches that flip between 1 and 0). Those 1s and 0s form everything from selfies to spreadsheets.
 
 Quantum computers use qubits. Qubits aren't either 1 or 0. They're both at once. That's called **superposition**.
 
-Qubits can also link with each other across space using **entanglement**, which makes them useful for solving complex problems with many variables—fast.
+Qubits can also link with each other across space using **entanglement**, which makes them useful for solving complex problems with many variables, fast.
 
 Google's quantum computer, Project Willow, solved a math problem in five minutes that would take a classical supercomputer 10 septillion years. That's a 1 with 25 zeros. And no, that's not a typo.
 
@@ -105,13 +105,13 @@ Google's quantum computer, Project Willow, solved a math problem in five minutes
 
 Because qubits are unstable.
 
-They lose information if they're disturbed—by heat, noise, or even the act of being measured. Running a quantum computer is like trying to keep a house of cards standing during a wind tunnel test.
+They lose information if they're disturbed (by heat, noise, or even the act of being measured). Running a quantum computer is like trying to keep a house of cards standing during a wind tunnel test.
 
 Until now, this made quantum computing more theoretical than practical.
 
-Microsoft's new chip, **Majorana-1**, changes that. It uses a particle called the **Majorana**, which is its own antiparticle. These particles exist in a **topological state**—a newly discovered state of matter that resists interference and holds quantum data more reliably.
+Microsoft's new chip, **Majorana-1**, changes that. It uses a particle called the **Majorana**, which is its own antiparticle. These particles exist in a **topological state** (a newly discovered state of matter that resists interference and holds quantum data more reliably).
 
-The chip only has 8 qubits today. But it's designed to scale to over 1 million. That's the level researchers say is needed to start solving big real-world problems—like drug discovery, climate modeling, and high-frequency financial simulation.
+The chip only has 8 qubits today. But it's designed to scale to over 1 million. That's the level researchers say is needed to start solving big real-world problems (like drug discovery, climate modeling, and high-frequency financial simulation).
 
 It also happens to be more than enough to break the encryption that keeps your digital life secure.
 
@@ -133,7 +133,7 @@ That means:
 
 All become vulnerable.
 
-The NSA calls this threat **Y2Q**—the quantum equivalent of Y2K. Except this time, the threat is real, and the clock is ticking faster than anyone planned for.
+The NSA calls this threat **Y2Q** (the quantum equivalent of Y2K). Except this time, the threat is real, and the clock is ticking faster than anyone planned for.
 
 ![Encryption Broken](./images/encryption-broken.jpg)
 
@@ -148,13 +148,13 @@ If encryption falls, it's not just about personal data leaks.
 
 Everything digital depends on some form of cryptography. And quantum computing goes straight through it.
 
-Security teams are now racing to build **quantum-resistant encryption**—methods that can survive attacks from quantum computers. But building and adopting these new systems takes time, and time is running out.
+Security teams are now racing to build **quantum-resistant encryption** (methods that can survive attacks from quantum computers). But building and adopting these new systems takes time, and time is running out.
 
 ## So Where Do We Go From Here?
 
 Quantum computing isn't science fiction anymore. It's real hardware, solving real problems.
 
-The upside is massive—faster innovation, better healthcare, cleaner energy.
+The upside is massive: faster innovation, better healthcare, cleaner energy.
 
 But the risk is real too. If we don't upgrade the systems we rely on daily, the cost won't be theoretical.
 

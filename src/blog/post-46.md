@@ -27,7 +27,7 @@ This year, it hits different.
 Not because I threw a party or did something traditional.  
 It matters because I'm starting over in a way that feels personal and overdue.
 
-After a few years of feeling stuck—disconnected from my identity, my culture, and myself—I'm finally moving again.  
+After a few years of feeling stuck (disconnected from my identity, my culture, and myself), I'm finally moving again.  
 This Naw Ruz isn't about going back.  
 It's about building something new from where I am now.
 
@@ -36,7 +36,7 @@ It's about building something new from where I am now.
 <div class="flex flex-wrap items-center">
   <div class="w-full md:w-1/2">
     <p>There was a time when I felt fully alive.  </p>
-    <p>I had close friends, fulfilling work, and space to be myself—driven, playful, openly gay, connected.</p>
+    <p>I had close friends, fulfilling work, and space to be myself (driven, playful, openly gay, connected).</p>
     <p>That version of me slowly faded when I moved back to Michigan to take care of my dad. <br />
     I don't regret that choice at all.  <br />
     But I stopped prioritizing myself, and that shift didn't reverse overnight.</p>
@@ -55,7 +55,7 @@ It's about building something new from where I am now.
 ## The Austin Experiment
 
 After the funeral, I needed a big change.  
-I moved to Austin—a new city with new energy—and thought it might bring something back to life in me.
+I moved to Austin (a new city with new energy) and thought it might bring something back to life in me.
 
 But it didn't feel right.
 
@@ -112,7 +112,7 @@ It feels like choosing myself.
 
 Growing up, Naw Ruz was always about bringing people together.  
 My dad made sure of that.  
-He didn't wait for someone else to plan something—he did it himself, every year.
+He didn't wait for someone else to plan something; he did it himself, every year.
 
 Since he passed, those celebrations haven't happened.  
 And for a while, I didn't want them to.  
@@ -126,12 +126,12 @@ Quietly. On my own.
 And it felt like something real.  
 Not a big moment.  
 Not a party.  
-But a promise—to myself—to keep going.
+But a promise (to myself) to keep going.
 
 This year, Naw Ruz isn't about what I've lost.  
 It's about what I'm choosing.
 
 I'm not waiting for the energy to come to me.  
-I'm stepping into it—one piece at a time.
+I'm stepping into it one piece at a time.
 
 </div>
