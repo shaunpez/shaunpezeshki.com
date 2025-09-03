@@ -3,24 +3,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apple-style Custom Properties */
+:root {
+  --apple-blue: #0891b2;
+  --apple-gray: #8e8e93;
+  --apple-gray-light: #f2f2f7;
+  --apple-gray-dark: #1c1c1e;
+  --apple-system-font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  --border-radius: 12px;
+  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-large: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--apple-system-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Headings and Paragraph */
 h1{
-    @apply text-4xl lg:text-5xl tracking-tight font-extrabold text-[#111];
+    @apply text-4xl lg:text-6xl tracking-tight font-bold text-[#1d1d1f] leading-tight mb-6 mt-8;
+    font-family: var(--apple-system-font);
 }
 h2{
-    @apply text-2xl tracking-tight font-extrabold text-[#111];
+    @apply text-3xl lg:text-4xl tracking-tight font-semibold text-[#1d1d1f] leading-tight mb-5 mt-10;
+    font-family: var(--apple-system-font);
 }
 h3{
-    @apply text-xl tracking-tight font-semibold text-[#111];
+    @apply text-2xl lg:text-3xl tracking-tight font-semibold text-[#1d1d1f] leading-tight mb-4 mt-8;
+    font-family: var(--apple-system-font);
 }
 h4{
-    @apply text-lg tracking-tight font-semibold text-[#111];
+    @apply text-xl lg:text-2xl tracking-tight font-medium text-[#1d1d1f] mb-4 mt-6;
+    font-family: var(--apple-system-font);
+}
+h5{
+    @apply text-lg lg:text-xl tracking-tight font-medium text-[#1d1d1f] mb-3 mt-5;
+    font-family: var(--apple-system-font);
+}
+h6{
+    @apply text-base lg:text-lg tracking-tight font-medium text-[#1d1d1f] mb-3 mt-4;
+    font-family: var(--apple-system-font);
 }
 p{
-    @apply font-light;
+    @apply text-lg leading-loose text-[#86868b] font-normal mb-6;
+    font-family: var(--apple-system-font);
+    line-height: 1.8;
 }
+
 .container{
-    @apply mx-auto px-4 py-14;
+    @apply mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16 lg:py-20 max-w-7xl;
 }
 
 /* Header */
@@ -43,7 +82,7 @@ header .menu ul{
     @apply text-xl;
 }
 header .menu ul li{
-    @apply inline-block pl-0 pr-8 lg:pl-8 lg:pr-0 sm:pl-0 sm:pr-8 hover:underline font-medium text-xl;
+    @apply inline-block pl-0 pr-8 lg:pl-8 lg:pr-0 sm:pl-0 sm:pr-8 hover:underline font-medium text-xl md:text-2xl;
 }
 
 header .menu ul .coffee-button {
@@ -55,113 +94,156 @@ header .menu ul .coffee-button a{
 
 /* Homepage */
 .section-title {
-    @apply text-4xl lg:text-4xl mb-8;
+    @apply text-4xl lg:text-5xl mb-12 font-semibold;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 .section-text {
-    @apply text-lg mb-6;
+    @apply text-xl lg:text-2xl mb-8 leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 /* Homepage - Hero*/
 .hero-section {
-    @apply py-0 md:py-14;
+    @apply pt-0 pb-8 md:py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50;
 }
 .hero-section h1{
-    @apply text-4xl lg:text-5xl mb-4;
+    @apply text-4xl md:text-5xl lg:text-7xl mb-4 md:mb-6 font-bold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 .hero-section p{
-    @apply text-xl md:text-2xl mb-8;
+    @apply text-xl md:text-2xl lg:text-3xl mb-8 md:mb-12 leading-relaxed font-normal;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 .hero-section .page-link{
-    @apply inline-flex items-center text-lg md:text-xl font-medium hover:underline pb-8;
+    @apply inline-flex items-center text-lg md:text-xl font-semibold px-6 md:px-8 py-3 md:py-4 bg-[#0891b2] text-white rounded-full transition-all duration-300 hover:bg-[#0e7490] hover:shadow-lg transform hover:-translate-y-0.5 mb-8 md:mb-0;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-medium);
 }
 
 /* Homepage - About */
 .about-section {
-    @apply py-8 md:py-14 bg-white;
+    @apply pt-0 pb-8 md:py-20 lg:py-28 bg-white;
 }
 .about-section .section-title{
-    @apply text-left;
+    @apply text-left mb-6 md:mb-8;
 }
 .about-section .page-link{
-    @apply inline-flex items-center font-medium hover:underline pb-8;
+    @apply inline-flex items-center text-base md:text-lg font-semibold px-5 md:px-6 py-2.5 md:py-3 bg-gray-100 text-[#1d1d1f] rounded-full transition-all duration-300 hover:bg-gray-200 hover:shadow-md transform hover:-translate-y-0.5 mb-8 md:mb-0;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-small);
 }
 
 /* Homepage - Services */
 .services-section {
-    @apply py-8 md:py-14 ;
+    @apply pt-0 pb-8 md:py-20 lg:py-28 bg-gray-50;
 }
 
 .services-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
 }
 
 .service-card {
-    @apply bg-white p-6 rounded-lg shadow-md;
+    @apply bg-white p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    box-shadow: var(--shadow-large);
 }
 
 .service-title {
-    @apply text-xl font-semibold mb-2;
+    @apply text-2xl font-semibold mb-4;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 
 .service-description {
-    @apply text-muted-foreground;
+    @apply text-lg leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 /* Homepage - Industries */
 .work-with-section {
-    @apply py-8 md:py-14 bg-white;
+    @apply pt-0 pb-8 md:py-20 lg:py-28 bg-white;
   }
 .industry-list {
-    @apply  space-y-4 mt-6;
+    @apply space-y-4 md:space-y-6 mt-6 md:mt-8;
+}
+.industry-list li {
+    @apply text-lg leading-relaxed pl-8 relative;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 .industry-list li::before {
     content: '•';
-    @apply text-primary mr-2 text-xl;
+    @apply absolute left-0 top-0 text-[#0891b2] text-2xl font-bold;
+}
+.industry-list strong {
+    color: #1d1d1f;
+    font-weight: 600;
 }
 
 
 /* Homepage - Testimonials */
 .testimonials-section {
-    @apply py-8 md:py-14;
+    @apply pt-0 pb-8 md:py-20 lg:py-28 bg-gray-50;
 }
 
 .testimonials-grid {
-    @apply grid md:grid-cols-2 gap-8;
+    @apply grid md:grid-cols-2 gap-10;
 }
 
 .testimonial-card {
-    @apply bg-white p-6 rounded-lg shadow-md;
+    @apply bg-white p-6 md:p-10 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:hover {
+    box-shadow: var(--shadow-large);
 }
 
 .testimonial-text {
-    @apply mb-4;
+    @apply mb-6 text-lg leading-relaxed;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 
 .testimonial-author {
-    @apply font-semibold;
+    @apply font-semibold text-lg;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 /* Homepage */
 .latest-articles-section{
-    @apply bg-white py-8 md:py-14;
+    @apply bg-white pt-0 pb-8 md:py-20 lg:py-28;
 }
 .latest-articles-section .page-link{
-    @apply inline-flex items-center font-medium hover:underline pb-8;
+    @apply inline-flex items-center text-lg font-semibold px-6 py-3 bg-gray-100 text-[#1d1d1f] rounded-full transition-all duration-300 hover:bg-gray-200 hover:shadow-md transform hover:-translate-y-0.5 mb-12;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-small);
 }
 
 /* Homepage - CTA */
 .cta-section {
-    @apply py-8 md:py-14;
+    @apply pt-0 pb-8 md:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white text-center;
 }
 .cta-section .section-title{
-    @apply pb-0;
+    @apply pb-8;
 }
 .cta-button {
-    @apply bg-gray-200 inline-flex items-center rounded-lg border-none py-3 px-6 cursor-pointer transition-colors duration-300;
-    /* @apply inline-flex items-center font-medium hover:underline pb-8 text-xl; */
-}
-.cta-button:hover {
-    @apply bg-[#111] text-white;
+    @apply bg-[#0891b2] text-white inline-flex items-center rounded-full border-none py-4 px-10 cursor-pointer transition-all duration-300 text-xl font-semibold hover:bg-[#0e7490] hover:shadow-xl transform hover:-translate-y-1;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-medium);
 }
 
 /* Blog */
@@ -169,23 +251,28 @@ header .menu ul .coffee-button a{
     @apply relative z-50;
 }
 .homepage .content{
-    @apply relative z-10 bg-[#111];
+    @apply relative z-10 bg-[#1d1d1f] py-20 lg:py-28;
 }
 .homepage .content .prose{
     @apply max-w-none text-white;
 }
 .homepage .content h3{
-    @apply text-white;    
+    @apply text-white text-3xl lg:text-4xl font-semibold mb-6;
+    font-family: var(--apple-system-font);
 }
 .homepage .content p{
-    @apply mt-4 text-[1.15rem];
+    @apply mt-6 text-xl leading-relaxed;
+    color: #a1a1a6;
+    font-family: var(--apple-system-font);
 }
 /* Blog - Main Heading */
 .homepage .main-title{
-    @apply mt-4;
+    @apply mt-8;
 }
 .homepage .main-title h1{
-    @apply mb-6 text-4xl lg:text-5xl;   
+    @apply mb-8 text-4xl md:text-5xl lg:text-6xl font-bold;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 
 /* Blog - Content - Pages */
@@ -202,62 +289,89 @@ header .menu ul .coffee-button a{
 
 /* First Post */
 .first-post{
-    @apply bg-[#111];
+    @apply bg-[#1d1d1f] py-8 lg:py-10;
 }
 .first-post .container{
-    @apply pb-6;
+    @apply pb-8;
 }
 
 /* Blog Listing */
 .blog-posts{
-    @apply grid gap-8 sm:grid-cols-2;
+    @apply grid gap-10 sm:grid-cols-2 lg:grid-cols-2;
 }
 .blog-posts .blog-post{
-    @apply border border-gray-200 bg-white relative z-10;
+    @apply bg-white relative z-10 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.blog-posts .blog-post:hover {
+    box-shadow: var(--shadow-large);
 }
 
 .blog-posts .blog-category {
-    @apply text-xs inline-flex items-center py-0.5 pr-2 pl-2 rounded-lg font-medium text-black bg-[#f2f2f2];
+    @apply text-sm inline-flex items-center py-2 px-4 rounded-full font-semibold text-[#0891b2] bg-blue-50;
+    font-family: var(--apple-system-font);
 }
 .blog-posts .blog-date {
-    @apply text-xs;
+    @apply text-sm;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 .blog-posts .blog-info{
-    @apply flex justify-between items-center mb-4 mt-6 text-gray-500 pl-6 pr-6;
+    @apply flex justify-between items-center mb-6 mt-6 pl-8 pr-8;
 }
 .blog-posts .blog-post .blog-col{
-    @apply rounded-[0px]
+    border-radius: var(--border-radius);
 }
 .blog-posts .blog-post .blog-hero{
-    @apply mb-4 sm:mb-0;
+    @apply mb-0;
 }
 .blog-posts .blog-post .blog-main{
-    @apply p-6 pt-0;
+    @apply p-8 pt-0;
 }
 .blog-posts .blog-post h2{
-    @apply mb-2 hover:underline leading-7;
+    @apply mb-4 hover:text-[#0891b2] leading-tight text-2xl font-semibold transition-colors duration-300;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 .blog-posts .blog-post p{
-    @apply mb-5 font-light text-gray-500 text-[0.9em];
+    @apply mb-6 text-lg leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 .blog-posts .blog-post p span{
-    @apply text-black font-medium;
+    @apply font-semibold;
+    color: #1d1d1f;
 }
 .blog-posts .blog-post .blog-link{
-    @apply inline-flex items-center font-medium hover:underline;
+    @apply inline-flex items-center font-semibold text-[#0891b2] hover:text-[#0e7490] transition-colors duration-300;
+    font-family: var(--apple-system-font);
 }
   
 /* Featured Blog Post */
 .featured-blog-post{
-    @apply border border-gray-200 bg-white relative z-10 mb-8;
+    @apply bg-white relative z-10 mb-12 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
+
+.featured-blog-post:hover {
+    box-shadow: var(--shadow-large);
+}
+
 .featured-blog-post::after {
-    @apply absolute top-0 left-0 z-10 bg-[#111] text-white py-2 px-3 text-sm uppercase font-medium;
+    @apply absolute top-4 left-4 z-10 bg-[#0891b2] text-white py-2 px-4 text-sm font-semibold rounded-full;
     content: "Latest";
+    font-family: var(--apple-system-font);
 }
 .featured-blog-post .blog-col{
-    @apply grid gap-8 sm:grid-cols-2;
+    @apply grid gap-0 sm:grid-cols-2;
 }
 .featured-blog-post .blog-hero{
     @apply bg-cover bg-center;
@@ -266,60 +380,371 @@ header .menu ul .coffee-button a{
     @apply block sm:hidden;
 }
 .featured-blog-post .blog-main{
-    @apply p-6 pt-0 sm:p-0 sm:pb-12 sm:pt-4 sm:pr-6;
+    @apply p-8 pt-6 sm:p-8 sm:pb-12 sm:pt-8;
 }
 .featured-blog-post h2{
-    @apply mb-2 hover:underline;
+    @apply mb-4 hover:text-[#0891b2] text-3xl font-semibold leading-tight transition-colors duration-300;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
 }
 .featured-blog-post p{
-    @apply mb-5 font-light text-gray-500 text-[0.9em];
+    @apply mb-6 text-lg leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 .featured-blog-post p span{
-    @apply text-black font-medium;
+    @apply font-semibold;
+    color: #1d1d1f;
 }
 .featured-blog-post .blog-link{
-    @apply inline-flex items-center font-medium hover:underline;
+    @apply inline-flex items-center font-semibold text-[#0891b2] hover:text-[#0e7490] transition-colors duration-300;
+    font-family: var(--apple-system-font);
 }
 .featured-blog-post .blog-info{
-    @apply flex justify-between items-center mb-4 sm:mt-6 text-gray-500;
+    @apply flex justify-between items-center mb-6 sm:mt-0;
 }
 .featured-blog-post .blog-category {
-    @apply text-xs inline-flex items-center py-0.5 pr-2 pl-2 rounded-lg font-medium text-black bg-[#f2f2f2];
+    @apply text-sm inline-flex items-center py-2 px-4 rounded-full font-semibold text-[#0891b2] bg-blue-50;
+    font-family: var(--apple-system-font);
 }
 .featured-blog-post .blog-date {
-    @apply text-xs;
+    @apply text-sm;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 /* Bio */
 .bio{
-    @apply md:flex;
+    @apply md:flex gap-8 md:gap-12;
 }
 .bio .info{
     @apply md:w-2/3;
 }
 .bio .image{
-    @apply md:pr-8 pb-8 md:w-1/3;
+    @apply md:pr-0 pb-8 md:pb-0 md:w-1/3;
+}
+
+/* About Page Specific Styles */
+.about-page {
+    @apply py-14 md:py-10 lg:py-8 bg-white;
+}
+
+.about-page .container {
+    @apply px-4 md:px-8 lg:px-8 py-2 md:py-4 lg:py-6;
+}
+
+.about-page h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl mb-8 font-bold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.about-page h3 {
+    @apply text-2xl md:text-3xl mb-6 mt-8 font-semibold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.about-page p {
+    @apply text-lg md:text-xl mb-8 leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
+}
+
+.about-page a {
+    @apply text-[#0891b2] hover:text-[#0e7490] transition-colors duration-300 font-medium;
+    font-family: var(--apple-system-font);
+}
+
+.about-page .bio .image img {
+    @apply rounded-2xl shadow-xl;
+    border-radius: 0;
+    box-shadow: var(--shadow-large);
+}
+
+.about-page .bio .image {
+}
+
+.about-page .bio .info {
+    @apply space-y-8;
+}
+
+/* Contact/Chat Page Specific Styles */
+.contact-page {
+    @apply py-4 md:py-4 bg-gradient-to-b from-gray-50 to-white;
+}
+
+.contact-page .container {
+    @apply px-4 md:px-6 lg:px-8 py-2 md:py-4 lg:py-6;
+}
+
+.contact-page h1 {
+    @apply mb-10 font-bold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.contact-page h3 {
+    @apply text-2xl md:text-3xl mb-6 mt-10 font-semibold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.contact-page p {
+    @apply text-lg md:text-xl mb-8 leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
+}
+
+.contact-page a {
+    @apply text-[#0891b2] hover:text-[#0e7490] transition-colors duration-300 font-medium;
+    font-family: var(--apple-system-font);
+}
+
+.contact-page .prose {
+    @apply max-w-4xl;
+}
+
+.contact-page .prose h1 {
+    @apply mb-6 text-4xl md:text-5xl lg:text-6xl;
+}
+
+.contact-page .prose h3 {
+    @apply mt-10 mb-6;
+}
+
+.contact-page .prose p {
+    @apply text-left;
+}
+
+.contact-page .prose a {
+    @apply inline-flex items-center;
+}
+
+.contact-page .prose a:hover {
+    @apply transform -translate-y-0.5 transition-transform duration-300;
+}
+
+.contact-page .prose p {
+    @apply mb-6 leading-relaxed;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 
 /* Blog */
 .blog{
-    @apply container;
+    @apply container bg-white;
+}
+
+.blog > * {
+    @apply max-w-4xl mx-auto;
 }
 .blog h1{
+    @apply mb-8 mt-6 text-4xl lg:text-5xl font-bold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog h2{
+    @apply mb-6 mt-12 text-3xl lg:text-4xl font-semibold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog h3{
+    @apply mb-5 mt-10 text-2xl lg:text-3xl font-semibold leading-tight;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog h4{
+    @apply mb-4 mt-8 text-xl lg:text-2xl font-medium;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog h5{
+    @apply mb-4 mt-6 text-lg lg:text-xl font-medium;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog h6{
+    @apply mb-3 mt-5 text-base lg:text-lg font-medium;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+.blog p{
+    @apply mb-8 text-lg leading-loose font-normal;
+    color: #86868b;
+    font-family: var(--apple-system-font);
+    line-height: 1.8;
+}
+.blog ul, .blog ol{
+    @apply mb-8 ml-6 space-y-3;
+}
+.blog li{
+    @apply text-lg leading-loose;
+    color: #86868b;
+    font-family: var(--apple-system-font);
+    line-height: 1.8;
+}
+.blog blockquote{
+    @apply border-l-4 border-[#0891b2] pl-6 py-4 my-8 bg-gray-50 rounded-r-lg;
+}
+.blog blockquote p{
+    @apply mb-0 text-xl font-medium italic;
+    color: #1d1d1f;
+}
+/* Blog Meta Section */
+.blog-meta {
     @apply mb-6;
 }
+
 .blog .date{
-    @apply mb-5 text-gray-500 text-sm;
+    @apply text-sm font-medium;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
+
+/* Blog Controls Section */
+.blog-controls {
+    @apply flex flex-wrap items-center gap-4 mb-6;
+}
+
+.blog-controls .category a {
+    @apply h-12 flex items-center px-6 text-base text-black bg-gray-100 rounded-full transition-all duration-300 hover:bg-gray-200 hover:shadow-md transform hover:-translate-y-0.5;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-small);
+}
+
+.blog-controls .text-to-speech button {
+    @apply h-12 flex items-center px-6 text-base bg-gray-100 hover:bg-gray-200 rounded-full transition-all duration-300 hover:shadow-md transform hover:-translate-y-0.5;
+    font-family: var(--apple-system-font);
+    color: #1d1d1f;
+    box-shadow: var(--shadow-small);
+}
+
+.blog-controls .react-audio-player {
+    @apply mb-0 h-12 flex items-center;
+}
+
+.blog-controls .react-audio-player audio {
+    @apply h-12;
+}
+
+/* Mobile responsive adjustments for blog controls */
+@media (max-width: 768px) {
+    .blog-controls {
+        @apply gap-3 mb-4;
+    }
+    
+    .blog-controls .category a,
+    .blog-controls .text-to-speech button {
+        @apply h-10 px-4;
+    }
+}
+/* Blog Header */
+.blog-header {
+    @apply flex justify-end mb-8;
+}
+
 .blog .back-button{
-    @apply py-2 hover:underline text-right block;
+    @apply inline-flex items-center font-semibold text-[#0891b2] hover:text-[#0e7490] transition-colors duration-300;
+    font-family: var(--apple-system-font);
+    text-decoration: none;
 }
 .blog .blog-separator{
-    @apply flex items-center pt-8 pb-8 justify-center w-full;
+    @apply flex items-center pt-12 pb-12 justify-center w-full;
 }
 .blog .blog-separator .dots{
-    @apply text-4xl text-gray-500 mx-2;
+    @apply text-4xl text-gray-400 mx-3;
 }
+
+/* Individual Blog Post Enhanced Styling */
+.blog article {
+    @apply max-w-4xl mx-auto;
+}
+
+.blog-content {
+    @apply space-y-6;
+}
+
+.blog-content > * {
+    @apply mb-6;
+}
+
+.blog .category {
+    @apply inline-block;
+}
+
+.blog .tags {
+    @apply mt-12 mb-8 p-6 bg-gray-50 rounded-xl;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+.blog .tags h4 {
+    @apply text-lg font-semibold mb-0 mt-2 mr-4;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.blog .tag-list {
+    @apply flex flex-wrap gap-3;
+}
+
+.blog .tags .tag {
+    @apply inline-flex items-center px-4 py-2 bg-white text-gray-700 rounded-full text-sm font-medium transition-all duration-300 hover:bg-gray-100 hover:shadow-md transform hover:-translate-y-0.5;
+    font-family: var(--apple-system-font);
+    box-shadow: var(--shadow-small);
+}
+
+/* Blog Post Typography Enhancements */
+.blog strong, .blog b {
+    @apply font-semibold;
+    color: #1d1d1f;
+}
+
+.blog em, .blog i {
+    @apply italic;
+    color: #1d1d1f;
+}
+
+.blog hr {
+    @apply my-12 border-t border-gray-200;
+}
+
+/* Blog Post Images */
+.blog img {
+    @apply rounded-xl shadow-lg my-8 w-full;
+    box-shadow: var(--shadow-medium);
+}
+
+.blog .gatsby-resp-image-wrapper {
+    @apply my-8 rounded-xl overflow-hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Blog Post Tables */
+.blog table {
+    @apply w-full my-8 border-collapse;
+}
+
+.blog th {
+    @apply bg-gray-50 px-6 py-4 text-left font-semibold border-b border-gray-200;
+    color: #1d1d1f;
+    font-family: var(--apple-system-font);
+}
+
+.blog td {
+    @apply px-6 py-4 border-b border-gray-100;
+    color: #86868b;
+    font-family: var(--apple-system-font);
+}
+
+/* Audio Player Styling */
+.blog .react-audio-player {
+    @apply w-full mb-8 bg-gray-50 rounded-lg p-4;
+    box-shadow: var(--shadow-small);
+}
+
+/* Text-to-Speech Button - handled in blog-controls section */
 
 .blog .tiktok-embed{
     padding:0 !important;
@@ -333,83 +758,81 @@ header .menu ul .coffee-button a{
     @apply text-center mt-2 text-gray-500;
 }
 
-/* Blog - Category */
-.blog .category{
-    @apply inline-block align-top mr-4;
-}
-.blog .category a {
-    @apply mb-6 inline-block bg-gray-200 rounded-lg border-none py-2.5 px-5 cursor-pointer transition-colors duration-300;
-}
-.blog .category a:hover {
-    @apply bg-gray-300;
-}
+/* Blog - Category - handled in blog-controls section */
 /* Blog - Tags */
 .blog .tags {
     @apply flex flex-wrap gap-2.5 mb-8 mt-8;
 }
 
-/* Blog - Read */
-.blog .text-to-speech {
-    @apply inline-block align-top;
-}
-.blog .text-to-speech button{
-    @apply bg-gray-200 hover:bg-gray-300 rounded-lg focus:outline-none  border-none py-2.5 px-4 cursor-pointer transition-colors duration-300 flex items-center;
-}
+/* Blog - Read - text-to-speech handled in blog-controls section */
 .blog .react-audio-player{
     @apply inline-block align-top mb-6;   
-}
-@media (max-width: 768px) {
-    .blog .text-to-speech button {
-        width: 100% !important;
-      }   
-    
 }
 
 
 .blog .tags .tag {
-    @apply bg-gray-200 rounded-lg text-xs border-none py-2.5 px-5 transition-colors duration-300;
+    @apply bg-gray-100 rounded-full border-none py-3 px-6 cursor-pointer transition-all duration-300 text-base font-medium hover:bg-gray-200 hover:shadow-md transform hover:-translate-y-0.5;
+    font-family: var(--apple-system-font);
+    color: #1d1d1f;
+    box-shadow: var(--shadow-small);
+}
+
+.blog .tags .tag:hover {
+    box-shadow: var(--shadow-medium);
 }
 /* Blog - footnotes */
 .blog .footnotes{
-    @apply text-xs pt-12 border-0;
+    @apply text-sm pt-12 mt-12 border-t border-gray-200;
+    color: #86868b;
+    font-family: var(--apple-system-font);
 }
 .blog .footnotes hr{
     @apply hidden;
 }
 .blog .footnotes li{
-    @apply pb-2;
+    @apply pb-3 leading-relaxed;
+}
+.blog .footnotes ol {
+    @apply ml-0 space-y-2;
+}
+.blog .footnotes a {
+    @apply text-[#0891b2] hover:text-[#0e7490];
 }
 
 /* Category buttons */
 .category-select h4{
-    @apply pb-2;
+    @apply pb-4;
 }
 .category-select .container{
-    @apply pb-2 pt-8;
+    @apply pb-6 pt-6;
 }
 .category-buttons {
-    @apply flex flex-wrap gap-2.5 mb-8;
+    @apply flex flex-wrap gap-4 mb-14;
 }
 
 .category-button {
-    @apply bg-gray-200 rounded-lg border-none py-2.5 px-4 cursor-pointer transition-colors duration-300;
+    @apply bg-gray-100 rounded-full border-none py-3 px-6 cursor-pointer transition-all duration-300 text-sm md:text-base font-medium hover:bg-gray-200 hover:shadow-md transform hover:-translate-y-0.5;
+    font-family: var(--apple-system-font);
+    color: #1d1d1f;
+    box-shadow: var(--shadow-small);
 }
 
 .category-button:hover {
-    @apply bg-gray-300;
+    box-shadow: var(--shadow-medium);
 }
 
 .category-button.selected, .category-button[aria-current="page"] {
-    @apply bg-[#111] text-white;
+    @apply bg-[#0891b2] text-white;
+    box-shadow: var(--shadow-medium);
 }
 
 
 /* Category Page */
 .category-page .container{
-    @apply pt-12;
+    @apply pt-6;
 }
 .category-page h1{
-    @apply text-4xl pb-6 lg:text-5xl;
+    @apply text-4xl md:text-5xl lg:text-6xl;
 }
 
 /* Prose */
@@ -418,6 +841,92 @@ header .menu ul .coffee-button a{
 }
 .prose a{
     @apply hover:no-underline font-normal;  
+}
+
+/* Enhanced Prose Styles for Apple Design */
+.prose {
+    @apply max-w-none;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    font-family: var(--apple-system-font);
+    color: #1d1d1f;
+}
+
+.prose h1 {
+    @apply mb-8 mt-6 text-4xl lg:text-5xl font-bold leading-tight;
+}
+
+.prose h2 {
+    @apply mb-6 mt-12 text-3xl lg:text-4xl font-semibold leading-tight;
+}
+
+.prose h3 {
+    @apply mb-5 mt-10 text-2xl lg:text-3xl font-semibold leading-tight;
+}
+
+.prose h4 {
+    @apply mb-4 mt-8 text-xl lg:text-2xl font-medium;
+}
+
+.prose h5 {
+    @apply mb-4 mt-6 text-lg lg:text-xl font-medium;
+}
+
+.prose h6 {
+    @apply mb-3 mt-5 text-base lg:text-lg font-medium;
+}
+
+.prose p {
+    font-family: var(--apple-system-font);
+    color: #86868b;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.prose ul, .prose ol {
+    @apply mb-8 ml-6 space-y-3;
+}
+
+.prose li {
+    font-family: var(--apple-system-font);
+    color: #86868b;
+    line-height: 1.8;
+    font-size: 1.125rem;
+}
+
+.prose blockquote {
+    @apply border-l-4 border-[#0891b2] pl-6 py-4 my-8 bg-gray-50 rounded-r-lg;
+}
+
+.prose blockquote p {
+    @apply mb-0 text-xl font-medium italic;
+    color: #1d1d1f;
+}
+
+.prose a {
+    color: #0891b2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.prose a:hover {
+    color: #0e7490;
+}
+
+.prose code {
+    @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono;
+    color: #1d1d1f;
+}
+
+.prose pre {
+    @apply bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto my-8;
+}
+
+.prose pre code {
+    @apply bg-transparent p-0 text-gray-100;
 }
 
 /* Footer */
@@ -433,16 +942,19 @@ footer ul{
 
 /* Main */
 main{
-    @apply bg-[#fafafa]
+    @apply bg-white
 }
 
 /* Back To Top */
 .back-to-top {
-    @apply fixed bottom-12 right-5 z-50 cursor-pointer w-[35px] h-[35px] bg-[#ececec] text-center;
+    @apply fixed bottom-12 right-5 z-[1001] cursor-pointer w-[35px] h-[35px] bg-[#ececec] text-center rounded-full shadow-lg hover:bg-[#d4d4d4] transition-colors duration-200;
 }
 
 .back-to-top button {
-    @apply text-black cursor-pointer text-[26px] leading-[42px];
+    @apply text-black cursor-pointer text-[20px] w-full h-full border-0 bg-transparent p-0 m-0 flex items-center justify-center;
+    line-height: 1;
+    vertical-align: middle;
+    transform: translateY(2px);
 }
 
 /* Donate */
@@ -492,7 +1004,7 @@ main{
 
 /* Plant */
 .plant{
-    @apply relative bg-[#fafafa];
+    @apply relative bg-gray-50;
 }
 /* Styles for .plant on smaller screens */
 @media (min-width: 768px) {

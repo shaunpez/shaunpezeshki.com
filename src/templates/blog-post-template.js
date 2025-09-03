@@ -79,27 +79,39 @@ const BlogPostTemplate = ({ data, location }) => {
       <Layout>
         <div key={post.frontmatter.slug}>
           <section className="blog">
-            <Link to={fromPage} className="back-button">
-              Back to Posts
-            </Link>
+            <div className="blog-header">
+              <Link to={fromPage} className="back-button">
+                ← Back to Posts
+              </Link>
+            </div>
             <article>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
-              <div className="date">
-                {post.frontmatter.date}
+              <div className="blog-meta">
+                <div className="date">
+                  {post.frontmatter.date}
+                </div>
               </div>
               <h1>{post.frontmatter.title}</h1>
-              <div className="category">
-                <Link to={`/category/${formatCategory(post.frontmatter.category)}`}>
-                  {post.frontmatter.category}
-                </Link>
+              <div className="blog-controls">
+                
+                <div className="category">
+                  <Link to={`/category/${formatCategory(post.frontmatter.category)}`}>
+                    {post.frontmatter.category}
+                  </Link>
+                </div>
+                <AudioPlayer slug={slug} />
               </div>
-              <AudioPlayer slug={slug} />
-              <div dangerouslySetInnerHTML={{ __html: post.html }} />  
-              <div className="tags">
-                {tags && tags.map((tag, index) => (
-                  <span key={index} className="tag">{tag}</span>
-                ))}
-              </div>
+              <div className="blog-content" dangerouslySetInnerHTML={{ __html: post.html }} />  
+              {tags && tags.length > 0 && (
+                <div className="tags">
+                  <h4>Tags</h4>
+                  <div className="tag-list">
+                    {tags.map((tag, index) => (
+                      <span key={index} className="tag">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
               
               <div className="blog-separator">
                 <span className="dots">&middot;</span>

@@ -13,12 +13,12 @@ const AboutPage = () => (
     image={headerImage} 
   />
   <Layout>
-    <div className="container px-4">
-      <div className="prose prose-lg max-w-none">
+    <div className="about-page">
+      <div className="container">
         <div className="bio">
           <div className="image">
             <StaticImage
-                  src="../images/shaun.jpg" // Adjust the path as necessary
+                  src="../images/disco-shaun.jpg" // Adjust the path as necessary
                   alt="Shaun Pezeshki"
                   placeholder="blurred" // Optional: This prop defines the loading strategy
                   className="shadow-lg"
@@ -33,17 +33,13 @@ const AboutPage = () => (
             <p>
             By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions. </p>
             <p>
-            Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He also writes for Prism & Pen, a publication focused on amplifying LGBTQ+ voices.</p>
+            Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He also writes for <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">Prism & Pen</a>, a publication focused on amplifying LGBTQ+ voices.</p>
             <h3>Want to connect?</h3>
             <p>
              Reach out at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
             </p>
           </div>
-          
-
         </div>
-
-
       </div>
     </div>
   </Layout>
