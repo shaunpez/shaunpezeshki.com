@@ -22,7 +22,7 @@ Bad news. We're all staying online. That quiet fantasy where we delete our accou
 
 ## The Analog Narrative Is a Delusion
 
-The Financial Times ran a piece showing social media use has peaked. Other outlets declared having no followers is cool now. Going offline is a status symbol.
+The [Financial Times](https://www.newyorker.com/culture/infinite-scroll/its-cool-to-have-no-followers-now) ran a piece showing social media use has peaked. Other outlets declared having no followers is cool now. Going offline is a status symbol.
 
 You read this and think: maybe we're finally logging off.
 
