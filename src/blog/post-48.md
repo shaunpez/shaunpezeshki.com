@@ -3,7 +3,7 @@ title: "We're All Staying on Social Media in 2026 and Here's Why"
 date: "2026-01-26"
 slug: "staying-on-social-media-2026"
 category: "Personal Development"
-excerpt: "The analog dream is a fantasy for the privileged. For the rest of us, personal brand is survival."
+excerpt: "Logging off is a luxury. For many, being online is not vanity. It is economic, social, and civic survival."
 image: "./images/social-media-brand-online.jpg"
 draft: false
 tags:
