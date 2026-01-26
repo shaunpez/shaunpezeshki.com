@@ -40,7 +40,7 @@ We maintain control over that image because we believe it defines our potential.
 
 Social media is the platform enabling this transaction. But even if every app disappeared tomorrow, the pressure would remain. The culture of expectation would remain. The financial squeeze would remain.
 
-And right now, it's doing something even more critical than career building.
+But it's doing something even more critical than career building.
 
 ## And Right Now? Logging Off Is Irresponsible
 
