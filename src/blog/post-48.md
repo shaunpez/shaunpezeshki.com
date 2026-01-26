@@ -92,7 +92,7 @@ Banning apps is cowardice dressed as courage.
 
 We're not addicted to our phones. We're trapped by economics.
 
-The scroll isn't a distraction from real life. For many, it is real life. It's where the opportunities are. The connections. The income.
+The scroll isn't a distraction from real life. For many, it is real life. It's where the opportunities are. The connections. The income. The only way to see what's actually happening.
 
 Until someone fixes the underlying conditions, the logout fantasy stays a fantasy.
 
