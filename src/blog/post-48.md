@@ -18,8 +18,6 @@ tags:
 
 <div class="prose prose-lg max-w-none mt-10">
 
-## We're All Staying on Social Media in 2026 and Here's Why
-
 Bad news. We're all staying online. That quiet fantasy where we delete our accounts and go touch grass? It's not happening.
 
 ## The Analog Narrative Is a Delusion
