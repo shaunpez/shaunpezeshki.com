@@ -42,19 +42,23 @@ Social media is the platform enabling this transaction. But even if every app di
 
 But it's doing something even more critical than career building.
 
-## And Right Now? Logging Off Is Irresponsible
+## And Right Now, Being Offline Makes You Useless
 
 In January 2026, while tech columnists write about digital detoxes, federal agents are killing American citizens in Minneapolis.
 
 Operation Metro Surge deployed thousands of ICE agents across Minnesota. Two U.S. citizens are dead. Thousands arrested. Schools went remote. The state held its first general strike in 80 years.
 
-You know how we know this? Social media.
+None of this became visible because people were touching grass.
+
+We know because of social media.
 
 Bystander video spread within hours. Organizers coordinated mutual aid. Activists documented raids in real time. Communities shared safety information faster than any official channel.
 
-When the government escalates force against its own people, "touch grass" becomes a luxury opinion. The extremely online aren't addicted. They're paying attention.
+The protests. The strikes. The real world gathering. All of it was organized online first.
 
-Going offline right now means going blind.
+Going offline right now does not make you present.
+
+It makes you blind.
 
 ## The Real World Is Too Risky
 
