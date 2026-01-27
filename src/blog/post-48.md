@@ -40,6 +40,15 @@ We maintain control over that image because we believe it defines our potential.
 
 Social media is the platform enabling this transaction. But even if every app disappeared tomorrow, the pressure would remain. The culture of expectation would remain. The financial squeeze would remain.
 
+This is the part people pretend not to understand.
+Social media isn’t just where we express ourselves. It’s where opportunity circulates.
+
+Jobs don’t come only from applications anymore. They come from networks. From referrals. From being remembered when someone needs to hire fast. Recruiters scroll. Clients scan. Silence doesn’t read as “private.” It reads as “unknown.”
+
+The same logic applies to relationships. Dating. Friendships. Creative partnerships. People don’t meet by accident nearly as much as they think. They meet through shared visibility. Through mutuals. Through posts that signal values, humor, taste, or simply presence.
+
+Even credibility is social now. Being searchable is legitimacy. Being absent means someone else fills the gap or takes the slot.
+
 But it's doing something even more critical than career building.
 
 ## And Right Now, Being Offline Makes You Useless
@@ -60,6 +69,8 @@ Going offline right now does not make you present.
 
 It makes you blind.
 
+Even people who claim to be offline depend on someone else being online to tell them what’s happening.
+
 ## The Real World Is Too Risky
 
 People aren't avoiding offline life because screens are more fun.
@@ -67,6 +78,8 @@ People aren't avoiding offline life because screens are more fun.
 The real world is too expensive. Too precarious. Too far away from the people you love.
 
 Where would we even go?
+
+When physical space becomes paywalled, digital space becomes infrastructure.
 
 ## Third Spaces Are Gone
 
@@ -97,6 +110,8 @@ Banning apps is cowardice dressed as courage.
 We're not addicted to our phones. We're trapped by economics.
 
 The scroll isn't a distraction from real life. For many, it is real life. It's where the opportunities are. The connections. The income. The only way to see what's actually happening.
+
+Going offline is framed as a personal choice. In reality, it’s an unevenly distributed option. A luxury belief.
 
 Until someone fixes the underlying conditions, the logout fantasy stays a fantasy.
 
