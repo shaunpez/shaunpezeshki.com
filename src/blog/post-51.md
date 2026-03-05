@@ -88,7 +88,7 @@ Women were gaining the right to vote. Going to university. Entering the workforc
 
 Changes were happening fast. The clerics told their communities: this westernization goes against Iranian sovereignty. It is pulling you away from God.
 
-One cleric stood above the rest. Ayatollah Khomeini condemned women's rights in public and was exiled in 1963.
+One cleric stood above the rest. Ayatollah Khomeini condemned the Shah's reforms in public, was imprisoned in 1963, and exiled in 1964.
 
 ## Khomeini's Rise
 
@@ -140,7 +140,7 @@ One video showed a crowd shouting: "Am I dreaming? Hello to the new world."
 
 Iran now faces its first succession crisis since 1989.
 
-An interim council runs the country for now. The Assembly of Experts, a body of 80 clerics, is responsible for choosing the next Supreme Leader. Mojtaba Khamenei, the dead leader's son, is a front-runner. Israel has bombed the buildings in Qom and Tehran where the Assembly meets.
+An interim council runs the country for now. The Assembly of Experts, a body of 88 clerics, is responsible for choosing the next Supreme Leader. Mojtaba Khamenei, the dead leader's son, is a front-runner. Israel has bombed the buildings in Qom and Tehran where the Assembly meets.
 
 The IRGC, the military force that enforced Khamenei's rule for decades, holds the cards. Whoever becomes the next Supreme Leader answers to them. They control the military. The economy. The intelligence apparatus.
 
