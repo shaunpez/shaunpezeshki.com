@@ -82,7 +82,7 @@ const BlogPage = ({ data }) => {
             <div className="container">
               <div className="prose prose-xl">
                 <h3>The Story Behind the Blog</h3>
-                <p>Threads of Perspective began as a personal outlet for navigating life's challenges as a millennial. Over time, it grew into a community built on shared stories, learning, and connection. Here, I explore the intersections of identity, technology, and human experiences, offering reflections that resonate and challenge conventional thinking. If you're looking for honest, thought-provoking insights that inspire growth, you're in the right place.</p>
+                <p>Real talk on identity, tech, and what it means to grow up in a world that's constantly shifting. No fluff, just honest perspectives worth sitting with. </p>
               </div>
             </div>
           </div>

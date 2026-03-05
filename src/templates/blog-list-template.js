@@ -36,7 +36,7 @@ const BlogListPage = ({ data, pageContext }) => {
             <div className="content pages">
               <h1>Threads of Perspective</h1>
               <h2>Page {currentPage}</h2>
-            </div>          
+            </div>
             <Pagination currentPage={currentPage} numberOfPages={numPages} />
             <PostList posts={posts} currentPath={currentPath} />
             <Pagination currentPage={currentPage} numberOfPages={numPages} />

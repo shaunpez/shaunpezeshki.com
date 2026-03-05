@@ -139,7 +139,7 @@ const IndexPage = ({ data }) => {
       <section className="latest-articles-section">
           <div className="container home">
             <h2 className="section-title">Latest Articles</h2>
-            <p class="section-text">Here are my latest posts on tech and business. While my blog dives into all aspects of my journey, these articles focuses on practical insights to help businesses grow.</p>
+            <p className="section-text">Here are my latest posts on tech and business. While my blog dives into all aspects of my journey, these articles focuses on practical insights to help businesses grow.</p>
             <Link to="/blog" className="page-link">
                 All Posts
                 <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>

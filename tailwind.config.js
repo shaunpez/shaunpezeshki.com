@@ -13,11 +13,22 @@ module.exports = {
         },
       },
       fontFamily: {
+        heading: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        body: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'sans-serif'],
         'apple': ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: 'var(--background)',
+        foreground: 'var(--text)',
+        primary: {
+          DEFAULT: 'var(--primary)',
+          foreground: '#FAFAFA',
+        },
+        secondary: 'var(--secondary)',
+        cta: {
+          DEFAULT: 'var(--cta)',
+          hover: 'var(--cta-hover)',
+        },
         apple: {
           blue: '#007aff',
           'blue-dark': '#0056cc',
@@ -27,24 +38,15 @@ module.exports = {
           text: '#1d1d1f',
           'text-secondary': '#86868b',
         },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          dark: '#2779bd',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        muted: 'hsl(var(--muted))',
-        'muted-foreground': 'hsl(var(--muted-foreground))',
+        muted: '#3F3F46',
+        'muted-foreground': '#71717a',
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: '#ffffff',
+          foreground: 'var(--text)',
         },
       },
       borderRadius: {
-        'apple': '12px',
+        'apple': '8px',
       },
       boxShadow: {
         'apple-small': '0 1px 3px rgba(0, 0, 0, 0.1)',
