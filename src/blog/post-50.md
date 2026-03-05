@@ -86,7 +86,7 @@ I want those things too.
 
 But who you are has been decided by systems you didn't choose. The neighborhood you grew up in chose for you. The schools you attended chose for you. The income your parents earned chose for you. The language spoken at your dinner table chose for you.
 
-You didn't pick your habitus. It picked you.
+You didn't pick your habits. It picked you.
 
 And distinction, the process by which people sort each other into categories based on taste, behavior, and cultural signals, is one of those systems. It is still running. It runs in job interviews. It runs at dinner parties. It runs on dating apps. It runs in classrooms and boardrooms and courtrooms.
 

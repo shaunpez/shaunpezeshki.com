@@ -30,7 +30,7 @@ And I found this gap between the hype and the lived experience worth pulling apa
 
 There are two camps.
 
-The first camp says they use AI all the time and it has changed their life. When you ask what they're doing with it, the answer is: asking questions. Getting summaries. Looking things up. They replaced Google with ChatGPT. The output looks smarter. It feels more productive. But the task is the same.
+The first camp says they use AI all the time and it has changed their life. When you ask what they're doing with it, the answer is: asking questions. Getting summaries. Looking things up. They replaced ChatGPT with Claude. The output looks smarter. It feels more productive. But the task is the same.
 
 The second camp is the people who have tested everything. They've used the coding tools. The agents. The workflow automations. The image generators. The voice tools. They know what works and what breaks.
 
