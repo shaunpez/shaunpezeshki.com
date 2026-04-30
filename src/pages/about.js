@@ -41,8 +41,11 @@ const AboutPage = () => (
               </p>
               <p>
                 Beyond technology, I care deeply about people, identity, community, and the stories
-                that do not fit into a professional bio. I&apos;m involved with the Human Rights
-                Campaign through the Columbus steering committee, and I write for{" "}
+                that do not fit into a professional bio. I&apos;m involved with the{" "}
+                <a target="_blank" rel="noreferrer" href="https://www.hrc.org/">
+                  Human Rights Campaign
+                </a>{" "}
+                through the Columbus steering committee, and I write for{" "}
                 <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">
                   Prism &amp; Pen
                 </a>, a publication that helps amplify LGBTQ+ voices.
