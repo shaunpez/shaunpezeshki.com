@@ -175,7 +175,6 @@ const IndexPage = ({ data }) => {
 
         <section className="editorial-section contact-cta">
           <div className="site-shell contact-cta__inner">
-            <p className="eyebrow">Open to useful conversations</p>
             <h2>
               Have a project in mind, a workflow that takes too much time, or just want to talk
               through an idea?

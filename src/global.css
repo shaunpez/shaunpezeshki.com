@@ -503,10 +503,6 @@ main {
   color: var(--surface);
 }
 
-.contact-cta .eyebrow {
-  color: color-mix(in oklch, var(--paper-soft) 88%, var(--surface));
-}
-
 .contact-cta h2 {
   max-width: 24ch;
   margin-bottom: 1.4rem;
