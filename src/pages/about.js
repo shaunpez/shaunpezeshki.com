@@ -28,28 +28,28 @@ const AboutPage = () => (
 
             <div className="prose editorial-prose">
               <p>
-                Across consulting, automation, and strategy work, Shaun helps clients turn scattered
-                systems into cleaner workflows, sharper decisions, and better use of the tools they
-                already have.
+                I work as a technical strategist and entrepreneur, helping businesses improve
+                operations through practical technology, automation, and strategy. With a background
+                in marketing and tech, I help clients make better use of their tools, strengthen
+                their systems, and invest in solutions that actually support how they work.
               </p>
               <p>
-                He excels at integrating modern solutions with existing systems, boosting
-                efficiency. Shaun&apos;s diverse experience, from individual brands to agencies,
-                enables him to understand varied needs and develop strategic success roadmaps.
+                I&apos;m especially good at connecting modern solutions with existing systems,
+                improving efficiency without overcomplicating the process. My experience spans
+                individual brands, agencies, and small businesses, which helps me understand
+                different needs and build clear, practical roadmaps for moving work forward.
               </p>
               <p>
-                By combining creativity with technology, Shaun focuses on increasing user engagement
-                and creating impactful business solutions.
+                By combining creativity with technology, I focus on improving user engagement,
+                business operations, and the everyday systems that help teams work better.
               </p>
               <p>
-                Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for
-                Asian, Middle Eastern, and LGBTQ+ communities. He serves on the Human Rights Campaign
-                Columbus steering committee and is part of the national HRC community. He also writes
-                for{" "}
+                Beyond technology, I care deeply about people, identity, community, and the stories
+                that do not fit neatly into a professional bio. I&apos;m involved with the Human
+                Rights Campaign through the Columbus steering committee, and I write for{" "}
                 <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">
                   Prism &amp; Pen
-                </a>
-                , a publication focused on amplifying LGBTQ+ voices.
+                </a>, a publication that helps amplify LGBTQ+ voices.
               </p>
 
               <div className="inline-actions">
