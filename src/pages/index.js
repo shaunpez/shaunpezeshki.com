@@ -29,12 +29,12 @@ const testimonials = [
   {
     quote:
       "Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency.",
-    author: "Travis B.",
+    author: "Travis B., Lucas Group",
   },
   {
     quote:
       "Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors.",
-    author: "Nicole A.",
+    author: "Nicole A., Fulton Fish Cooperative",
   },
 ];
 
