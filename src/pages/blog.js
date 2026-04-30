@@ -33,15 +33,15 @@ const BlogPage = ({ data }) => {
       <SeoSchema posts={subsequentPosts} siteUrl={siteUrl} />
       <Layout>
         <section className="archive-page">
-          <div className="site-shell archive-hero">
+          <div className="site-shell archive-hero archive-hero--story">
             <div>
-              <p className="eyebrow">Stories and notes</p>
+              <p className="eyebrow">Stories and thoughts</p>
               <h1>Threads of Perspective</h1>
+              <p className="lede">
+                Real talk on identity, tech, career, community, and what it means to grow in a
+                world that keeps shifting.
+              </p>
             </div>
-            <p>
-              Real talk on identity, tech, career, community, and what it means to grow in a world
-              that keeps shifting.
-            </p>
           </div>
 
           <div className="site-shell archive-controls">

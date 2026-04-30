@@ -524,17 +524,22 @@ main {
 }
 
 .archive-hero h1 {
-  max-width: 10ch;
-  margin-bottom: 0;
-  font-size: clamp(2.7rem, 7vw, 5.4rem);
+  max-width: 12ch;
+  margin-bottom: 1.1rem;
+  font-size: clamp(2.35rem, 5.1vw, 4.05rem);
   font-weight: 780;
-  line-height: 0.96;
+  line-height: 0.98;
 }
 
-.archive-hero p {
-  max-width: 36rem;
+.archive-hero p:not(.eyebrow) {
+  max-width: 42rem;
   margin-bottom: 0;
-  font-size: 1.08rem;
+  font-size: clamp(1.08rem, 1.7vw, 1.28rem);
+  line-height: 1.68;
+}
+
+.archive-hero--story {
+  display: block;
 }
 
 .archive-hero--compact {
@@ -1311,20 +1316,22 @@ main {
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
-  background: var(--paper-soft);
+  background: color-mix(in oklch, var(--paper) 90%, transparent);
 }
 
 .site-footer__inner {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .footer-name {
   display: inline-flex;
-  margin-bottom: 0.4rem;
+  min-height: 40px;
+  align-items: center;
+  margin-bottom: 0;
   color: var(--ink);
   font-weight: 820;
 }
