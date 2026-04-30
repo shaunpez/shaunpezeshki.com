@@ -31,11 +31,11 @@ const BlogListPage = ({ data, pageContext }) => {
       />
       <SeoSchema posts={posts} siteUrl={siteUrl} />
       <Layout>
-        <section className="homepage plant plant-bottom">
-          <div className="container">
-            <div className="content pages">
+        <section className="archive-page archive-page--paginated">
+          <div className="site-shell">
+            <div className="archive-hero archive-hero--compact">
               <h1>Threads of Perspective</h1>
-              <h2>Page {currentPage}</h2>
+              <p>Page {currentPage}</p>
             </div>
             <Pagination currentPage={currentPage} numberOfPages={numPages} />
             <PostList posts={posts} currentPath={currentPath} />

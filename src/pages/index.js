@@ -1,11 +1,42 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import headerImage from '../images/shaun-hero-in-light.png';
-import { StaticImage } from 'gatsby-plugin-image';
-import PostList from "../components/post-list"; // Reuse PostList for consistency
+import PostList from "../components/post-list";
+import headerImage from "../images/shaun-hero-in-light.jpg";
 
+const Arrow = () => (
+  <svg aria-hidden="true" className="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M11.25 3.75 17.5 10l-6.25 6.25-1.06-1.06 4.44-4.44H2.5v-1.5h12.13L10.19 4.81l1.06-1.06Z" />
+  </svg>
+);
+
+const services = [
+  ["Tech Optimization", "Revamp systems for higher efficiency."],
+  ["Automation Solutions", "Eliminate manual tasks with custom automation."],
+  ["Custom Development", "Tailored tools to meet your specific business goals."],
+  ["Data-Driven Strategy", "Insights to guide smarter decision-making."],
+];
+
+const industries = [
+  ["Manufacturing", "Streamlining operations and optimizing production workflows."],
+  ["E-commerce", "Enhancing customer experiences through automation and seamless integrations."],
+  ["Brands and Agencies", "Developing tailored solutions that boost efficiency and drive growth."],
+];
+
+const testimonials = [
+  {
+    quote:
+      "Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency.",
+    author: "Travis B.",
+  },
+  {
+    quote:
+      "Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors.",
+    author: "Nicole A.",
+  },
+];
 
 const IndexPage = ({ data }) => {
   const latestPosts = data.latestPosts.edges;
@@ -13,151 +44,152 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <Seo
-        title="Helping Businesses Grow with Automation and Tech Solutions"
-        description="Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life."
-        meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Shaunpez, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie' }]}
+        title="Shaun Pezeshki"
+        description="Technical strategy, automation, and personal stories from Shaun Pezeshki."
+        meta={[
+          {
+            name: "keywords",
+            content:
+              "Shaun Pezeshki, Shaunpez, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie",
+          },
+        ]}
         image={headerImage}
       />
       <Layout>
-      <section className="hero-section">
-        <div className="container md:flex md:items-center">
-          <div className="md:w-1/2 w-full md:pr-16 pt-8 md:pt-0">
-            <h1>I help businesses grow and succeed.</h1>
-            <p>Through smart automation and efficient tech solutions, I'll streamline your processes and help you reach your goals.</p>
-            <Link to="/chat-with-shaun" className="page-link">Let's Chat
-               <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-
-            </Link>
-          </div>
-          <div className="md:w-1/2 w-full">
-            <StaticImage
-                    src="../images/shaun-hero-in-light.jpg" // Adjust the path as necessary
-                    alt="Shaun Pezeshki"
-                    placeholder="blurred" // Optional: This prop defines the loading strategy
-                    className="shadow-lg"
-              />
-          </div>
-        </div>
-      </section>
-      {/* Why Optimization Matters */}
-      <section className="work-with-section">
-        <div className="container md:flex md:flex-row flex flex-col-reverse md:items-center">
-        <div className="md:w-1/2 w-full md:pr-16">
-              <StaticImage
-                      src="../images/giraffe-chat.jpg" // Adjust the path as necessary
-                      alt="Professional Giraffes"
-                      placeholder="blurred" // Optional: This prop defines the loading strategy
-                      className="shadow-lg"
-                />
-          </div>
-          <div className="md:w-1/2 w-full pt-8 pb-8 md:pt-0 md:pb-0">
-              <h2 className="section-title">Who I Work With</h2>
-              <p className="section-text">
-                I partner with small to medium-sized businesses across a range of industries, including:
+        <section className="home-masthead editorial-reveal">
+          <div className="site-shell home-masthead__grid">
+            <div className="home-masthead__copy">
+              <h1>I help businesses grow and succeed.</h1>
+              <p className="lede">
+                I build smarter automations, cleaner workflows, and practical systems that help
+                teams save time, reduce handoffs, and make better decisions. I also write about
+                technology, identity, community, career shifts, and what I&apos;m learning along the
+                way.
               </p>
-              <ul className="industry-list">
-                <li>
-                  <strong>Manufacturing: </strong> Streamlining operations and optimizing production workflows.
-                </li>
-                <li>
-                  <strong>E-commerce: </strong> Enhancing customer experiences through automation and seamless integrations.
-                </li>
-                <li>
-                  <strong>Brands and Agencies: </strong> Developing tailored solutions that boost efficiency and drive growth.
-                </li>
-              </ul>
-            </div>
-
-         
-        </div>
-      </section>
-      {/* Services Section */}
-      <section className="services-section">
-        <div className="container">
-          <h2 className="section-title">What I Offer</h2>
-          <div className="services-grid">
-            {[
-              { title: "Tech Optimization", description: "Revamp systems for higher efficiency" },
-              { title: "Automation Solutions", description: "Eliminate manual tasks with custom automation" },
-              { title: "Custom Development", description: "Tailored tools to meet your specific business goals" },
-              { title: "Data-Driven Strategy", description: "Insights to guide smarter decision-making" },
-            ].map((service, index) => (
-              <div key={index} className="service-card">
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-description">{service.description}</p>
+              <div className="action-row" aria-label="Primary actions">
+                <Link to="/chat-with-shaun" className="button button-primary">
+                  Let&apos;s Chat <Arrow />
+                </Link>
+                <Link to="/blog" className="button button-secondary">
+                  Read Stories <Arrow />
+                </Link>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="about-section">
-        <div className="container md:flex md:items-center">
-          
-          
-          <div className="md:w-1/2 w-full md:pr-16 pt-8 md:pt-0">
-            <h2 className="section-title">Who I Am</h2>
-            <p className="section-text">
-              I'm a tech professional with over 14 years of experience, specializing in optimizing business processes through tech solutions. My expertise covers web development, automation, and problem-solving, helping businesses of all sizes grow efficiently.
-            </p>
-            <Link to="/about" className="page-link">
-                About Shaun
-                <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </Link>
-          </div>
-          <div className="md:w-1/2 w-full">
+            </div>
+            <figure className="home-portrait">
               <StaticImage
-                      src="../images/shaun-sitting.jpg" // Adjust the path as necessary
-                      alt="Shaun Pezeshki"
-                      placeholder="blurred" // Optional: This prop defines the loading strategy
-                      className="shadow-lg"
-                />
+                src="../images/shaun-hero-in-light.jpg"
+                alt="Shaun Pezeshki smiling in a bright studio"
+                placeholder="blurred"
+                className="image-frame"
+                imgClassName="image-cover"
+                loading="eager"
+              />
+            </figure>
           </div>
-        </div>
-      </section>
+        </section>
 
-
-      {/* Testimonials/Case Studies */}
-      <section className="testimonials-section">
-        <div className="container">
-          <h2 className="section-title">Success Stories</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <p className="testimonial-text">"Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency."</p>
-              <p className="testimonial-author">- Travis B.</p>
+        <section className="editorial-section proof-section" id="work">
+          <div className="site-shell proof-layout">
+            <div className="section-kicker">
+              <h2>What I Offer</h2>
+              <p>
+                I partner with small to medium-sized businesses that need clearer systems, better
+                operations, and practical technology that fits how the team actually works.
+              </p>
             </div>
-            <div className="testimonial-card">
-              <p className="testimonial-text">"Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors, making it easier for them to understand who we are and what we offer."</p>
-              <p className="testimonial-author">- Nicole A.</p>
+
+            <div className="proof-columns">
+              <div className="service-list">
+                {services.map(([title, text]) => (
+                  <div className="service-item" key={title}>
+                    <div>
+                      <h3>{title}</h3>
+                      <p>{text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="proof-notes">
+                <p className="list-label">Who I work with</p>
+                {industries.map(([title, text]) => (
+                  <div className="note-row" key={title}>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="quote-strip" aria-label="Client feedback">
+              {testimonials.map((testimonial) => (
+                <figure key={testimonial.author}>
+                  <blockquote>{testimonial.quote}</blockquote>
+                  <figcaption>{testimonial.author}</figcaption>
+                </figure>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Latest Articles Section */}
-      <section className="latest-articles-section">
-          <div className="container home">
-            <h2 className="section-title">Latest Articles</h2>
-            <p className="section-text">Here are my latest posts on tech and business. While my blog dives into all aspects of my journey, these articles focuses on practical insights to help businesses grow.</p>
-            <Link to="/blog" className="page-link">
-                All Posts
-                <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-            </Link>
+        <section className="editorial-section writing-section">
+          <div className="site-shell writing-layout">
+            <div className="section-kicker">
+              <h2>Stories from work, life, and what I&apos;m still figuring out.</h2>
+              <p>
+                I write about tech, identity, community, career shifts, and the questions that keep
+                coming up along the way.
+              </p>
+              <Link to="/blog" className="text-link">
+                All Posts <Arrow />
+              </Link>
+            </div>
             <PostList posts={latestPosts} />
           </div>
         </section>
 
-      {/* Call to Action */}
-      <section className="cta-section">
-        <div className="container text-center">
-          <h2 className="section-title">Ready to Connect with Shaun?</h2>
-          <Link to="/chat-with-shaun" className="cta-button">Let's Chat
-          <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-          </Link>
-        </div>
-      </section>
+        <section className="editorial-section profile-bridge">
+          <div className="site-shell profile-layout">
+            <div className="profile-image-grid">
+              <StaticImage
+                src="../images/shaun-sitting.jpg"
+                alt="Shaun Pezeshki sitting and smiling"
+                placeholder="blurred"
+                className="image-frame profile-main-image"
+                imgClassName="image-cover"
+              />
+            </div>
+            <div className="section-kicker">
+              <h2>Who I am shapes how I work.</h2>
+              <p>
+                I&apos;m a tech professional with over 14 years of experience, specializing in
+                optimizing business processes through tech solutions. Beyond technology, I care about
+                social advocacy, inclusivity, and making room for more honest conversations.
+              </p>
+              <Link to="/about" className="button button-secondary">
+                About Shaun <Arrow />
+              </Link>
+            </div>
+          </div>
+        </section>
 
+        <section className="editorial-section contact-cta">
+          <div className="site-shell contact-cta__inner">
+            <p className="eyebrow">Open to useful conversations</p>
+            <h2>
+              Have a project in mind, a workflow that takes too much time, or just want to talk
+              through an idea?
+            </h2>
+            <div className="action-row">
+              <Link to="/chat-with-shaun" className="button button-primary">
+                Let&apos;s Chat <Arrow />
+              </Link>
+              <a href="mailto:shaun@uphighstudio.com" className="button button-secondary">
+                Email Shaun <Arrow />
+              </a>
+            </div>
+          </div>
+        </section>
       </Layout>
     </>
   );
@@ -165,15 +197,11 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    categories: allMarkdownRemark {
-      group(field: {frontmatter: {category: SELECT}}) {
-        fieldValue
-      }
-    }
-    totalCount: allMarkdownRemark {
-      totalCount
-    }
-    latestPosts: allMarkdownRemark(limit: 2, sort: {frontmatter: {date: DESC}}, filter: { frontmatter: { category: { in: ["Career Development", "Technology"] } } }) {
+    latestPosts: allMarkdownRemark(
+      limit: 3
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
       edges {
         node {
           frontmatter {
@@ -190,11 +218,6 @@ export const query = graphql`
           }
           rawMarkdownBody
         }
-      }
-    }
-    site {
-      siteMetadata {
-        siteUrl
       }
     }
   }

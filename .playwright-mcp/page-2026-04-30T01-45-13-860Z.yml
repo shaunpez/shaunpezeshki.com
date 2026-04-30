@@ -1,0 +1,62 @@
+- generic [ref=e2]:
+  - generic [active] [ref=e3]:
+    - banner [ref=e156]:
+      - generic [ref=e157]:
+        - heading "SP" [level=1] [ref=e158]:
+          - link "SP" [ref=e159] [cursor=pointer]:
+            - /url: /
+        - navigation [ref=e160]:
+          - list [ref=e161]:
+            - listitem [ref=e162] [cursor=pointer]:
+              - link "About" [ref=e163]:
+                - /url: /about/
+            - listitem [ref=e164] [cursor=pointer]:
+              - link "Blog" [ref=e165]:
+                - /url: /blog/
+            - listitem [ref=e166] [cursor=pointer]:
+              - link "Chat with Shaun" [ref=e167]:
+                - /url: /chat-with-shaun/
+            - listitem [ref=e168] [cursor=pointer]:
+              - link "Buy Me Coffee" [ref=e169]:
+                - /url: https://buymeacoffee.com/shaunpez
+                - img "Buy Me Coffee" [ref=e170]
+    - main [ref=e171]:
+      - generic [ref=e174]:
+        - generic [ref=e176]:
+          - img [ref=e178]
+          - img [ref=e179]
+          - img "Shaun Pezeshki" [ref=e180]
+        - generic [ref=e181]:
+          - heading "About Shaun Pezeshki" [level=1] [ref=e182]
+          - paragraph [ref=e183]: Shaun Pezeshki is a technical strategist and entrepreneurship known for enhancing business operations. With a strong marketing and tech background, he maximizes client investments efficiently.
+          - paragraph [ref=e184]: He excels at integrating modern solutions with existing systems, boosting efficiency. Shaun's diverse experience, from individual brands to agencies, enables him to understand varied needs and develop strategic success roadmaps.
+          - paragraph [ref=e185]: By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions.
+          - paragraph [ref=e186]:
+            - text: Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He also writes for
+            - link "Prism & Pen" [ref=e187] [cursor=pointer]:
+              - /url: https://medium.com/prismnpen
+            - text: ", a publication focused on amplifying LGBTQ+ voices."
+          - heading "Want to connect?" [level=3] [ref=e188]
+          - paragraph [ref=e189]:
+            - text: Reach out at
+            - link "shaun@uphighstudio.com" [ref=e190] [cursor=pointer]:
+              - /url: mailto:shaun@uphighstudio.com
+            - text: .
+    - contentinfo [ref=e191]:
+      - list [ref=e193]:
+        - listitem [ref=e194]:
+          - link "LinkedIn" [ref=e195] [cursor=pointer]:
+            - /url: https://linkedin.com/in/shaunpez
+        - listitem [ref=e196]:
+          - link "X" [ref=e197] [cursor=pointer]:
+            - /url: https://twitter.com/shaunpez
+        - listitem [ref=e198]:
+          - link "Instagram" [ref=e199] [cursor=pointer]:
+            - /url: https://instagram.com/shaunpez
+        - listitem [ref=e200]:
+          - link "RSS" [ref=e201] [cursor=pointer]:
+            - /url: /rss.xml
+        - listitem [ref=e202]:
+          - link "Privacy" [ref=e203] [cursor=pointer]:
+            - /url: /privacy-policy/
+  - generic [ref=e155]: Navigated to SP

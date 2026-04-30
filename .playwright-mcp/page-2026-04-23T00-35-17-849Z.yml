@@ -1,0 +1,223 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "SP" [level=1] [ref=e6]:
+        - link "SP" [ref=e7] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10] [cursor=pointer]:
+            - link "About" [ref=e11]:
+              - /url: /about/
+          - listitem [ref=e12] [cursor=pointer]:
+            - link "Blog" [ref=e13]:
+              - /url: /blog/
+          - listitem [ref=e14] [cursor=pointer]:
+            - link "Chat with Shaun" [ref=e15]:
+              - /url: /chat-with-shaun/
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - heading "Threads of Perspective" [level=1] [ref=e21]
+        - generic [ref=e23]:
+          - link "All" [ref=e24] [cursor=pointer]:
+            - /url: /blog/
+          - link "Career Development" [ref=e25] [cursor=pointer]:
+            - /url: /category/career-development/
+          - link "Economy" [ref=e26] [cursor=pointer]:
+            - /url: /category/economy/
+          - link "History" [ref=e27] [cursor=pointer]:
+            - /url: /category/history/
+          - link "Human Stories" [ref=e28] [cursor=pointer]:
+            - /url: /category/human-stories/
+          - link "LGBTQ+" [ref=e29] [cursor=pointer]:
+            - /url: /category/lgbtq+/
+          - link "Mental Health" [ref=e30] [cursor=pointer]:
+            - /url: /category/mental-health/
+          - link "Personal Development" [ref=e31] [cursor=pointer]:
+            - /url: /category/personal-development/
+          - link "Politics" [ref=e32] [cursor=pointer]:
+            - /url: /category/politics/
+          - link "Spirituality" [ref=e33] [cursor=pointer]:
+            - /url: /category/spirituality/
+          - link "Technology" [ref=e34] [cursor=pointer]:
+            - /url: /category/technology/
+      - article [ref=e37] [cursor=pointer]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - link "Personal Development" [ref=e45]:
+              - /url: /category/personal-development/
+            - generic [ref=e46]: Apr 22, 2026
+          - heading "A Good City Is Not Enough" [level=2] [ref=e47]:
+            - link "A Good City Is Not Enough" [ref=e48]:
+              - /url: /2026/04/22/columbus-taught-me-what-i-want/
+          - paragraph [ref=e49]:
+            - text: A year in Columbus, Ohio showed me the difference between a place working on paper and a place working for you.
+            - generic [ref=e50]: "[7 min read]"
+          - link "Read more" [ref=e51]:
+            - /url: /2026/04/22/columbus-taught-me-what-i-want/
+            - text: Read more
+            - img [ref=e52]
+        - text: Latest
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - article [ref=e56] [cursor=pointer]:
+            - generic [ref=e57]:
+              - generic [ref=e61]:
+                - link "Technology" [ref=e62]:
+                  - /url: /category/technology/
+                - generic [ref=e63]: Mar 5, 2026
+              - generic [ref=e64]:
+                - heading "AI Is Not Making You More Productive. Yet." [level=2] [ref=e65]:
+                  - link "AI Is Not Making You More Productive. Yet." [ref=e66]:
+                    - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                - paragraph [ref=e67]:
+                  - text: The on-the-ground feedback from people using AI does not match the hype. History tells us why.
+                  - generic [ref=e68]: "[6 min read]"
+                - link "Read more" [ref=e69]:
+                  - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                  - text: Read more
+                  - img [ref=e70]
+          - article [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]:
+              - generic [ref=e77]:
+                - link "History" [ref=e78]:
+                  - /url: /category/history/
+                - generic [ref=e79]: Mar 4, 2026
+              - generic [ref=e80]:
+                - heading "How Iran Got Here" [level=2] [ref=e81]:
+                  - link "How Iran Got Here" [ref=e82]:
+                    - /url: /2026/03/04/how-iran-got-here/
+                - paragraph [ref=e83]:
+                  - text: The unrest in Iran traces back to a 1953 CIA coup, British oil greed, and seven decades of consequences the Iranian people never asked for.
+                  - generic [ref=e84]: "[7 min read]"
+                - link "Read more" [ref=e85]:
+                  - /url: /2026/03/04/how-iran-got-here/
+                  - text: Read more
+                  - img [ref=e86]
+          - article [ref=e88] [cursor=pointer]:
+            - generic [ref=e89]:
+              - generic [ref=e93]:
+                - link "Personal Development" [ref=e94]:
+                  - /url: /category/personal-development/
+                - generic [ref=e95]: Mar 1, 2026
+              - generic [ref=e96]:
+                - heading "You Can't Just Be Yourself" [level=2] [ref=e97]:
+                  - link "You Can't Just Be Yourself" [ref=e98]:
+                    - /url: /2026/03/01/you-cant-just-be-yourself/
+                - paragraph [ref=e99]:
+                  - text: The advice to be yourself assumes a fixed self exists and distinction is optional. Both are wrong.
+                  - generic [ref=e100]: "[5 min read]"
+                - link "Read more" [ref=e101]:
+                  - /url: /2026/03/01/you-cant-just-be-yourself/
+                  - text: Read more
+                  - img [ref=e102]
+          - article [ref=e104] [cursor=pointer]:
+            - generic [ref=e105]:
+              - generic [ref=e109]:
+                - link "Personal Development" [ref=e110]:
+                  - /url: /category/personal-development/
+                - generic [ref=e111]: Jan 26, 2026
+              - generic [ref=e112]:
+                - heading "We're All Staying on Social Media in 2026 and Here's Why" [level=2] [ref=e113]:
+                  - link "We're All Staying on Social Media in 2026 and Here's Why" [ref=e114]:
+                    - /url: /2026/01/26/staying-on-social-media-2026/
+                - paragraph [ref=e115]:
+                  - text: Logging off is a luxury. For many, being online is not vanity. It is economic, social, and civic survival.
+                  - generic [ref=e116]: "[4 min read]"
+                - link "Read more" [ref=e117]:
+                  - /url: /2026/01/26/staying-on-social-media-2026/
+                  - text: Read more
+                  - img [ref=e118]
+          - article [ref=e120] [cursor=pointer]:
+            - generic [ref=e121]:
+              - generic [ref=e125]:
+                - link "LGBTQ+" [ref=e126]:
+                  - /url: /category/lgbtq+/
+                - generic [ref=e127]: Jul 22, 2025
+              - generic [ref=e128]:
+                - 'heading "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [level=2] [ref=e129]':
+                  - 'link "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [ref=e130]':
+                    - /url: /2025/07/22/pride-becomes-performance-gay-community/
+                - paragraph [ref=e131]:
+                  - text: Why being lectured about Pride history by the same people who have consistently marginalized you feels particularly hollow.
+                  - generic [ref=e132]: "[6 min read]"
+                - link "Read more" [ref=e133]:
+                  - /url: /2025/07/22/pride-becomes-performance-gay-community/
+                  - text: Read more
+                  - img [ref=e134]
+          - article [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - generic [ref=e141]:
+                - link "Technology" [ref=e142]:
+                  - /url: /category/technology/
+                - generic [ref=e143]: Mar 22, 2025
+              - generic [ref=e144]:
+                - 'heading "Quantum Computing: How Your Passwords Became Obsolete Overnight" [level=2] [ref=e145]':
+                  - 'link "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e146]':
+                    - /url: /2025/03/22/quantum-computing-password-security/
+                - paragraph [ref=e147]:
+                  - text: Quantum computing promises incredible power but might destroy the digital security we depend on. Here's how this tech works and why you should pay attention.
+                  - generic [ref=e148]: "[5 min read]"
+                - link "Read more" [ref=e149]:
+                  - /url: /2025/03/22/quantum-computing-password-security/
+                  - text: Read more
+                  - img [ref=e150]
+          - article [ref=e152] [cursor=pointer]:
+            - generic [ref=e153]:
+              - generic [ref=e157]:
+                - link "Personal Development" [ref=e158]:
+                  - /url: /category/personal-development/
+                - generic [ref=e159]: Mar 21, 2025
+              - generic [ref=e160]:
+                - 'heading "My Own Naw Ruz: Finding Growth in New Beginnings" [level=2] [ref=e161]':
+                  - 'link "My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e162]':
+                    - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+                - paragraph [ref=e163]:
+                  - text: This Naw Ruz marks more than spring, it marks a fresh start, reclaiming myself after years of feeling paused.
+                  - generic [ref=e164]: "[4 min read]"
+                - link "Read more" [ref=e165]:
+                  - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+                  - text: Read more
+                  - img [ref=e166]
+          - article [ref=e168] [cursor=pointer]:
+            - generic [ref=e169]:
+              - generic [ref=e173]:
+                - link "Politics" [ref=e174]:
+                  - /url: /category/politics/
+                - generic [ref=e175]: Nov 25, 2024
+              - generic [ref=e176]:
+                - 'heading "Immigration: The Truth Behind the Divide" [level=2] [ref=e177]':
+                  - 'link "Immigration: The Truth Behind the Divide" [ref=e178]':
+                    - /url: /2024/11/25/immigration-story-debate/
+                - paragraph [ref=e179]:
+                  - text: A balanced look at the immigration debate, exploring its history, economic implications, and modern challenges.
+                  - generic [ref=e180]: "[8 min read]"
+                - link "Read more" [ref=e181]:
+                  - /url: /2024/11/25/immigration-story-debate/
+                  - text: Read more
+                  - img [ref=e182]
+        - generic [ref=e184]:
+          - link "←Previous" [ref=e185] [cursor=pointer]:
+            - /url: /page/2/
+          - text: Next→
+      - generic [ref=e188]:
+        - heading "The Story Behind the Blog" [level=3] [ref=e189]
+        - paragraph [ref=e190]: Real talk on identity, tech, and what it means to grow up in a world that's constantly shifting. No fluff, just honest perspectives worth sitting with.
+  - contentinfo [ref=e191]:
+    - list [ref=e193]:
+      - listitem [ref=e194]:
+        - link "LinkedIn" [ref=e195] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+      - listitem [ref=e196]:
+        - link "X" [ref=e197] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+      - listitem [ref=e198]:
+        - link "Instagram" [ref=e199] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+      - listitem [ref=e200]:
+        - link "RSS" [ref=e201] [cursor=pointer]:
+          - /url: /rss.xml
+      - listitem [ref=e202]:
+        - link "Privacy" [ref=e203] [cursor=pointer]:
+          - /url: /privacy-policy/

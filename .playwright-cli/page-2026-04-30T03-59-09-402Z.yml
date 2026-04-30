@@ -1,0 +1,53 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: About Shaun
+        - heading "Technical strategist, writer, and advocate for human rights." [level=1] [ref=e17]
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Across consulting, automation, and strategy work, Shaun helps clients turn scattered systems into cleaner workflows, sharper decisions, and better use of the tools they already have.
+          - paragraph [ref=e20]: He excels at integrating modern solutions with existing systems, boosting efficiency. Shaun's diverse experience, from individual brands to agencies, enables him to understand varied needs and develop strategic success roadmaps.
+          - paragraph [ref=e21]: By combining creativity with technology, Shaun focuses on increasing user engagement and creating impactful business solutions.
+          - paragraph [ref=e22]:
+            - text: Beyond technology, Shaun is dedicated to social advocacy, promoting inclusivity for Asian, Middle Eastern, and LGBTQ+ communities. He serves on the Human Rights Campaign Columbus steering committee and is part of the national HRC community. He also writes for
+            - link "Prism & Pen" [ref=e23] [cursor=pointer]:
+              - /url: https://medium.com/prismnpen
+            - text: ", a publication focused on amplifying LGBTQ+ voices."
+          - generic [ref=e24]:
+            - link "Connect with Shaun" [ref=e25] [cursor=pointer]:
+              - /url: /chat-with-shaun/
+            - link "Email Shaun" [ref=e26] [cursor=pointer]:
+              - /url: mailto:shaun@uphighstudio.com
+      - generic [ref=e27]:
+        - img [ref=e29]
+        - img [ref=e30]
+        - img "Shaun Pezeshki smiling" [ref=e31]
+  - contentinfo [ref=e32]:
+    - generic [ref=e33]:
+      - link "Shaun Pezeshki" [ref=e35] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e36]:
+        - link "LinkedIn" [ref=e37] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e38] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e39] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e40] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e41] [cursor=pointer]:
+          - /url: /privacy-policy/

@@ -1,0 +1,171 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - heading "I help businesses grow and succeed." [level=1] [ref=e16]
+        - paragraph [ref=e17]: I build smarter automations, cleaner workflows, and practical tech systems that help teams move with less friction. I also write about technology, identity, community, and the parts of life that do not fit neatly into a job title.
+        - generic "Primary actions" [ref=e18]:
+          - link "Let's Chat" [ref=e19] [cursor=pointer]:
+            - /url: /chat-with-shaun/
+            - text: Let's Chat
+            - img [ref=e20]
+          - link "Read Stories" [ref=e22] [cursor=pointer]:
+            - /url: /blog/
+            - text: Read Stories
+            - img [ref=e23]
+      - figure [ref=e25]:
+        - generic [ref=e26]:
+          - img [ref=e28]
+          - img [ref=e29]
+          - img "Shaun Pezeshki smiling in a bright studio" [ref=e30]
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - heading "What I Offer" [level=2] [ref=e34]
+        - paragraph [ref=e35]: I partner with small to medium-sized businesses that need clearer systems, better operations, and practical technology that fits how the team actually works.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e39]:
+            - heading "Tech Optimization" [level=3] [ref=e40]
+            - paragraph [ref=e41]: Revamp systems for higher efficiency.
+          - generic [ref=e43]:
+            - heading "Automation Solutions" [level=3] [ref=e44]
+            - paragraph [ref=e45]: Eliminate manual tasks with custom automation.
+          - generic [ref=e47]:
+            - heading "Custom Development" [level=3] [ref=e48]
+            - paragraph [ref=e49]: Tailored tools to meet your specific business goals.
+          - generic [ref=e51]:
+            - heading "Data-Driven Strategy" [level=3] [ref=e52]
+            - paragraph [ref=e53]: Insights to guide smarter decision-making.
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: Who I work with
+          - generic [ref=e56]:
+            - heading "Manufacturing" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Streamlining operations and optimizing production workflows.
+          - generic [ref=e59]:
+            - heading "E-commerce" [level=3] [ref=e60]
+            - paragraph [ref=e61]: Enhancing customer experiences through automation and seamless integrations.
+          - generic [ref=e62]:
+            - heading "Brands and Agencies" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Developing tailored solutions that boost efficiency and drive growth.
+      - generic "Client feedback" [ref=e65]:
+        - figure "Travis B." [ref=e66]:
+          - blockquote [ref=e67]: Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency.
+          - generic [ref=e68]: Travis B.
+        - figure "Nicole A." [ref=e69]:
+          - blockquote [ref=e70]: Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors.
+          - generic [ref=e71]: Nicole A.
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - heading "Stories from work, life, and what I'm still figuring out." [level=2] [ref=e75]
+        - paragraph [ref=e76]: I write about tech, identity, community, career shifts, and the questions that keep coming up along the way.
+        - link "All Posts" [ref=e77] [cursor=pointer]:
+          - /url: /blog/
+          - text: All Posts
+          - img [ref=e78]
+      - generic [ref=e80]:
+        - article [ref=e81]:
+          - link "Read A Good City Is Not Enough" [ref=e82] [cursor=pointer]:
+            - /url: /2026/04/22/columbus-taught-me-what-i-want/
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - link "Personal Development" [ref=e88] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e89]: Apr 22, 2026
+            - heading "A Good City Is Not Enough" [level=2] [ref=e90]:
+              - link "A Good City Is Not Enough" [ref=e91] [cursor=pointer]:
+                - /url: /2026/04/22/columbus-taught-me-what-i-want/
+            - paragraph [ref=e92]: A year in Columbus, Ohio showed me the difference between a place working on paper and a place working for you. 7 min read
+            - link "Read more" [ref=e93] [cursor=pointer]:
+              - /url: /2026/04/22/columbus-taught-me-what-i-want/
+              - text: Read more
+              - img [ref=e94]
+        - article [ref=e96]:
+          - link "Read AI Is Not Making You More Productive. Yet." [ref=e97] [cursor=pointer]:
+            - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - link "Technology" [ref=e103] [cursor=pointer]:
+                - /url: /category/technology/
+              - generic [ref=e104]: Mar 5, 2026
+            - heading "AI Is Not Making You More Productive. Yet." [level=2] [ref=e105]:
+              - link "AI Is Not Making You More Productive. Yet." [ref=e106] [cursor=pointer]:
+                - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+            - paragraph [ref=e107]: The on-the-ground feedback from people using AI does not match the hype. History tells us why. 6 min read
+            - link "Read more" [ref=e108] [cursor=pointer]:
+              - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+              - text: Read more
+              - img [ref=e109]
+        - article [ref=e111]:
+          - link "Read How Iran Got Here" [ref=e112] [cursor=pointer]:
+            - /url: /2026/03/04/how-iran-got-here/
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - link "History" [ref=e118] [cursor=pointer]:
+                - /url: /category/history/
+              - generic [ref=e119]: Mar 4, 2026
+            - heading "How Iran Got Here" [level=2] [ref=e120]:
+              - link "How Iran Got Here" [ref=e121] [cursor=pointer]:
+                - /url: /2026/03/04/how-iran-got-here/
+            - paragraph [ref=e122]: The unrest in Iran traces back to a 1953 CIA coup, British oil greed, and seven decades of consequences the Iranian people never asked for. 7 min read
+            - link "Read more" [ref=e123] [cursor=pointer]:
+              - /url: /2026/03/04/how-iran-got-here/
+              - text: Read more
+              - img [ref=e124]
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - img [ref=e131]
+          - img [ref=e132]
+          - img "Shaun Pezeshki sitting and smiling" [ref=e133]
+        - generic [ref=e134]:
+          - img [ref=e136]
+          - img [ref=e137]
+          - img "Shaun Pezeshki in front of a wall of books" [ref=e138]
+      - generic [ref=e139]:
+        - heading "Who I am shapes how I work." [level=2] [ref=e140]
+        - paragraph [ref=e141]: I'm a tech professional with over 14 years of experience, specializing in optimizing business processes through tech solutions. Beyond technology, I care about social advocacy, inclusivity, and making room for more honest conversations.
+        - link "About Shaun" [ref=e142] [cursor=pointer]:
+          - /url: /about/
+          - text: About Shaun
+          - img [ref=e143]
+    - generic [ref=e146]:
+      - paragraph [ref=e147]: Open to useful conversations
+      - heading "Have a project in mind, a messy workflow, or just want to talk through an idea?" [level=2] [ref=e148]
+      - generic [ref=e149]:
+        - link "Let's Chat" [ref=e150] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+          - text: Let's Chat
+          - img [ref=e151]
+        - link "Email Shaun" [ref=e153] [cursor=pointer]:
+          - /url: mailto:shaun@uphighstudio.com
+          - text: Email Shaun
+          - img [ref=e154]
+  - contentinfo [ref=e156]:
+    - generic [ref=e157]:
+      - link "Shaun Pezeshki" [ref=e159] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e160]:
+        - link "LinkedIn" [ref=e161] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e162] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e163] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e164] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e165] [cursor=pointer]:
+          - /url: /privacy-policy/

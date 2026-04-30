@@ -1,41 +1,63 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-import headerImage from '../images/shaun-hero-v4.jpg';
+import headerImage from "../images/shaun-hero-v4.jpg";
 import Seo from "../components/seo";
 
 const ContactPage = () => (
   <>
-<Seo
-      title="Connect with Shaun Pezeshki: Tech Enthusiast, Strategist & Entrepreneur"
-      description="Engage with Shaun Pezeshki for insightful tech and entrepreneurship discussions and collaborations. Ready to chat about AI, tech innovations, entrepreneurship, or grab a virtual coffee."
+    <Seo
+      title="Connect with Shaun Pezeshki"
+      description="Chat with Shaun Pezeshki about technology, entrepreneurship, inclusivity, consulting, or a virtual coffee."
       meta={[
         {
-          name: 'keywords',
-          content: 'Shaun Pezeshki, Technical Strategist, Technology, AI Conversations, Tech Collaboration, Entrepreneurship, Virtual Coffee Chat, Inclusive Techie',
+          name: "keywords",
+          content:
+            "Shaun Pezeshki, Technical Strategist, Technology, AI Conversations, Tech Collaboration, Entrepreneurship, Virtual Coffee Chat, Inclusive Techie",
         },
       ]}
       image={headerImage}
     />
-  <Layout>
-    <div className="contact-page">
-      <div className="container">
-        <div className="prose">
-          <h1>Let's Chat</h1>
-          <p>
-          Hey there! Interested in chatting about tech, entrepreneurship, exploring inclusivity, or anything in between? Whether you're itching to share the latest breakthrough or just looking for a friendly chat, I'm here to learn and talk shop.
-          </p>
-          <h3>Want to set up a coffee chat?</h3>
-          <p>Pick a slot from my  <a href="https://calendly.com/shaunpez/coffee-chat">Calendly link</a> (15-minute chats available). </p>
-          <h3>Prefer email?</h3>
-          <p>Reach out to me at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>. You can also connect with me on social media.</p>  
-          <h3>Curious about what I do?</h3>
-          <p>
-             Check out <a href="https://uphighstudio.com">Up High Studio</a> and let's chat soon!
-          </p>
+    <Layout>
+      <section className="contact-page editorial-page">
+        <div className="site-shell editorial-page__hero contact-hero">
+          <div>
+            <p className="eyebrow">Let&apos;s Chat</p>
+            <h1>For consulting, coffee chats, or talking through an idea.</h1>
+            <p className="lede">
+              Interested in chatting about tech, entrepreneurship, exploring inclusivity, or
+              something in between? I&apos;m here to learn, talk shop, and see where the conversation
+              goes.
+            </p>
+          </div>
+          <StaticImage
+            src="../images/shaun-bookstore3.jpg"
+            alt="Shaun Pezeshki in front of a wall of books"
+            placeholder="blurred"
+            className="image-frame editorial-page__image"
+            imgClassName="image-cover"
+          />
         </div>
-      </div>
-    </div>
-  </Layout>
+
+        <div className="site-shell contact-options">
+          <a className="contact-option" href="https://calendly.com/shaunpez/coffee-chat">
+            <span>01</span>
+            <strong>Coffee chat</strong>
+            <p>Pick a slot from my Calendly link. Fifteen-minute chats are available.</p>
+          </a>
+          <a className="contact-option" href="mailto:shaun@uphighstudio.com">
+            <span>02</span>
+            <strong>Email</strong>
+            <p>Reach out at shaun@uphighstudio.com for projects, ideas, or introductions.</p>
+          </a>
+          <a className="contact-option" href="https://uphighstudio.com">
+            <span>03</span>
+            <strong>Up High Studio</strong>
+            <p>Curious about the consulting work? See the studio and what I help teams build.</p>
+          </a>
+        </div>
+      </section>
+    </Layout>
   </>
 );
 

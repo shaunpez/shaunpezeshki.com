@@ -1,48 +1,60 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import calculateReadingTime from '../utils/read-time';
+import React from "react";
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import calculateReadingTime from "../utils/read-time";
 
-const createCategoryPath = (category) => {
-  return category.toLowerCase().replace(/\s+/g, '-');
-};
+const createCategoryPath = (category) => category.toLowerCase().replace(/\s+/g, "-");
+
+const Arrow = () => (
+  <svg aria-hidden="true" className="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M11.25 3.75 17.5 10l-6.25 6.25-1.06-1.06 4.44-4.44H2.5v-1.5h12.13L10.19 4.81l1.06-1.06Z" />
+  </svg>
+);
 
 const FeaturedPost = ({ post, handleLinkClick }) => {
   if (!post) return null;
 
   const { title, date, slug, category, excerpt, image } = post.frontmatter;
-  const formattedDate = new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
   const postUrl = `/${date}/${slug}`;
 
   return (
-      <article key={slug} className="featured-blog-post">
-        <div className="blog-col">
-          {image && (
-            <div className="blog-hero">
-              <GatsbyImage
-                className="featured-image"
-                image={image.childImageSharp.gatsbyImageData}
-                alt={title}
-                imgStyle={{ objectFit: 'cover', objectPosition: 'center bottom' }}
-              />
-            </div>
-          )}
-          <div className={image ? "blog-main" : ""}>
-            <div className="blog-copy">
-              <div className="blog-info">
-                <Link to={`/category/${createCategoryPath(category)}`} className="blog-category">{category}</Link>
-                <span className="blog-date">{formattedDate}</span>
-              </div>
-              <h2><Link to={postUrl} onClick={handleLinkClick}>{title}</Link></h2>
-              <p>{excerpt} <span>[{calculateReadingTime(post.rawMarkdownBody)}]</span></p>
-              <Link to={postUrl} onClick={handleLinkClick} className="blog-link">
-                Read more
-                <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-              </Link>
-            </div>
-          </div>
+    <article key={slug} className="featured-blog-post">
+      <div className="featured-blog-post__copy">
+        <p className="list-label">Featured story</p>
+        <div className="blog-info">
+          <Link to={`/category/${createCategoryPath(category)}`} className="blog-category">
+            {category}
+          </Link>
+          <span className="blog-date">{formattedDate}</span>
         </div>
-      </article>
+        <h2>
+          <Link to={postUrl} onClick={handleLinkClick}>
+            {title}
+          </Link>
+        </h2>
+        <p>
+          {excerpt} <span>{calculateReadingTime(post.rawMarkdownBody)}</span>
+        </p>
+        <Link to={postUrl} onClick={handleLinkClick} className="text-link">
+          Read more <Arrow />
+        </Link>
+      </div>
+      {image && (
+        <Link to={postUrl} onClick={handleLinkClick} className="blog-hero" aria-label={`Read ${title}`}>
+          <GatsbyImage
+            className="featured-image"
+            image={image.childImageSharp.gatsbyImageData}
+            alt=""
+            imgStyle={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </Link>
+      )}
+    </article>
   );
 };
 

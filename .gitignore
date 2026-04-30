@@ -71,3 +71,6 @@ yarn-error.log
 # Google Key
 z_google/
 .qodo
+
+# Local browser state from Playwright verification
+output/playwright/profile/

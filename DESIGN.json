@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-30T00:00:00Z",
+  "title": "Design System: Warm Editorial Index",
+  "extensions": {
+    "northStar": {
+      "name": "Personal Map Masthead",
+      "summary": "A warm, photo-led editorial index that connects Shaun's consulting work, stories, and personal background."
+    },
+    "visualProbeDecision": {
+      "generated": true,
+      "chosenDirection": "Hybrid of Field Notes Masthead and Personal Map",
+      "carryForward": [
+        "Shaun's photo leads the masthead",
+        "Consulting proof follows the hero without an extra start-here index",
+        "Consulting proof uses services, industries, and quotes rather than equal card grids",
+        "Latest stories appear as editorial entries",
+        "Warm paper, teal, clay, and olive accents"
+      ],
+      "doNotLiteralize": [
+        "Generated fake photos",
+        "Handwritten annotations",
+        "Exact probe copy",
+        "Stock landscape scenes"
+      ]
+    },
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Notebook Ink",
+        "canonical": "#202620"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fbf7ee"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Fresh Surface",
+        "canonical": "#fffdf8"
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Signal Teal",
+        "canonical": "#0e7c74"
+      },
+      "clay": {
+        "role": "secondary",
+        "displayName": "Clay Warmth",
+        "canonical": "#b85f45"
+      },
+      "olive": {
+        "role": "secondary",
+        "displayName": "Olive Leaf",
+        "canonical": "#697b45"
+      }
+    },
+    "rules": {
+      "firstViewport": "Show Shaun/personality and hint at the next section on mobile and desktop.",
+      "readFirst": "Article pages prioritize comfortable reading measure and working audio/category/tag UI.",
+      "proof": "Consulting proof should feel specific and editorial, not like a generic service-card grid.",
+      "antiPattern": "No Consulting + personal writing bubble, no repeated two-column homepage rhythm, no SaaS consultant template."
+    }
+  }
+}

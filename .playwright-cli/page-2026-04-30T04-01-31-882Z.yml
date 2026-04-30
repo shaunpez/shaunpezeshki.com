@@ -1,0 +1,57 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Let's Chat
+          - heading "For consulting, coffee chats, or talking through an idea." [level=1] [ref=e17]
+          - paragraph [ref=e18]: Interested in chatting about tech, entrepreneurship, exploring inclusivity, or something in between? I'm here to learn, talk shop, and see where the conversation goes.
+        - generic [ref=e19]:
+          - img [ref=e21]
+          - img [ref=e22]
+          - img "Shaun Pezeshki in front of a wall of books" [ref=e23]
+      - generic [ref=e24]:
+        - link "01 Coffee chat Pick a slot from my Calendly link. Fifteen-minute chats are available." [ref=e25] [cursor=pointer]:
+          - /url: https://calendly.com/shaunpez/coffee-chat
+          - generic [ref=e26]: "01"
+          - strong [ref=e27]: Coffee chat
+          - paragraph [ref=e28]: Pick a slot from my Calendly link. Fifteen-minute chats are available.
+        - link "02 Email Reach out at shaun@uphighstudio.com for projects, ideas, or introductions." [ref=e29] [cursor=pointer]:
+          - /url: mailto:shaun@uphighstudio.com
+          - generic [ref=e30]: "02"
+          - strong [ref=e31]: Email
+          - paragraph [ref=e32]: Reach out at shaun@uphighstudio.com for projects, ideas, or introductions.
+        - link "03 Up High Studio Curious about the consulting work? See the studio and what I help teams build." [ref=e33] [cursor=pointer]:
+          - /url: https://uphighstudio.com
+          - generic [ref=e34]: "03"
+          - strong [ref=e35]: Up High Studio
+          - paragraph [ref=e36]: Curious about the consulting work? See the studio and what I help teams build.
+  - contentinfo [ref=e37]:
+    - generic [ref=e38]:
+      - link "Shaun Pezeshki" [ref=e40] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e41]:
+        - link "LinkedIn" [ref=e42] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e43] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e44] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e45] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e46] [cursor=pointer]:
+          - /url: /privacy-policy/

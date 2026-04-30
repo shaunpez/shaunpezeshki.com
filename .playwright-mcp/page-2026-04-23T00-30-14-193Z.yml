@@ -1,0 +1,238 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "SP" [level=1] [ref=e6]:
+        - link "SP" [ref=e7] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10] [cursor=pointer]:
+            - link "About" [ref=e11]:
+              - /url: /about/
+          - listitem [ref=e12] [cursor=pointer]:
+            - link "Blog" [ref=e13]:
+              - /url: /blog/
+          - listitem [ref=e14] [cursor=pointer]:
+            - link "Chat with Shaun" [ref=e15]:
+              - /url: /chat-with-shaun/
+          - listitem [ref=e16] [cursor=pointer]:
+            - link "Buy Me Coffee" [ref=e17]:
+              - /url: https://buymeacoffee.com/shaunpez
+              - img "Buy Me Coffee" [ref=e18]
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e22]:
+        - heading "Threads of Perspective" [level=1] [ref=e24]
+        - generic [ref=e26]:
+          - link "All" [ref=e27] [cursor=pointer]:
+            - /url: /blog/
+          - link "Career Development" [ref=e28] [cursor=pointer]:
+            - /url: /category/career-development/
+          - link "Economy" [ref=e29] [cursor=pointer]:
+            - /url: /category/economy/
+          - link "History" [ref=e30] [cursor=pointer]:
+            - /url: /category/history/
+          - link "Human Stories" [ref=e31] [cursor=pointer]:
+            - /url: /category/human-stories/
+          - link "LGBTQ+" [ref=e32] [cursor=pointer]:
+            - /url: /category/lgbtq+/
+          - link "Mental Health" [ref=e33] [cursor=pointer]:
+            - /url: /category/mental-health/
+          - link "Personal Development" [ref=e34] [cursor=pointer]:
+            - /url: /category/personal-development/
+          - link "Politics" [ref=e35] [cursor=pointer]:
+            - /url: /category/politics/
+          - link "Spirituality" [ref=e36] [cursor=pointer]:
+            - /url: /category/spirituality/
+          - link "Technology" [ref=e37] [cursor=pointer]:
+            - /url: /category/technology/
+      - article [ref=e40] [cursor=pointer]:
+        - generic [ref=e41]:
+          - img "A Good City Is Not Enough" [ref=e46]
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]:
+                - link "Personal Development" [ref=e50]:
+                  - /url: /category/personal-development/
+                - generic [ref=e51]: Apr 22, 2026
+              - heading "A Good City Is Not Enough" [level=2] [ref=e52]:
+                - link "A Good City Is Not Enough" [ref=e53]:
+                  - /url: /2026/04/22/columbus-taught-me-what-i-want/
+              - paragraph [ref=e54]:
+                - text: A year in Columbus, Ohio showed me the difference between a place working on paper and a place working for you.
+                - generic [ref=e55]: "[7 min read]"
+            - link "Read more" [ref=e56]:
+              - /url: /2026/04/22/columbus-taught-me-what-i-want/
+              - text: Read more
+              - img [ref=e57]
+        - text: Latest
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - article [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]:
+              - img "AI Is Not Making You More Productive. Yet." [ref=e67]
+              - generic [ref=e68]:
+                - link "Technology" [ref=e69]:
+                  - /url: /category/technology/
+                - generic [ref=e70]: Mar 5, 2026
+              - generic [ref=e71]:
+                - heading "AI Is Not Making You More Productive. Yet." [level=2] [ref=e72]:
+                  - link "AI Is Not Making You More Productive. Yet." [ref=e73]:
+                    - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                - paragraph [ref=e74]:
+                  - text: The on-the-ground feedback from people using AI does not match the hype. History tells us why.
+                  - generic [ref=e75]: "[6 min read]"
+                - link "Read more" [ref=e76]:
+                  - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                  - text: Read more
+                  - img [ref=e77]
+          - article [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]:
+              - img "How Iran Got Here" [ref=e85]
+              - generic [ref=e86]:
+                - link "History" [ref=e87]:
+                  - /url: /category/history/
+                - generic [ref=e88]: Mar 4, 2026
+              - generic [ref=e89]:
+                - heading "How Iran Got Here" [level=2] [ref=e90]:
+                  - link "How Iran Got Here" [ref=e91]:
+                    - /url: /2026/03/04/how-iran-got-here/
+                - paragraph [ref=e92]:
+                  - text: The unrest in Iran traces back to a 1953 CIA coup, British oil greed, and seven decades of consequences the Iranian people never asked for.
+                  - generic [ref=e93]: "[7 min read]"
+                - link "Read more" [ref=e94]:
+                  - /url: /2026/03/04/how-iran-got-here/
+                  - text: Read more
+                  - img [ref=e95]
+          - article [ref=e97] [cursor=pointer]:
+            - generic [ref=e98]:
+              - img "You Can't Just Be Yourself" [ref=e103]
+              - generic [ref=e104]:
+                - link "Personal Development" [ref=e105]:
+                  - /url: /category/personal-development/
+                - generic [ref=e106]: Mar 1, 2026
+              - generic [ref=e107]:
+                - heading "You Can't Just Be Yourself" [level=2] [ref=e108]:
+                  - link "You Can't Just Be Yourself" [ref=e109]:
+                    - /url: /2026/03/01/you-cant-just-be-yourself/
+                - paragraph [ref=e110]:
+                  - text: The advice to be yourself assumes a fixed self exists and distinction is optional. Both are wrong.
+                  - generic [ref=e111]: "[5 min read]"
+                - link "Read more" [ref=e112]:
+                  - /url: /2026/03/01/you-cant-just-be-yourself/
+                  - text: Read more
+                  - img [ref=e113]
+          - article [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]:
+              - img "We're All Staying on Social Media in 2026 and Here's Why" [ref=e121]
+              - generic [ref=e122]:
+                - link "Personal Development" [ref=e123]:
+                  - /url: /category/personal-development/
+                - generic [ref=e124]: Jan 26, 2026
+              - generic [ref=e125]:
+                - heading "We're All Staying on Social Media in 2026 and Here's Why" [level=2] [ref=e126]:
+                  - link "We're All Staying on Social Media in 2026 and Here's Why" [ref=e127]:
+                    - /url: /2026/01/26/staying-on-social-media-2026/
+                - paragraph [ref=e128]:
+                  - text: Logging off is a luxury. For many, being online is not vanity. It is economic, social, and civic survival.
+                  - generic [ref=e129]: "[4 min read]"
+                - link "Read more" [ref=e130]:
+                  - /url: /2026/01/26/staying-on-social-media-2026/
+                  - text: Read more
+                  - img [ref=e131]
+          - article [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]:
+              - 'img "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [ref=e139]'
+              - generic [ref=e140]:
+                - link "LGBTQ+" [ref=e141]:
+                  - /url: /category/lgbtq+/
+                - generic [ref=e142]: Jul 22, 2025
+              - generic [ref=e143]:
+                - 'heading "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [level=2] [ref=e144]':
+                  - 'link "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [ref=e145]':
+                    - /url: /2025/07/22/pride-becomes-performance-gay-community/
+                - paragraph [ref=e146]:
+                  - text: Why being lectured about Pride history by the same people who have consistently marginalized you feels particularly hollow.
+                  - generic [ref=e147]: "[6 min read]"
+                - link "Read more" [ref=e148]:
+                  - /url: /2025/07/22/pride-becomes-performance-gay-community/
+                  - text: Read more
+                  - img [ref=e149]
+          - article [ref=e151] [cursor=pointer]:
+            - generic [ref=e152]:
+              - 'img "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e157]'
+              - generic [ref=e158]:
+                - link "Technology" [ref=e159]:
+                  - /url: /category/technology/
+                - generic [ref=e160]: Mar 22, 2025
+              - generic [ref=e161]:
+                - 'heading "Quantum Computing: How Your Passwords Became Obsolete Overnight" [level=2] [ref=e162]':
+                  - 'link "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e163]':
+                    - /url: /2025/03/22/quantum-computing-password-security/
+                - paragraph [ref=e164]:
+                  - text: Quantum computing promises incredible power but might destroy the digital security we depend on. Here's how this tech works and why you should pay attention.
+                  - generic [ref=e165]: "[5 min read]"
+                - link "Read more" [ref=e166]:
+                  - /url: /2025/03/22/quantum-computing-password-security/
+                  - text: Read more
+                  - img [ref=e167]
+          - article [ref=e169] [cursor=pointer]:
+            - generic [ref=e170]:
+              - 'img "My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e175]'
+              - generic [ref=e176]:
+                - link "Personal Development" [ref=e177]:
+                  - /url: /category/personal-development/
+                - generic [ref=e178]: Mar 21, 2025
+              - generic [ref=e179]:
+                - 'heading "My Own Naw Ruz: Finding Growth in New Beginnings" [level=2] [ref=e180]':
+                  - 'link "My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e181]':
+                    - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+                - paragraph [ref=e182]:
+                  - text: This Naw Ruz marks more than spring, it marks a fresh start, reclaiming myself after years of feeling paused.
+                  - generic [ref=e183]: "[4 min read]"
+                - link "Read more" [ref=e184]:
+                  - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+                  - text: Read more
+                  - img [ref=e185]
+          - article [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]:
+              - 'img "Immigration: The Truth Behind the Divide" [ref=e193]'
+              - generic [ref=e194]:
+                - link "Politics" [ref=e195]:
+                  - /url: /category/politics/
+                - generic [ref=e196]: Nov 25, 2024
+              - generic [ref=e197]:
+                - 'heading "Immigration: The Truth Behind the Divide" [level=2] [ref=e198]':
+                  - 'link "Immigration: The Truth Behind the Divide" [ref=e199]':
+                    - /url: /2024/11/25/immigration-story-debate/
+                - paragraph [ref=e200]:
+                  - text: A balanced look at the immigration debate, exploring its history, economic implications, and modern challenges.
+                  - generic [ref=e201]: "[8 min read]"
+                - link "Read more" [ref=e202]:
+                  - /url: /2024/11/25/immigration-story-debate/
+                  - text: Read more
+                  - img [ref=e203]
+        - generic [ref=e205]:
+          - link "←Previous" [ref=e206] [cursor=pointer]:
+            - /url: /page/2/
+          - text: Next→
+      - generic [ref=e209]:
+        - heading "The Story Behind the Blog" [level=3] [ref=e210]
+        - paragraph [ref=e211]: Real talk on identity, tech, and what it means to grow up in a world that's constantly shifting. No fluff, just honest perspectives worth sitting with.
+  - contentinfo [ref=e212]:
+    - list [ref=e214]:
+      - listitem [ref=e215]:
+        - link "LinkedIn" [ref=e216] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+      - listitem [ref=e217]:
+        - link "X" [ref=e218] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+      - listitem [ref=e219]:
+        - link "Instagram" [ref=e220] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+      - listitem [ref=e221]:
+        - link "RSS" [ref=e222] [cursor=pointer]:
+          - /url: /rss.xml
+      - listitem [ref=e223]:
+        - link "Privacy" [ref=e224] [cursor=pointer]:
+          - /url: /privacy-policy/

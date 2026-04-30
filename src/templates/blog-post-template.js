@@ -78,29 +78,31 @@ const BlogPostTemplate = ({ data, location }) => {
       />
       <Layout>
         <div key={post.frontmatter.slug}>
-          <section className="blog">
-            <div className="blog-header">
+          <section className="blog article-page">
+            <div className="blog-header site-shell article-shell">
               <Link to={fromPage} className="back-button">
-                ← Back to Posts
+                Back to Posts
               </Link>
             </div>
-            <article>
+            <article className="article-shell">
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
-              <div className="blog-meta">
-                <div className="date">
-                  {post.frontmatter.date}
+              <header className="article-masthead">
+                <div className="blog-meta">
+                  <div className="date">
+                    {post.frontmatter.date}
+                  </div>
                 </div>
-              </div>
-              <h1>{post.frontmatter.title}</h1>
-              <div className="blog-controls">
-                
-                <div className="category">
-                  <Link to={`/category/${formatCategory(post.frontmatter.category)}`}>
-                    {post.frontmatter.category}
-                  </Link>
+                <h1>{post.frontmatter.title}</h1>
+                <p>{post.frontmatter.excerpt}</p>
+                <div className="blog-controls">
+                  <div className="category">
+                    <Link to={`/category/${formatCategory(post.frontmatter.category)}`}>
+                      {post.frontmatter.category}
+                    </Link>
+                  </div>
+                  <AudioPlayer slug={slug} />
                 </div>
-                <AudioPlayer slug={slug} />
-              </div>
+              </header>
               <div className="blog-content" dangerouslySetInnerHTML={{ __html: post.html }} />  
               {tags && tags.length > 0 && (
                 <div className="tags">

@@ -1,0 +1,315 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: Category
+        - heading "Posts on Personal Development" [level=1] [ref=e17]
+      - generic [ref=e20]:
+        - link "All" [ref=e21] [cursor=pointer]:
+          - /url: /blog/
+        - link "Career Development" [ref=e22] [cursor=pointer]:
+          - /url: /category/career-development/
+        - link "Economy" [ref=e23] [cursor=pointer]:
+          - /url: /category/economy/
+        - link "History" [ref=e24] [cursor=pointer]:
+          - /url: /category/history/
+        - link "Human Stories" [ref=e25] [cursor=pointer]:
+          - /url: /category/human-stories/
+        - link "LGBTQ+" [ref=e26] [cursor=pointer]:
+          - /url: /category/lgbtq+/
+        - link "Mental Health" [ref=e27] [cursor=pointer]:
+          - /url: /category/mental-health/
+        - link "Personal Development" [ref=e28] [cursor=pointer]:
+          - /url: /category/personal-development/
+        - link "Politics" [ref=e29] [cursor=pointer]:
+          - /url: /category/politics/
+        - link "Spirituality" [ref=e30] [cursor=pointer]:
+          - /url: /category/spirituality/
+        - link "Technology" [ref=e31] [cursor=pointer]:
+          - /url: /category/technology/
+      - generic [ref=e33]:
+        - article [ref=e34]:
+          - link "Read A Good City Is Not Enough" [ref=e35] [cursor=pointer]:
+            - /url: /2026/04/22/columbus-taught-me-what-i-want/
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - link "Personal Development" [ref=e41] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e42]: Apr 22, 2026
+            - heading "A Good City Is Not Enough" [level=2] [ref=e43]:
+              - link "A Good City Is Not Enough" [ref=e44] [cursor=pointer]:
+                - /url: /2026/04/22/columbus-taught-me-what-i-want/
+            - paragraph [ref=e45]: A year in Columbus, Ohio showed me the difference between a place working on paper and a place working for you. 7 min read
+            - link "Read more" [ref=e46] [cursor=pointer]:
+              - /url: /2026/04/22/columbus-taught-me-what-i-want/
+              - text: Read more
+              - img [ref=e47]
+        - article [ref=e49]:
+          - link "Read You Can't Just Be Yourself" [ref=e50] [cursor=pointer]:
+            - /url: /2026/03/01/you-cant-just-be-yourself/
+          - generic [ref=e54]:
+            - generic [ref=e55]:
+              - link "Personal Development" [ref=e56] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e57]: Mar 1, 2026
+            - heading "You Can't Just Be Yourself" [level=2] [ref=e58]:
+              - link "You Can't Just Be Yourself" [ref=e59] [cursor=pointer]:
+                - /url: /2026/03/01/you-cant-just-be-yourself/
+            - paragraph [ref=e60]: The advice to be yourself assumes a fixed self exists and distinction is optional. Both are wrong. 5 min read
+            - link "Read more" [ref=e61] [cursor=pointer]:
+              - /url: /2026/03/01/you-cant-just-be-yourself/
+              - text: Read more
+              - img [ref=e62]
+        - article [ref=e64]:
+          - link "Read We're All Staying on Social Media in 2026 and Here's Why" [ref=e65] [cursor=pointer]:
+            - /url: /2026/01/26/staying-on-social-media-2026/
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - link "Personal Development" [ref=e71] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e72]: Jan 26, 2026
+            - heading "We're All Staying on Social Media in 2026 and Here's Why" [level=2] [ref=e73]:
+              - link "We're All Staying on Social Media in 2026 and Here's Why" [ref=e74] [cursor=pointer]:
+                - /url: /2026/01/26/staying-on-social-media-2026/
+            - paragraph [ref=e75]: Logging off is a luxury. For many, being online is not vanity. It is economic, social, and civic survival. 4 min read
+            - link "Read more" [ref=e76] [cursor=pointer]:
+              - /url: /2026/01/26/staying-on-social-media-2026/
+              - text: Read more
+              - img [ref=e77]
+        - article [ref=e79]:
+          - 'link "Read My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e80] [cursor=pointer]':
+            - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - link "Personal Development" [ref=e86] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e87]: Mar 21, 2025
+            - 'heading "My Own Naw Ruz: Finding Growth in New Beginnings" [level=2] [ref=e88]':
+              - 'link "My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e89] [cursor=pointer]':
+                - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+            - paragraph [ref=e90]: This Naw Ruz marks more than spring, it marks a fresh start, reclaiming myself after years of feeling paused. 4 min read
+            - link "Read more" [ref=e91] [cursor=pointer]:
+              - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+              - text: Read more
+              - img [ref=e92]
+        - article [ref=e94]:
+          - 'link "Read Growing Up Gay: How Early Rejection and Acceptance Shaped My Identity" [ref=e95] [cursor=pointer]':
+            - /url: /2024/10/02/how-navigating-rejection-and-acceptance-shaped-my-gay-identity/
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - link "Personal Development" [ref=e101] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e102]: Oct 2, 2024
+            - 'heading "Growing Up Gay: How Early Rejection and Acceptance Shaped My Identity" [level=2] [ref=e103]':
+              - 'link "Growing Up Gay: How Early Rejection and Acceptance Shaped My Identity" [ref=e104] [cursor=pointer]':
+                - /url: /2024/10/02/how-navigating-rejection-and-acceptance-shaped-my-gay-identity/
+            - paragraph [ref=e105]: A candid reflection on early experiences as a gay Asian man, exploring culture, community, and self-discovery during my college years. 7 min read
+            - link "Read more" [ref=e106] [cursor=pointer]:
+              - /url: /2024/10/02/how-navigating-rejection-and-acceptance-shaped-my-gay-identity/
+              - text: Read more
+              - img [ref=e107]
+        - article [ref=e109]:
+          - 'link "Read 10 Invalidating Phrases in Relationships: Why They Hurt and What to Say Instead" [ref=e110] [cursor=pointer]':
+            - /url: /2024/08/29/invalidating-phrases-relationships/
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - link "Personal Development" [ref=e116] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e117]: Aug 29, 2024
+            - 'heading "10 Invalidating Phrases in Relationships: Why They Hurt and What to Say Instead" [level=2] [ref=e118]':
+              - 'link "10 Invalidating Phrases in Relationships: Why They Hurt and What to Say Instead" [ref=e119] [cursor=pointer]':
+                - /url: /2024/08/29/invalidating-phrases-relationships/
+            - paragraph [ref=e120]: Drawing from personal experience, this highlights 10 common invalidating phrases that can damage relationships and offers alternatives for healthier communication. 4 min read
+            - link "Read more" [ref=e121] [cursor=pointer]:
+              - /url: /2024/08/29/invalidating-phrases-relationships/
+              - text: Read more
+              - img [ref=e122]
+        - article [ref=e124]:
+          - link "Read What Happens When the Need to Please Others Undermines Your Self-Worth?" [ref=e125] [cursor=pointer]:
+            - /url: /2024/08/08/people-pleaser-to-self-advocate/
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - link "Personal Development" [ref=e131] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e132]: Aug 8, 2024
+            - heading "What Happens When the Need to Please Others Undermines Your Self-Worth?" [level=2] [ref=e133]:
+              - link "What Happens When the Need to Please Others Undermines Your Self-Worth?" [ref=e134] [cursor=pointer]:
+                - /url: /2024/08/08/people-pleaser-to-self-advocate/
+            - paragraph [ref=e135]: Discover how the journey from a middle school people-pleaser to a self-advocate has shaped relationships, self-worth, and outlook on life. 6 min read
+            - link "Read more" [ref=e136] [cursor=pointer]:
+              - /url: /2024/08/08/people-pleaser-to-self-advocate/
+              - text: Read more
+              - img [ref=e137]
+        - article [ref=e139]:
+          - link "Read What Moving to Austin Taught Me About Friendship, Family, and Self-Growth" [ref=e140] [cursor=pointer]:
+            - /url: /2024/07/31/moving-to-austin-lessons-on-friendship-family-self-growth/
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - link "Personal Development" [ref=e146] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e147]: Jul 31, 2024
+            - heading "What Moving to Austin Taught Me About Friendship, Family, and Self-Growth" [level=2] [ref=e148]:
+              - link "What Moving to Austin Taught Me About Friendship, Family, and Self-Growth" [ref=e149] [cursor=pointer]:
+                - /url: /2024/07/31/moving-to-austin-lessons-on-friendship-family-self-growth/
+            - paragraph [ref=e150]: Moving to Austin, TX, was meant to be a fresh start. Instead, it turned into a journey of unexpected challenges and profound lessons about friendship, family, and personal growth. 7 min read
+            - link "Read more" [ref=e151] [cursor=pointer]:
+              - /url: /2024/07/31/moving-to-austin-lessons-on-friendship-family-self-growth/
+              - text: Read more
+              - img [ref=e152]
+        - article [ref=e154]:
+          - link "Read Is the Paralysis of Overthinking Holding You Back from Personal Growth?" [ref=e155] [cursor=pointer]:
+            - /url: /2024/07/08/paralysis-of-overthinking/
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - link "Personal Development" [ref=e161] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e162]: Jul 8, 2024
+            - heading "Is the Paralysis of Overthinking Holding You Back from Personal Growth?" [level=2] [ref=e163]:
+              - link "Is the Paralysis of Overthinking Holding You Back from Personal Growth?" [ref=e164] [cursor=pointer]:
+                - /url: /2024/07/08/paralysis-of-overthinking/
+            - paragraph [ref=e165]: Overthinking can be both a tool for deep reflection and a barrier to personal growth. 4 min read
+            - link "Read more" [ref=e166] [cursor=pointer]:
+              - /url: /2024/07/08/paralysis-of-overthinking/
+              - text: Read more
+              - img [ref=e167]
+        - article [ref=e169]:
+          - link "Read Is It Normal to Feel Like a Walking Contradiction?" [ref=e170] [cursor=pointer]:
+            - /url: /2024/05/31/normal-feeling-like-a-walking-contradiction/
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - link "Personal Development" [ref=e176] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e177]: May 31, 2024
+            - heading "Is It Normal to Feel Like a Walking Contradiction?" [level=2] [ref=e178]:
+              - link "Is It Normal to Feel Like a Walking Contradiction?" [ref=e179] [cursor=pointer]:
+                - /url: /2024/05/31/normal-feeling-like-a-walking-contradiction/
+            - paragraph [ref=e180]: Exploring the paradoxes within, understanding why one can be both needy and independent, and seeking balance in life and relationships. 4 min read
+            - link "Read more" [ref=e181] [cursor=pointer]:
+              - /url: /2024/05/31/normal-feeling-like-a-walking-contradiction/
+              - text: Read more
+              - img [ref=e182]
+        - article [ref=e184]:
+          - link "Read Lost in Thought This Mother's Day" [ref=e185] [cursor=pointer]:
+            - /url: /2024/05/12/feeling-lost-on-mothers-day/
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - link "Personal Development" [ref=e191] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e192]: May 12, 2024
+            - heading "Lost in Thought This Mother's Day" [level=2] [ref=e193]:
+              - link "Lost in Thought This Mother's Day" [ref=e194] [cursor=pointer]:
+                - /url: /2024/05/12/feeling-lost-on-mothers-day/
+            - paragraph [ref=e195]: On Mother's Day, there's a mix of gratitude for family and a restless want for the vibrant life left behind in the city. 3 min read
+            - link "Read more" [ref=e196] [cursor=pointer]:
+              - /url: /2024/05/12/feeling-lost-on-mothers-day/
+              - text: Read more
+              - img [ref=e197]
+        - article [ref=e199]:
+          - link "Read Finding a Place to Call Home..." [ref=e200] [cursor=pointer]:
+            - /url: /2024/03/26/finding-a-place-to-call-home/
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - link "Personal Development" [ref=e206] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e207]: Mar 26, 2024
+            - heading "Finding a Place to Call Home..." [level=2] [ref=e208]:
+              - link "Finding a Place to Call Home..." [ref=e209] [cursor=pointer]:
+                - /url: /2024/03/26/finding-a-place-to-call-home/
+            - paragraph [ref=e210]: A gay's experience through the Midwest reveals an unexpected sense of belonging in Columbus, OH, highlighting the minority experience. 4 min read
+            - link "Read more" [ref=e211] [cursor=pointer]:
+              - /url: /2024/03/26/finding-a-place-to-call-home/
+              - text: Read more
+              - img [ref=e212]
+        - article [ref=e214]:
+          - link "Read Behind DE's Smile Lies a Story of Deception and Discovery" [ref=e215] [cursor=pointer]:
+            - /url: /2024/03/21/behind-de-smile-story-of-deception-and-discovery/
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - link "Personal Development" [ref=e221] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e222]: Mar 21, 2024
+            - heading "Behind DE's Smile Lies a Story of Deception and Discovery" [level=2] [ref=e223]:
+              - link "Behind DE's Smile Lies a Story of Deception and Discovery" [ref=e224] [cursor=pointer]:
+                - /url: /2024/03/21/behind-de-smile-story-of-deception-and-discovery/
+            - paragraph [ref=e225]: "Reflecting on 16 years: A story of trust, manipulation, and cultural complexities, as lived by a group of friends at Wayne State University. 5 min read"
+            - link "Read more" [ref=e226] [cursor=pointer]:
+              - /url: /2024/03/21/behind-de-smile-story-of-deception-and-discovery/
+              - text: Read more
+              - img [ref=e227]
+        - article [ref=e229]:
+          - link "Read The Transition from Party Animal to...Something Else?" [ref=e230] [cursor=pointer]:
+            - /url: /2024/03/14/transition-from-party-animal-to-something-else/
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - link "Personal Development" [ref=e236] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e237]: Mar 14, 2024
+            - heading "The Transition from Party Animal to...Something Else?" [level=2] [ref=e238]:
+              - link "The Transition from Party Animal to...Something Else?" [ref=e239] [cursor=pointer]:
+                - /url: /2024/03/14/transition-from-party-animal-to-something-else/
+            - paragraph [ref=e240]: Transitioning from the vibrant nightlife of your 20s to a more subdued social life in your 30s can be a perplexing journey. 5 min read
+            - link "Read more" [ref=e241] [cursor=pointer]:
+              - /url: /2024/03/14/transition-from-party-animal-to-something-else/
+              - text: Read more
+              - img [ref=e242]
+        - article [ref=e244]:
+          - link "Read Debugging Life Lessons for a Code-Inspired Existence" [ref=e245] [cursor=pointer]:
+            - /url: /2024/02/29/debugging-life-lessons-unraveling-code-existence/
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - link "Personal Development" [ref=e251] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e252]: Feb 29, 2024
+            - heading "Debugging Life Lessons for a Code-Inspired Existence" [level=2] [ref=e253]:
+              - link "Debugging Life Lessons for a Code-Inspired Existence" [ref=e254] [cursor=pointer]:
+                - /url: /2024/02/29/debugging-life-lessons-unraveling-code-existence/
+            - paragraph [ref=e255]: Understand how common coding dilemmas mirror real-life challenges and explore practical solutions to navigate the complexities of both worlds. 6 min read
+            - link "Read more" [ref=e256] [cursor=pointer]:
+              - /url: /2024/02/29/debugging-life-lessons-unraveling-code-existence/
+              - text: Read more
+              - img [ref=e257]
+        - article [ref=e259]:
+          - link "Read The Whirlwind of Millennial Existence" [ref=e260] [cursor=pointer]:
+            - /url: /2024/02/18/embracing-uncertainty-millennial-existence/
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - link "Personal Development" [ref=e266] [cursor=pointer]:
+                - /url: /category/personal-development/
+              - generic [ref=e267]: Feb 18, 2024
+            - heading "The Whirlwind of Millennial Existence" [level=2] [ref=e268]:
+              - link "The Whirlwind of Millennial Existence" [ref=e269] [cursor=pointer]:
+                - /url: /2024/02/18/embracing-uncertainty-millennial-existence/
+            - paragraph [ref=e270]: A guide through the whirlwinds of existential uncertainty, introspection, and the embrace of life's darker recesses that make the human experience beautifully messy. 2 min read
+            - link "Read more" [ref=e271] [cursor=pointer]:
+              - /url: /2024/02/18/embracing-uncertainty-millennial-existence/
+              - text: Read more
+              - img [ref=e272]
+  - contentinfo [ref=e274]:
+    - generic [ref=e275]:
+      - link "Shaun Pezeshki" [ref=e277] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e278]:
+        - link "LinkedIn" [ref=e279] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e280] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e281] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e282] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e283] [cursor=pointer]:
+          - /url: /privacy-policy/

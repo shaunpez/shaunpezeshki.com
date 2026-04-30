@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import headerImage from '../images/shaun-hero-v3.jpg';
+import headerImage from "../images/shaun-hero-v3.jpg";
 import PostList from "../components/post-list";
 import CategoryButtons from "../components/category-buttons";
 import FeaturedPost from "../components/featured-post";
@@ -10,82 +10,67 @@ import SeoSchema from "../components/seo-list-schema";
 
 const BlogPage = ({ data }) => {
   const total = data.totalCount.totalCount;
-  const today = new Date();
-  const todayFormatted = today.toLocaleDateString('en-CA', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
-  }).replace(/-/g, '/');
-
-
-  // Filter posts to only include those published up to today
-  const allPosts = data.allPosts.edges.filter(({ node }) => {
-    const postDate = new Date(node.frontmatter.date);
-    const postDateFormatted = postDate.toLocaleDateString('en-CA', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit'
-    }).replace(/-/g, '/');
-    return postDateFormatted <= todayFormatted;
-  });
- 
-  // Extract the first post
+  const allPosts = data.allPosts.edges;
   const firstPost = allPosts.length > 0 ? allPosts[0].node : null;
-
-  // Extract the next 8 posts (ignoring the first one)
-  const subsequentPosts = allPosts.slice(1, 9);
-
+  const subsequentPosts = allPosts.slice(1, 10);
   const { siteUrl } = data.site.siteMetadata;
-
-  // List of categories
-  const categories = ["All", ...data.categories.group.map(group => group.fieldValue)];
+  const categories = ["All", ...data.categories.group.map((group) => group.fieldValue)];
 
   return (
     <>
       <Seo
         title="Threads of Perspective"
-        description="Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life."
-        meta={[{ name: 'keywords', content: 'Shaun Pezeshki, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie' }]}
+        description="Stories on personal growth, technology, career development, mental health, LGBTQ+ and minority issues in modern life."
+        meta={[
+          {
+            name: "keywords",
+            content:
+              "Shaun Pezeshki, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie",
+          },
+        ]}
         image={headerImage}
       />
       <SeoSchema posts={subsequentPosts} siteUrl={siteUrl} />
       <Layout>
-        <section className="homepage plant">
-          <div className="category-select">
-            <div className="container home">
-              <div className="main-title prose prose-xl">
-                <h1>Threads of Perspective</h1>
-              </div>
-              <CategoryButtons categories={categories} />
+        <section className="archive-page">
+          <div className="site-shell archive-hero">
+            <div>
+              <p className="eyebrow">Stories and notes</p>
+              <h1>Threads of Perspective</h1>
             </div>
+            <p>
+              Real talk on identity, tech, career, community, and what it means to grow in a world
+              that keeps shifting.
+            </p>
           </div>
 
-          <div className="first-post">
-            <div className="container home">
+          <div className="site-shell archive-controls">
+            <CategoryButtons categories={categories} />
+          </div>
+
+          <div className="site-shell archive-feature">
             {firstPost && <FeaturedPost post={firstPost} />}
-            </div>
           </div>
-          <div className="container home">
+
+          <div className="site-shell archive-layout">
+            <aside className="archive-note">
+              <p className="list-label">Archive</p>
+              <h2>Latest entries</h2>
+              <p>
+                Explore {total} published stories on work, identity, community, and finding your
+                way through change.
+              </p>
+            </aside>
             <PostList posts={subsequentPosts} />
-            {total > 9 && (
-              <div className="pagination">
-                <Link to="/page/2" rel="prev" className="prev">
-                  Previous
-                </Link>
-                <span className="next text-gray-300">
-                  Next
-                </span>
-              </div>
-            )}
           </div>
-          <div className="content">
-            <div className="container">
-              <div className="prose prose-xl">
-                <h3>The Story Behind the Blog</h3>
-                <p>Real talk on identity, tech, and what it means to grow up in a world that's constantly shifting. No fluff, just honest perspectives worth sitting with. </p>
-              </div>
+
+          {total > 10 && (
+            <div className="site-shell pagination">
+              <Link to="/page/2" rel="next" className="next">
+                Older Posts
+              </Link>
             </div>
-          </div>
+          )}
         </section>
       </Layout>
     </>
@@ -94,15 +79,19 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    categories: allMarkdownRemark {
-      group(field: {frontmatter: {category: SELECT}}) {
+    categories: allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
+      group(field: { frontmatter: { category: SELECT } }) {
         fieldValue
       }
     }
-    totalCount: allMarkdownRemark {
+    totalCount: allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
       totalCount
     }
-    allPosts: allMarkdownRemark(limit: 9, sort: {frontmatter: {date: DESC}}) {
+    allPosts: allMarkdownRemark(
+      limit: 11
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
       edges {
         node {
           frontmatter {

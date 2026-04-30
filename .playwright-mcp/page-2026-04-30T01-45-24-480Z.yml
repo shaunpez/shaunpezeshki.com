@@ -1,0 +1,158 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "SP" [level=1] [ref=e6]:
+        - link "SP" [ref=e7] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10] [cursor=pointer]:
+            - link "About" [ref=e11]:
+              - /url: /about/
+          - listitem [ref=e12] [cursor=pointer]:
+            - link "Blog" [ref=e13]:
+              - /url: /blog/
+          - listitem [ref=e14] [cursor=pointer]:
+            - link "Chat with Shaun" [ref=e15]:
+              - /url: /chat-with-shaun/
+          - listitem [ref=e16] [cursor=pointer]:
+            - link "Buy Me Coffee" [ref=e17]:
+              - /url: https://buymeacoffee.com/shaunpez
+              - img "Buy Me Coffee" [ref=e18]
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - heading "I help businesses grow and succeed." [level=1] [ref=e23]
+        - paragraph [ref=e24]: Through smart automation and efficient tech solutions, I'll streamline your processes and help you reach your goals.
+        - link "Let's Chat" [ref=e25] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+          - text: Let's Chat
+          - img [ref=e26]
+      - generic [ref=e29]:
+        - img [ref=e31]
+        - img [ref=e32]
+        - img "Shaun Pezeshki" [ref=e33]
+    - generic [ref=e35]:
+      - generic [ref=e37]:
+        - img [ref=e39]
+        - img [ref=e40]
+        - img "Professional Giraffes" [ref=e41]
+      - generic [ref=e42]:
+        - heading "Who I Work With" [level=2] [ref=e43]
+        - paragraph [ref=e44]: "I partner with small to medium-sized businesses across a range of industries, including:"
+        - list [ref=e45]:
+          - listitem [ref=e46]:
+            - text: •
+            - strong [ref=e47]: "Manufacturing:"
+            - text: Streamlining operations and optimizing production workflows.
+          - listitem [ref=e48]:
+            - text: •
+            - strong [ref=e49]: "E-commerce:"
+            - text: Enhancing customer experiences through automation and seamless integrations.
+          - listitem [ref=e50]:
+            - text: •
+            - strong [ref=e51]: "Brands and Agencies:"
+            - text: Developing tailored solutions that boost efficiency and drive growth.
+    - generic [ref=e53]:
+      - heading "What I Offer" [level=2] [ref=e54]
+      - generic [ref=e55]:
+        - generic [ref=e56] [cursor=pointer]:
+          - heading "Tech Optimization" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Revamp systems for higher efficiency
+        - generic [ref=e59] [cursor=pointer]:
+          - heading "Automation Solutions" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Eliminate manual tasks with custom automation
+        - generic [ref=e62] [cursor=pointer]:
+          - heading "Custom Development" [level=3] [ref=e63]
+          - paragraph [ref=e64]: Tailored tools to meet your specific business goals
+        - generic [ref=e65] [cursor=pointer]:
+          - heading "Data-Driven Strategy" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Insights to guide smarter decision-making
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - heading "Who I Am" [level=2] [ref=e71]
+        - paragraph [ref=e72]: I'm a tech professional with over 14 years of experience, specializing in optimizing business processes through tech solutions. My expertise covers web development, automation, and problem-solving, helping businesses of all sizes grow efficiently.
+        - link "About Shaun" [ref=e73] [cursor=pointer]:
+          - /url: /about/
+          - text: About Shaun
+          - img [ref=e74]
+      - generic [ref=e77]:
+        - img [ref=e79]
+        - img [ref=e80]
+        - img "Shaun Pezeshki" [ref=e81]
+    - generic [ref=e83]:
+      - heading "Success Stories" [level=2] [ref=e84]
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - paragraph [ref=e87]: "\"Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency.\""
+          - paragraph [ref=e88]: "- Travis B."
+        - generic [ref=e89]:
+          - paragraph [ref=e90]: "\"Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors, making it easier for them to understand who we are and what we offer.\""
+          - paragraph [ref=e91]: "- Nicole A."
+    - generic [ref=e93]:
+      - heading "Latest Articles" [level=2] [ref=e94]
+      - paragraph [ref=e95]: Here are my latest posts on tech and business. While my blog dives into all aspects of my journey, these articles focuses on practical insights to help businesses grow.
+      - link "All Posts" [ref=e96] [cursor=pointer]:
+        - /url: /blog/
+        - text: All Posts
+        - img [ref=e97]
+      - generic [ref=e99]:
+        - article [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]:
+            - img "AI Is Not Making You More Productive. Yet." [ref=e106]
+            - generic [ref=e107]:
+              - link "Technology" [ref=e108]:
+                - /url: /category/technology/
+              - generic [ref=e109]: Mar 5, 2026
+            - generic [ref=e110]:
+              - heading "AI Is Not Making You More Productive. Yet." [level=2] [ref=e111]:
+                - link "AI Is Not Making You More Productive. Yet." [ref=e112]:
+                  - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+              - paragraph [ref=e113]:
+                - text: The on-the-ground feedback from people using AI does not match the hype. History tells us why.
+                - generic [ref=e114]: "[6 min read]"
+              - link "Read more" [ref=e115]:
+                - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                - text: Read more
+                - img [ref=e116]
+        - article [ref=e118] [cursor=pointer]:
+          - generic [ref=e119]:
+            - 'img "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e124]'
+            - generic [ref=e125]:
+              - link "Technology" [ref=e126]:
+                - /url: /category/technology/
+              - generic [ref=e127]: Mar 22, 2025
+            - generic [ref=e128]:
+              - 'heading "Quantum Computing: How Your Passwords Became Obsolete Overnight" [level=2] [ref=e129]':
+                - 'link "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e130]':
+                  - /url: /2025/03/22/quantum-computing-password-security/
+              - paragraph [ref=e131]:
+                - text: Quantum computing promises incredible power but might destroy the digital security we depend on. Here's how this tech works and why you should pay attention.
+                - generic [ref=e132]: "[5 min read]"
+              - link "Read more" [ref=e133]:
+                - /url: /2025/03/22/quantum-computing-password-security/
+                - text: Read more
+                - img [ref=e134]
+    - generic [ref=e137]:
+      - heading "Ready to Connect with Shaun?" [level=2] [ref=e138]
+      - link "Let's Chat" [ref=e139] [cursor=pointer]:
+        - /url: /chat-with-shaun/
+        - text: Let's Chat
+        - img [ref=e140]
+  - contentinfo [ref=e142]:
+    - list [ref=e144]:
+      - listitem [ref=e145]:
+        - link "LinkedIn" [ref=e146] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+      - listitem [ref=e147]:
+        - link "X" [ref=e148] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+      - listitem [ref=e149]:
+        - link "Instagram" [ref=e150] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+      - listitem [ref=e151]:
+        - link "RSS" [ref=e152] [cursor=pointer]:
+          - /url: /rss.xml
+      - listitem [ref=e153]:
+        - link "Privacy" [ref=e154] [cursor=pointer]:
+          - /url: /privacy-policy/

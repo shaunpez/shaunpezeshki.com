@@ -1,0 +1,230 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Stories and notes
+          - heading "Threads of Perspective" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Real talk on identity, tech, career, community, and what it means to grow in a world that keeps shifting.
+      - generic [ref=e21]:
+        - link "All" [ref=e22] [cursor=pointer]:
+          - /url: /blog/
+        - link "Career Development" [ref=e23] [cursor=pointer]:
+          - /url: /category/career-development/
+        - link "Economy" [ref=e24] [cursor=pointer]:
+          - /url: /category/economy/
+        - link "History" [ref=e25] [cursor=pointer]:
+          - /url: /category/history/
+        - link "Human Stories" [ref=e26] [cursor=pointer]:
+          - /url: /category/human-stories/
+        - link "LGBTQ+" [ref=e27] [cursor=pointer]:
+          - /url: /category/lgbtq+/
+        - link "Mental Health" [ref=e28] [cursor=pointer]:
+          - /url: /category/mental-health/
+        - link "Personal Development" [ref=e29] [cursor=pointer]:
+          - /url: /category/personal-development/
+        - link "Politics" [ref=e30] [cursor=pointer]:
+          - /url: /category/politics/
+        - link "Spirituality" [ref=e31] [cursor=pointer]:
+          - /url: /category/spirituality/
+        - link "Technology" [ref=e32] [cursor=pointer]:
+          - /url: /category/technology/
+      - article [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - link "Personal Development" [ref=e37] [cursor=pointer]:
+              - /url: /category/personal-development/
+            - generic [ref=e38]: Apr 22, 2026
+          - paragraph [ref=e39]: Featured story
+          - heading "A Good City Is Not Enough" [level=2] [ref=e40]:
+            - link "A Good City Is Not Enough" [ref=e41] [cursor=pointer]:
+              - /url: /2026/04/22/columbus-taught-me-what-i-want/
+          - paragraph [ref=e42]: A year in Columbus, Ohio showed me the difference between a place working on paper and a place working for you. 7 min read
+          - link "Read more" [ref=e43] [cursor=pointer]:
+            - /url: /2026/04/22/columbus-taught-me-what-i-want/
+            - text: Read more
+            - img [ref=e44]
+        - link "Read A Good City Is Not Enough" [ref=e46] [cursor=pointer]:
+          - /url: /2026/04/22/columbus-taught-me-what-i-want/
+      - generic [ref=e50]:
+        - complementary [ref=e51]:
+          - paragraph [ref=e52]: Archive
+          - heading "Latest entries" [level=2] [ref=e53]
+          - paragraph [ref=e54]: Browse the newest stories first, or use categories to move through the topics Shaun returns to most often.
+          - generic [ref=e55]: 51 published posts
+        - generic [ref=e56]:
+          - article [ref=e57]:
+            - link "Read AI Is Not Making You More Productive. Yet." [ref=e58] [cursor=pointer]:
+              - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - link "Technology" [ref=e64] [cursor=pointer]:
+                  - /url: /category/technology/
+                - generic [ref=e65]: Mar 5, 2026
+              - heading "AI Is Not Making You More Productive. Yet." [level=2] [ref=e66]:
+                - link "AI Is Not Making You More Productive. Yet." [ref=e67] [cursor=pointer]:
+                  - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+              - paragraph [ref=e68]: The on-the-ground feedback from people using AI does not match the hype. History tells us why. 6 min read
+              - link "Read more" [ref=e69] [cursor=pointer]:
+                - /url: /2026/03/05/ai-not-making-you-more-productive-yet/
+                - text: Read more
+                - img [ref=e70]
+          - article [ref=e72]:
+            - link "Read How Iran Got Here" [ref=e73] [cursor=pointer]:
+              - /url: /2026/03/04/how-iran-got-here/
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - link "History" [ref=e79] [cursor=pointer]:
+                  - /url: /category/history/
+                - generic [ref=e80]: Mar 4, 2026
+              - heading "How Iran Got Here" [level=2] [ref=e81]:
+                - link "How Iran Got Here" [ref=e82] [cursor=pointer]:
+                  - /url: /2026/03/04/how-iran-got-here/
+              - paragraph [ref=e83]: The unrest in Iran traces back to a 1953 CIA coup, British oil greed, and seven decades of consequences the Iranian people never asked for. 7 min read
+              - link "Read more" [ref=e84] [cursor=pointer]:
+                - /url: /2026/03/04/how-iran-got-here/
+                - text: Read more
+                - img [ref=e85]
+          - article [ref=e87]:
+            - link "Read You Can't Just Be Yourself" [ref=e88] [cursor=pointer]:
+              - /url: /2026/03/01/you-cant-just-be-yourself/
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - link "Personal Development" [ref=e94] [cursor=pointer]:
+                  - /url: /category/personal-development/
+                - generic [ref=e95]: Mar 1, 2026
+              - heading "You Can't Just Be Yourself" [level=2] [ref=e96]:
+                - link "You Can't Just Be Yourself" [ref=e97] [cursor=pointer]:
+                  - /url: /2026/03/01/you-cant-just-be-yourself/
+              - paragraph [ref=e98]: The advice to be yourself assumes a fixed self exists and distinction is optional. Both are wrong. 5 min read
+              - link "Read more" [ref=e99] [cursor=pointer]:
+                - /url: /2026/03/01/you-cant-just-be-yourself/
+                - text: Read more
+                - img [ref=e100]
+          - article [ref=e102]:
+            - link "Read We're All Staying on Social Media in 2026 and Here's Why" [ref=e103] [cursor=pointer]:
+              - /url: /2026/01/26/staying-on-social-media-2026/
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - link "Personal Development" [ref=e109] [cursor=pointer]:
+                  - /url: /category/personal-development/
+                - generic [ref=e110]: Jan 26, 2026
+              - heading "We're All Staying on Social Media in 2026 and Here's Why" [level=2] [ref=e111]:
+                - link "We're All Staying on Social Media in 2026 and Here's Why" [ref=e112] [cursor=pointer]:
+                  - /url: /2026/01/26/staying-on-social-media-2026/
+              - paragraph [ref=e113]: Logging off is a luxury. For many, being online is not vanity. It is economic, social, and civic survival. 4 min read
+              - link "Read more" [ref=e114] [cursor=pointer]:
+                - /url: /2026/01/26/staying-on-social-media-2026/
+                - text: Read more
+                - img [ref=e115]
+          - article [ref=e117]:
+            - 'link "Read When Pride Becomes Performance: My Complex Feelings About the Gay Community" [ref=e118] [cursor=pointer]':
+              - /url: /2025/07/22/pride-becomes-performance-gay-community/
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - link "LGBTQ+" [ref=e124] [cursor=pointer]:
+                  - /url: /category/lgbtq+/
+                - generic [ref=e125]: Jul 22, 2025
+              - 'heading "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [level=2] [ref=e126]':
+                - 'link "When Pride Becomes Performance: My Complex Feelings About the Gay Community" [ref=e127] [cursor=pointer]':
+                  - /url: /2025/07/22/pride-becomes-performance-gay-community/
+              - paragraph [ref=e128]: Why being lectured about Pride history by the same people who have consistently marginalized you feels particularly hollow. 6 min read
+              - link "Read more" [ref=e129] [cursor=pointer]:
+                - /url: /2025/07/22/pride-becomes-performance-gay-community/
+                - text: Read more
+                - img [ref=e130]
+          - article [ref=e132]:
+            - 'link "Read Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e133] [cursor=pointer]':
+              - /url: /2025/03/22/quantum-computing-password-security/
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - link "Technology" [ref=e139] [cursor=pointer]:
+                  - /url: /category/technology/
+                - generic [ref=e140]: Mar 22, 2025
+              - 'heading "Quantum Computing: How Your Passwords Became Obsolete Overnight" [level=2] [ref=e141]':
+                - 'link "Quantum Computing: How Your Passwords Became Obsolete Overnight" [ref=e142] [cursor=pointer]':
+                  - /url: /2025/03/22/quantum-computing-password-security/
+              - paragraph [ref=e143]: Quantum computing promises incredible power but might destroy the digital security we depend on. Here's how this tech works and why you should pay attention. 5 min read
+              - link "Read more" [ref=e144] [cursor=pointer]:
+                - /url: /2025/03/22/quantum-computing-password-security/
+                - text: Read more
+                - img [ref=e145]
+          - article [ref=e147]:
+            - 'link "Read My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e148] [cursor=pointer]':
+              - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - link "Personal Development" [ref=e154] [cursor=pointer]:
+                  - /url: /category/personal-development/
+                - generic [ref=e155]: Mar 21, 2025
+              - 'heading "My Own Naw Ruz: Finding Growth in New Beginnings" [level=2] [ref=e156]':
+                - 'link "My Own Naw Ruz: Finding Growth in New Beginnings" [ref=e157] [cursor=pointer]':
+                  - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+              - paragraph [ref=e158]: This Naw Ruz marks more than spring, it marks a fresh start, reclaiming myself after years of feeling paused. 4 min read
+              - link "Read more" [ref=e159] [cursor=pointer]:
+                - /url: /2025/03/21/my-own-naw-ruz-growth-new-beginnings/
+                - text: Read more
+                - img [ref=e160]
+          - article [ref=e162]:
+            - 'link "Read Immigration: The Truth Behind the Divide" [ref=e163] [cursor=pointer]':
+              - /url: /2024/11/25/immigration-story-debate/
+            - generic [ref=e167]:
+              - generic [ref=e168]:
+                - link "Politics" [ref=e169] [cursor=pointer]:
+                  - /url: /category/politics/
+                - generic [ref=e170]: Nov 25, 2024
+              - 'heading "Immigration: The Truth Behind the Divide" [level=2] [ref=e171]':
+                - 'link "Immigration: The Truth Behind the Divide" [ref=e172] [cursor=pointer]':
+                  - /url: /2024/11/25/immigration-story-debate/
+              - paragraph [ref=e173]: A balanced look at the immigration debate, exploring its history, economic implications, and modern challenges. 8 min read
+              - link "Read more" [ref=e174] [cursor=pointer]:
+                - /url: /2024/11/25/immigration-story-debate/
+                - text: Read more
+                - img [ref=e175]
+          - article [ref=e177]:
+            - link "Read 17 Reasons Trump's Next Term Could Leave Us Trumped" [ref=e178] [cursor=pointer]:
+              - /url: /2024/11/23/trump-policy-impacts/
+            - generic [ref=e182]:
+              - generic [ref=e183]:
+                - link "Politics" [ref=e184] [cursor=pointer]:
+                  - /url: /category/politics/
+                - generic [ref=e185]: Nov 23, 2024
+              - heading "17 Reasons Trump's Next Term Could Leave Us Trumped" [level=2] [ref=e186]:
+                - link "17 Reasons Trump's Next Term Could Leave Us Trumped" [ref=e187] [cursor=pointer]:
+                  - /url: /2024/11/23/trump-policy-impacts/
+              - paragraph [ref=e188]: Examining 17 key areas where Donald Trump's proposed policies could reshape the nation—and bring about sweeping changes for the future of America. 11 min read
+              - link "Read more" [ref=e189] [cursor=pointer]:
+                - /url: /2024/11/23/trump-policy-impacts/
+                - text: Read more
+                - img [ref=e190]
+      - link "Older Posts →" [ref=e193] [cursor=pointer]:
+        - /url: /page/2/
+  - contentinfo [ref=e194]:
+    - generic [ref=e195]:
+      - link "Shaun Pezeshki" [ref=e197] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e198]:
+        - link "LinkedIn" [ref=e199] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e200] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e201] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e202] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e203] [cursor=pointer]:
+          - /url: /privacy-policy/

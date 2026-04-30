@@ -27,14 +27,23 @@ const CategoryTemplate = ({ data, pageContext }) => {
       <Seo title={`Posts in ${category}`} />
       <SeoSchema posts={posts} siteUrl={siteUrl} category={category} />
       <Layout>
-        <div className="category-page">
-          <div className="container">
-            <h1>Posts on {category}</h1>
+        <section className="category-page archive-page">
+          <div className="site-shell">
+            <div className="archive-hero archive-hero--compact">
+              <p className="eyebrow">Category</p>
+              <h1>Posts on {category}</h1>
+            </div>
+          </div>
+
+          <div className="site-shell archive-controls">
             <CategoryButtons categories={categories} />
+          </div>
+
+          <div className="site-shell archive-list">
             <PostList posts={posts} currentPath={currentPath} />
             <LoadMore currentPage={currentPage} numberOfPages={numPages} basePath={`/category/${category}`} />
           </div>
-        </div>
+        </section>
       </Layout>
     </>
   );
