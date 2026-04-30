@@ -34,19 +34,15 @@ const AboutPage = () => (
                 their systems, and invest in solutions that actually support how they work.
               </p>
               <p>
-                I&apos;m especially good at connecting modern solutions with existing systems,
-                improving efficiency without overcomplicating the process. My experience spans
-                individual brands, agencies, and small businesses, which helps me understand
-                different needs and build clear, practical roadmaps for moving work forward.
-              </p>
-              <p>
-                By combining creativity with technology, I focus on improving user engagement,
-                business operations, and the everyday systems that help teams work better.
+                A lot of that comes down to connecting modern solutions with existing systems
+                without making the process feel more complicated than it needs to be. I&apos;ve
+                worked with individual brands, agencies, and small businesses, which helps me
+                understand different needs and build practical roadmaps for moving work forward.
               </p>
               <p>
                 Beyond technology, I care deeply about people, identity, community, and the stories
-                that do not fit neatly into a professional bio. I&apos;m involved with the Human
-                Rights Campaign through the Columbus steering committee, and I write for{" "}
+                that do not fit into a professional bio. I&apos;m involved with the Human Rights
+                Campaign through the Columbus steering committee, and I write for{" "}
                 <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">
                   Prism &amp; Pen
                 </a>, a publication that helps amplify LGBTQ+ voices.
