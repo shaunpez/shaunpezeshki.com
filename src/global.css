@@ -449,19 +449,39 @@ header .menu ul .coffee-button a:hover{
     font-family: var(--font-body);
 }
 .featured-blog-post .blog-col{
-    @apply grid gap-0 sm:grid-cols-2;
+    @apply grid gap-0;
 }
 .featured-blog-post .blog-hero{
-    @apply bg-cover bg-center;
+    position: relative;
+    min-height: 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
 }
-.featured-blog-post .gatsby-image-wrapper{
-    @apply block sm:hidden;
+.featured-blog-post .featured-image,
+.featured-blog-post .featured-image.gatsby-image-wrapper,
+.featured-blog-post .blog-hero .gatsby-image-wrapper{
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .featured-blog-post .blog-main{
-    @apply p-5 pt-4 sm:p-6 sm:pb-8 sm:pt-6;
+    @apply p-5 pt-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+}
+.featured-blog-post .blog-copy{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .featured-blog-post h2{
-    @apply mb-3 text-xl font-bold leading-tight transition-colors duration-200;
+    @apply mt-0 mb-3 text-xl font-bold leading-tight transition-colors duration-200;
     color: var(--text);
     font-family: var(--font-heading);
 }
@@ -469,7 +489,7 @@ header .menu ul .coffee-button a:hover{
     color: var(--cta);
 }
 .featured-blog-post p{
-    @apply mb-4 text-base leading-relaxed;
+    @apply mt-0 mb-4 text-base leading-relaxed;
     color: var(--secondary);
     font-family: var(--font-body);
 }
@@ -499,6 +519,28 @@ header .menu ul .coffee-button a:hover{
     @apply text-sm;
     color: var(--secondary);
     font-family: var(--font-body);
+}
+
+@media (min-width: 768px) {
+    .featured-blog-post{
+        height: clamp(320px, 30vw, 380px);
+    }
+    .featured-blog-post .blog-col{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        height: 100%;
+        align-items: stretch;
+    }
+    .featured-blog-post .blog-hero{
+        aspect-ratio: auto;
+        height: 100%;
+    }
+    .featured-blog-post .blog-main{
+        @apply p-6;
+        height: 100%;
+    }
+    .featured-blog-post .blog-info{
+        margin-top: 0;
+    }
 }
 
 /* Bio */
@@ -1229,4 +1271,3 @@ main{
         transition-duration: 0.01ms !important;
     }
 }
-
