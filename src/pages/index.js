@@ -23,6 +23,7 @@ const industries = [
   ["Manufacturing", "Streamlining operations and optimizing production workflows."],
   ["E-commerce", "Enhancing customer experiences through automation and seamless integrations."],
   ["Brands and Agencies", "Developing tailored solutions that boost efficiency and drive growth."],
+  ["You", "Turning what you need into something real, useful, and built for the way you work."],
 ];
 
 const testimonials = [
