@@ -49,7 +49,12 @@ const BlogListPage = ({ data, pageContext }) => {
 
 export const query = graphql`
   query ($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: $limit, skip: $skip) {
+    allMarkdownRemark(
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {draft: {ne: true}}}
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           frontmatter {

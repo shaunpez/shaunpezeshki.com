@@ -74,3 +74,4 @@ z_google/
 
 # Local browser state from Playwright verification
 output/playwright/profile/
+.vercel

@@ -1,0 +1,157 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - link "← Back to Posts" [ref=e16] [cursor=pointer]:
+        - /url: /blog/
+      - article [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]: May 04, 2026
+            - generic [ref=e21]: 5 min read
+          - 'heading "HRC Equality in Action: What I Learned by Showing Up" [level=1] [ref=e22]'
+          - paragraph [ref=e23]: I flew to DC for HRC Equality in Action expecting panels. I came home with new friends, an award I did not see coming, and a clearer view of the work ahead.
+          - link "LGBTQ+" [ref=e26] [cursor=pointer]:
+            - /url: /category/lgbtq+/
+        - generic [ref=e27]:
+          - paragraph [ref=e28]:
+            - link "Shaun in front of the Human Rights Campaign headquarters in Washington, DC" [ref=e30] [cursor=pointer]:
+              - /url: /static/5dd0bc85636c24a321076e8ace55e4d9/5b6ee/hrc-equality-in-action-hero-generated.png
+              - img "Shaun in front of the Human Rights Campaign headquarters in Washington, DC" [ref=e32]
+          - generic [ref=e33]:
+            - heading "The Happy Hour" [level=2] [ref=e34]
+            - paragraph [ref=e35]: I flew to DC for the Human Rights Campaign Equality in Action.
+            - paragraph [ref=e36]: I expected panels. Updates on what HRC is doing. New people.
+            - paragraph [ref=e37]: The first thing I walked into was the welcome happy hour for arrivals.
+            - paragraph [ref=e38]: The room was a mix. People from different states. People with different identities. People who had built effective change in their own cities. People who came to help others find a voice.
+            - paragraph [ref=e39]: I spent the first 15 minutes quiet.
+            - paragraph [ref=e40]: I looked around. I talked to a few people. Everyone I met was friendly.
+            - paragraph [ref=e41]: I did not feel out of place. I did not know what I was walking into. I thought I knew on the way in. I did not.
+            - paragraph [ref=e42]: I met a bunch of people in short windows. Where are you from. What chapter. What brought you out here.
+            - paragraph [ref=e43]: It was an interesting way to start.
+            - heading "Same Fight, Different Cities" [level=2] [ref=e44]
+            - paragraph [ref=e45]:
+              - link "With friends I made at the HRC Equality in Action Convention in DC" [ref=e47] [cursor=pointer]:
+                - /url: /static/32b4d32559b9686478bd0ed50a7b5c52/b17f8/hrc-equality-in-action-friends-1.jpg
+                - img "With friends I made at the HRC Equality in Action Convention in DC" [ref=e49]
+            - paragraph [ref=e50]:
+              - text: If you read
+              - link "my Columbus post a couple of weeks back" [ref=e51] [cursor=pointer]:
+                - /url: /2026/04/22/columbus-taught-me-what-i-want
+              - text: ", you know I have been thinking about community."
+            - paragraph [ref=e52]: The people who notice when you show up.
+            - paragraph [ref=e53]: The people who ask what you are working on and mean it.
+            - paragraph [ref=e54]: The people who do not make caring feel embarrassing.
+            - paragraph [ref=e55]: I found a lot of those people in DC.
+            - paragraph [ref=e56]: Every conversation had weight.
+            - paragraph [ref=e57]: People shared what they were doing in their own cities. How they were making impact. How they were getting more people involved. How they were keeping volunteers around.
+            - paragraph [ref=e58]: It took time to connect. It does anywhere new. Even so, the room felt like a small community I was already part of.
+            - paragraph [ref=e59]: We were in there for the same reason. Civil rights for LGBTQ+ Americans. Protecting the rights we already have.
+            - paragraph [ref=e60]: An interesting microcosm of connection.
+            - paragraph [ref=e61]:
+              - link "New friends from chapters around the country at the convention" [ref=e63] [cursor=pointer]:
+                - /url: /static/a447eb4610252bada978b105e6aeb122/e5166/hrc-equality-in-action-friends-2.jpg
+                - img "New friends from chapters around the country at the convention" [ref=e65]
+            - heading "Lobby Day From the Outside" [level=2] [ref=e66]
+            - paragraph [ref=e67]: I was not able to make lobby day.
+            - paragraph [ref=e68]: Hundreds of HRC members went to the Hill. They met with senators and representatives from their own cities.
+            - paragraph [ref=e69]: Some representatives came off the floor to greet their chapters. The Columbus team got one of those moments.
+            - paragraph [ref=e70]: This is what the organization does.
+            - paragraph [ref=e71]: This is how far we go to make change.
+            - paragraph [ref=e72]: This is how we get involved with our local representation.
+            - paragraph [ref=e73]: We are the ones impacting our communities.
+            - heading "A Small Surprise" [level=2] [ref=e74]
+            - paragraph [ref=e75]:
+              - link "The Catalyst for Narrative Change 2026 award from HRC" [ref=e77] [cursor=pointer]:
+                - /url: /static/824edab8ca0f51df110536d566d48bd7/5b6ee/hrc-equality-in-action-award-generated.png
+                - img "The Catalyst for Narrative Change 2026 award from HRC" [ref=e79]
+            - paragraph [ref=e80]: I serve as the Digital Engagement Chair for HRC's Columbus, Ohio chapter.
+            - paragraph [ref=e81]: It is volunteer work. Most of it happens in small pieces. A post. A caption. A calendar. A reminder to someone who wants to help and does not know where to start.
+            - paragraph [ref=e82]: When I joined, I positioned myself around one idea. Build proper ways to extend our chapter's messaging on digital platforms.
+            - paragraph [ref=e83]: I like building things. I like building ideas.
+            - paragraph [ref=e84]: So right at the start, I built a software tool to manage event and content requests coming in from our partners. It gave the team leeway time. We worked each request through a real process. We built out each post with intention instead of reacting.
+            - paragraph [ref=e85]: In DC, they handed me the Catalyst for Narrative Change Award for 2026.
+            - paragraph [ref=e86]: I did not see it coming.
+            - paragraph [ref=e87]: This is not one of the marquee awards of the weekend. I had been with the chapter less than a year. I was floored I was even on the list.
+            - paragraph [ref=e88]: I sat with it afterward.
+            - paragraph [ref=e89]: I believe in the work HRC does. I believe in what it means for people like me.
+            - paragraph [ref=e90]: Getting recognized for trying to do the work well, this early in, meant something.
+            - heading "Stories Add Value" [level=2] [ref=e91]
+            - paragraph [ref=e92]: Being part of digital engagement has made me think more about what our chapter puts into the world.
+            - paragraph [ref=e93]: I do not want our Columbus account to feel like a bulletin board.
+            - paragraph [ref=e94]: Information matters. Dates matter. Links matter. Fundraising matters. People need to know where to go, what to give, and how to help.
+            - paragraph [ref=e95]: But stories are what help people care.
+            - paragraph [ref=e96]: I want us to share more about what is happening in the community. The people doing the work. The events bringing people together. The reasons behind the ask.
+            - paragraph [ref=e97]: What we are doing.
+            - paragraph [ref=e98]: Why we are doing it.
+            - paragraph [ref=e99]: What someone else might try in their own city.
+            - paragraph [ref=e100]: The midterms make this feel urgent.
+            - paragraph [ref=e101]: "HRC is running Let's Get Free: Vote Equality '26 to mobilize LGBTQ+ voters and allies for November."
+            - paragraph [ref=e102]: If we want people to show up, stories are how we get them there.
+            - paragraph [ref=e103]: It is the part of this work I want to keep getting better at.
+            - heading "What Showing Up Looks Like" [level=2] [ref=e104]
+            - paragraph [ref=e105]:
+              - link "HRC Columbus members at Equality in Action" [ref=e107] [cursor=pointer]:
+                - /url: /static/f6977da3f474130df0ad2bd1fdb8160a/6c50f/hrc-equality-in-action-showing-up.jpg
+                - img "HRC Columbus members at Equality in Action" [ref=e109]
+            - paragraph [ref=e110]: If you have been on the sidelines, here is what I would tell you.
+            - paragraph [ref=e111]:
+              - text: Find your local HRC chapter. Most major cities have one. Smaller cities have a Steering Committee or a state-level group. They are listed on
+              - link "hrc.org" [ref=e112] [cursor=pointer]:
+                - /url: https://www.hrc.org/in-your-area
+              - text: .
+            - paragraph [ref=e113]: Volunteer if you have time.
+            - paragraph [ref=e114]: Donate if you have money.
+            - paragraph [ref=e115]: Phone bank if you have neither and a couple of evenings.
+            - paragraph [ref=e116]: Bring one person with you. One is enough. These rooms grow because someone brings someone, who brings someone else.
+            - paragraph [ref=e117]: If you have kept politics at arm's length, I get it.
+            - paragraph [ref=e118]: It is exhausting.
+            - paragraph [ref=e119]: It asks for attention when your life already asks for plenty.
+            - paragraph [ref=e120]: But after this weekend, I understand something I did not understand before. Showing up is not about being the loudest person in the room. It is about finding the room where your part is useful.
+            - paragraph [ref=e121]: I found one.
+            - paragraph [ref=e122]: Next time, I want to bring more people with me.
+            - paragraph [ref=e123]: Six months. Show up.
+        - generic [ref=e124]:
+          - heading "Tags" [level=4] [ref=e125]
+          - generic [ref=e126]:
+            - generic [ref=e127]: LGBTQ+
+            - generic [ref=e128]: Human Rights Campaign
+            - generic [ref=e129]: Activism
+            - generic [ref=e130]: Midterm Elections
+            - generic [ref=e131]: Columbus Ohio
+        - generic [ref=e132]:
+          - generic [ref=e133]: ·
+          - generic [ref=e134]: ·
+          - generic [ref=e135]: ·
+        - generic [ref=e136]:
+          - iframe
+        - generic:
+          - iframe
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - link "Shaun Pezeshki" [ref=e140] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e141]:
+        - link "LinkedIn" [ref=e142] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e143] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e144] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e145] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e146] [cursor=pointer]:
+          - /url: /privacy-policy/

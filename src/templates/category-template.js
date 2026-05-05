@@ -52,7 +52,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
 export const query = graphql`
   query($category: String!) {
     allMarkdownRemark(
-      filter: {frontmatter: {category: {eq: $category}}}
+      filter: {frontmatter: {category: {eq: $category}, draft: {ne: true}}}
       sort: {frontmatter: {date: DESC}}
     ) {
       edges {
@@ -73,7 +73,7 @@ export const query = graphql`
         }
       }
     }
-    categories: allMarkdownRemark {
+    categories: allMarkdownRemark(filter: {frontmatter: {draft: {ne: true}}}) {
       group(field: {frontmatter: {category: SELECT}}) {
         fieldValue
       }

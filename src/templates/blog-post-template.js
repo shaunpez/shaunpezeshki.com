@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import { getSrc } from "gatsby-plugin-image";
 import { Disqus } from 'gatsby-plugin-disqus';
 import AudioPlayer from '../components/audio-player';
+import calculateReadingTime from "../utils/read-time";
 
 const BlogPostTemplate = ({ data, location }) => {
   const [fromPage, setFromPage] = useState("/blog");
@@ -12,6 +13,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const { siteUrl } = data.site.siteMetadata;
   const imageUrl = post.frontmatter.image ? `${getSrc(post.frontmatter.image.childImageSharp)}` : null;
   const { title, date, slug, category, tags } = post.frontmatter;
+  const readingTime = calculateReadingTime(post.rawMarkdownBody);
+  const postClassName = slug ? `post-${slug.replace(/[^a-z0-9-]/gi, '-').toLowerCase()}` : "";
   const formattedDate = new Date(date).toISOString();
 
   const dateObj = new Date(date);
@@ -78,7 +81,7 @@ const BlogPostTemplate = ({ data, location }) => {
       />
       <Layout>
         <div key={post.frontmatter.slug}>
-          <section className="blog article-page">
+          <section className={`blog article-page ${postClassName}`}>
             <div className="blog-header site-shell article-shell">
               <Link to={fromPage} className="back-button">
                 Back to Posts
@@ -88,9 +91,10 @@ const BlogPostTemplate = ({ data, location }) => {
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataScript }} />
               <header className="article-masthead">
                 <div className="blog-meta">
-                  <div className="date">
+                  <span className="date">
                     {post.frontmatter.date}
-                  </div>
+                  </span>
+                  <span className="read-time">{readingTime}</span>
                 </div>
                 <h1>{post.frontmatter.title}</h1>
                 <p>{post.frontmatter.excerpt}</p>
@@ -135,6 +139,7 @@ export const query = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
+      rawMarkdownBody
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

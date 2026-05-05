@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {frontmatter: {draft: {ne: true}}}) {
         edges {
           node {
             frontmatter {
@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
         totalCount
       }
-      categories: allMarkdownRemark {
+      categories: allMarkdownRemark(filter: {frontmatter: {draft: {ne: true}}}) {
         group(field: {frontmatter: {category: SELECT}}) {
           fieldValue
           totalCount

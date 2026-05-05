@@ -1,0 +1,118 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Shaun Pezeshki home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Shaun Pezeshki
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Stories" [ref=e8] [cursor=pointer]:
+          - /url: /blog/
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about/
+        - link "Chat" [ref=e10] [cursor=pointer]:
+          - /url: /chat-with-shaun/
+        - link "Buy Shaun a coffee" [ref=e11] [cursor=pointer]:
+          - /url: https://buymeacoffee.com/shaunpez
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - link "← Back to Posts" [ref=e16] [cursor=pointer]:
+        - /url: /blog/
+      - article [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e20]: May 04, 2026
+          - heading "I Flew to DC for HRC. I Flew Home Different." [level=1] [ref=e21]
+          - paragraph [ref=e22]: My first HRC convention. New friends, an unexpected award, and a six-month runway to the midterms.
+          - link "LGBTQ+" [ref=e25] [cursor=pointer]:
+            - /url: /category/lgbtq+/
+        - generic [ref=e26]:
+          - paragraph [ref=e27]:
+            - link "Shaun in front of the Human Rights Campaign headquarters in Washington, DC" [ref=e29] [cursor=pointer]:
+              - /url: /static/0a434e434b5338aecbe1e991a93cdb00/c23a4/hrc-equality-in-action-hero.jpg
+              - img "Shaun in front of the Human Rights Campaign headquarters in Washington, DC" [ref=e31]
+          - generic [ref=e32]:
+            - heading "My First HRC Convention" [level=2] [ref=e33]
+            - paragraph [ref=e34]: This past weekend was my first time at the Human Rights Campaign Equality in Action Convention.
+            - paragraph [ref=e35]: I have been gay my whole life. I have been a tech founder, a Midwest transplant, a guy with a blog. I have not been someone who showed up to political conventions.
+            - paragraph [ref=e36]: This weekend changed it.
+            - paragraph [ref=e37]: I flew into DC on Friday. Walked into a room of people from every state in the country. Members who have been doing this work for ten, fifteen, twenty years. The kind of people who know the bill numbers off the top of their head. Who have stood outside more state capitols than I have airports.
+            - paragraph [ref=e38]: I spent the first hour quiet. Listening.
+            - paragraph [ref=e39]: Then I started talking to people. And the temperature of the room got into me.
+            - heading "The People in the Room" [level=2] [ref=e40]
+            - paragraph [ref=e41]:
+              - link "With friends I made at the HRC Equality in Action Convention in DC" [ref=e43] [cursor=pointer]:
+                - /url: /static/32b4d32559b9686478bd0ed50a7b5c52/b17f8/hrc-equality-in-action-friends-1.jpg
+                - img "With friends I made at the HRC Equality in Action Convention in DC" [ref=e45]
+            - paragraph [ref=e46]:
+              - text: If you read
+              - link "my Columbus post a couple of weeks back" [ref=e47] [cursor=pointer]:
+                - /url: /2026/04/22/columbus-taught-me-what-i-want
+              - text: ", you know I have been searching for my people in this city. People who get fired up about the things they care about. People who do something with the energy."
+            - paragraph [ref=e48]: I found those people in DC.
+            - paragraph [ref=e49]: Every conversation went somewhere. Someone running a Pride event in a small Texas town. Someone organizing trans youth families in Florida. Someone three years into rebuilding a chapter from almost folding. Nobody was bored of their own life.
+            - paragraph [ref=e50]: I made friends in two days. Real ones. People I am keeping.
+            - paragraph [ref=e51]: The flight was worth it for the friends alone.
+            - paragraph [ref=e52]:
+              - link "New friends from chapters around the country at the convention" [ref=e54] [cursor=pointer]:
+                - /url: /static/a447eb4610252bada978b105e6aeb122/e5166/hrc-equality-in-action-friends-2.jpg
+                - img "New friends from chapters around the country at the convention" [ref=e56]
+            - heading "Lobby Day, From Where I Stood" [level=2] [ref=e57]
+            - paragraph [ref=e58]: I did not do lobby day. Hundreds of HRC members went up to the Hill, met with their senators and representatives, and walked them through what the LGBTQ+ community needs from them right now.
+            - paragraph [ref=e59]: I was not in those meetings. But I was in the room when people came back.
+            - paragraph [ref=e60]: The debrief is the part I keep thinking about. People comparing notes on which offices were warm, which were cold, which staffer to follow up with. The whole thing is organized in a way you do not see from the outside. There is a script. There is a follow-up plan. People are doing their homework.
+            - paragraph [ref=e61]: This is not a vibes operation.
+            - heading "The Award I Did Not See Coming" [level=2] [ref=e62]
+            - paragraph [ref=e63]:
+              - link "The Catalyst for Narrative Change 2026 award from HRC" [ref=e65] [cursor=pointer]:
+                - /url: /static/351a8521f8b60dbb3a3f12eaa7ee749b/512c0/hrc-equality-in-action-award.jpg
+                - img "The Catalyst for Narrative Change 2026 award from HRC" [ref=e67]
+            - paragraph [ref=e68]: I serve as the Digital Engagement Chair for HRC's Columbus, Ohio chapter. It is volunteer work. I took it on because the chapter needed someone with a marketing background to push the digital side.
+            - paragraph [ref=e69]: We have been rebuilding how the chapter shows up online. New voice. Tighter messaging. Content people want to share instead of scroll past. Chapters across the country deal with the same gap, and it is one I know how to close.
+            - paragraph [ref=e70]: At the convention they handed me the Catalyst for Narrative Change Award for 2026.
+            - paragraph [ref=e71]: I did not expect it. I did not know it was coming. I sat down with it for a while afterwards because I wanted to feel what it was.
+            - paragraph [ref=e72]: The award is a reminder. The part of this work I am best at is also part of the work. Telling our stories, on the platforms our community lives on, in a voice they recognize, is one of the things moving the needle. Not the only thing. But a real thing.
+            - heading "The Campaign on the Table Right Now" [level=2] [ref=e73]
+            - paragraph [ref=e74]: "HRC is running a campaign called Let's Get Free: Vote Equality '26."
+            - paragraph [ref=e75]: It is the midterm push. The goal is to mobilize LGBTQ+ voters and allies into a voting force capable of flipping seats and changing outcomes. Not a vague get-out-the-vote effort. A specific plan to turn our community into a political force the rest of the country has to reckon with.
+            - paragraph [ref=e76]: This is not abstract.
+            - paragraph [ref=e77]: The bills being filed against trans kids, against marriage, against our healthcare are not theoretical. The laws being written about how teachers talk about us in classrooms are happening now. The Supreme Court is one ruling away from undoing decades of work.
+            - paragraph [ref=e78]: Whoever is in Congress decides what gets stopped. Whoever is in your state house decides whether your local rights survive.
+            - paragraph [ref=e79]: The midterms are six months out. The window is now.
+            - heading "What You Do With This" [level=2] [ref=e80]
+            - paragraph [ref=e81]: If you have been on the sidelines, here is what I would tell you.
+            - paragraph [ref=e82]:
+              - text: Find your local HRC chapter. Most major cities have one. Smaller cities have a Steering Committee or a state-level group. They are listed on
+              - link "hrc.org" [ref=e83] [cursor=pointer]:
+                - /url: https://www.hrc.org/
+              - text: .
+            - paragraph [ref=e84]: Volunteer if you have time. Donate if you have money. Phone bank if you have neither and a couple of free evenings a week.
+            - paragraph [ref=e85]: Bring one person with you. One is enough. The reason these rooms work is the chain. Someone brought someone, who brought someone else.
+            - paragraph [ref=e86]: If you are queer and you have been keeping politics at arm's length the way I did, I get it. I stayed out for years. I do not regret showing up now. I regret not showing up sooner.
+            - paragraph [ref=e87]: The next convention I go to, I want to bring three of you with me.
+            - paragraph [ref=e88]: Six months. Show up.
+        - generic [ref=e89]:
+          - heading "Tags" [level=4] [ref=e90]
+          - generic [ref=e91]:
+            - generic [ref=e92]: LGBTQ+
+            - generic [ref=e93]: Human Rights Campaign
+            - generic [ref=e94]: Activism
+            - generic [ref=e95]: Midterm Elections
+            - generic [ref=e96]: Columbus Ohio
+        - generic [ref=e97]:
+          - generic [ref=e98]: ·
+          - generic [ref=e99]: ·
+          - generic [ref=e100]: ·
+  - contentinfo [ref=e101]:
+    - generic [ref=e102]:
+      - link "Shaun Pezeshki" [ref=e104] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer navigation" [ref=e105]:
+        - link "LinkedIn" [ref=e106] [cursor=pointer]:
+          - /url: https://linkedin.com/in/shaunpez
+        - link "X" [ref=e107] [cursor=pointer]:
+          - /url: https://twitter.com/shaunpez
+        - link "Instagram" [ref=e108] [cursor=pointer]:
+          - /url: https://instagram.com/shaunpez
+        - link "RSS" [ref=e109] [cursor=pointer]:
+          - /url: /rss.xml
+        - link "Privacy" [ref=e110] [cursor=pointer]:
+          - /url: /privacy-policy/
