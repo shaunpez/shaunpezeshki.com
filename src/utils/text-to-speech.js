@@ -20,8 +20,8 @@ async function synthesizeSpeech(text, slug) {
       input: { text: chunks[i] },
       voice: {
         languageCode: 'en-US',
-        name: 'en-US-Studio-Q', // Change this to the desired voice
-        ssmlGender: 'MALE', // Change this to 'FEMALE' if desired
+        name: 'en-US-Chirp3-HD-Algenib',
+        ssmlGender: 'MALE',
       },
       audioConfig: { audioEncoding: 'MP3' },
     };
