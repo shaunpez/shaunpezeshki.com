@@ -29,9 +29,10 @@ const AboutPage = () => (
             <div className="prose editorial-prose">
               <p>
                 I work as a technical strategist and entrepreneur, helping businesses improve
-                operations through practical technology, automation, and strategy. With a background
-                in marketing and tech, I help clients make better use of their tools, strengthen
-                their systems, and invest in solutions that actually support how they work.
+                operations through practical technology, automation, AI workflows, and strategy.
+                With a background in marketing and tech, I help clients make better use of their
+                tools, strengthen their systems, and invest in solutions that actually support how
+                they work.
               </p>
               <p>
                 A lot of that comes down to connecting modern solutions with existing systems

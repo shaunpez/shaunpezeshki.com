@@ -14,9 +14,9 @@ const Arrow = () => (
 
 const services = [
   ["Tech Optimization", "Revamp systems for higher efficiency."],
-  ["Automation Solutions", "Eliminate manual tasks with custom automation."],
+  ["Automation Solutions", "Eliminate manual tasks with custom automation and practical AI workflow support."],
   ["Custom Development", "Tailored tools to meet your specific business goals."],
-  ["Data-Driven Strategy", "Insights to guide smarter decision-making."],
+  ["Data-Driven Strategy", "Use data, AI-assisted analysis, and business context to guide smarter decisions."],
 ];
 
 const industries = [
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
     <>
       <Seo
         title="Shaun Pezeshki"
-        description="Technical strategy, automation, and personal stories from Shaun Pezeshki."
+        description="Technical strategy, automation, AI workflows, and personal stories from Shaun Pezeshki."
         meta={[
           {
             name: "keywords",
@@ -62,8 +62,8 @@ const IndexPage = ({ data }) => {
             <div className="home-masthead__copy">
               <h1>I help businesses grow and succeed.</h1>
               <p className="lede">
-                I build smarter automations, cleaner workflows, and practical systems that help
-                teams save time, reduce handoffs, and make better decisions. I also write about
+                I build smarter automations, AI workflows, and practical systems that help teams
+                save time, reduce handoffs, and make better decisions. I also write about
                 technology, identity, community, career shifts, and what I&apos;m learning along the
                 way.
               </p>
