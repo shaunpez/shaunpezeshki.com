@@ -26,15 +26,9 @@ const PostList = ({ posts, handleLinkClick, currentPath }) => {
         return (
           <article key={slug} className="blog-post editorial-entry">
             {image && (
-              <Link
-                to={postUrl}
-                state={{ from: currentPath }}
-                onClick={handleLinkClick}
-                className="blog-hero"
-                aria-label={`Read ${title}`}
-              >
+              <div className="blog-hero">
                 <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
-              </Link>
+              </div>
             )}
             <div className="blog-main">
               <div className="blog-info">

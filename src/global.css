@@ -681,12 +681,6 @@ main {
 .featured-blog-post .blog-hero .gatsby-image-wrapper {
   width: 100%;
   height: 100%;
-  transition: transform 420ms var(--ease-out);
-}
-
-.blog-post:hover .blog-hero .gatsby-image-wrapper,
-.featured-blog-post:hover .blog-hero .gatsby-image-wrapper {
-  transform: scale(1.025);
 }
 
 .blog-main {
@@ -1119,7 +1113,6 @@ main {
   box-shadow: var(--shadow-image);
 }
 
-.post-hrc-equality-in-action-show-up .blog-content .gatsby-resp-image-link,
 .post-hrc-equality-in-action-show-up .blog-content .gatsby-resp-image-background-image {
   display: block;
   width: 100%;
@@ -1468,6 +1461,7 @@ main {
   }
 
   .featured-blog-post .blog-hero {
+    order: -1;
     aspect-ratio: 1.6 / 1;
   }
 

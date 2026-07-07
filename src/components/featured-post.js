@@ -45,14 +45,14 @@ const FeaturedPost = ({ post, handleLinkClick }) => {
         </Link>
       </div>
       {image && (
-        <Link to={postUrl} onClick={handleLinkClick} className="blog-hero" aria-label={`Read ${title}`}>
+        <div className="blog-hero">
           <GatsbyImage
             className="featured-image"
             image={image.childImageSharp.gatsbyImageData}
             alt=""
             imgStyle={{ objectFit: "cover", objectPosition: "center" }}
           />
-        </Link>
+        </div>
       )}
     </article>
   );
