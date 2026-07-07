@@ -1,30 +1,59 @@
-import React from "react";
-import { graphql, Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import PostList from "../components/post-list";
-import headerImage from "../images/shaun-hero-in-light.jpg";
+import React from "react"
+import { graphql, Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import PostList from "../components/post-list"
+import headerImage from "../images/shaun-hero-in-light.jpg"
 
 const Arrow = () => (
-  <svg aria-hidden="true" className="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+  <svg
+    aria-hidden="true"
+    className="arrow-icon"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
     <path d="M11.25 3.75 17.5 10l-6.25 6.25-1.06-1.06 4.44-4.44H2.5v-1.5h12.13L10.19 4.81l1.06-1.06Z" />
   </svg>
-);
+)
 
 const services = [
-  ["Tech Optimization", "Revamp systems for higher efficiency."],
-  ["Automation Solutions", "Eliminate manual tasks with custom automation and practical AI workflow support."],
-  ["Custom Development", "Tailored tools to meet your specific business goals."],
-  ["Data-Driven Strategy", "Use data, AI-assisted analysis, and business context to guide smarter decisions."],
-];
+  [
+    "Product Discovery",
+    "Find the real workflow problem behind requests, then turn it into a clear decision about what to build, change, or stop doing.",
+  ],
+  [
+    "Workflow Redesign",
+    "Map handoffs, edge cases, and team habits so the fix reduces friction without breaking the parts people already trust.",
+  ],
+  [
+    "AI-Enabled Operations",
+    "Use automation where it shortens busywork, keep human judgment where context matters, and make adoption feel practical.",
+  ],
+  [
+    "Implementation Planning",
+    "Translate strategy into roadmaps, specs, and buildable next steps across business, design, and technical constraints.",
+  ],
+]
 
 const industries = [
-  ["Manufacturing", "Streamlining operations and optimizing production workflows."],
-  ["E-commerce", "Enhancing customer experiences through automation and seamless integrations."],
-  ["Brands and Agencies", "Developing tailored solutions that boost efficiency and drive growth."],
-  ["You", "Turning what you need into something real, useful, and built for the way you work."],
-];
+  [
+    "Small Businesses",
+    "Turning owner knowledge and day-to-day operations into systems the team can actually use.",
+  ],
+  [
+    "Operations-Heavy Teams",
+    "Improving repeatable work, handoffs, and exceptions so people spend less time sorting through the same problems.",
+  ],
+  [
+    "Brands and Agencies",
+    "Connecting client needs, internal capacity, and technical tradeoffs before the work turns into churn.",
+  ],
+  [
+    "Product-Minded Teams",
+    "Helping frame the user need, business case, and implementation path before everyone starts building.",
+  ],
+]
 
 const testimonials = [
   {
@@ -37,21 +66,21 @@ const testimonials = [
       "Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors.",
     author: "Nicole A., Fulton Fish Cooperative",
   },
-];
+]
 
 const IndexPage = ({ data }) => {
-  const latestPosts = data.latestPosts.edges;
+  const productPosts = data.productPosts.edges
 
   return (
     <>
       <Seo
-        title="Shaun Pezeshki"
-        description="Technical strategy, automation, AI workflows, and personal stories from Shaun Pezeshki."
+        title="Shaun Pezeshki | Technical Product Strategy"
+        description="Technical product strategy, AI workflows, systems thinking, and personal writing from Shaun Pezeshki."
         meta={[
           {
             name: "keywords",
             content:
-              "Shaun Pezeshki, Shaunpez, Technical Strategist, Marketing, Technology, Entrepreneur, Inclusive Techie",
+              "Shaun Pezeshki, Technical Product Management, Technical Product Strategy, AI Workflows, Systems Thinking, Automation, Inclusive Techie",
           },
         ]}
         image={headerImage}
@@ -60,12 +89,12 @@ const IndexPage = ({ data }) => {
         <section className="home-masthead editorial-reveal">
           <div className="site-shell home-masthead__grid">
             <div className="home-masthead__copy">
-              <h1>I help businesses grow and succeed.</h1>
+              <h1>I turn complicated workflows into useful systems.</h1>
               <p className="lede">
-                I build smarter automations, AI workflows, and practical systems that help teams
-                save time, reduce handoffs, and make better decisions. I also write about
-                technology, identity, community, career shifts, and what I&apos;m learning along the
-                way.
+                I work at the intersection of business operations, automation,
+                AI workflows, and product decisions. I help teams
+                understand what people need, make clear tradeoffs, and build
+                systems that make the work easier to manage.
               </p>
               <div className="action-row" aria-label="Primary actions">
                 <Link to="/chat-with-shaun" className="button button-primary">
@@ -92,10 +121,12 @@ const IndexPage = ({ data }) => {
         <section className="editorial-section proof-section" id="work">
           <div className="site-shell proof-layout">
             <div className="section-kicker">
-              <h2>What I Offer</h2>
+              <h2>Product-shaped work for practical teams.</h2>
               <p>
-                I partner with small to medium-sized businesses that need clearer systems, better
-                operations, and practical technology that fits how the team actually works.
+                I bring a product manager&apos;s lens to small-business systems,
+                AI adoption, operations, and technical projects: understand the
+                user, work within the constraints, and ship the version people can
+                actually use.
               </p>
             </div>
 
@@ -123,7 +154,7 @@ const IndexPage = ({ data }) => {
             </div>
 
             <div className="quote-strip" aria-label="Client feedback">
-              {testimonials.map((testimonial) => (
+              {testimonials.map(testimonial => (
                 <figure key={testimonial.author}>
                   <blockquote>{testimonial.quote}</blockquote>
                   <figcaption>{testimonial.author}</figcaption>
@@ -138,14 +169,14 @@ const IndexPage = ({ data }) => {
             <div className="section-kicker">
               <h2>Stories from work, life, and what I&apos;m still figuring out.</h2>
               <p>
-                I write about tech, identity, community, career shifts, and the questions that keep
-                coming up along the way.
+                I write about tech, identity, community, career shifts, and the
+                questions that keep coming up along the way.
               </p>
               <Link to="/blog" className="text-link">
                 All Posts <Arrow />
               </Link>
             </div>
-            <PostList posts={latestPosts} />
+            <PostList posts={productPosts} />
           </div>
         </section>
 
@@ -163,9 +194,11 @@ const IndexPage = ({ data }) => {
             <div className="section-kicker">
               <h2>Who I am shapes how I work.</h2>
               <p>
-                I&apos;m a tech professional with over 14 years of experience, specializing in
-                optimizing business processes through tech solutions. Beyond technology, I care about
-                social advocacy, inclusivity, and making room for more honest conversations.
+                I&apos;m a technical strategist with over 14 years of experience
+                across marketing, development, automation, and client work. My
+                advocacy and writing are part of the same practice: listening
+                closely, noticing patterns, and making complex human systems
+                easier to navigate.
               </p>
               <Link to="/about" className="button button-secondary">
                 About Shaun <Arrow />
@@ -177,14 +210,17 @@ const IndexPage = ({ data }) => {
         <section className="editorial-section contact-cta">
           <div className="site-shell contact-cta__inner">
             <h2>
-              Have a project in mind, a workflow that takes too much time, or just want to talk
-              through an idea?
+              Hiring for product, improving a workflow, or trying to make AI
+              useful at work?
             </h2>
             <div className="action-row">
               <Link to="/chat-with-shaun" className="button button-primary">
                 Let&apos;s Chat <Arrow />
               </Link>
-              <a href="mailto:shaun@uphighstudio.com" className="button button-secondary">
+              <a
+                href="mailto:shaun@uphighstudio.com"
+                className="button button-secondary"
+              >
                 Email Shaun <Arrow />
               </a>
             </div>
@@ -192,15 +228,26 @@ const IndexPage = ({ data }) => {
         </section>
       </Layout>
     </>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query {
-    latestPosts: allMarkdownRemark(
-      limit: 3
+    productPosts: allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
-      filter: { frontmatter: { draft: { ne: true } } }
+      filter: {
+        frontmatter: {
+          draft: { ne: true }
+          slug: {
+            in: [
+              "ai-not-making-you-more-productive-yet"
+              "staying-on-social-media-2026"
+              "navigating-difficult-client-relationships"
+              "strategies-for-success-navigating-the-2024-tech-job-market"
+            ]
+          }
+        }
+      }
     ) {
       edges {
         node {
@@ -221,6 +268,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage
