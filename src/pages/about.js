@@ -1,20 +1,20 @@
-import React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import headerImage from "../images/shaun.jpg";
+import React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import headerImage from "../images/shaun.jpg"
 
 const AboutPage = () => (
   <>
     <Seo
-      title="About Shaun Pezeshki"
-      description="Shaun Pezeshki is a technical strategist and entrepreneur with a talent for assisting businesses in enhancing their operational practices."
+      title="About Shaun Pezeshki | Technical Product Strategy"
+      description="Shaun Pezeshki is a technical strategist working across product, technology, and operations, with a focus on AI workflows and practical systems."
       meta={[
         {
           name: "keywords",
           content:
-            "Shaun Pezeshki, Shaunpez, Technical Strategist, Marketing, Technology, Inclusive Techie, Entrepreneur",
+            "Shaun Pezeshki, Technical Product Management, Product Strategy, AI Workflows, Systems Thinking, Technical Strategist, Inclusive Techie",
         },
       ]}
       image={headerImage}
@@ -24,39 +24,51 @@ const AboutPage = () => (
         <div className="site-shell editorial-page__hero">
           <div>
             <p className="eyebrow">About Shaun</p>
-            <h1>Technical strategist, writer, and advocate for human rights.</h1>
+            <h1>
+              Technical strategist working across product, technology, and
+              operations.
+            </h1>
 
             <div className="prose editorial-prose">
               <p>
-                I work as a technical strategist and entrepreneur, helping businesses improve
-                operations through practical technology, automation, AI workflows, and strategy.
-                With a background in marketing and tech, I help clients make better use of their
-                tools, strengthen their systems, and invest in solutions that actually support how
-                they work.
+                My background spans marketing, development, automation, AI
+                workflows, and client service. My work begins by listening,
+                understanding what is getting in the way, and finding a
+                practical path forward.
               </p>
               <p>
-                A lot of that comes down to connecting modern solutions with existing systems
-                without making the process feel more complicated than it needs to be. I&apos;ve
-                worked with individual brands, agencies, and small businesses, which helps me
-                understand different needs and build practical roadmaps for moving work forward.
+                That experience led me naturally to product work. I care about
+                understanding users, choosing problems worth solving, navigating
+                the tradeoffs a team has to make, and building things people can
+                actually use.
               </p>
               <p>
-                Beyond technology, I care deeply about people, identity, community, and the stories
-                that do not fit into a professional bio. I&apos;m involved with the{" "}
+                I also write about identity, community, work, technology, and
+                the parts of life that do not fit neatly into a resume. My
+                involvement with the{" "}
                 <a target="_blank" rel="noreferrer" href="https://www.hrc.org/">
                   Human Rights Campaign
                 </a>{" "}
-                through the Columbus steering committee, and I write for{" "}
-                <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">
+                through the Columbus steering committee and my writing for{" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/prismnpen"
+                >
                   Prism &amp; Pen
-                </a>, a publication that helps amplify LGBTQ+ voices.
+                </a>
+                {", "}a publication that helps amplify LGBTQ+ voices. Both are
+                an important part of who I am and how I see the world.
               </p>
 
               <div className="inline-actions">
                 <Link to="/chat-with-shaun" className="button button-primary">
-                  Connect with Shaun
+                  Let&apos;s Chat
                 </Link>
-                <a href="mailto:shaun@uphighstudio.com" className="button button-secondary">
+                <a
+                  href="mailto:shaun@uphighstudio.com"
+                  className="button button-secondary"
+                >
                   Email Shaun
                 </a>
               </div>
@@ -73,6 +85,6 @@ const AboutPage = () => (
       </section>
     </Layout>
   </>
-);
+)
 
-export default AboutPage;
+export default AboutPage
