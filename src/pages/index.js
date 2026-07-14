@@ -20,38 +20,38 @@ const Arrow = () => (
 const services = [
   [
     "Product Discovery",
-    "Find the real workflow problem behind requests, then turn it into a clear decision about what to build, change, or stop doing.",
+    "Listen to the people doing the work, identify the problem behind the request, and decide what is worth building or changing.",
   ],
   [
     "Workflow Redesign",
-    "Map handoffs, edge cases, and team habits so the fix reduces friction without breaking the parts people already trust.",
+    "Map the handoffs, edge cases, and team habits that create friction, then improve the process without losing what already works.",
   ],
   [
     "AI-Enabled Operations",
-    "Use automation where it shortens busywork, keep human judgment where context matters, and make adoption feel practical.",
+    "Find where AI and automation can reduce repetitive work, while keeping human judgment where context matters.",
   ],
   [
     "Implementation Planning",
-    "Translate strategy into roadmaps, specs, and buildable next steps across business, design, and technical constraints.",
+    "Turn the direction into a practical roadmap, clear requirements, and next steps that account for business and technical constraints.",
   ],
 ]
 
 const industries = [
   [
     "Small Businesses",
-    "Turning owner knowledge and day-to-day operations into systems the team can actually use.",
+    "Help owner-led teams turn day-to-day knowledge into processes and tools other people can use.",
   ],
   [
     "Operations-Heavy Teams",
-    "Improving repeatable work, handoffs, and exceptions so people spend less time sorting through the same problems.",
+    "Improve repeatable work, handoffs, and exceptions so the same problems do not have to be solved from scratch.",
   ],
   [
     "Brands and Agencies",
-    "Connecting client needs, internal capacity, and technical tradeoffs before the work turns into churn.",
+    "Connect client needs, team capacity, and technical tradeoffs before the work becomes harder to manage.",
   ],
   [
-    "Product-Minded Teams",
-    "Helping frame the user need, business case, and implementation path before everyone starts building.",
+    "Teams Building Products",
+    "Clarify the user need, business case, and implementation path before the team commits to a solution.",
   ],
 ]
 
@@ -89,12 +89,13 @@ const IndexPage = ({ data }) => {
         <section className="home-masthead editorial-reveal">
           <div className="site-shell home-masthead__grid">
             <div className="home-masthead__copy">
-              <h1>I turn complicated workflows into useful systems.</h1>
+              <h1>I help teams make complicated work easier to manage.</h1>
               <p className="lede">
-                I work at the intersection of business operations, automation,
-                AI workflows, and product decisions. I help teams
-                understand what people need, make clear tradeoffs, and build
-                systems that make the work easier to manage.
+                I work across product, technology, and operations. I start by
+                understanding what people need, what is getting in the way, and
+                what the team can realistically change. From there, I help shape
+                practical products, workflows, and AI tools people can actually
+                use.
               </p>
               <div className="action-row" aria-label="Primary actions">
                 <Link to="/chat-with-shaun" className="button button-primary">
@@ -121,12 +122,12 @@ const IndexPage = ({ data }) => {
         <section className="editorial-section proof-section" id="work">
           <div className="site-shell proof-layout">
             <div className="section-kicker">
-              <h2>Product-shaped work for practical teams.</h2>
+              <h2>Product work grounded in how teams operate.</h2>
               <p>
-                I bring a product manager&apos;s lens to small-business systems,
-                AI adoption, operations, and technical projects: understand the
-                user, work within the constraints, and ship the version people can
-                actually use.
+                My background in marketing, development, automation, and client
+                service helps me connect user needs with business and technical
+                constraints. The goal is a clear path from the problem to
+                something the team can build, adopt, and improve.
               </p>
             </div>
 
@@ -167,10 +168,13 @@ const IndexPage = ({ data }) => {
         <section className="editorial-section writing-section">
           <div className="site-shell writing-layout">
             <div className="section-kicker">
-              <h2>Stories from work, life, and what I&apos;m still figuring out.</h2>
+              <h2>
+                Stories from work, life, and what I&apos;m still figuring out.
+              </h2>
               <p>
-                I write about tech, identity, community, career shifts, and the
-                questions that keep coming up along the way.
+                I write about technology, product thinking, identity, community,
+                career shifts, and the questions that keep coming up along the
+                way.
               </p>
               <Link to="/blog" className="text-link">
                 All Posts <Arrow />
