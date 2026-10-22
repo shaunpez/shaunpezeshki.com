@@ -24,7 +24,9 @@ const { title, description = SITE.description, image, keywords, noindex = false,
   Astro.props
 // Titles that already name me (Home, About, Contact) are used as written.
 const fullTitle = title.includes(SITE.title) ? title : `${title} | ${SITE.title}`
-const canonical = new URL(Astro.url.pathname, SITE.url).href
+// Encode each path segment so /category/lgbtq+/ becomes the %2B form Cloudflare serves without a redirect.
+const canonicalPath = Astro.url.pathname.split("/").map(segment => encodeURIComponent(decodeURIComponent(segment))).join("/")
+const canonical = new URL(canonicalPath, SITE.url).href
 const imageUrl = new URL(image ?? defaultImage.src, SITE.url).href
 ---
 

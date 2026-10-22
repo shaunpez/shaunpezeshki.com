@@ -48,7 +48,8 @@ export const categorySlug = (category: string) =>
 export const postUrl = ({ data }: Post) =>
   `/${data.date.replaceAll("-", "/")}/${data.slug}/`
 
-export const categoryUrl = (category: string) => `/category/${categorySlug(category)}/`
+// Cloudflare serves "lgbtq+" at its encoded path (lgbtq%2B) and redirects the raw "+", so link to the encoded form.
+export const categoryUrl = (category: string) => `/category/${encodeURIComponent(categorySlug(category))}/`
 
 export const readingTime = (text = "") =>
   `${Math.ceil(text.split(/\s+/).length / 200)} min read`

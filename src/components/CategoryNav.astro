@@ -15,6 +15,6 @@ const items = [
 
 <div class="category-buttons">
   {items.map(({ label, href }) => (
-    <a href={href} class="category-button" aria-current={path === href.replace(/\/$/, "") ? "page" : undefined}>{label}</a>
+    <a href={href} class="category-button" aria-current={path === decodeURIComponent(href).replace(/\/$/, "") ? "page" : undefined}>{label}</a>
   ))}
 </div>

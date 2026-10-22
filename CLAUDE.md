@@ -46,7 +46,7 @@ Post URLs are `/{YYYY}/{MM}/{DD}/{slug}`. Drafts and future-dated posts are excl
 
 - `index.astro`: homepage; "Stories" shows the latest 4 posts automatically
 - `blog.astro`: newest story featured, then every story as rows grouped by year; `page/[page].astro` keeps old `/page/N` links working
-- `category/[category]/[...page].astro`: `/category/{slug}` and `/category/{slug}/2`, 8 per page. Slugs keep `+` (`/category/lgbtq+`).
+- `category/[category]/[...page].astro`: `/category/{slug}` and `/category/{slug}/2`, 8 per page. Slugs keep `+`, but links, canonicals and the sitemap use the encoded form (`/category/lgbtq%2B/`) because Cloudflare redirects the raw `+`. Use `categoryUrl()`.
 - `[yyyy]/[mm]/[dd]/[slug].astro`: single post
 - `styleguide.astro`: every token and shared component, rendered with real posts (noindex, not in sitemap). Check UI changes here first.
 - `rss.xml.ts`, sitemap via `@astrojs/sitemap`, `public/_redirects` for `/feed`
