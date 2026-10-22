@@ -1,0 +1,16 @@
+---
+interface Props {
+  quotes: { text: string; name: string }[]
+}
+
+const { quotes } = Astro.props
+---
+
+<div class="quotes">
+  {quotes.map(({ text, name }) => (
+    <blockquote class="quote" data-reveal>
+      <p>“{text}”</p>
+      <footer>{name}</footer>
+    </blockquote>
+  ))}
+</div>

@@ -28,7 +28,7 @@ Ah, my wild 20s in San Francisco. Those were the days when every weekend was an 
     <p>But then my 30s came around and pulled the rug right out from under me. Suddenly the hangovers hit way harder and that rat race of chasing the next party high started feeling...empty. Damn you, maturity! The pandemic didn't help either, making the world feel smaller just as I was supposed to be coming into my own. How does one break out of their shell again when real human interaction sans screens feels so foreign?</p>
   </div>
   <div class="w-full md:w-1/3">
-    <img src="./images/find-substance-v2.jpg" alt="Shaun at the Eiffel Tower" />
+    <img src="/images/blog/find-substance-v2.jpg" loading="lazy" alt="Shaun at the Eiffel Tower" />
   </div>
 </div>
 

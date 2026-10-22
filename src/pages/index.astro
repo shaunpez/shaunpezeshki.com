@@ -1,0 +1,176 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ArrowIcon from "../components/ArrowIcon.astro"
+import Button from "../components/Button.astro"
+import ContactBand from "../components/ContactBand.astro"
+import PageHero from "../components/PageHero.astro"
+import Photo from "../components/Photo.astro"
+import PostFeature from "../components/PostFeature.astro"
+import PostRow from "../components/PostRow.astro"
+import Quotes from "../components/Quotes.astro"
+import SplitRow from "../components/SplitRow.astro"
+import { getPublishedPosts } from "../lib/posts"
+import heroImage from "../images/shaun-hero-in-light.jpg"
+import workImage from "../images/shaun.jpg"
+import communityImage from "../images/disco-shaun.jpg"
+import writingImage from "../images/shaun-bookstore3.jpg"
+import portraitImage from "../images/shaun-portrait.jpg"
+import sittingImage from "../images/shaun-sitting.jpg"
+
+const posts = await getPublishedPosts()
+const [latest, ...recent] = posts
+const nextThree = recent.slice(0, 3)
+---
+
+<BaseLayout
+  title="Shaun Pezeshki | I build technology around people"
+  description="Shaun Pezeshki builds technology around people: AI and systems for businesses through Up High Studio, and products like Proudly Paired that help people connect. Stories about identity, community and work from Columbus, Ohio."
+  keywords="Shaun Pezeshki, Threads of Perspective, LGBTQ+ writing, community, HRC Columbus, AI, systems, Columbus Ohio"
+  image={heroImage.src}
+>
+  <PageHero image={heroImage} alt="Shaun smiling in a bright studio">
+    <h1 data-reveal>I'm Shaun.<br />I build technology around people.</h1>
+    <p class="hero__lede" data-reveal>
+      Tech has gotten loud and hard to trust. I want to bring it back to people. Through Up High Studio, I build AI
+      and systems that take the draining work off a team's plate. With Proudly Paired, I'm helping people get off
+      the apps and actually meet.
+    </p>
+    <div class="action-row" data-reveal>
+      <Button href="/chat-with-shaun">Let's talk</Button>
+      <a class="text-link" href="/blog">Read my stories <ArrowIcon /></a>
+    </div>
+  </PageHero>
+
+  <section class="band facets" aria-labelledby="facets-title" data-reveal-group>
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="facets-title" data-reveal>Tech should make life feel lighter.</h2>
+        <p data-reveal>
+          We've piled on so much tech that a lot of it makes life heavier. I use technology, especially AI, to give people
+          their time and attention back. Here's who I do that for.
+        </p>
+      </div>
+      <SplitRow
+        image={workImage}
+        alt="Shaun with bleached hair in a white t-shirt"
+        title="Teams and small businesses"
+        link={{ href: "https://uphighstudio.com", label: "Visit Up High Studio" }}
+      >
+        <p>
+          For more than 16 years I've worked across marketing, development and automation. I look for the work that wears
+          a team down, then build systems and AI tools around it so people get their time back and the tech stays out of
+          the way. Today I do that through my studio, Up High Studio.
+        </p>
+      </SplitRow>
+      <SplitRow
+        image={portraitImage}
+        alt="Shaun in a dark blazer, smiling on a couch"
+        title="Proudly Paired"
+        note="Website coming soon"
+        reverse
+      >
+        <p>
+          I got tired of the dating apps, and almost everyone I talked to felt the same. So I'm building Proudly Paired:
+          personal matchmaking for LGBTQ+ men who date men, with every introduction made by a person who knows you both.
+          It launches soon in Columbus.
+        </p>
+      </SplitRow>
+      <SplitRow
+        image={communityImage}
+        alt="Shaun in a patterned shirt under pink neon light"
+        title="My community"
+        link={{ href: "/2026/05/04/hrc-equality-in-action-show-up", label: "Read about Equality in Action" }}
+      >
+        <p>
+          I serve as Digital Engagement Chair for the Human Rights Campaign's Columbus chapter. Most of it happens in small
+          pieces, like a post or a reminder to someone who wants to help and doesn't know where to start. I built our
+          chapter a tool to handle partner requests, and in 2026 that work earned HRC's Catalyst for Narrative
+          Change Award.
+        </p>
+      </SplitRow>
+      <SplitRow
+        image={writingImage}
+        alt="Shaun in front of a wall of old books"
+        title="Anyone who wants to talk"
+        link={{ href: "https://calendly.com/shaunpez/coffee-chat", label: "Book a coffee chat" }}
+        reverse
+      >
+        <p>
+          Some of my favorite work starts as a coffee chat. A career question, a process that won't behave, an idea you're
+          not sure about yet. Bring it. I like people, and I like figuring things out with them.
+        </p>
+      </SplitRow>
+    </div>
+  </section>
+
+  <section class="proof" aria-labelledby="proof-title" data-reveal-group>
+    <div class="shell">
+      <h2 id="proof-title" class="proof__title" data-reveal>A few kind words</h2>
+      <Quotes
+        quotes={[
+          {
+            text: "Shaun helped us bring a 200-year legacy into the modern era. Our new site not only showcases our services but also strengthens our connection with visitors and vendors.",
+            name: "Nicole A., Fulton Fish Cooperative",
+          },
+          {
+            text: "Shaun connected our legacy systems with modern platforms, transforming how we manage operations and greatly improving overall efficiency.",
+            name: "Travis B., Lucas Group",
+          },
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="stories" aria-labelledby="stories-title" data-reveal-group>
+    <div class="shell">
+      <div class="section-head section-head--split">
+        <div>
+          <h2 id="stories-title" data-reveal>Stories from work, life, and what I'm still figuring out.</h2>
+          <p data-reveal>
+            I write about identity, community, work and the parts of growing up gay that rarely get said out loud. Some of it
+            is published with Prism &amp; Pen. Most of it you can listen to.
+          </p>
+        </div>
+        <a class="text-link" href="/blog" data-reveal>All {posts.length} stories <ArrowIcon /></a>
+      </div>
+      {latest && <PostFeature post={latest} />}
+      <div class="post-rows">
+        {nextThree.map(post => <PostRow post={post} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="band about" aria-labelledby="about-title" data-reveal-group>
+    <div class="shell">
+      <div class="about__intro">
+        <div class="about__photo" data-reveal>
+          <Photo
+            src={sittingImage}
+            alt="Shaun sitting on a sofa and smiling"
+            ratio="4 / 3"
+            widths={[480, 960]}
+            sizes="(min-width: 900px) 36vw, 100vw"
+          />
+        </div>
+        <div class="about__text">
+          <h2 id="about-title" data-reveal>I've always been fascinated by how people connect.</h2>
+          <p data-reveal>
+            I have a computer science background and more than 16 years in tech. I've called Washington, DC, Seattle, San
+            Francisco and Austin home, and now Columbus, Ohio. I grew up in Michigan. Every move taught me something about
+            the people I want around me.
+          </p>
+          <p data-reveal>
+            What excites me right now is building with AI, making things that help people, and creating systems that make
+            work and life make more sense.
+          </p>
+          <a class="text-link" href="/about" data-reveal>More about me <ArrowIcon /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ContactBand
+    title="Is something harder than it needs to be?"
+    text="Tell me about it over coffee. A project, a process, an idea you can't get off the ground, or just hello."
+  />
+</BaseLayout>

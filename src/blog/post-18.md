@@ -26,7 +26,7 @@ Four years ago, the world shut down. As streets emptied and doors closed, my dad
     <p>My dad was a man of few words but many inches, standing over six feet tall—a quiet giant with a presence that was as subtle as it was significant. He was more introvert than extrovert, yet his towering figure commanded attention without so much as a word. While he might have seemed intimidating to some, those who knew him understood the gentleness of his spirit.</p>
   </div>
   <div class="w-full md:mt-2 md:w-1/3">
-      <img src="./images/baba-stylish.jpg" alt="Darioush Pezeshki" />
+      <img src="/images/blog/baba-stylish.jpg" loading="lazy" alt="Darioush Pezeshki" />
   </div>
 </div>
 

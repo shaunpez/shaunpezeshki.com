@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import PostRow from "../../components/PostRow.astro"
+import Pagination from "../../components/Pagination.astro"
+import { getPublishedPosts } from "../../lib/posts"
+import { blogPageCount, blogPageSlice } from "../../lib/blog-pages"
+import headerImage from "../../images/shaun-hero-v3.jpg"
+
+// Kept so old /page/N links still resolve; /blog now lists every story.
+export const getStaticPaths = (async () => {
+  const posts = await getPublishedPosts()
+  const numPages = blogPageCount(posts.length)
+  return Array.from({ length: numPages - 1 }, (_, i) => {
+    const page = i + 2
+    return { params: { page: String(page) }, props: { page, numPages, posts: blogPageSlice(posts, page) } }
+  })
+}) satisfies GetStaticPaths
+
+const { page, numPages, posts } = Astro.props
+---
+
+<BaseLayout
+  title={`Threads of Perspective - Page ${page}`}
+  description="Insights on personal growth, tech, career development, mental health, LGBTQ+ and minority issues in modern life."
+  image={headerImage.src}
+  noindex
+>
+  <section class="page-head">
+    <div class="shell">
+      <h1>Threads of Perspective</h1>
+      <p class="page-head__lede">Page {page} of the archive. <a href="/blog">See every story on one page</a>.</p>
+    </div>
+  </section>
+  <section class="shell post-list" data-reveal-group>
+    <div class="post-rows">{posts.map(post => <PostRow post={post} />)}</div>
+    <Pagination currentPage={page} numPages={numPages} first="/blog" base="/page" />
+  </section>
+</BaseLayout>

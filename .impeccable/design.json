@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T00:00:00Z",
+  "title": "Design System: Clean Editorial Index",
+  "extensions": {
+    "northStar": {
+      "name": "Personal Map Masthead",
+      "summary": "A bright, photo-led editorial index on clean neutrals with one green accent, connecting Shaun's work, stories, and personal background."
+    },
+    "visualProbeDecision": {
+      "generated": true,
+      "chosenDirection": "Hybrid of Field Notes Masthead and Personal Map",
+      "carryForward": [
+        "Shaun's photo leads the masthead",
+        "Consulting proof follows the hero without an extra start-here index",
+        "Consulting proof uses services, industries, and quotes rather than equal card grids",
+        "Latest stories appear as editorial entries",
+        "Clean neutral surfaces with a single green accent (tan, clay, and olive retired Oct 2026)"
+      ],
+      "doNotLiteralize": [
+        "Generated fake photos",
+        "Handwritten annotations",
+        "Exact probe copy",
+        "Stock landscape scenes"
+      ]
+    },
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink",
+        "canonical": "#161b18"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Page",
+        "canonical": "#fafaf9"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#ffffff"
+      },
+      "teal": {
+        "role": "primary",
+        "displayName": "Signal Green",
+        "canonical": "#0e7c74"
+      }
+    },
+    "rules": {
+      "firstViewport": "Show Shaun/personality and hint at the next section on mobile and desktop.",
+      "readFirst": "Article pages prioritize comfortable reading measure and working audio/category/tag UI.",
+      "proof": "Consulting proof should feel specific and editorial, not like a generic service-card grid.",
+      "antiPattern": "No Consulting + personal writing bubble, no repeated two-column homepage rhythm, no SaaS consultant template."
+    }
+  }
+}

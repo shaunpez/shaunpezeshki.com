@@ -1,0 +1,246 @@
+---
+// Listen button plus a player docked to the corner, like Medium and podcast apps:
+// scrub, skip 15 seconds either way, change speed, and pick up where you left off.
+import { existsSync } from "node:fs"
+import { join } from "node:path"
+
+interface Props {
+  slug: string
+  /** Shown in the player and on the phone's lock screen. */
+  title: string
+  /** Absolute URL of the cover, for the lock screen. */
+  artwork?: string
+}
+
+const { slug, title, artwork } = Astro.props
+const hasAudio = existsSync(join(process.cwd(), "public/audio", `${slug}.mp3`))
+const playerId = `player-${slug}`
+---
+
+{hasAudio && (
+  <div class="listen" data-slug={slug} data-title={title} data-artwork={artwork}>
+    <button class="button button-secondary listen__open" type="button" aria-expanded="false" aria-controls={playerId}>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="play">
+        <path d="M7.3 4c-1.2-.7-2.8.2-2.8 1.7v12.7c0 1.4 1.5 2.3 2.8 1.6l11.5-6.3c1.3-.7 1.3-2.6 0-3.3Z"></path>
+      </svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="pause" hidden>
+        <rect x="6" y="4.5" width="4" height="15" rx="1"></rect><rect x="14" y="4.5" width="4" height="15" rx="1"></rect>
+      </svg>
+      <span data-label>Listen</span>
+      <span class="listen__length" data-length></span>
+    </button>
+    <audio src={`/audio/${slug}.mp3`} preload="metadata"></audio>
+
+    <section class="player" id={playerId} aria-label="Audio player" hidden>
+      <div class="player__top">
+        <p class="player__title">{title}</p>
+        <button class="player__icon player__close" type="button" aria-label="Close player" data-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18"></path>
+          </svg>
+        </button>
+      </div>
+      <input class="player__seek" type="range" min="0" max="0" step="1" value="0" aria-label="Seek" data-seek />
+      <div class="player__times">
+        <span data-elapsed>0:00</span>
+        <span data-remaining></span>
+      </div>
+      <div class="player__controls">
+        <button class="player__speed" type="button" aria-label="Playback speed" data-speed>1×</button>
+        <button class="player__icon" type="button" aria-label="Back 15 seconds" data-back>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path>
+            <text x="12" y="15.4" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor" stroke="none">15</text>
+          </svg>
+        </button>
+        <button class="player__play" type="button" aria-label="Play" data-toggle>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="play">
+            <path d="M7.3 4c-1.2-.7-2.8.2-2.8 1.7v12.7c0 1.4 1.5 2.3 2.8 1.6l11.5-6.3c1.3-.7 1.3-2.6 0-3.3Z"></path>
+          </svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="pause" hidden>
+            <rect x="6" y="4.5" width="4" height="15" rx="1"></rect><rect x="14" y="4.5" width="4" height="15" rx="1"></rect>
+          </svg>
+        </button>
+        <button class="player__icon" type="button" aria-label="Forward 15 seconds" data-forward>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path>
+            <text x="12" y="15.4" text-anchor="middle" font-size="7.5" font-weight="700" fill="currentColor" stroke="none">15</text>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </div>
+)}
+
+<script>
+  const SKIP = 15
+  const SPEEDS = [1, 1.25, 1.5, 1.75, 2, 0.75]
+
+  // Saved place and speed are a convenience; the player works without storage.
+  const store = {
+    get: (key: string) => {
+      try {
+        return localStorage.getItem(key)
+      } catch {
+        return null
+      }
+    },
+    set: (key: string, value: string) => {
+      try {
+        localStorage.setItem(key, value)
+      } catch {}
+    },
+    remove: (key: string) => {
+      try {
+        localStorage.removeItem(key)
+      } catch {}
+    },
+  }
+
+  const clock = (seconds: number) => {
+    const s = Math.max(0, Math.floor(seconds || 0))
+    return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`
+  }
+
+  document.querySelectorAll<HTMLElement>(".listen").forEach(root => {
+    const audio = root.querySelector("audio")!
+    const open = root.querySelector<HTMLButtonElement>(".listen__open")!
+    const label = root.querySelector("[data-label]")!
+    const length = root.querySelector("[data-length]")!
+    const player = root.querySelector<HTMLElement>(".player")!
+    const seek = player.querySelector<HTMLInputElement>("[data-seek]")!
+    const elapsed = player.querySelector("[data-elapsed]")!
+    const remaining = player.querySelector("[data-remaining]")!
+    const toggle = player.querySelector<HTMLButtonElement>("[data-toggle]")!
+    const speed = player.querySelector<HTMLButtonElement>("[data-speed]")!
+    const key = `listen:${root.dataset.slug}`
+    let seeking = false
+    let lastSaved = 0
+
+    // The header animates in with a transform, which would trap position: fixed. Dock from <body> instead.
+    document.body.append(player)
+
+    const saved = Number(store.get(key)) || 0
+    if (saved > 10) label.textContent = "Resume"
+
+    const rate = Number(store.get("listen:rate")) || 1
+    audio.defaultPlaybackRate = audio.playbackRate = rate
+    speed.textContent = `${rate}×`
+
+    const render = () => {
+      const t = audio.currentTime
+      const d = audio.duration || 0
+      if (!seeking) seek.value = String(Math.floor(t))
+      elapsed.textContent = clock(t)
+      remaining.textContent = d ? `-${clock(d - t)}` : ""
+      seek.setAttribute("aria-valuetext", `${clock(t)} of ${clock(d)}`)
+    }
+
+    const setPlaying = (playing: boolean) => {
+      for (const scope of [open, toggle]) {
+        scope.querySelector("[data-icon=play]")!.toggleAttribute("hidden", playing)
+        scope.querySelector("[data-icon=pause]")!.toggleAttribute("hidden", !playing)
+      }
+      toggle.setAttribute("aria-label", playing ? "Pause" : "Play")
+      label.textContent = playing ? "Pause" : audio.currentTime > 1 ? "Resume" : "Listen"
+    }
+
+    const jump = (to: number) => {
+      audio.currentTime = Math.min(Math.max(0, to), audio.duration || to)
+      render()
+    }
+
+    const show = () => {
+      player.hidden = false
+      open.setAttribute("aria-expanded", "true")
+      document.documentElement.classList.add("has-player")
+    }
+
+    const play = () => {
+      show()
+      if (audio.currentTime === 0 && saved > 10) {
+        if (audio.readyState >= 1) jump(saved)
+        else audio.addEventListener("loadedmetadata", () => jump(saved), { once: true })
+      }
+      audio.play()
+    }
+
+    open.addEventListener("click", () => (audio.paused ? play() : audio.pause()))
+    toggle.addEventListener("click", () => (audio.paused ? play() : audio.pause()))
+    player.querySelector("[data-back]")!.addEventListener("click", () => jump(audio.currentTime - SKIP))
+    player.querySelector("[data-forward]")!.addEventListener("click", () => jump(audio.currentTime + SKIP))
+    player.querySelector("[data-close]")!.addEventListener("click", () => {
+      audio.pause()
+      player.hidden = true
+      open.setAttribute("aria-expanded", "false")
+      document.documentElement.classList.remove("has-player")
+      open.focus()
+    })
+
+    speed.addEventListener("click", () => {
+      const next = SPEEDS[(SPEEDS.indexOf(audio.playbackRate) + 1) % SPEEDS.length]
+      audio.defaultPlaybackRate = audio.playbackRate = next
+      speed.textContent = `${next}×`
+      store.set("listen:rate", String(next))
+    })
+
+    seek.addEventListener("input", () => {
+      seeking = true
+      elapsed.textContent = clock(Number(seek.value))
+    })
+    seek.addEventListener("change", () => {
+      seeking = false
+      jump(Number(seek.value))
+    })
+
+    audio.addEventListener("loadedmetadata", () => {
+      seek.max = String(Math.floor(audio.duration))
+      length.textContent = `${Math.max(1, Math.round(audio.duration / 60))} min`
+      render()
+    })
+    audio.addEventListener("timeupdate", () => {
+      render()
+      if (Math.abs(audio.currentTime - lastSaved) >= 5) {
+        lastSaved = audio.currentTime
+        store.set(key, String(Math.floor(lastSaved)))
+      }
+    })
+    audio.addEventListener("play", () => setPlaying(true))
+    audio.addEventListener("pause", () => {
+      setPlaying(false)
+      store.set(key, String(Math.floor(audio.currentTime)))
+    })
+    audio.addEventListener("ended", () => {
+      store.remove(key)
+      audio.currentTime = 0
+      setPlaying(false)
+    })
+    audio.addEventListener("error", () => {
+      label.textContent = "Audio unavailable"
+      open.disabled = true
+    })
+
+    // Lock screen and headphone controls.
+    if ("mediaSession" in navigator) {
+      const { title = "", artwork } = root.dataset
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title,
+        artist: "Shaun Pezeshki",
+        album: "Threads of Perspective",
+        artwork: artwork ? [{ src: artwork }] : [],
+      })
+      const actions: [MediaSessionAction, MediaSessionActionHandler][] = [
+        ["play", play],
+        ["pause", () => audio.pause()],
+        ["seekbackward", details => jump(audio.currentTime - (details.seekOffset || SKIP))],
+        ["seekforward", details => jump(audio.currentTime + (details.seekOffset || SKIP))],
+        ["seekto", details => jump(details.seekTime ?? audio.currentTime)],
+      ]
+      for (const [action, handler] of actions) {
+        try {
+          navigator.mediaSession.setActionHandler(action, handler)
+        } catch {}
+      }
+    }
+  })
+</script>

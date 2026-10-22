@@ -1,0 +1,21 @@
+---
+import Button from "./Button.astro"
+
+interface Props {
+  title: string
+  text?: string
+}
+
+const { title, text } = Astro.props
+---
+
+<section class="contact-band" aria-label="Get in touch" data-reveal-group>
+  <div class="shell contact-band__inner">
+    <h2 data-reveal>{title}</h2>
+    {text && <p data-reveal>{text}</p>}
+    <div class="action-row" data-reveal>
+      <Button href="/chat-with-shaun">Let's talk</Button>
+      <Button href="mailto:shaun@uphighstudio.com" variant="secondary" arrow={false}>shaun@uphighstudio.com</Button>
+    </div>
+  </div>
+</section>

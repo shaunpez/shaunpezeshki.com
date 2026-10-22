@@ -47,7 +47,7 @@ It's about building something new from where I am now.
   </div>
   <div class="w-full md:w-1/2 md:pl-8">
     <figure>
-      <img src="./images/homer-bush.gif" alt="Homer in Bush" />
+      <img src="/images/blog/homer-bush.gif" loading="lazy" alt="Homer in Bush" />
     </figure>
   </div>
 </div>

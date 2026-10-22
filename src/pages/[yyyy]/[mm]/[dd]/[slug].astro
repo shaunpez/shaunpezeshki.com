@@ -1,0 +1,83 @@
+---
+import type { GetStaticPaths } from "astro"
+import { render } from "astro:content"
+import { getImage } from "astro:assets"
+import BaseLayout from "../../../../layouts/BaseLayout.astro"
+import ArrowIcon from "../../../../components/ArrowIcon.astro"
+import AudioPlayer from "../../../../components/AudioPlayer.astro"
+import Comments from "../../../../components/Comments.astro"
+import PostMeta from "../../../../components/PostMeta.astro"
+import PostRow from "../../../../components/PostRow.astro"
+import { SITE, getPublishedPosts, postUrl } from "../../../../lib/posts"
+
+export const getStaticPaths = (async () => {
+  const posts = await getPublishedPosts()
+  return posts.map(post => {
+    const [yyyy, mm, dd] = post.data.date.split("-")
+    // Keep reading: newest stories from the same category first, then the newest overall.
+    const others = posts.filter(other => other !== post)
+    const more = [
+      ...others.filter(other => other.data.category === post.data.category),
+      ...others.filter(other => other.data.category !== post.data.category),
+    ].slice(0, 3)
+    return { params: { yyyy, mm, dd, slug: post.data.slug }, props: { post, more, total: posts.length } }
+  })
+}) satisfies GetStaticPaths
+
+const { post, more, total } = Astro.props
+const { title, date, slug, category, excerpt, tags, image } = post.data
+const { Content } = await render(post)
+const url = SITE.url + postUrl(post)
+const ogImage = image ? (await getImage({ src: image, width: 1200, format: "jpg" })).src : undefined
+const artwork = ogImage && new URL(ogImage, SITE.url).href
+const hasTikTok = post.body?.includes("tiktok-embed")
+const postClass = `post-${slug.replace(/[^a-z0-9-]/gi, "-").toLowerCase()}`
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description: excerpt,
+  datePublished: new Date(`${date}T12:00:00Z`).toISOString(),
+  author: { "@type": "Person", name: "Shaun Pezeshki" },
+  publisher: { "@type": "Organization", name: "Threads of Perspective" },
+  image: artwork,
+  url,
+  genre: category,
+}
+---
+
+<BaseLayout title={title} description={excerpt} image={ogImage} jsonLd={jsonLd}>
+  <article class={`story ${postClass}`}>
+    <header class="shell shell--narrow story__head" data-reveal-group>
+      <a class="text-link text-link--back" href="/blog" data-reveal><ArrowIcon /> All stories</a>
+      <div data-reveal><PostMeta post={post} /></div>
+      <h1 data-reveal>{title}</h1>
+      <p class="story__lede" data-reveal>{excerpt}</p>
+      <div data-reveal><AudioPlayer slug={slug} title={title} artwork={artwork} /></div>
+    </header>
+
+    <div class="shell shell--narrow">
+      <div class="story__body"><Content /></div>
+      {tags.length > 0 && (
+        <ul class="story__tags" aria-label="Tags">
+          {tags.map(tag => <li>{tag}</li>)}
+        </ul>
+      )}
+      <Comments url={url} identifier={slug} title={title} />
+    </div>
+  </article>
+
+  {more.length > 0 && (
+    <section class="band keep-reading" aria-labelledby="more-title" data-reveal-group>
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <h2 id="more-title" data-reveal>Keep reading</h2>
+          <a class="text-link" href="/blog" data-reveal>All {total} stories <ArrowIcon /></a>
+        </div>
+        <div class="post-rows">{more.map(other => <PostRow post={other} />)}</div>
+      </div>
+    </section>
+  )}
+  {hasTikTok && <script is:inline async src="https://www.tiktok.com/embed.js"></script>}
+</BaseLayout>

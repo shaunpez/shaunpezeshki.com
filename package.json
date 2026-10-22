@@ -1,73 +1,40 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "shaunpezeshki-com",
   "private": true,
   "description": "A journey of a millennial techie navigating technology, personal growth, and diverse experiences in today's dynamic world.",
   "version": "0.1.0",
   "author": "Shaun Pezeshki",
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/manrope": "^5.3.0",
     "@google-cloud/text-to-speech": "^5.3.0",
-    "@heroicons/react": "^2.1.4",
-    "@mdx-js/mdx": "^3.0.1",
-    "@mdx-js/react": "^2.3.0",
-    "autoprefixer": "^10.4.17",
-    "axios": "^1.7.2",
-    "gatsby": "^5.13.3",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-disqus": "^1.2.6",
-    "gatsby-plugin-feed": "^5.13.1",
-    "gatsby-plugin-google-gtag": "^5.13.1",
-    "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-mdx": "^5.13.1",
-    "gatsby-plugin-netlify": "^5.1.1",
-    "gatsby-plugin-offline": "^6.13.1",
-    "gatsby-plugin-postcss": "^6.13.1",
-    "gatsby-plugin-react-helmet": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.13.1",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-remark-copy-linked-files": "^6.14.0",
-    "gatsby-remark-images": "^7.13.1",
-    "gatsby-remark-relative-images": "^0.2.0",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-source-strapi": "^3.3.3",
-    "gatsby-transformer-remark": "^6.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
+    "@tailwindcss/typography": "^0.5.20",
+    "astro": "^7.4.2",
+    "autoprefixer": "^10.6.1",
     "gray-matter": "^4.0.3",
-    "postcss": "^8.4.35",
-    "punycode": "^2.3.1",
-    "react": "^18.2.0",
-    "react-audio-player": "^0.17.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-native-tts": "^4.1.1",
+    "postcss": "^8.5.31",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "tailwindcss": "^3.4.1"
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "gh-pages": "^6.1.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "wrangler": "^4.151.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "0BSD",
   "scripts": {
-    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "deploy": "astro build && wrangler deploy",
+    "audio": "node scripts/audio/generate-audio.js",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/shaunpez/shaunpezeshki.com"
   }
 }

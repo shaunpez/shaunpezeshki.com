@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import CategoryNav from "../components/CategoryNav.astro"
+import PostFeature from "../components/PostFeature.astro"
+import PostRow from "../components/PostRow.astro"
+import { SITE, getCategories, getPublishedPosts, groupByYear, postUrl } from "../lib/posts"
+import headerImage from "../images/shaun-hero-v3.jpg"
+
+const posts = await getPublishedPosts()
+const [lead, ...rest] = posts
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: posts.map((post, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: SITE.url + postUrl(post),
+  })),
+}
+---
+
+<BaseLayout
+  title="Threads of Perspective"
+  description="Shaun Pezeshki writes about technology, work, identity, community, career shifts, and modern life."
+  keywords="Shaun Pezeshki, Threads of Perspective, Technology, Career Development, Identity, LGBTQ+ Writing, Community"
+  image={headerImage.src}
+  jsonLd={jsonLd}
+>
+  <section class="page-head" data-reveal-group>
+    <div class="shell">
+      <h1 data-reveal>Threads of Perspective</h1>
+      <p class="page-head__lede" data-reveal>
+        {posts.length} stories about identity, community, work and technology. Most have a narrated version you can listen to.
+      </p>
+      <CategoryNav categories={getCategories(posts)} />
+    </div>
+  </section>
+
+  <section class="shell post-list" data-reveal-group>
+    {lead && <PostFeature post={lead} as="h2" />}
+    {groupByYear(rest).map(([year, yearPosts]) => (
+      <div class="year-group">
+        <h2 class="year-group__label">{year}</h2>
+        <div class="post-rows">{yearPosts.map(post => <PostRow post={post} />)}</div>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

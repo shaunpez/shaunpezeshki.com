@@ -1,0 +1,29 @@
+---
+import ArrowIcon from "./ArrowIcon.astro"
+import Photo from "./Photo.astro"
+import { postUrl, type Post } from "../lib/posts"
+
+interface Props {
+  /** Stories that mark a moment, oldest first. */
+  posts: Post[]
+}
+
+const { posts } = Astro.props
+---
+
+<ol class="moments">
+  {posts.map(post => {
+    const { title, date, excerpt, image } = post.data
+    return (
+      <li class="moment" data-reveal>
+        <time class="moment__year" datetime={date}>{date.slice(0, 4)}</time>
+        {image && <Photo class="moment__image" src={image} alt="" ratio="3 / 2" small widths={[320, 640]} sizes="(min-width: 900px) 240px, 100vw" />}
+        <div class="moment__text">
+          <h3><a href={postUrl(post)}>{title}</a></h3>
+          <p>{excerpt}</p>
+          <a class="text-link" href={postUrl(post)}>Read the story <ArrowIcon /></a>
+        </div>
+      </li>
+    )
+  })}
+</ol>
