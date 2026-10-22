@@ -102,15 +102,6 @@ main {
   background: transparent;
 }
 
-.container {
-  width: min(100% - 32px, 1180px);
-  margin-inline: auto;
-}
-
-.container {
-  padding-block: clamp(2rem, 4vw, 4rem);
-}
-
 .arrow-icon {
   width: 1em;
   height: 1em;
@@ -412,23 +403,6 @@ main {
   max-width: 74ch;
 }
 
-.prose h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  font-weight: 650;
-  line-height: 1.05;
-}
-
-.prose .text-sm,
-.text-sm {
-  font-size: 0.9rem;
-}
-
-@media (max-width: 640px) {
-  .container {
-    width: min(100% - 40px, 1180px);
-  }
-}
 
 /* ===== Light system (Oct 2026): airy like Up High Studio, original section order ===== */
 :root {
@@ -1021,7 +995,54 @@ h4 {
 
 /* Room so the player never covers the footer. */
 .has-player body {
-  padding-bottom: 200px;
+  padding-bottom: calc(var(--player-h, 190px) + 2 * var(--gutter));
+}
+
+/* Back to top: a quiet round button, bottom right, lifted above the player when it's open. */
+.back-to-top {
+  position: fixed;
+  right: var(--gutter);
+  bottom: var(--gutter);
+  z-index: 890;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lift);
+  color: var(--ink);
+  cursor: pointer;
+  opacity: 0;
+  translate: 0 8px;
+  visibility: hidden;
+  transition:
+    opacity 200ms var(--ease-out),
+    translate 240ms var(--ease-out),
+    bottom 240ms var(--ease-out),
+    visibility 0s linear 240ms;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  translate: 0 0;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.back-to-top:hover {
+  background: var(--band);
+  color: var(--teal-deep);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.has-player .back-to-top {
+  bottom: calc(var(--gutter) + var(--player-h, 190px) + 12px);
 }
 
 .player__top {
@@ -1145,6 +1166,10 @@ h4 {
     border-width: 1px 0 0;
     border-radius: var(--radius-img) var(--radius-img) 0 0;
     padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+
+  .has-player .back-to-top {
+    bottom: calc(var(--player-h, 190px) + 12px);
   }
 }
 
@@ -1283,6 +1308,19 @@ h4 {
 
 .post-list {
   padding-bottom: var(--section);
+}
+
+/* Plain text pages (privacy, 404): page-head on top, a readable column below, aligned with the logo. */
+.page-body {
+  padding-bottom: var(--section);
+}
+
+.page-body .prose {
+  max-width: var(--measure);
+}
+
+.page-body .prose > :first-child {
+  margin-top: 0;
 }
 
 .year-group {

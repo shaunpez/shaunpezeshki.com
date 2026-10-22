@@ -1,68 +1,112 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+
+// Keep this in step with what the site actually loads: BaseLayout (analytics), Comments (Disqus),
+// AudioPlayer (local storage) and any embeds in posts.
+const updated = "October 21, 2026"
 ---
 
 <BaseLayout
-  title="Privacy Policy"
-  description="Welcome! Our Privacy Policy outlines how we collect, use, and protect your information."
-  keywords="Privacy Policy, Data Protection, User Privacy, Information Security, Shaun Pezeshki"
+  title="Privacy policy"
+  description="How shaunpezeshki.com handles your information: what's collected, which services are involved, and your choices."
+  keywords="Privacy policy, Shaun Pezeshki, Google Analytics, Disqus, Cloudflare"
 >
-  <div class="container px-4">
-    <div class="prose prose-lg max-w-none">
-      <p class="text-sm">Last updated: September 17, 2024</p>
-      <h1>Privacy Policy</h1>
-      <h2>Introduction</h2>
+  <section class="page-head" data-reveal-group>
+    <div class="shell">
+      <h1 data-reveal>Privacy policy</h1>
+      <p class="page-head__lede" data-reveal>Last updated {updated}.</p>
+    </div>
+  </section>
+
+  <div class="shell page-body">
+    <div class="prose">
+      <h2>The short version</h2>
       <p>
-        We are committed to protecting your personal information and your right to privacy. If you have any questions
-        or concerns about this privacy notice, or our practices with regards to your personal information, please
-        contact us at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
+        This is my personal website. I don't sell your information, and there are no ads or accounts here. A few
+        outside services help count visits, run comments and play embedded media. Each one is listed below.
       </p>
 
-      <h2>Information We Collect</h2>
-      <p>
-        We collect several types of information from and about users of our website, including information by which
-        you may be personally identified, such as name, postal address, email address, telephone number, etc.
-        ("personal information").
-      </p>
-
-      <h2>How We Use Your Information</h2>
-      <p>
-        We use information that we collect about you or that you provide to us, including any personal information,
-        to provide our website and its contents to you, to provide you with information, products, or services that
-        you request from us, to fulfill any other purpose for which you provide it, and to carry out our obligations
-        and enforce our rights arising from any contracts entered into between you and us.
-      </p>
-
-      <h2>CCPA Privacy Rights</h2>
-      <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+      <h2>What I collect</h2>
       <ul>
         <li>
-          Request that a business that collects a consumer's personal data disclose the categories and specific
-          pieces of personal data that a business has collected about consumers.
+          <strong>Visits.</strong> Google Analytics records which pages are viewed, roughly where visitors are, and what
+          device and browser they use. It sets cookies to do this. If your browser sends a Do Not Track signal, Google
+          Analytics doesn't load on this site at all.
         </li>
-        <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
         <li>
-          Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+          <strong>Emails you send me.</strong> If you email me, I keep your message and address so I can reply.
+        </li>
+        <li>
+          <strong>Comments.</strong> Comments on stories are run by Disqus. Anything you post there, and the cookies
+          Disqus sets, are covered by its own privacy policy.
+        </li>
+      </ul>
+
+      <h2>What stays on your device</h2>
+      <p>
+        The audio player remembers where you stopped in each story and the speed you like. That's saved in your own
+        browser and never sent to me. Clearing your browser data removes it.
+      </p>
+
+      <h2>Services this site uses</h2>
+      <ul>
+        <li>
+          <strong>Cloudflare</strong> hosts the site. Like any host, it handles basic request data such as IP addresses
+          to deliver pages and block abuse.{" "}
+          <a target="_blank" rel="noreferrer" href="https://www.cloudflare.com/privacypolicy/">Cloudflare's policy</a>
+        </li>
+        <li>
+          <strong>Google Analytics</strong> counts visits, as described above.{" "}
+          <a target="_blank" rel="noreferrer" href="https://policies.google.com/privacy">Google's policy</a>
+        </li>
+        <li>
+          <strong>Disqus</strong> runs comments and only loads when you scroll near them.{" "}
+          <a target="_blank" rel="noreferrer" href="https://help.disqus.com/en/articles/1717103-disqus-privacy-policy">Disqus's policy</a>
+        </li>
+        <li>
+          <strong>TikTok</strong> loads its player on the one story that embeds a TikTok video.{" "}
+          <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/legal/privacy-policy-us">TikTok's policy</a>
         </li>
       </ul>
       <p>
-        If you make a request, we have one month to respond to you. If you would like to exercise any of these rights,
-        please contact us at <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
+        Links to Calendly, Buy Me a Coffee, LinkedIn, Instagram and X take you to those sites, where their own policies
+        apply.
       </p>
 
-      <h2>Changes to Our Privacy Policy</h2>
+      <h2>How I use information</h2>
       <p>
-        It is our policy to post any changes we make to our privacy policy on this page. If we make material changes
-        to how we treat our users' personal information, we will notify you through a notice on the website home
-        page. The date the privacy policy was last revised is identified at the top of the page. You are responsible
-        for ensuring we have an up-to-date active and deliverable email address for you, and for periodically visiting
-        our website and this privacy policy to check for any changes.
+        Only to run this site, see which stories people read, and reply to messages. I don't sell or rent personal
+        information, and I don't share it beyond the services listed above.
       </p>
 
-      <h2>Contact Information</h2>
+      <h2>Your choices</h2>
+      <ul>
+        <li>Turn on Do Not Track in your browser to stop Google Analytics here.</li>
+        <li>Block or clear cookies in your browser settings.</li>
+        <li>Email me to ask what I have about you, or to have it deleted.</li>
+      </ul>
+
+      <h2>California privacy rights</h2>
+      <p>If you live in California, the CCPA lets you ask me to:</p>
+      <ul>
+        <li>Tell you what personal information I've collected about you.</li>
+        <li>Delete the personal information I've collected about you.</li>
+        <li>Not sell your personal information. I don't sell it, but you can still ask.</li>
+      </ul>
       <p>
-        If you have any questions or concerns about our privacy policy, please contact us at:
-        <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>
+        To make a request, email <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>. I'll respond
+        within 45 days.
+      </p>
+
+      <h2>Children</h2>
+      <p>This site isn't meant for children under 13, and I don't knowingly collect their information.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, I'll update this page and the date at the top.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about privacy? Email <a href="mailto:shaun@uphighstudio.com">shaun@uphighstudio.com</a>.
       </p>
     </div>
   </div>

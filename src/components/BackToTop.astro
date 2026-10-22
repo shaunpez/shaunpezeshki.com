@@ -1,0 +1,36 @@
+---
+// Appears after a screen of scrolling. Sits above the audio player when that is open.
+---
+
+<button class="back-to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>(".back-to-top")
+  if (button) {
+    let ticking = false
+    const update = () => {
+      button.classList.toggle("is-visible", window.scrollY > window.innerHeight)
+      ticking = false
+    }
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) requestAnimationFrame(update)
+        ticking = true
+      },
+      { passive: true }
+    )
+    update()
+
+    button.addEventListener("click", () => {
+      const instant = matchMedia("(prefers-reduced-motion: reduce)").matches
+      window.scrollTo({ top: 0, behavior: instant ? "auto" : "smooth" })
+      // Keyboard users land back at the top of the page too.
+      document.querySelector<HTMLElement>(".brand-mark")?.focus({ preventScroll: true })
+    })
+  }
+</script>

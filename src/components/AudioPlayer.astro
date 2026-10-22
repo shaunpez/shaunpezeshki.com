@@ -119,6 +119,9 @@ const playerId = `player-${slug}`
 
     // The header animates in with a transform, which would trap position: fixed. Dock from <body> instead.
     document.body.append(player)
+    new ResizeObserver(() => {
+      document.documentElement.style.setProperty("--player-h", `${player.offsetHeight}px`)
+    }).observe(player)
 
     const saved = Number(store.get(key)) || 0
     if (saved > 10) label.textContent = "Resume"

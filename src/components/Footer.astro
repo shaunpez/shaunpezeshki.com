@@ -25,8 +25,8 @@ const elsewhere = [
       <p class="site-footer__heading">Explore</p>
       {explore.map(({ href, label }) => <a href={href}>{label}</a>)}
     </nav>
-    <nav aria-label="Elsewhere">
-      <p class="site-footer__heading">Elsewhere</p>
+    <nav aria-label="Social">
+      <p class="site-footer__heading">Social</p>
       {elsewhere.map(({ href, label }) => (
         <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer">{label}</a>
       ))}

@@ -14,7 +14,7 @@ npm run audio        # Generate missing post audio with Google TTS (needs z_goog
 
 ## Architecture
 
-**Astro 7 static site** on Cloudflare (a Worker serving `dist/` as static assets, see `wrangler.jsonc`). Markdown → content collection → `.astro` pages → static HTML. Almost no client JS: only the mobile nav toggle, the audio player, and lazy Disqus.
+**Astro 7 static site** on Cloudflare (a Worker serving `dist/` as static assets, see `wrangler.jsonc`). Markdown → content collection → `.astro` pages → static HTML. Almost no client JS: only the mobile nav toggle, the audio player, back to top, and lazy Disqus.
 
 ### Content pipeline
 
@@ -55,7 +55,7 @@ Post URLs are `/{YYYY}/{MM}/{DD}/{slug}`. Drafts and future-dated posts are excl
 
 - `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`. Use these; don't rebuild URL or date logic in pages.
 - `src/layouts/BaseLayout.astro`: head/SEO/OG/JSON-LD, Google Analytics (skipped under Do Not Track), header, footer
-- `src/components/*.astro`: Header, Footer, Button, Photo (every image goes through it), PageHero, SplitRow, TextRow, Quotes, PostFeature, PostRow, PostMeta, Moments, ContactBand, CategoryNav, Pagination, AudioPlayer, Comments (Disqus). See DESIGN.md for the visual rules.
+- `src/components/*.astro`: Header, Footer, Button, Photo (every image goes through it), PageHero, SplitRow, TextRow, Quotes, PostFeature, PostRow, PostMeta, Moments, ContactBand, BackToTop, CategoryNav, Pagination, AudioPlayer, Comments (Disqus). See DESIGN.md for the visual rules.
 
 ### Styling
 

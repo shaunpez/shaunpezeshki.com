@@ -64,12 +64,14 @@ The homepage is the trailer; the About page is the full story.
 
 The contact page (`/chat-with-shaun`) is a `PageHero` and three ways to reach me, as rows with thin rules.
 
+Plain text pages (privacy, 404) use the Stories page header (`.page-head`) and a `.page-body` column capped at 720px, left-aligned with the logo.
+
 ## Components (src/components)
 
-`Header`, `Footer`, `Button` (primary/secondary), `Photo`, `PageHero`, `SplitRow` (photo + text), `TextRow` (heading + text), `Quotes`, `PostFeature`, `PostRow`, `PostMeta` (category, date, read time), `Moments`, `ContactBand`, `CategoryNav`, `Pagination`, `AudioPlayer`, `Comments`. `/styleguide` renders them with real content.
+`Header`, `Footer`, `Button` (primary/secondary), `Photo`, `PageHero`, `SplitRow` (photo + text), `TextRow` (heading + text), `Quotes`, `PostFeature`, `PostRow`, `PostMeta` (category, date, read time), `Moments`, `ContactBand`, `BackToTop`, `CategoryNav`, `Pagination`, `AudioPlayer`, `Comments`. `/styleguide` renders them with real content.
 
 ## Story page
 
 A reading column (`.shell--narrow`, 720px): All stories link, `PostMeta`, title, summary, Listen button (secondary button). The cover is the first image in the Markdown. Body text is `.prose`, themed with the site tokens; pull quotes get a pistachio bar. Then tags as quiet pills, comments, and a "Keep reading" band of three `PostRow`s (same category first).
 
-Listen opens a player docked bottom right (full width on phones): seek bar, time played and left, back and forward 15 seconds, speed 0.75× to 2×, close. It remembers each story's place and the speed, and supports lock-screen controls. It's the only floating element besides the phone menu.
+Listen opens a player docked bottom right (full width on phones): seek bar, time played and left, back and forward 15 seconds, speed 0.75× to 2×, close. It remembers each story's place and the speed, and supports lock-screen controls. The only other floating elements are the phone menu and `BackToTop` (a round button bottom right after one screen of scrolling, lifted above the player when it's open).
