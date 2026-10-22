@@ -25,10 +25,28 @@ const links = [
 <script>
   const toggle = document.querySelector<HTMLButtonElement>(".nav-toggle")
   const nav = document.getElementById("primary-navigation")
-  toggle?.addEventListener("click", () => {
-    const open = toggle.getAttribute("aria-expanded") !== "true"
-    toggle.setAttribute("aria-expanded", String(open))
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu")
+  const setOpen = (open: boolean) => {
+    toggle?.setAttribute("aria-expanded", String(open))
+    toggle?.setAttribute("aria-label", open ? "Close menu" : "Open menu")
     nav?.classList.toggle("site-nav--open", open)
+  }
+  const isOpen = () => nav?.classList.contains("site-nav--open") ?? false
+  toggle?.addEventListener("click", () => setOpen(!isOpen()))
+  // Escape, or a tap on the dimmed page, closes the phone menu.
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !isOpen()) return
+    setOpen(false)
+    toggle?.focus()
   })
+  document.addEventListener("click", (event) => {
+    const target = event.target as Node
+    if (isOpen() && !nav?.contains(target) && !toggle?.contains(target)) setOpen(false)
+  })
+
+  const header = document.querySelector<HTMLElement>(".site-header")
+  if (header) {
+    const update = () => header.classList.toggle("is-scrolled", window.scrollY > 4)
+    window.addEventListener("scroll", update, { passive: true })
+    update()
+  }
 </script>
