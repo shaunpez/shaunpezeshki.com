@@ -199,7 +199,7 @@ main {
 
 /* Long-form text: stories, privacy, 404. Themes the Tailwind typography plugin with the site tokens. */
 .prose {
-  --tw-prose-body: var(--ink);
+  --tw-prose-body: var(--graphite);
   --tw-prose-headings: var(--ink);
   --tw-prose-lead: var(--graphite);
   --tw-prose-links: var(--teal-deep);
@@ -216,7 +216,7 @@ main {
 
 .prose p,
 .prose li {
-  color: var(--ink);
+  color: var(--graphite);
   font-size: 1.125rem;
   line-height: 1.75;
 }
@@ -295,6 +295,7 @@ main {
 
 .prose blockquote p {
   margin: 0;
+  color: var(--ink);
   font-family: var(--font-head);
   font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
   font-weight: 550;
