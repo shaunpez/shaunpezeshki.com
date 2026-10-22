@@ -1,0 +1,34 @@
+---
+const path = Astro.url.pathname.replace(/\/$/, "") || "/"
+const links = [
+  { href: "/blog", label: "Stories" },
+  { href: "/about", label: "About" },
+]
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand-mark" href="/">Shaun Pezeshki</a>
+    <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+      {links.map(({ href, label }) => (
+        <a href={href} aria-current={path === href ? "page" : undefined}>{label}</a>
+      ))}
+      <a class="button button-primary site-nav__cta" href="/chat-with-shaun">Let's talk</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>(".nav-toggle")
+  const nav = document.getElementById("primary-navigation")
+  toggle?.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true"
+    toggle.setAttribute("aria-expanded", String(open))
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu")
+    nav?.classList.toggle("site-nav--open", open)
+  })
+</script>

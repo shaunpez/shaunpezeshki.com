@@ -28,7 +28,7 @@ Naw Ruz, the Persian New Year, marks the arrival of spring on the vernal equinox
     <p>My dad was a simple man who noticed a significant gap in our local Bahá'í community's Naw Ruz celebrations. Moving to bridge this, he took a hands-on approach to bring the community together by organizing an event that had everything needed for a proper celebration: he found a venue, arranged for a variety of foods to be served, and ensured there was music and space for dancing. His goal was not only to create a welcoming atmosphere where everyone could come together, enjoy the festivities, and mark the start of the New Year but also to share this important tradition with me and my sister. Thanks to his efforts, the event became a memorable gathering for our community, highlighting the importance of unity and joy in our cultural traditions.</p>
   </div>
   <div class="w-full md:w-1/3">
-    <img src="./images/baba.png" alt="Darioush Pezeshki" />
+    <img src="/images/blog/baba.png" loading="lazy" alt="Darioush Pezeshki" />
   </div>
 </div>
 

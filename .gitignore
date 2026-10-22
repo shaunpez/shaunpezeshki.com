@@ -54,9 +54,10 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache/
-public
+# Build output
+.astro/
+dist
+.wrangler/
 
 # Mac files
 .DS_Store
@@ -72,6 +73,11 @@ yarn-error.log
 z_google/
 .qodo
 
-# Local browser state from Playwright verification
-output/playwright/profile/
+# Screenshots, logs and browser state from design and test tools
+output/
+.playwright-mcp/
+.playwright-cli/
+.taste-skill/
+/*.png
+/*.jpg
 .vercel

@@ -1,0 +1,30 @@
+---
+import ArrowIcon from "./ArrowIcon.astro"
+import Photo from "./Photo.astro"
+import PostMeta from "./PostMeta.astro"
+import { postUrl, type Post } from "../lib/posts"
+
+interface Props {
+  post: Post
+  /** Heading level for the title, so the feature fits the page outline. */
+  as?: "h2" | "h3"
+}
+
+const { post, as: Heading = "h3" } = Astro.props
+const { title, excerpt, image } = post.data
+const url = postUrl(post)
+---
+
+<article class="post-feature" data-reveal>
+  {image && (
+    <a class="post-feature__image" href={url} tabindex="-1" aria-hidden="true">
+      <Photo src={image} alt="" ratio="16 / 10" widths={[640, 960, 1280]} sizes="(min-width: 900px) 56vw, 100vw" />
+    </a>
+  )}
+  <div class="post-feature__text">
+    <Heading class="post-feature__title"><a href={url}>{title}</a></Heading>
+    <p class="post-feature__excerpt">{excerpt}</p>
+    <PostMeta post={post} />
+    <a class="text-link" href={url}>Read the story <ArrowIcon /></a>
+  </div>
+</article>

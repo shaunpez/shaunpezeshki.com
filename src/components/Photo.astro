@@ -1,0 +1,23 @@
+---
+// Every photo on the site goes through here, so corners and crops always match.
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+
+interface Props {
+  src: ImageMetadata
+  alt: string
+  /** Width / height on wide screens. Phones crop every large photo to 4 / 3. */
+  ratio?: string
+  /** Thumbnails: a tighter corner, and the ratio holds on phones. */
+  small?: boolean
+  widths?: number[]
+  sizes?: string
+  class?: string
+  loading?: "eager" | "lazy"
+  fetchpriority?: "high" | "low" | "auto"
+}
+
+const { ratio = "4 / 5", small = false, class: className, ...rest } = Astro.props
+---
+
+<Image {...rest} class:list={["photo", { "photo--small": small }, className]} style={`--ratio: ${ratio}`} />

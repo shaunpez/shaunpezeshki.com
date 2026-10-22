@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ArrowIcon from "../components/ArrowIcon.astro"
+import PageHero from "../components/PageHero.astro"
+import headerImage from "../images/shaun-hero-v4.jpg"
+import bookstoreImage from "../images/shaun-bookstore3.jpg"
+
+const ways = [
+  {
+    title: "Coffee chat",
+    text: "Book a short conversation about technology, career paths, or an idea you're not sure about yet.",
+    href: "https://calendly.com/shaunpez/coffee-chat",
+    label: "Book a time",
+  },
+  {
+    title: "Email",
+    text: "Send a note about a project, a question, or anything else on your mind.",
+    href: "mailto:shaun@uphighstudio.com",
+    label: "Email me",
+  },
+  {
+    title: "Up High Studio",
+    text: "See the studio side of my work and the practical systems I help teams build.",
+    href: "https://uphighstudio.com",
+    label: "Visit Up High Studio",
+  },
+  {
+    title: "Proudly Paired",
+    text: "Personal matchmaking for LGBTQ+ men who date men, with every introduction made by a person who knows you both. Launching soon in Columbus.",
+    note: "Website coming soon",
+  },
+]
+---
+
+<BaseLayout
+  title="Let's talk | Shaun Pezeshki"
+  description="Reach Shaun Pezeshki for a coffee chat, a project, AI and systems work through Up High Studio, or Proudly Paired."
+  keywords="Shaun Pezeshki, coffee chat, Up High Studio, AI, systems, Proudly Paired, LGBTQ+ matchmaking, Columbus Ohio"
+  image={headerImage.src}
+>
+  <PageHero image={bookstoreImage} alt="Shaun Pezeshki in front of a wall of books">
+    <h1 data-reveal>Let's talk.</h1>
+    <p class="hero__lede" data-reveal>
+      Whether you're stuck on a workflow problem, sitting on an idea, or just curious to connect, reach out. I'm always
+      happy to talk shop, share ideas, and see where the conversation goes.
+    </p>
+  </PageHero>
+
+  <section class="ways" aria-label="Ways to reach me" data-reveal-group>
+    <div class="shell">
+      {ways.map(({ title, text, href, label, note }) => (
+        <div class="way" data-reveal>
+          <h2>{title}</h2>
+          <p>{text}</p>
+          {href ? <a class="text-link" href={href}>{label} <ArrowIcon /></a> : <p class="status-note">{note}</p>}
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

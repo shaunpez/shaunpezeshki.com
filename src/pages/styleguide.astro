@@ -1,0 +1,194 @@
+---
+// Living reference for the shared components. Not linked, noindex, left out of the sitemap.
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ArrowIcon from "../components/ArrowIcon.astro"
+import Button from "../components/Button.astro"
+import CategoryNav from "../components/CategoryNav.astro"
+import ContactBand from "../components/ContactBand.astro"
+import Moments from "../components/Moments.astro"
+import PageHero from "../components/PageHero.astro"
+import Photo from "../components/Photo.astro"
+import PostFeature from "../components/PostFeature.astro"
+import PostRow from "../components/PostRow.astro"
+import Quotes from "../components/Quotes.astro"
+import SplitRow from "../components/SplitRow.astro"
+import TextRow from "../components/TextRow.astro"
+import { getCategories, getPublishedPosts } from "../lib/posts"
+import writingImage from "../images/shaun-bookstore3.jpg"
+
+const posts = await getPublishedPosts()
+const colours = [
+  ["--paper", "Page"],
+  ["--band", "Quiet band"],
+  ["--mint-band", "Contact band"],
+  ["--cta", "Buttons"],
+  ["--teal", "Links, accents"],
+  ["--teal-deep", "Link text, years"],
+  ["--graphite", "Secondary text"],
+  ["--ink", "Text"],
+]
+---
+
+<BaseLayout title="Styleguide" noindex>
+  <section class="page-head">
+    <div class="shell">
+      <h1>Styleguide</h1>
+      <p class="page-head__lede">
+        Light and airy, Manrope for headings, the system font for reading, soft rounded photos, pistachio buttons. Every
+        component below is the real one, rendered with real stories.
+      </p>
+    </div>
+  </section>
+
+  <div class="shell sg">
+    <section>
+      <h2>Colour</h2>
+      <div class="sg-swatches">
+        {colours.map(([name, use]) => (
+          <div class="sg-swatch">
+            <span style={`background: var(${name})`}></span>
+            <strong>{name}</strong>
+            <small>{use}</small>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2>Type</h2>
+      <p class="sg-h1">Page headline in Manrope</p>
+      <p class="sg-h2">Section heading in Manrope</p>
+      <p class="sg-body">Body text stays on the system font at 17 to 18px, so long stories read comfortably.</p>
+    </section>
+
+    <section>
+      <h2>Actions</h2>
+      <div class="action-row">
+        <Button href="#">Let's talk</Button>
+        <Button href="#" variant="secondary" arrow={false}>Secondary</Button>
+        <a href="#" class="text-link">Text link <ArrowIcon /></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Photo: large (20px corner) and small (14px corner)</h2>
+      <div class="sg-photos">
+        <Photo src={writingImage} alt="" widths={[400]} sizes="240px" />
+        <Photo src={writingImage} alt="" ratio="4 / 3" small widths={[400]} sizes="240px" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Page hero</h2>
+      <PageHero image={writingImage} alt="Shaun in front of a wall of old books">
+        <h1 class="sg-hero-title">Page headline</h1>
+        <p class="hero__lede">One or two sentences under it.</p>
+      </PageHero>
+    </section>
+
+    <section>
+      <h2>Categories</h2>
+      <CategoryNav categories={getCategories(posts)} />
+    </section>
+
+    <section>
+      <h2>Post feature and rows</h2>
+      <PostFeature post={posts[0]} />
+      <div class="post-rows">{posts.slice(1, 3).map(post => <PostRow post={post} />)}</div>
+    </section>
+
+    <section>
+      <h2>Split row</h2>
+      <SplitRow image={writingImage} alt="Shaun in front of a wall of old books" title="Row title" link={{ href: "#", label: "Optional link" }}>
+        <p>One short paragraph. Alternate rows with reverse to swap the photo side.</p>
+      </SplitRow>
+    </section>
+
+    <section>
+      <h2>Text row</h2>
+      <TextRow title="Section heading" link={{ href: "#", label: "Optional link" }}>
+        <p>Short paragraphs beside the heading, with an <a href="#">inline link</a>. Use it when a photo would repeat.</p>
+      </TextRow>
+    </section>
+
+    <section>
+      <h2>Quotes</h2>
+      <Quotes quotes={[{ text: "A short real quote goes here.", name: "Name, Organisation" }, { text: "A second quote sits beside it.", name: "Name, Organisation" }]} />
+    </section>
+
+    <section class="band sg-band">
+      <h2>Moments</h2>
+      <Moments posts={posts.slice(0, 2).reverse()} />
+    </section>
+  </div>
+
+  <ContactBand title="Contact band headline" />
+</BaseLayout>
+
+<style>
+  .sg {
+    padding-bottom: 80px;
+  }
+  .sg > section {
+    padding-block: 40px;
+    border-top: 1px solid var(--rule);
+  }
+  .sg > section > h2 {
+    margin-bottom: 24px;
+    color: var(--graphite);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  .sg-swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 16px;
+  }
+  .sg-swatch {
+    display: grid;
+    gap: 4px;
+    font-size: 0.875rem;
+  }
+  .sg-swatch span {
+    height: 64px;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+  }
+  .sg-swatch small {
+    color: var(--graphite);
+  }
+  .sg-h1,
+  .sg-h2 {
+    color: var(--ink);
+    font-family: var(--font-head);
+    font-weight: 650;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+  .sg-h1 {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+  }
+  .sg-h2 {
+    margin-top: 12px;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+  .sg-body {
+    max-width: 40rem;
+    margin-top: 12px;
+    font-size: 1.1rem;
+  }
+  .sg-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    align-items: start;
+    gap: 24px;
+  }
+  .sg-hero-title {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+  }
+  .sg-band {
+    padding-inline: 24px;
+    border-radius: 20px;
+  }
+</style>

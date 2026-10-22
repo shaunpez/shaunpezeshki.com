@@ -1,0 +1,86 @@
+---
+import "@fontsource-variable/manrope"
+import "../styles/global.css"
+import Header from "../components/Header.astro"
+import BackToTop from "../components/BackToTop.astro"
+import Footer from "../components/Footer.astro"
+import { SITE } from "../lib/posts"
+
+interface Props {
+  title: string
+  description?: string
+  /** Site-relative or absolute URL for og:image. */
+  image?: string
+  keywords?: string
+  noindex?: boolean
+  jsonLd?: object
+}
+
+const { title, description = SITE.description, image, keywords, noindex = false, jsonLd } = Astro.props
+const fullTitle = `${title} | ${SITE.title}`
+const canonical = new URL(Astro.url.pathname, SITE.url).href
+const imageUrl = image ? new URL(image, SITE.url).href : undefined
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>document.documentElement.classList.add("js")</script>
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="Shaun Pezeshki" href="/rss.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta name="twitter:card" content={imageUrl ? "summary_large_image" : "summary"} />
+    <meta name="twitter:creator" content="Shaun Pezeshki" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <script is:inline>
+      // Matches the old plugin's respectDNT setting: no analytics at all under Do Not Track.
+      if (navigator.doNotTrack !== "1") {
+        const ga = document.createElement("script")
+        ga.async = true
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-JF4CNN7RZ6"
+        document.head.append(ga)
+        window.dataLayer = window.dataLayer || []
+        window.gtag = function () { dataLayer.push(arguments) }
+        gtag("js", new Date())
+        gtag("config", "G-JF4CNN7RZ6")
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    <main><slot /></main>
+    <Footer />
+    <BackToTop />
+    <script>
+      // Section entrances; without JS the "js" class never lands and everything stays visible.
+      const io = new IntersectionObserver(
+        entries =>
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return
+            entry.target.classList.add("is-in")
+            io.unobserve(entry.target)
+          }),
+        { rootMargin: "0px 0px -12% 0px" }
+      )
+      document.querySelectorAll("[data-reveal-group]").forEach(group => {
+        group.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el, i) => el.style.setProperty("--i", String(i)))
+        io.observe(group)
+      })
+    </script>
+  </body>
+</html>

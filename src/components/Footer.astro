@@ -1,0 +1,39 @@
+---
+const year = new Date().getFullYear()
+const explore = [
+  { href: "/blog", label: "Stories" },
+  { href: "/about", label: "About" },
+  { href: "/chat-with-shaun", label: "Let's talk" },
+  { href: "https://uphighstudio.com", label: "Up High Studio" },
+]
+const elsewhere = [
+  { href: "https://linkedin.com/in/shaunpez", label: "LinkedIn" },
+  { href: "https://instagram.com/shaunpez", label: "Instagram" },
+  { href: "https://twitter.com/shaunpez", label: "X" },
+  { href: "/rss.xml", label: "RSS" },
+  { href: "https://buymeacoffee.com/shaunpez", label: "Buy me a coffee" },
+]
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__about">
+      <a href="/" class="brand-mark">Shaun Pezeshki</a>
+      <p>I build technology around people. Always up for a good coffee and a real conversation.</p>
+    </div>
+    <nav aria-label="Explore">
+      <p class="site-footer__heading">Explore</p>
+      {explore.map(({ href, label }) => <a href={href}>{label}</a>)}
+    </nav>
+    <nav aria-label="Social">
+      <p class="site-footer__heading">Social</p>
+      {elsewhere.map(({ href, label }) => (
+        <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer">{label}</a>
+      ))}
+    </nav>
+  </div>
+  <div class="site-footer__legal">
+    <span>&copy; {year} Shaun Pezeshki</span>
+    <a href="/privacy-policy">Privacy</a>
+  </div>
+</footer>

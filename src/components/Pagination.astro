@@ -1,0 +1,32 @@
+---
+import ArrowIcon from "./ArrowIcon.astro"
+
+interface Props {
+  currentPage: number
+  numPages: number
+  /** URL of page 1. */
+  first: string
+  /** Page n (n > 1) lives at `${base}/${n}`. */
+  base: string
+}
+
+const { currentPage, numPages, first, base } = Astro.props
+const pageUrl = (n: number) => (n === 1 ? first : `${base}/${n}`)
+const older = currentPage < numPages ? pageUrl(currentPage + 1) : undefined
+const newer = currentPage > 1 ? pageUrl(currentPage - 1) : undefined
+---
+
+{numPages > 1 && (
+  <nav class="pagination" aria-label="Pagination">
+    {older ? (
+      <a href={older} class="prev" rel="next"><ArrowIcon />Older posts</a>
+    ) : (
+      <span class="prev"><ArrowIcon />Older posts</span>
+    )}
+    {newer ? (
+      <a href={newer} class="next" rel="prev">Newer posts<ArrowIcon /></a>
+    ) : (
+      <span class="next">Newer posts<ArrowIcon /></span>
+    )}
+  </nav>
+)}

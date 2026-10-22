@@ -1,0 +1,36 @@
+---
+interface Props {
+  url: string
+  identifier: string
+  title: string
+}
+
+const { url, identifier, title } = Astro.props
+---
+
+<div id="disqus_thread" data-url={url} data-identifier={identifier} data-title={title}></div>
+
+<script>
+  // Load Disqus only when the reader scrolls near the comments.
+  const thread = document.getElementById("disqus_thread")
+  if (thread) {
+    const observer = new IntersectionObserver(
+      entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return
+        observer.disconnect()
+        const { url, identifier, title } = thread.dataset
+        ;(window as any).disqus_config = function (this: any) {
+          this.page.url = url
+          this.page.identifier = identifier
+          this.page.title = title
+        }
+        const script = document.createElement("script")
+        script.src = "https://shaunpezeshki.disqus.com/embed.js"
+        script.setAttribute("data-timestamp", String(Date.now()))
+        document.body.append(script)
+      },
+      { rootMargin: "600px" }
+    )
+    observer.observe(thread)
+  }
+</script>

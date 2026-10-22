@@ -32,7 +32,7 @@ The LGBTQ+ community is a brilliant spectrum, each shade representing a distinct
   </div>
   <div class="w-full md:mt-16 md:w-1/3">
     <figure>
-      <img src="./images/pizza-calzone.jpg" alt="Pizza or Calzone" />
+      <img src="/images/blog/pizza-calzone.jpg" loading="lazy" alt="Pizza or Calzone" />
     </figure>
   </div>
 </div>
@@ -48,7 +48,7 @@ Now, gender itself isn't a one-size-fits-all hat; it's more like a galaxy with a
   </div>
   <div class="w-full md:mt-16 md:w-1/3">
     <figure>
-      <img src="./images/marsha-p-johnson-v3.jpg" alt="Marsha P. Johnson" />
+      <img src="/images/blog/marsha-p-johnson-v3.jpg" loading="lazy" alt="Marsha P. Johnson" />
       <figcaption class="mt-2">Marsha P. Johnson</figcaption>
     </figure>
   </div>

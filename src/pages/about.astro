@@ -1,0 +1,134 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ContactBand from "../components/ContactBand.astro"
+import Moments from "../components/Moments.astro"
+import PageHero from "../components/PageHero.astro"
+import Photo from "../components/Photo.astro"
+import TextRow from "../components/TextRow.astro"
+import { getPublishedPosts } from "../lib/posts"
+import heroImage from "../images/shaun-sitting.jpg"
+import selfieImage from "../images/shaun.jpg"
+import beachImage from "../images/shaun-hero-v4.jpg"
+import wingsImage from "../images/shaun-hero-v5.jpg"
+
+const posts = await getPublishedPosts()
+
+// The stories that mark where I've been, oldest first. Swap slugs here to change the story.
+const momentSlugs = [
+  "bridging-worlds-digital-agency-to-public-service",
+  "navigating-difficult-client-relationships",
+  "moving-to-austin-lessons-on-friendship-family-self-growth",
+  "my-own-naw-ruz-growth-new-beginnings",
+  "columbus-taught-me-what-i-want",
+  "hrc-equality-in-action-show-up",
+]
+const moments = momentSlugs
+  .map(slug => posts.find(post => post.data.slug === slug))
+  .filter(post => post !== undefined)
+
+// Draft values for "What I care about"; edit freely.
+const values = [
+  {
+    image: wingsImage,
+    alt: "Shaun standing in front of a mural of painted wings",
+    title: "Quality over quantity",
+    text: "Whether it's a client project or something I'm building for myself, I'd rather do fewer things well. It's how I run Up High Studio and how I'm building Proudly Paired.",
+  },
+  {
+    image: selfieImage,
+    alt: "Shaun with bleached hair in a white t-shirt",
+    title: "Showing up for my community",
+    text: "I sit on the HRC Columbus steering committee as Digital Engagement Chair. Community is where I learn the most about people.",
+  },
+  {
+    image: beachImage,
+    alt: "Shaun smiling at the beach with waves behind him",
+    title: "Conversations that go somewhere",
+    text: "I'd take a long coffee and a real question over small talk any day. It's why I still offer coffee chats to anyone who asks.",
+  },
+]
+---
+
+<BaseLayout
+  title="About Shaun Pezeshki"
+  description="Shaun Pezeshki has spent more than 16 years making technology work for people. He builds websites, systems and workflows for teams and small businesses, and cares most about community, writing and good conversations."
+  keywords="Shaun Pezeshki, about, AI, systems, HRC Columbus, Prism & Pen, LGBTQ+ writing, Columbus Ohio"
+  image={heroImage.src}
+>
+  <PageHero image={heroImage} alt="Shaun sitting on a sofa and smiling">
+    <h1 data-reveal>I've spent more than 16 years making technology work for people.</h1>
+    <p class="hero__lede" data-reveal>
+      I'm Shaun Pezeshki. I build websites, systems and workflows that make work simpler for teams and small
+      businesses. Outside of work, I care most about community, writing and good conversations.
+    </p>
+  </PageHero>
+
+  <section class="band text-section" aria-labelledby="story-title" data-reveal-group>
+    <div class="shell">
+      <TextRow id="story-title" title="How I got here">
+        <p>
+          I have a computer science background and more than 16 years in tech, across marketing, development,
+          automation, AI workflows and client service.
+        </p>
+        <p>
+          That path led me naturally to building products. I care about understanding people, choosing problems worth
+          solving, and making things people can actually use. Today most of that happens through my studio,{" "}
+          <a href="https://uphighstudio.com">Up High Studio</a>.
+        </p>
+      </TextRow>
+    </div>
+  </section>
+
+  <section class="care" aria-labelledby="care-title" data-reveal-group>
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="care-title" data-reveal>What I care about</h2>
+      </div>
+      <div class="values__grid">
+        {values.map(({ image, alt, title, text }) => (
+          <article class="value" data-reveal>
+            <Photo src={image} alt={alt} widths={[400, 800]} sizes="(min-width: 900px) 30vw, 100vw" />
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band journey" aria-labelledby="journey-title" data-reveal-group>
+    <div class="shell">
+      <div class="section-head">
+        <h2 id="journey-title" data-reveal>Where I've been, in my own words</h2>
+        <p data-reveal>
+          I've called Washington, DC, Seattle, San Francisco and Austin home, and now Columbus, Ohio. I grew up in
+          Michigan. These are the moments that changed how I work and live, each one a story I wrote at the time.
+        </p>
+      </div>
+      <Moments posts={moments} />
+    </div>
+  </section>
+
+  <section class="text-section" aria-labelledby="writing-title" data-reveal-group>
+    <div class="shell">
+      <TextRow id="writing-title" title="Community and writing" link={{ href: "/blog", label: "Read my stories" }}>
+        <p>
+          I write about identity, community, work, technology, and the parts of life that don't fit neatly into a
+          resume. Some of it is published with{" "}
+          <a target="_blank" rel="noreferrer" href="https://medium.com/prismnpen">Prism &amp; Pen</a>, a publication
+          that amplifies LGBTQ+ voices.
+        </p>
+        <p>
+          I also serve on the Columbus steering committee for the{" "}
+          <a target="_blank" rel="noreferrer" href="https://www.hrc.org/">Human Rights Campaign</a>. Both are a big part
+          of who I am and how I see the world.
+        </p>
+      </TextRow>
+    </div>
+  </section>
+
+  <ContactBand
+    title="I'd love to hear from you."
+    text="Bring a project, a career question, an idea you're not sure about yet, or just say hello."
+  />
+</BaseLayout>

@@ -5,32 +5,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev          # Start dev server at localhost:8000
-npm run build        # Production build
-npm run serve        # Serve the production build locally
-npm run clean        # Clear Gatsby cache (.cache/ and public/)
-npm run deploy       # gatsby clean + build + gh-pages deploy to GitHub Pages
+npm run dev          # Start dev server at localhost:4321
+npm run build        # Production build into dist/
+npm run preview      # Serve the production build locally
+npm run deploy       # Build + wrangler deploy to Cloudflare
+npm run audio        # Generate missing post audio with Google TTS (needs z_google/service-google-key.json)
 ```
-
-Run `gatsby clean` before builds when you see stale cache errors or GraphQL schema mismatches.
 
 ## Architecture
 
-**Gatsby 5 static site** — Markdown files → GraphQL → React templates → static HTML.
+**Astro 7 static site** on Cloudflare (a Worker serving `dist/` as static assets, see `wrangler.jsonc`). Markdown → content collection → `.astro` pages → static HTML. Almost no client JS: only the mobile nav toggle, the audio player, back to top, and lazy Disqus.
 
 ### Content pipeline
 
-- Blog posts live in `src/blog/post-N.md` (plain Markdown, not MDX despite MDX plugin being installed)
-- Images: `src/blog/images/filename.jpg` — referenced in frontmatter as `./images/filename.jpg`
-- Audio: `static/audio/{slug}.mp3` — auto-detected by the AudioPlayer component via HEAD request; no frontmatter needed
-- Videos: referenced inline, copied to `public/blog/videos/` at build time via `gatsby-remark-copy-linked-files`
+- Blog posts live in `src/blog/post-N.md` (plain Markdown). The `blog` collection in `src/content.config.ts` loads `post-*.md` only, so `post-49.md-draft` style files are ignored.
+- Images: `src/blog/images/filename.jpg`, referenced in frontmatter and body as `./images/filename.jpg`. Astro optimizes them at build time. Raw HTML `<img>` tags in a post are not processed, so those images live in `public/images/blog/` and use `/images/blog/filename.jpg`. Prefer Markdown `![alt](./images/...)`.
+- Audio: `public/audio/{slug}.mp3`. `AudioPlayer.astro` checks for the file at build time; no frontmatter needed.
+- TikTok embeds in a post body load the TikTok script automatically on that post only.
 
 ### Post frontmatter schema
 
 ```yaml
 ---
 title: "Post Title"
-date: "YYYY-MM-DD"
+date: "YYYY-MM-DD"   # keep quoted; used verbatim for the URL
 slug: "url-friendly-slug"
 category: "Category Name"
 excerpt: "Short description shown in listing"
@@ -42,25 +40,26 @@ tags:
 ---
 ```
 
-Post URLs are generated as `/{YYYY}/{MM}/{DD}/{slug}` by `gatsby-node.js`. Posts with a future date are excluded at build time.
+Post URLs are `/{YYYY}/{MM}/{DD}/{slug}`. Drafts and future-dated posts are excluded at build time (`getPublishedPosts()` in `src/lib/posts.ts`).
 
-### Page generation (`gatsby-node.js`)
+### Pages (`src/pages/`)
 
-- One page per post at `/{date}/{slug}`
-- Paginated blog list starting at `/page/2` (page 1 is `src/pages/index.js`)
-- Category pages at `/category/{slug}` with 8 posts per page
+- `index.astro`: homepage; "Stories" shows the latest 4 posts automatically
+- `blog.astro`: newest story featured, then every story as rows grouped by year; `page/[page].astro` keeps old `/page/N` links working
+- `category/[category]/[...page].astro`: `/category/{slug}` and `/category/{slug}/2`, 8 per page. Slugs keep `+` (`/category/lgbtq+`).
+- `[yyyy]/[mm]/[dd]/[slug].astro`: single post
+- `styleguide.astro`: every token and shared component, rendered with real posts (noindex, not in sitemap). Check UI changes here first.
+- `rss.xml.ts`, sitemap via `@astrojs/sitemap`, `public/_redirects` for `/feed`
 
-### Templates & components
+### Shared code
 
-- `src/templates/blog-post-template.js` — single post view; renders `post.html` via `dangerouslySetInnerHTML`
-- `src/templates/blog-list-template.js` — paginated post listing
-- `src/templates/category-template.js` — filtered listing by category
-- `src/components/audio-player.js` — checks `/audio/{slug}.mp3` existence; shows player only if file found
-- `src/components/seo.js` — React Helmet wrapper for meta/OG tags
+- `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`. Use these; don't rebuild URL or date logic in pages.
+- `src/layouts/BaseLayout.astro`: head/SEO/OG/JSON-LD, Google Analytics (skipped under Do Not Track), header, footer
+- `src/components/*.astro`: Header, Footer, Button, Photo (every image goes through it), PageHero, SplitRow, TextRow, Quotes, PostFeature, PostRow, PostMeta, Moments, ContactBand, BackToTop, CategoryNav, Pagination, AudioPlayer, Comments (Disqus). See DESIGN.md for the visual rules.
 
 ### Styling
 
-Tailwind CSS with `@tailwindcss/typography` (the `prose` classes). PostCSS config in `postcss.config.js`. Global styles in `src/styles/global.css`.
+One global stylesheet, `src/styles/global.css`, with color tokens on `:root` (see `DESIGN.md`). Tailwind v3 runs through `postcss.config.js` for its base reset and `@tailwindcss/typography` (`prose`); nearly all styling is plain CSS classes. Never hardcode hex values outside `:root`.
 
 ### Numbering convention
 

@@ -1,0 +1,15 @@
+---
+import ArrowIcon from "./ArrowIcon.astro"
+
+interface Props {
+  href: string
+  variant?: "primary" | "secondary"
+  arrow?: boolean
+}
+
+const { href, variant = "primary", arrow = true } = Astro.props
+---
+
+<a href={href} class={`button button-${variant}`}>
+  <slot />{arrow && <ArrowIcon />}
+</a>

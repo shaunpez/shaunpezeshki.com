@@ -1,118 +1,77 @@
 ---
-name: Shaun Pezeshki Warm Editorial Index
-description: A photo-led editorial system for Shaun's consulting work, stories, and personal background.
+name: Shaun Pezeshki Light
+description: Light, airy and organized, in the spirit of uphighstudio.com. The original section order, with each section redesigned to flow.
 colors:
-  ink: "#202620"
-  graphite: "#59635c"
-  paper: "#fbf7ee"
-  paper-soft: "#f0e8d9"
-  surface: "#fffdf8"
-  line: "#d8cdbc"
+  ink: "#161b18"
+  graphite: "#5a635d"
+  paper: "#fafaf9"
+  band: "#f1f5f2"
+  mint-band: "#e8f4ed"
+  surface: "#ffffff"
   teal: "#0e7c74"
   teal-deep: "#075f59"
-  olive: "#697b45"
-  clay: "#b85f45"
+  cta: "#9edbbc"
+  cta-hover: "#8dd3b0"
+  cta-ink: "#0b3d2e"
 typography:
-  display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "clamp(2.75rem, 6.2vw, 5.4rem)"
-    fontWeight: 750
-    lineHeight: 0.95
-    letterSpacing: "0"
-  headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "clamp(2rem, 4vw, 3.45rem)"
-    fontWeight: 720
-    lineHeight: 1.02
-    letterSpacing: "0"
-  title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "clamp(1.35rem, 2.4vw, 2rem)"
-    fontWeight: 700
-    lineHeight: 1.15
-    letterSpacing: "0"
-  body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
-    fontSize: "1rem"
-    fontWeight: 400
-    lineHeight: 1.7
-    letterSpacing: "0"
+  headings: "Manrope Variable (self-hosted via @fontsource-variable/manrope), weight 650, tracking -0.03em, sentence case"
+  body: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif at 17-18px"
 rounded:
-  sm: "6px"
-  md: "8px"
-  lg: "14px"
+  photos: "20px (thumbnails 14-16px)"
+  buttons: "pill"
 ---
 
-# Design System: Warm Editorial Index
+# Design System: Light
 
-## North Star
+Chosen Oct 2026 after Shaun compared real reference sites (board: https://app.superset.sh/page/shaun-s-site-directions-p8qgvr). He picked a mix:
 
-The site should feel like Shaun opened a well-organized field notebook: personal photos, clear pathways, practical consulting proof, and stories that feel central rather than bolted on. The first screen should lead with Shaun's practical value, show the person, and hint at the page below.
+- Light and airy like uphighstudio.com (his studio), not copied from it.
+- The clean text structure of justinwelsh.me and jamesclear.com.
+- More imagery, like nesslabs.com and fs.blog.
+- From stevenbartlett.com: lots of photos of him, a story, a business showcase. Told through his own essays, not his upbringing.
 
-## Direction
+Two earlier passes were rejected: a recolor that kept the old boxy cards, and a bold "name as monument" redesign (giant all-caps type, dark colour chapters). Do not bring back all caps, tiny text, dark sections, or giant type.
 
-Use the **Personal Map Masthead** direction from the visual probes:
+## Rules
 
-- A personal photo leads the first viewport.
-- The homepage opens with a direct consulting value headline and a personal photo.
-- Consulting proof appears as clear services, industries, and quotes, not repeated equal cards.
-- Writing appears as an archive of featured editorial entries with category/date/reading time.
-- About and contact pages inherit the same index language instead of becoming isolated prose cards.
+- Light only. No dark mode.
+- Call the writing "stories", never "essays", in anything a visitor reads.
+- Sentence case everywhere. Body text 17-18px; nothing under 14px.
+- Sections separated by space and soft tone bands (`--band`, `--mint-band`), not boxes or borders. Thin rules only between list rows.
+- Photos with soft rounded corners, always through `Photo.astro` (20px, or 14px with `small` for thumbnails). Never style an `<img>` corner directly. Phones crop large photos to 4 / 3.
+- Pistachio pill buttons (`--cta` with `--cta-ink` text). Green (`--teal-deep`) for links, years, categories.
+- Real content only: Shaun's photos, essay covers, Up High Studio case-study screenshots. Proudly Paired stays off the site (matchmaking is not public yet).
 
-Do not literalize generated probe details such as fake handwritten notes or stock-looking landscape imagery. Use the existing local Shaun photos and blog images.
+## Homepage order (unchanged from the original site)
 
-## Color
+The homepage is the trailer; the About page is the full story.
 
-The strategy is **full palette, controlled**. Warm paper carries the surface, while teal is functional, clay is human/emotional, and olive supports personal/reflection sections.
+1. Hero (`PageHero`): headline, one paragraph, Let's talk + Read my stories, large photo.
+2. What I do (band): four `SplitRow`s that alternate sides.
+3. Kind words: two quotes.
+4. Stories: newest story as a feature, three more as rows with thumbnails.
+5. About teaser (band): photo, two short paragraphs, "More about me".
+6. Contact band (mint): one line and buttons.
 
-- Notebook Ink `#202620`: primary text and strong rules.
-- Muted Graphite `#59635c`: secondary text and metadata.
-- Warm Paper `#fbf7ee`: page background.
-- Soft Paper `#f0e8d9`: section bands and quiet panels.
-- Fresh Surface `#fffdf8`: readable raised surfaces.
-- Soft Line `#d8cdbc`: dividers and borders.
-- Signal Teal `#0e7c74`: actions and active category states.
-- Deep Signal Teal `#075f59`: hover and focus emphasis.
-- Olive Leaf `#697b45`: personal/profile accents.
-- Clay Warmth `#b85f45`: quotes, small editorial markers, and emotional emphasis.
+## About page order
 
-Use OKLCH/color-mix where practical in CSS. Avoid pure black or white, gradient text, decorative orbs, and dark technical panels.
+1. Hero (`PageHero`): "I love making life easier for people."
+2. How I got here (band): `TextRow`.
+3. What I care about: three photos with short values.
+4. Where I've been (band): `Moments` timeline of stories (slugs listed in `src/pages/about.astro`).
+5. Community and writing: `TextRow`.
+6. Contact band (mint).
 
-## Typography
+The contact page (`/chat-with-shaun`) is a `PageHero` and three ways to reach me, as rows with thin rules.
 
-Use the system sans stack for speed and directness. The editorial quality should come from scale, measure, rules, and image rhythm rather than a reflexive serif-magazine treatment.
+Plain text pages (privacy, 404) use the Stories page header (`.page-head`) and a `.page-body` column capped at 720px, left-aligned with the logo.
 
-- Keep display type below oversized hero scale. Shaun's name should be confident but human.
-- Body line length should stay near 65-75ch on articles.
-- Short labels may use caps with moderate tracking.
-- Do not use monospace to imply technical credibility.
+## Components (src/components)
 
-## Layout
+`Header`, `Footer`, `Button` (primary/secondary), `Photo`, `PageHero`, `SplitRow` (photo + text), `TextRow` (heading + text), `Quotes`, `PostFeature`, `PostRow`, `PostMeta` (category, date, read time), `Moments`, `ContactBand`, `BackToTop`, `CategoryNav`, `Pagination`, `AudioPlayer`, `Comments`. `/styleguide` renders them with real content.
 
-The core pattern is an editorial index:
+## Story page
 
-- Header: compact text-led navigation with clear work/blog/about/contact paths.
-- Homepage: masthead, consulting proof, writing archive, personal bridge, contact close.
-- Blog index: featured/latest/category hierarchy and an archive rhythm, not a generic grid.
-- Article: readable masthead, date/category/audio/tags grouped cleanly, generous prose measure.
-- About/contact: image-led editorial pages with clear actions.
+A reading column (`.shell--narrow`, 720px): All stories link, `PostMeta`, title, summary, Listen button (secondary button). The cover is the first image in the Markdown. Body text is `.prose`, themed with the site tokens; pull quotes get a pistachio bar. Then tags as quiet pills, comments, and a "Keep reading" band of three `PostRow`s (same category first).
 
-Cards are allowed for repeated article previews and small action modules only. Do not nest cards or use identical icon-card grids for consulting proof.
-
-## Motion
-
-Motion should be subtle and reduced-motion safe:
-
-- Hover lift on clickable editorial entries.
-- Small image scale on hover.
-- Soft entrance reveal for major sections when motion is allowed.
-- No bounce, elastic, layout-property animation, or motion that blocks reading.
-
-## Anti-Patterns
-
-- No "Consulting + personal writing" bubble.
-- No generic SaaS/agency consultant hero.
-- No repeated two-column homepage sections.
-- No identical card grid for services, industries, and testimonials.
-- No beige newsletter minimalism where imagery and personal texture disappear.
-- No dark tech-bro aesthetic.
+Listen opens a player docked bottom right (full width on phones): seek bar, time played and left, back and forward 15 seconds, speed 0.75× to 2×, close. It remembers each story's place and the speed, and supports lock-screen controls. The only other floating elements are the phone menu and `BackToTop` (a round button bottom right after one screen of scrolling, lifted above the player when it's open).

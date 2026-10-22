@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ArrowIcon from "../components/ArrowIcon.astro"
+import Button from "../components/Button.astro"
+---
+
+<BaseLayout title="Page not found" noindex>
+  <section class="page-head page-body" data-reveal-group>
+    <div class="shell">
+      <h1 data-reveal>Page not found</h1>
+      <p class="page-head__lede" data-reveal>This page moved or never existed. Try the homepage, or find a story to read.</p>
+      <div class="action-row" data-reveal>
+        <Button href="/">Go home</Button>
+        <a class="text-link" href="/blog">Read my stories <ArrowIcon /></a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

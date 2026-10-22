@@ -1,0 +1,26 @@
+---
+import Photo from "./Photo.astro"
+import PostMeta from "./PostMeta.astro"
+import { postUrl, type Post } from "../lib/posts"
+
+interface Props {
+  post: Post
+}
+
+const { post } = Astro.props
+const { title, excerpt, image } = post.data
+const url = postUrl(post)
+---
+
+<article class="post-row" data-reveal>
+  {image && (
+    <a class="post-row__image" href={url} tabindex="-1" aria-hidden="true">
+      <Photo src={image} alt="" ratio="4 / 3" small widths={[240, 480]} sizes="200px" />
+    </a>
+  )}
+  <div class="post-row__text">
+    <h3 class="post-row__title"><a href={url}>{title}</a></h3>
+    <p class="post-row__excerpt">{excerpt}</p>
+    <PostMeta post={post} />
+  </div>
+</article>
