@@ -4,7 +4,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro"
 import CategoryNav from "../../../components/CategoryNav.astro"
 import PostRow from "../../../components/PostRow.astro"
 import Pagination from "../../../components/Pagination.astro"
-import { POSTS_PER_PAGE, SITE, categorySlug, getCategories, getPublishedPosts, postUrl } from "../../../lib/posts"
+import { POSTS_PER_PAGE, SITE, categorySlug, categoryUrl, getCategories, getPublishedPosts, postUrl } from "../../../lib/posts"
 
 export const getStaticPaths = (async () => {
   const posts = await getPublishedPosts()
@@ -27,12 +27,12 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 
 const { category, categories, total, currentPage, numPages, posts } = Astro.props
-const path = `/category/${categorySlug(category)}`
+const path = categoryUrl(category)
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: category,
-  description: `A list of posts in the category ${category}.`,
+  description: `${category} stories by Shaun Pezeshki.`,
   url: SITE.url + path,
   itemListElement: posts.map((post, index) => ({
     "@type": "ListItem",
@@ -42,7 +42,12 @@ const jsonLd = {
 }
 ---
 
-<BaseLayout title={`Posts in ${category}`} jsonLd={jsonLd} noindex={currentPage > 1}>
+<BaseLayout
+  title={`${category} stories`}
+  description={`${category} stories by Shaun Pezeshki, from Threads of Perspective. Most come with a narrated version you can listen to.`}
+  jsonLd={jsonLd}
+  noindex={currentPage > 1}
+>
   <section class="page-head" data-reveal-group>
     <div class="shell">
       <h1 data-reveal>{category}</h1>

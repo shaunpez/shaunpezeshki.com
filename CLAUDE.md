@@ -46,14 +46,16 @@ Post URLs are `/{YYYY}/{MM}/{DD}/{slug}`. Drafts and future-dated posts are excl
 
 - `index.astro`: homepage; "Stories" shows the latest 4 posts automatically
 - `blog.astro`: newest story featured, then every story as rows grouped by year; `page/[page].astro` keeps old `/page/N` links working
-- `category/[category]/[...page].astro`: `/category/{slug}` and `/category/{slug}/2`, 8 per page. Slugs keep `+` (`/category/lgbtq+`).
+- `category/[category]/[...page].astro`: `/category/{slug}` and `/category/{slug}/2`, 8 per page. Slugs keep `+`, but links, canonicals and the sitemap use the encoded form (`/category/lgbtq%2B/`) because Cloudflare redirects the raw `+`. Use `categoryUrl()`.
 - `[yyyy]/[mm]/[dd]/[slug].astro`: single post
 - `styleguide.astro`: every token and shared component, rendered with real posts (noindex, not in sitemap). Check UI changes here first.
 - `rss.xml.ts`, sitemap via `@astrojs/sitemap`, `public/_redirects` for `/feed`
 
 ### Shared code
 
-- `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`. Use these; don't rebuild URL or date logic in pages.
+- `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categoryUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`, `PERSON` (Person schema: technical strategist, Up High Studio, Columbus). Use these; don't rebuild URL or date logic in pages.
+- Internal links always end in a slash (`/about/`, `/2026/05/04/slug/`), matching canonicals and how Cloudflare serves pages; a missing slash costs a redirect.
+- SEO voice: professional (technical strategist, 16+ years, websites, systems and workflows). Not product-role framing, and don't lead with AI. Titles that include "Shaun Pezeshki" are used as written; others get " | Shaun Pezeshki".
 - `src/layouts/BaseLayout.astro`: head/SEO/OG/JSON-LD, Google Analytics (skipped under Do Not Track), header, footer
 - `src/components/*.astro`: Header, Footer, Button, Photo (every image goes through it), PageHero, SplitRow, TextRow, Quotes, PostFeature, PostRow, PostMeta, Moments, ContactBand, BackToTop, CategoryNav, Pagination, AudioPlayer, Comments (Disqus). See DESIGN.md for the visual rules.
 

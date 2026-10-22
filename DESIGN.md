@@ -36,6 +36,7 @@ Two earlier passes were rejected: a recolor that kept the old boxy cards, and a 
 
 - Light only. No dark mode.
 - Call the writing "stories", never "essays", in anything a visitor reads.
+- Text color: headings, titles and display quotes in `--ink`; every paragraph, list and description in `--graphite`, including story text. Don't set body text to `--ink`.
 - Sentence case everywhere. Body text 17-18px; nothing under 14px.
 - Sections separated by space and soft tone bands (`--band`, `--mint-band`), not boxes or borders. Thin rules only between list rows.
 - Photos with soft rounded corners, always through `Photo.astro` (20px, or 14px with `small` for thumbnails). Never style an `<img>` corner directly. Phones crop large photos to 4 / 3.

@@ -1,8 +1,8 @@
 ---
 const path = Astro.url.pathname.replace(/\/$/, "") || "/"
 const links = [
-  { href: "/blog", label: "Stories" },
-  { href: "/about", label: "About" },
+  { href: "/blog/", label: "Stories" },
+  { href: "/about/", label: "About" },
 ]
 ---
 
@@ -15,9 +15,9 @@ const links = [
     </button>
     <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
       {links.map(({ href, label }) => (
-        <a href={href} aria-current={path === href ? "page" : undefined}>{label}</a>
+        <a href={href} aria-current={path === href.replace(/\/$/, "") ? "page" : undefined}>{label}</a>
       ))}
-      <a class="button button-primary site-nav__cta" href="/chat-with-shaun">Let's talk</a>
+      <a class="button button-primary site-nav__cta" href="/chat-with-shaun/">Let's talk</a>
     </nav>
   </div>
 </header>
