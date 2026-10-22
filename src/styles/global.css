@@ -466,7 +466,14 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid transparent;
   background: var(--paper);
+  transition: border-color 200ms var(--ease-out);
+}
+
+/* A hairline appears once the page scrolls under the header. */
+.site-header.is-scrolled {
+  border-bottom-color: var(--rule);
 }
 
 .site-header__inner {
@@ -1410,20 +1417,22 @@ h4 {
     rotate: -45deg;
   }
 
+  /* The phone menu drops from the header as one sheet, full width, over a dimmed page that doesn't scroll. */
   .site-nav {
     position: absolute;
     top: 100%;
-    right: var(--gutter);
-    left: var(--gutter);
+    right: 0;
+    left: 0;
     visibility: hidden;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    border-radius: 16px;
-    background: var(--surface);
+    border-top: 1px solid var(--rule);
+    border-radius: 0 0 var(--radius-img) var(--radius-img);
+    background: var(--paper);
     box-shadow: var(--shadow-lift);
     opacity: 0;
-    padding: 8px 16px 16px;
+    padding: 4px var(--gutter) 24px;
     translate: 0 -8px;
     transition: opacity 180ms var(--ease-out), translate 220ms var(--ease-out), visibility 0s linear 220ms;
   }
@@ -1435,14 +1444,55 @@ h4 {
     transition-delay: 0s;
   }
 
+  .site-header::after {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 100dvh;
+    background: color-mix(in oklch, var(--ink) 28%, transparent);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms var(--ease-out);
+  }
+
+  .site-header:has(.site-nav--open)::after {
+    opacity: 1;
+  }
+
+  html:has(.site-nav--open) {
+    overflow: hidden;
+  }
+
   .site-nav a:not(.button) {
-    min-height: 52px;
+    min-height: 60px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--rule);
     color: var(--ink);
-    font-size: 1.15rem;
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+  }
+
+  .site-nav a[aria-current="page"] {
+    color: var(--teal-deep);
+  }
+
+  .site-nav a[aria-current="page"]::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    content: "";
   }
 
   .site-nav__cta {
-    margin-top: 8px;
+    min-height: 52px;
+    margin-top: 24px;
+    font-size: 1.05rem;
   }
 
   .section-head--split {
