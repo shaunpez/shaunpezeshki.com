@@ -6,12 +6,12 @@ interface Props {
   numPages: number
   /** URL of page 1. */
   first: string
-  /** Page n (n > 1) lives at `${base}/${n}`. */
+  /** Page n (n > 1) lives at `${base}/${n}/`. */
   base: string
 }
 
 const { currentPage, numPages, first, base } = Astro.props
-const pageUrl = (n: number) => (n === 1 ? first : `${base}/${n}`)
+const pageUrl = (n: number) => (n === 1 ? first : `${base.replace(/\/$/, "")}/${n}/`)
 const older = currentPage < numPages ? pageUrl(currentPage + 1) : undefined
 const newer = currentPage > 1 ? pageUrl(currentPage - 1) : undefined
 ---

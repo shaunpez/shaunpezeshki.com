@@ -4,7 +4,7 @@ import { SITE, getPublishedPosts, postUrl } from "../lib/posts"
 export async function GET() {
   const posts = await getPublishedPosts()
   return rss({
-    title: "Chronicles of a Millennial Techie",
+    title: "Threads of Perspective by Shaun Pezeshki",
     description: SITE.description,
     site: SITE.url,
     items: posts.map(post => ({

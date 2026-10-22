@@ -5,6 +5,7 @@ import Header from "../components/Header.astro"
 import BackToTop from "../components/BackToTop.astro"
 import Footer from "../components/Footer.astro"
 import { SITE } from "../lib/posts"
+import defaultImage from "../images/shaun-hero-in-light.jpg"
 
 interface Props {
   title: string
@@ -14,12 +15,17 @@ interface Props {
   keywords?: string
   noindex?: boolean
   jsonLd?: object
+  /** "article" for stories, with the date they were published (YYYY-MM-DD). */
+  type?: "website" | "article"
+  published?: string
 }
 
-const { title, description = SITE.description, image, keywords, noindex = false, jsonLd } = Astro.props
-const fullTitle = `${title} | ${SITE.title}`
+const { title, description = SITE.description, image, keywords, noindex = false, jsonLd, type = "website", published } =
+  Astro.props
+// Titles that already name me (Home, About, Contact) are used as written.
+const fullTitle = title.includes(SITE.title) ? title : `${title} | ${SITE.title}`
 const canonical = new URL(Astro.url.pathname, SITE.url).href
-const imageUrl = image ? new URL(image, SITE.url).href : undefined
+const imageUrl = new URL(image ?? defaultImage.src, SITE.url).href
 ---
 
 <!doctype html>
@@ -32,20 +38,25 @@ const imageUrl = image ? new URL(image, SITE.url).href : undefined
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
     {noindex && <meta name="robots" content="noindex, follow" />}
-    <link rel="canonical" href={canonical} />
+    {!noindex && <link rel="canonical" href={canonical} />}
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="alternate" type="application/rss+xml" title="Shaun Pezeshki" href="/rss.xml" />
-    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonical} />
-    {imageUrl && <meta property="og:image" content={imageUrl} />}
-    <meta name="twitter:card" content={imageUrl ? "summary_large_image" : "summary"} />
-    <meta name="twitter:creator" content="Shaun Pezeshki" />
-    <meta name="twitter:title" content={title} />
+    <meta property="og:image" content={imageUrl} />
+    {published && <meta property="article:published_time" content={`${published}T12:00:00Z`} />}
+    {type === "article" && <meta property="article:author" content={`${SITE.url}/about/`} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@shaunpez" />
+    <meta name="twitter:creator" content="@shaunpez" />
+    <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
-    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    <meta name="twitter:image" content={imageUrl} />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <script is:inline>
       // Matches the old plugin's respectDNT setting: no analytics at all under Do Not Track.

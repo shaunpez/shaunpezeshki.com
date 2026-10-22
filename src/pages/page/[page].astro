@@ -29,11 +29,11 @@ const { page, numPages, posts } = Astro.props
   <section class="page-head">
     <div class="shell">
       <h1>Threads of Perspective</h1>
-      <p class="page-head__lede">Page {page} of the archive. <a href="/blog">See every story on one page</a>.</p>
+      <p class="page-head__lede">Page {page} of the archive. <a href="/blog/">See every story on one page</a>.</p>
     </div>
   </section>
   <section class="shell post-list" data-reveal-group>
     <div class="post-rows">{posts.map(post => <PostRow post={post} />)}</div>
-    <Pagination currentPage={page} numPages={numPages} first="/blog" base="/page" />
+    <Pagination currentPage={page} numPages={numPages} first="/blog/" base="/page" />
   </section>
 </BaseLayout>

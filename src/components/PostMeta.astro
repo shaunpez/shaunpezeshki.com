@@ -1,6 +1,6 @@
 ---
 // Category, date and reading time: one line, the same everywhere a story appears.
-import { categorySlug, formatDate, readingTime, type Post } from "../lib/posts"
+import { categoryUrl, formatDate, readingTime, type Post } from "../lib/posts"
 
 interface Props {
   post: Post
@@ -11,7 +11,7 @@ const { date, category } = post.data
 ---
 
 <p class="post-meta">
-  <a href={`/category/${categorySlug(category)}`}>{category}</a>
+  <a href={categoryUrl(category)}>{category}</a>
   <span>{formatDate(date)}</span>
   <span>{readingTime(post.body)}</span>
 </p>

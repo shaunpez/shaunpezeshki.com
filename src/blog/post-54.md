@@ -42,7 +42,7 @@ It was an interesting way to start.
 
 ![With friends I made at the HRC Equality in Action Convention in DC](./images/hrc-equality-in-action-friends-1.jpg)
 
-If you read [my Columbus post a couple of weeks back](/2026/04/22/columbus-taught-me-what-i-want), you know I have been thinking about community.
+If you read [my Columbus post a couple of weeks back](/2026/04/22/columbus-taught-me-what-i-want/), you know I have been thinking about community.
 
 The people who notice when you show up.
 

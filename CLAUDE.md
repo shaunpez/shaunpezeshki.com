@@ -53,7 +53,9 @@ Post URLs are `/{YYYY}/{MM}/{DD}/{slug}`. Drafts and future-dated posts are excl
 
 ### Shared code
 
-- `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`. Use these; don't rebuild URL or date logic in pages.
+- `src/lib/posts.ts`: `getPublishedPosts`, `postUrl`, `categoryUrl`, `categorySlug`, `readingTime`, `formatDate`, `SITE`, `PERSON` (Person schema: technical strategist, Up High Studio, Columbus). Use these; don't rebuild URL or date logic in pages.
+- Internal links always end in a slash (`/about/`, `/2026/05/04/slug/`), matching canonicals and how Cloudflare serves pages; a missing slash costs a redirect.
+- SEO voice: professional (technical strategist, 16+ years, websites, systems and workflows). Not product-role framing, and don't lead with AI. Titles that include "Shaun Pezeshki" are used as written; others get " | Shaun Pezeshki".
 - `src/layouts/BaseLayout.astro`: head/SEO/OG/JSON-LD, Google Analytics (skipped under Do Not Track), header, footer
 - `src/components/*.astro`: Header, Footer, Button, Photo (every image goes through it), PageHero, SplitRow, TextRow, Quotes, PostFeature, PostRow, PostMeta, Moments, ContactBand, BackToTop, CategoryNav, Pagination, AudioPlayer, Comments (Disqus). See DESIGN.md for the visual rules.
 

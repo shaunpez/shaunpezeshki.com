@@ -34,7 +34,7 @@ I was wrong about whether I would find my people inside it.
 
 Before I go further, some context.
 
-I have lived in a handful of cities. San Francisco was one of them, [years ago in my 20s, when travel and nightlife mattered a lot more to me](/2024/03/14/transition-from-party-animal-to-something-else). I give each place real time. Years, not months. I have left some reluctantly. I have stayed in others longer than I should have.
+I have lived in a handful of cities. San Francisco was one of them, [years ago in my 20s, when travel and nightlife mattered a lot more to me](/2024/03/14/transition-from-party-animal-to-something-else/). I give each place real time. Years, not months. I have left some reluctantly. I have stayed in others longer than I should have.
 
 This is a slow decision, not a restless one.
 

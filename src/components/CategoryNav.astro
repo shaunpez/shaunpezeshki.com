@@ -1,5 +1,5 @@
 ---
-import { categorySlug } from "../lib/posts"
+import { categoryUrl } from "../lib/posts"
 
 interface Props {
   categories: string[]
@@ -8,13 +8,13 @@ interface Props {
 const { categories } = Astro.props
 const path = decodeURI(Astro.url.pathname).replace(/\/$/, "")
 const items = [
-  { label: "All", href: "/blog" },
-  ...categories.map(category => ({ label: category, href: `/category/${categorySlug(category)}` })),
+  { label: "All", href: "/blog/" },
+  ...categories.map(category => ({ label: category, href: categoryUrl(category) })),
 ]
 ---
 
 <div class="category-buttons">
   {items.map(({ label, href }) => (
-    <a href={href} class="category-button" aria-current={path === href ? "page" : undefined}>{label}</a>
+    <a href={href} class="category-button" aria-current={path === href.replace(/\/$/, "") ? "page" : undefined}>{label}</a>
   ))}
 </div>

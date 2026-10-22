@@ -8,7 +8,7 @@ import AudioPlayer from "../../../../components/AudioPlayer.astro"
 import Comments from "../../../../components/Comments.astro"
 import PostMeta from "../../../../components/PostMeta.astro"
 import PostRow from "../../../../components/PostRow.astro"
-import { SITE, getPublishedPosts, postUrl } from "../../../../lib/posts"
+import { PERSON, SITE, getPublishedPosts, postUrl } from "../../../../lib/posts"
 
 export const getStaticPaths = (async () => {
   const posts = await getPublishedPosts()
@@ -39,18 +39,19 @@ const jsonLd = {
   headline: title,
   description: excerpt,
   datePublished: new Date(`${date}T12:00:00Z`).toISOString(),
-  author: { "@type": "Person", name: "Shaun Pezeshki" },
-  publisher: { "@type": "Organization", name: "Threads of Perspective" },
+  author: { "@type": "Person", "@id": PERSON["@id"], name: PERSON.name, url: `${SITE.url}/about/` },
+  publisher: { "@type": "Person", "@id": PERSON["@id"], name: PERSON.name, url: PERSON.url },
+  mainEntityOfPage: url,
   image: artwork,
   url,
   genre: category,
 }
 ---
 
-<BaseLayout title={title} description={excerpt} image={ogImage} jsonLd={jsonLd}>
+<BaseLayout title={title} description={excerpt} image={ogImage} jsonLd={jsonLd} type="article" published={date}>
   <article class={`story ${postClass}`}>
     <header class="shell shell--narrow story__head" data-reveal-group>
-      <a class="text-link text-link--back" href="/blog" data-reveal><ArrowIcon /> All stories</a>
+      <a class="text-link text-link--back" href="/blog/" data-reveal><ArrowIcon /> All stories</a>
       <div data-reveal><PostMeta post={post} /></div>
       <h1 data-reveal>{title}</h1>
       <p class="story__lede" data-reveal>{excerpt}</p>
@@ -73,7 +74,7 @@ const jsonLd = {
       <div class="shell">
         <div class="section-head section-head--split">
           <h2 id="more-title" data-reveal>Keep reading</h2>
-          <a class="text-link" href="/blog" data-reveal>All {total} stories <ArrowIcon /></a>
+          <a class="text-link" href="/blog/" data-reveal>All {total} stories <ArrowIcon /></a>
         </div>
         <div class="post-rows">{more.map(other => <PostRow post={other} />)}</div>
       </div>

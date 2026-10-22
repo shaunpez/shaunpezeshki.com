@@ -9,7 +9,7 @@ import PostFeature from "../components/PostFeature.astro"
 import PostRow from "../components/PostRow.astro"
 import Quotes from "../components/Quotes.astro"
 import SplitRow from "../components/SplitRow.astro"
-import { getPublishedPosts } from "../lib/posts"
+import { PERSON, SITE, getPublishedPosts } from "../lib/posts"
 import heroImage from "../images/shaun-hero-in-light.jpg"
 import workImage from "../images/shaun.jpg"
 import communityImage from "../images/disco-shaun.jpg"
@@ -20,13 +20,22 @@ import sittingImage from "../images/shaun-sitting.jpg"
 const posts = await getPublishedPosts()
 const [latest, ...recent] = posts
 const nextThree = recent.slice(0, 3)
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.title, publisher: { "@id": PERSON["@id"] } },
+    PERSON,
+  ],
+}
 ---
 
 <BaseLayout
-  title="Shaun Pezeshki | I build technology around people"
-  description="Shaun Pezeshki builds technology around people: AI and systems for businesses through Up High Studio, and products like Proudly Paired that help people connect. Stories about identity, community and work from Columbus, Ohio."
-  keywords="Shaun Pezeshki, Threads of Perspective, LGBTQ+ writing, community, HRC Columbus, AI, systems, Columbus Ohio"
+  title="Shaun Pezeshki | Technical Strategist in Columbus, Ohio"
+  description="I'm a technical strategist with more than 16 years across marketing, development, automation and client work. I build websites, systems and workflows for teams."
+  keywords="Shaun Pezeshki, technical strategist, web development, systems integration, marketing automation, Up High Studio, Columbus Ohio"
   image={heroImage.src}
+  jsonLd={jsonLd}
 >
   <PageHero image={heroImage} alt="Shaun smiling in a bright studio">
     <h1 data-reveal>I'm Shaun.<br />I build technology around people.</h1>
@@ -36,8 +45,8 @@ const nextThree = recent.slice(0, 3)
       the apps and actually meet.
     </p>
     <div class="action-row" data-reveal>
-      <Button href="/chat-with-shaun">Let's talk</Button>
-      <a class="text-link" href="/blog">Read my stories <ArrowIcon /></a>
+      <Button href="/chat-with-shaun/">Let's talk</Button>
+      <a class="text-link" href="/blog/">Read my stories <ArrowIcon /></a>
     </div>
   </PageHero>
 
@@ -79,7 +88,7 @@ const nextThree = recent.slice(0, 3)
         image={communityImage}
         alt="Shaun in a patterned shirt under pink neon light"
         title="My community"
-        link={{ href: "/2026/05/04/hrc-equality-in-action-show-up", label: "Read about Equality in Action" }}
+        link={{ href: "/2026/05/04/hrc-equality-in-action-show-up/", label: "Read about Equality in Action" }}
       >
         <p>
           I serve as Digital Engagement Chair for the Human Rights Campaign's Columbus chapter. Most of it happens in small
@@ -131,7 +140,7 @@ const nextThree = recent.slice(0, 3)
             is published with Prism &amp; Pen. Most of it you can listen to.
           </p>
         </div>
-        <a class="text-link" href="/blog" data-reveal>All {posts.length} stories <ArrowIcon /></a>
+        <a class="text-link" href="/blog/" data-reveal>All {posts.length} stories <ArrowIcon /></a>
       </div>
       {latest && <PostFeature post={latest} />}
       <div class="post-rows">
@@ -163,7 +172,7 @@ const nextThree = recent.slice(0, 3)
             What excites me right now is building with AI, making things that help people, and creating systems that make
             work and life make more sense.
           </p>
-          <a class="text-link" href="/about" data-reveal>More about me <ArrowIcon /></a>
+          <a class="text-link" href="/about/" data-reveal>More about me <ArrowIcon /></a>
         </div>
       </div>
     </div>

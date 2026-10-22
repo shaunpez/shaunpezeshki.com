@@ -1,12 +1,29 @@
 import { getCollection, type CollectionEntry } from "astro:content"
+import portrait from "../images/shaun-hero-in-light.jpg"
 
 export type Post = CollectionEntry<"blog">
 
 export const SITE = {
   title: "Shaun Pezeshki",
   description:
-    "Stories about technology, identity, community and work from Shaun Pezeshki.",
+    "Shaun Pezeshki is a technical strategist in Columbus, Ohio with more than 16 years across marketing, development and automation.",
   url: "https://shaunpezeshki.com",
+}
+
+/** Who the site is about: Person schema on Home and About, and the author of every story. */
+export const PERSON = {
+  "@type": "Person",
+  "@id": `${SITE.url}/#person`,
+  name: "Shaun Pezeshki",
+  url: `${SITE.url}/`,
+  image: new URL(portrait.src, SITE.url).href,
+  jobTitle: "Technical Strategist",
+  description:
+    "Technical strategist with more than 16 years across marketing, development and automation, building websites, systems and workflows for teams and small businesses.",
+  worksFor: { "@type": "Organization", name: "Up High Studio", url: "https://uphighstudio.com" },
+  address: { "@type": "PostalAddress", addressLocality: "Columbus", addressRegion: "OH", addressCountry: "US" },
+  knowsAbout: ["Technical strategy", "Web development", "Marketing automation", "Systems integration", "Workflow design"],
+  sameAs: ["https://linkedin.com/in/shaunpez", "https://instagram.com/shaunpez", "https://twitter.com/shaunpez"],
 }
 
 export const POSTS_PER_PAGE = 8
@@ -27,8 +44,11 @@ export async function getPublishedPosts(): Promise<Post[]> {
 export const categorySlug = (category: string) =>
   category.toLowerCase().replace(/\s+/g, "-")
 
+// Page URLs end in a slash, matching how Cloudflare serves them and the canonical tags.
 export const postUrl = ({ data }: Post) =>
-  `/${data.date.replaceAll("-", "/")}/${data.slug}`
+  `/${data.date.replaceAll("-", "/")}/${data.slug}/`
+
+export const categoryUrl = (category: string) => `/category/${categorySlug(category)}/`
 
 export const readingTime = (text = "") =>
   `${Math.ceil(text.split(/\s+/).length / 200)} min read`
