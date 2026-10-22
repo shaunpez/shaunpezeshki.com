@@ -631,7 +631,6 @@ h4 {
 .split-row__text p {
   max-width: 34rem;
   margin-bottom: 1.25rem;
-  color: var(--ink);
   font-size: 1.125rem;
   line-height: 1.65;
 }
@@ -868,7 +867,6 @@ h4 {
 .text-row__body p {
   max-width: 38rem;
   margin-bottom: 1.25rem;
-  color: var(--ink);
   font-size: 1.125rem;
   line-height: 1.65;
 }
